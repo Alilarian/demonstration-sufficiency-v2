@@ -1,0 +1,37 @@
+env_config:
+  render_mode: "rgb_array"    # Render mode for the environment: "human" for GUI, "rgb_array" for image array output
+  size: 2                     # Grid size (5x5 grid in this case)
+  noise_prob: 0.1             # Probability of a noisy transition, introducing randomness to actions
+  seed: 137                   # Random seed for reproducibility of results
+  steps: 100                  # Maximum number of steps the agent can take per episode
+  sleep_time: 0.5             # Time delay (in seconds) between each step during rendering
+  gamma: 0.99                 # Discount factor, determining the importance of future rewards
+
+algorithm_config:
+  epsilon: 1e-20              # Convergence threshold for value iteration; smaller values yield more precise solutions
+
+bayesian_irl_config:
+  num_steps: 3000             # Number of steps the MCMC sampler will take
+  step_stdev: 1.5            # Standard deviation for proposal distribution in the MCMC sampler
+  beta: 100                    # Inverse temperature parameter to control exploration vs. exploitation
+  burn_frac: 0.35              # Fraction of initial steps discarded as burn-in period
+  normalize: true             # Whether to normalize reward functions during sampling
+  skip_rate: 0                # Number of steps to skip when storing samples to reduce correlation
+  adaptive: true
+
+suff_config:
+  alphas: [0.85, 0.90, 0.95, 0.99] # Alpha Var
+  delta: 0.08
+  optimality_threshold: 0.96
+  random_normalization: true  # whether or not to normalize with random policy
+  thresholds: [0.1, 0.2, 0.3, 0.4] # Thresholds to declare demonstration sufficiency
+
+experiments:
+  num_world: 1
+  num_demonstration: 10
+
+data_generation:
+  # Strategy for generating pairwise comparisons:
+  # 'random_vs_random' - Generates multiple random trajectories and compares all unique pairs.
+  # 'same_start_state' - Generates two trajectories starting from the same state and compares them.
+  pair_wise_strategy: 'same_start_state'
