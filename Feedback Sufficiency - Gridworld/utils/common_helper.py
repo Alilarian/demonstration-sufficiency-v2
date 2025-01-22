@@ -180,6 +180,9 @@ def compute_infogain(env, demo, mcmc_samples, beta):
     main_sum = 0  # To accumulate the main sum
 
     s, a = demo  # Unpack the state and action from the demo
+    #print("State and action - Inside compute_infogain")
+    #print(s)
+    #print(a)
 
     # Step 1: Compute P(Dn | theta) for all thetas
     p_dn_given_theta_list = []  # Store P(Dn | theta) for each theta
@@ -217,3 +220,116 @@ def compute_infogain(env, demo, mcmc_samples, beta):
 
     return info_gain
 
+
+def compute_infogain_log(env, demos, mcmc_samples, beta):
+    """
+    Compute the information gain in log scale for a list of demonstrations.
+
+    Args:
+        env: The environment object, which allows setting feature weights and computing Q-values.
+        demos: A list of tuples [(s, a)] representing the demonstrations (states and actions).
+        mcmc_samples: A list of sampled theta values (feature weights).
+        beta: Inverse temperature parameter for the Boltzmann distribution.
+
+    Returns:
+        Information gain (float).
+    """
+    M = len(mcmc_samples)  # Number of MCMC samples
+    main_sum = 0  # To accumulate the main sum
+
+    # Step 1: Outer loop over demonstrations
+    for demo in demos:
+        s, a = demo  # Unpack the state and action from the current demo
+
+        # Step 2: Compute log P(Dn | theta) for all thetas
+        log_p_dn_given_theta_list = []  # Store log P(Dn | theta) for each theta
+
+        for theta in mcmc_samples:
+            # Set feature weights to the current theta
+            env.set_feature_weights(theta)
+
+            # Perform value iteration to get Q-values
+            val_iter = ValueIteration(env)
+            q_values = val_iter.get_q_values()
+
+            # Compute log P(Dn | theta) using the log-sum-exp trick
+            log_p_dn_given_theta = beta * q_values[s][a] - logsumexp(beta * q_values[s])
+            log_p_dn_given_theta_list.append(log_p_dn_given_theta)
+
+        # Step 3: Compute log marginal likelihood log P(Dn)
+        log_p_dn_given_theta_array = np.array(log_p_dn_given_theta_list)
+        log_p_dn = logsumexp(log_p_dn_given_theta_array - np.log(M))  # Normalize by M
+
+        # Step 4: Compute the main sum for the current demo
+        for i, theta in enumerate(mcmc_samples):
+            log_p_dn_given_theta = log_p_dn_given_theta_list[i]
+
+            # Compute the first log term: log(M * P(Dn | theta)) = log(M) + log P(Dn | theta)
+            log_term1 = np.log(M) + log_p_dn_given_theta
+
+            # Compute the second log term: log P(Dn)
+            log_term2 = log_p_dn
+
+            # Convert back from log to linear scale for weighted sum
+            main_sum += np.exp(log_p_dn_given_theta) * (log_term1 - log_term2)
+
+    # Step 5: Normalize by the number of samples M and the number of demonstrations
+    info_gain = main_sum / (M)
+
+    return info_gain
+
+
+def compute_infogain_log___(env, demo, mcmc_samples, beta):
+    """
+    Compute the information gain in log scale.
+
+    Args:
+        env: The environment object, which allows setting feature weights and computing Q-values.
+        demo: A tuple (s, a) representing the demonstration (state, action).
+        mcmc_samples: A list of sampled theta values (feature weights).
+        beta: Inverse temperature parameter for the Boltzmann distribution.
+
+    Returns:
+        Information gain (float).
+    """
+    M = len(mcmc_samples)  # Number of MCMC samples
+    main_sum = 0  # To accumulate the main sum
+
+    s, a = demo  # Unpack the state and action from the demo
+
+    # Step 1: Compute log P(Dn | theta) for all thetas
+    log_p_dn_given_theta_list = []  # Store log P(Dn | theta) for each theta
+
+    for theta in mcmc_samples:
+        # Set feature weights to the current theta
+        env.set_feature_weights(theta)
+
+        # Perform value iteration to get Q-values
+        val_iter = ValueIteration(env)
+        q_values = val_iter.get_q_values()
+
+        # Compute log P(Dn | theta) using the log-sum-exp trick
+        log_p_dn_given_theta = beta * q_values[s][a] - logsumexp(beta * q_values[s])
+        log_p_dn_given_theta_list.append(log_p_dn_given_theta)
+
+    # Step 2: Compute log marginal likelihood log P(Dn)
+    log_p_dn_given_theta_array = np.array(log_p_dn_given_theta_list)
+    log_p_dn = logsumexp(log_p_dn_given_theta_array - np.log(M))  # Normalize by M
+
+    # Step 3: Compute the main sum
+    for i, theta in enumerate(mcmc_samples):
+        log_p_dn_given_theta = log_p_dn_given_theta_list[i]
+
+        # Compute the first log term: log(M * P(Dn | theta)) = log(M) + log P(Dn | theta)
+        log_term1 = np.log(M) + log_p_dn_given_theta
+
+        # Compute the second log term: log P(Dn)
+        log_term2 = log_p_dn
+
+        # Convert back from log to linear scale for weighted sum
+        main_sum += np.exp(log_p_dn_given_theta) * (log_term1 - log_term2)
+
+    # Step 4: Normalize by the number of samples M
+    info_gain = main_sum / M
+
+    return info_gain

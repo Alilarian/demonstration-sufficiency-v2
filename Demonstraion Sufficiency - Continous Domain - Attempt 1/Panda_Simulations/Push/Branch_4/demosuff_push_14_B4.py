@@ -143,8 +143,6 @@ for experiment_num in range(n_runs):
             #nevd_random_norm_map_policy.append((best_traj_reward_for_current_sample - map_policy_reward_under_current_mcmc_sample) / (best_traj_reward_for_current_sample))
             #nevd_max_norm_mean_policy.append((best_traj_reward_for_current_sample - mean_policy_reward_under_current_mcmc_sample) / (best_traj_reward_for_current_sample))
 
-
-        
         for alpha in alphas:
             N_burned = len(all_double_mcmc_sample)
             k = math.ceil(N_burned * alpha + norm.ppf(1 - delta) * np.sqrt(N_burned * alpha * (1 - alpha)) - 0.5)
@@ -184,7 +182,6 @@ for experiment_num in range(n_runs):
         true_avar_bounds_max_norm_mean_policy[demonstration + 1].append(true_avar_max_norm_mean_policy)
         print(f"True nEVD for {demonstration + 1} demonstration MEAN Policy: {true_avar_max_norm_mean_policy:.6f}\n")
         
-    
     avar_all_iterations_max_norm_map_policy.append(avar_bounds_max_norm_map_policy)
     true_avar_all_iterations_max_norm_map_policy.append(true_avar_bounds_max_norm_map_policy)
 

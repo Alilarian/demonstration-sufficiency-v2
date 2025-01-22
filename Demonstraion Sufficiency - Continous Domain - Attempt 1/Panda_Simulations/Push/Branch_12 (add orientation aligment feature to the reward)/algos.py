@@ -1,6 +1,7 @@
 import numpy as np
 import random
-
+from tqdm import tqdm
+import numpy as np
 #np.random.seed(42)
 
 def rand_demo(xi):
@@ -21,12 +22,6 @@ def p_xi_theta(env, xi, theta, beta=0.1):
     f = env.feature_count(xi, [0, 0, 0])
     R = env.reward(f, theta)
     return beta * R
-
-from tqdm import tqdm
-import numpy as np
-
-from tqdm import tqdm
-import numpy as np
 
 def human_demo_2(env, xi, theta, n_samples, n_demos=50):
     XI = []

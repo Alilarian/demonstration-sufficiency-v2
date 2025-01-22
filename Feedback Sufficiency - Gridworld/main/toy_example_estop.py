@@ -15,7 +15,7 @@ sys.path.append(parent)
 
 from env import gridworld_env2
 from agent.q_learning_agent import ValueIteration
-from reward_learning.ebirl import EBIRL
+from reward_learning.ebirl_v2 import EBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
                                  calculate_expected_value_difference)
@@ -44,7 +44,6 @@ logger = logging.getLogger()
 with open(parent+"/configs/gridworld_config.yaml", 'r') as file:
     config = yaml.safe_load(file)
 logger.info("Config file loaded successfully.")
-
 
 # Extract config parameters
 render_mode = config['env_config']['render_mode']
@@ -86,7 +85,11 @@ custom_grid_features = [
 
 # Initialize environments
 # Define your feature weights list
-feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
+
+#[-0.69171446 -0.20751434  0.69171446] This reward weights work in the previous experiment which did not work, because the the inequality 2w_1 > w_2 + w_3 did not hold.
+#feature_weights_list = [[-0.23570226, -0.94280904,  0.41247896]]
+feature_weights_list = [[-0.1622, -0.9512, 0.2624]]
+# To learn the reward in this environment using Estop, the inequality 2w_1 > w_2 + w_3 must hold true.
 
 # Initialize environments with feature weights
 envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
@@ -107,12 +110,14 @@ print_policy(policies[0], 2, 3)
 logger.info(f"Generated optimal policies for all environments.")
 
 # Initialize metrics storage
-estops = [([(0, 1), (3, 3), (4, 0), (1, 3), (2, 1), (5, None)], 0),
- ([(0, 1), (3, 3), (4, 0), (1, 1), (4, 3), (5, None)], 0),
- ([(0, 1), (3, 3), (4, 1), (4, 0), (1, 3), (2, 1), (5, None)], 0),
- #([(0, 1), (3, 3), (4, 3), (5, None)], 3),
- ([(3, 3), (4, 0), (1, 1), (4, 3), (5, None)], 0)]
- 
+estops = [([(0, 1), (3, 3), (4, 0), (1, 3), (2, 1), (5, None)], 2),
+ #([(0, 1), (3, 3), (4, 0), (1, 1), (4, 3), (5, None)], 2),
+  ([(0, 3), (1, 3), (2, 1), (5, None)], 0),
+ #([(0, 1), (3, 3), (4, 1), (4, 0), (1, 3), (2, 1), (5, None)], 2),
+ ([(0, 1), (3, 3), (4, 3), (5, None)], 3),]
+ #([(3, 3), (4, 0), (1, 1), (4, 3), (5, None)], 0)]
+
+
 bounds_all_experiments = []
 num_demos_all_experiments = []
 true_evds_all_experiments = []
@@ -127,11 +132,9 @@ for i in range(100):
     env = envs[0]
     logger.info(f"\nRunning experiment {i+1}/{100}...")
 
-    # Shuffle the pairwise comparisons
     estops_shuffled = estops
     random.shuffle(estops_shuffled)
     logger.info(f"Shuffled Estops: {estops_shuffled}")
-
 
     # Initialize metrics for the current experiment
     bounds = {threshold: [] for threshold in thresholds}
@@ -144,7 +147,7 @@ for i in range(100):
     avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
     true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
 
-    # Run PBIRL for each demonstration
+    # Run EBIRL for each demonstration
     for demonstration in range(num_demonstration):
         logger.info(f"\nRunning PBIRL with {demonstration + 1} demonstrations for experiment {i+1}")
         print(estops_shuffled[:demonstration+1])

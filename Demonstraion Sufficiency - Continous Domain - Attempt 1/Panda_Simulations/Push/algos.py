@@ -15,12 +15,7 @@ def rand_demo(xi):
         xi1[idx, :] = np.array([x, y, z])
     return xi1
 
-"""
-def p_xi_theta(env, xi, theta, beta=20.0):
-    f = env.feature_count(xi)
-    R = env.reward(f, theta)
-    return np.exp(beta * R), f, R
-"""
+
 def p_xi_theta(env, xi, theta, beta=0.1):
     f = env.feature_count(xi)
     R = env.reward(f, theta)

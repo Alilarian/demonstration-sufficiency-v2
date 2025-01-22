@@ -19,7 +19,8 @@ from data_generation.generate_data import GridWorldMDPDataGenerator
 from reward_learning.pbirl import PBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
-                                 calculate_expected_value_difference)
+                                 calculate_expected_value_difference,
+                                 compute_infogain_log)
 from utils.env_helper import print_policy
 
 # Argument parser for command line arguments
@@ -112,7 +113,13 @@ logger.info(f"Generated optimal policies for all environments.")
 # Initialize metrics storage
 pairwise_comparisons = [([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]), 
                         ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,3), (2,1), (5,None)]),
-                        ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,1), (4,3), (5,None)])]
+                       ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,1), (4,3), (5,None)])]
+
+#pairwise_comparisons = [([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]), 
+#                        ([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]),
+#                        ([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)])]
+
+
 
 bounds_all_experiments = []
 num_demos_all_experiments = []
@@ -122,6 +129,7 @@ policy_optimalities_all_experiments = []
 confusion_matrices_all_experiments = []
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
+info_gain_all_experiments = []
 
 # Run experiments for each world
 for i in range(50):
@@ -144,6 +152,8 @@ for i in range(50):
 
     avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
     true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
+
+    info_gain = {i: [] for i in range(0, num_demonstration)}
 
     # Run PBIRL for each demonstration
     for demonstration in range(num_demonstration):
@@ -181,6 +191,11 @@ for i in range(50):
         true_avar_bounds[demonstration].append(true_bound)
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
+        # Calculate Information gain
+        infogain = compute_infogain_log(env, pairwise_comparisons_shuffled[demonstration], mcmc_samples, beta)
+        info_gain[demonstration].append(infogain)
+        logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
+
         # Check sufficiency with threshold
         for threshold in thresholds:
             avar_bound = avar_bounds[0.95][demonstration][0]
@@ -213,8 +228,9 @@ for i in range(50):
     avg_bound_errors_all_experiments.append(avg_bound_errors)
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_all_experiments.append(confusion_matrices)
+    info_gain_all_experiments.append(info_gain)
 
-    if (i+1)%2 == 0:
+    if (i+1)%10 == 0:
         # Save results to files
         logger.info("\nSaving results to files...")
         np.save(os.path.join(save_dir, 'avar_bound_all_experiments.npy'), avar_bound_all_experiments)
@@ -225,5 +241,7 @@ for i in range(50):
         np.save(os.path.join(save_dir, 'avg_bound_errors_all_experiments.npy'), avg_bound_errors_all_experiments)
         np.save(os.path.join(save_dir, 'policy_optimalities_all_experiments.npy'), policy_optimalities_all_experiments)
         np.save(os.path.join(save_dir, 'confusion_matrices_all_experiments.npy'), confusion_matrices_all_experiments)
+        np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
+            
 
         logger.info("Results saved successfully.")

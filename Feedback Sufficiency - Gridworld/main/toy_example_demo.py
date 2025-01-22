@@ -19,7 +19,8 @@ from reward_learning.birl import BIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
                                  calculate_expected_value_difference,
-                                 compute_infogain)
+                                 compute_infogain,
+                                 compute_infogain_log)
 from utils.env_helper import print_policy
 
 # Argument parser for command line arguments
@@ -107,6 +108,7 @@ logger.info(f"Generated optimal policies for all environments.")
 
 # Initialize metrics storage
 demos = [(0, 1), (2, 1), (4, 3)]
+#demos = [[(0, 1), (0, 1), (0, 1)], [(2, 1), (2, 1), (2, 1)], [(4, 3), (4, 3), (4, 3)], [(3, 3), (3, 3), (3, 3)]]
 
 bounds_all_experiments = []
 num_demos_all_experiments = []
@@ -116,17 +118,28 @@ policy_optimalities_all_experiments = []
 confusion_matrices_all_experiments = []
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
+info_gain_all_experiments = []
+
+experiment_same_demo = False
 
 # Run experiments for each world
 for i in range(50):
     env = envs[0]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    # Shuffle the pairwise comparisons
-    demos_shuffled = demos.copy()
-    random.shuffle(demos_shuffled)
-    logger.info(f"Shuffled Demos: {demos_shuffled}")
+    if experiment_same_demo:
+        
+        random_index = np.random.choice(range(len(demos)))
+        demos_shuffled = demos[random_index]
+        logger.info(f"Same Demos: {demos_shuffled}")
 
+    else:
+        # Shuffle the pairwise comparisons
+        demos_shuffled = demos.copy()
+        random.shuffle(demos_shuffled)
+        logger.info(f"Shuffled Demos: {demos_shuffled}")
+
+    print(demos_shuffled)
 
     # Initialize metrics for the current experiment
     bounds = {threshold: [] for threshold in thresholds}
@@ -138,6 +151,8 @@ for i in range(50):
 
     avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
     true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
+
+    info_gain = {i: [] for i in range(0, num_demonstration)}
 
     # Run PBIRL for each demonstration
     for demonstration in range(num_demonstration):
@@ -176,9 +191,9 @@ for i in range(50):
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
         # Calculate Information gain
-        infogain = compute_infogain(env, demos_shuffled[demonstration], mcmc_samples, beta)
+        infogain = compute_infogain_log(env, demos_shuffled[:demonstration+1], mcmc_samples, beta)
+        info_gain[demonstration].append(infogain)
         logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
-
 
         # Check sufficiency with threshold
         for threshold in thresholds:
@@ -213,7 +228,9 @@ for i in range(50):
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_all_experiments.append(confusion_matrices)
 
-    if (i+1)%2 == 0:
+    info_gain_all_experiments.append(info_gain)
+
+    if (i+1)%10 == 0:
         # Save results to files
         logger.info("\nSaving results to files...")
         np.save(os.path.join(save_dir, 'avar_bound_all_experiments.npy'), avar_bound_all_experiments)
@@ -224,5 +241,5 @@ for i in range(50):
         np.save(os.path.join(save_dir, 'avg_bound_errors_all_experiments.npy'), avg_bound_errors_all_experiments)
         np.save(os.path.join(save_dir, 'policy_optimalities_all_experiments.npy'), policy_optimalities_all_experiments)
         np.save(os.path.join(save_dir, 'confusion_matrices_all_experiments.npy'), confusion_matrices_all_experiments)
-
+        np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
         logger.info("Results saved successfully.")

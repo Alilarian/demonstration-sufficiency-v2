@@ -2,7 +2,12 @@ from agent.q_learning_agent import ValueIteration
 import numpy as np
 import copy
 from utils.common_helper import compute_reward_for_trajectory
+"""
+In this version, I implemented the Estop model presented in the paper section 2.1:
+The Effect of Modeling Human Rationality Level on Learning Rewards from Multiple Feedback Types
 
+Based on our analysis, this model is not a good model.
+"""
 
 class EBIRL:
     def __init__(self, env, demos, beta, epsilon=0.0001):
@@ -12,7 +17,6 @@ class EBIRL:
         env: the mdp (we ignore the reward)
         demos: list of (s,a) tuples 
         beta: the assumed boltzman rationality of the demonstrator
-
         """
         self.env = copy.deepcopy(env)
         self.demonstrations = demos
