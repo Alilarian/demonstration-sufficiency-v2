@@ -8,7 +8,7 @@ env_config:
   gamma: 0.99                 # Discount factor, determining the importance of future rewards
 
 algorithm_config:
-  epsilon: 1e-20              # Convergence threshold for value iteration; smaller values yield more precise solutions
+  epsilon: 1e-5              # Convergence threshold for value iteration; smaller values yield more precise solutions
 
 bayesian_irl_config:
   num_steps: 3000             # Number of steps the MCMC sampler will take

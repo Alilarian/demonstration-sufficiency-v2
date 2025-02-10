@@ -247,3 +247,136 @@ class GridWorldMDPDataGenerator:
         """
         np.random.seed(seed)
         random.seed(seed)
+
+
+def generate_random_trajectory(env, max_horizon=25):
+    """
+    Generate a random trajectory of fixed length (max_horizon + 1) using random actions.
+    The state is stored as an integer index (raw_index) instead of (row, col).
+    
+    Args:
+        env: The GridWorld environment.
+        max_horizon (int): Maximum length of the trajectory.
+        
+    Returns:
+        list of (state_index, action) tuples.
+    """
+    trajectory = []
+    obsv = env.reset()  # Reset environment and get initial observation.
+    agent_position = obsv["agent"]  # [row, col]
+    terminal_states = obsv["terminal states"]  # List of terminal states as indices
+
+    # Compute the raw index (integer) for the initial state.
+    state = agent_position[0] * env.columns + agent_position[1]
+
+    for step in range(max_horizon + 1):
+        # Check if the current state is terminal.
+        if state in terminal_states:
+            break  # Stop generating the trajectory if a terminal state is reached.
+
+        # Choose a random action uniformly.
+        action = np.random.choice(env.num_actions)
+
+        # Sample the next state based on transition probabilities.
+        next_state = np.random.choice(env.num_states, p=env.transitions[state][action])
+
+        # Append (current state, chosen action) to the trajectory.
+        trajectory.append((state, action))
+
+        # Update state (now directly using raw index).
+        state = next_state
+
+    return trajectory
+
+def simulate_human_estop(env, full_trajectory, beta=2.0, gamma=1.0, fixed_length=None):
+    """
+    Simulates human E-stop (early stopping) behavior in a GridWorld environment and ensures all output trajectories have the same length.
+
+    Args:
+        env (NoisyLinearRewardFeaturizedGridWorldEnv): The environment instance.
+        full_trajectory (list): A full-length trajectory as [(state, action), ...].
+        beta (float): Sensitivity parameter for Boltzmann distribution.
+        gamma (float): Discount factor for cumulative rewards.
+        fixed_length (int, optional): Desired fixed length for the output trajectory. If the trajectory is shorter, the last step is repeated.
+
+    Returns:
+        tuple: (trajectory, stopping_time)
+    """
+    cumulative_rewards = []
+    current_reward = 0
+
+    for k, (state, _) in enumerate(full_trajectory):
+        if state is None:  # Handle padding
+            break
+
+        # Compute reward for the current state using the environment function
+        reward = env.compute_reward(state)  # Now using the built-in reward function
+
+        # Discounted cumulative reward up to step k
+        current_reward += (gamma**k) * reward
+        cumulative_rewards.append(current_reward)
+
+    # Compute stopping probabilities using Boltzmann distribution
+    probabilities = np.exp(beta * np.array(cumulative_rewards))
+    probabilities /= probabilities.sum()
+
+    # Use the stopping point with the highest cumulative reward
+    t_stop = np.argmax(probabilities)
+
+    # Pad the trajectory to ensure it matches the fixed length
+    if fixed_length is not None:
+        last_step = full_trajectory[-1]
+        while len(full_trajectory) < fixed_length:
+            full_trajectory.append(last_step)
+
+    return (full_trajectory[:fixed_length] if fixed_length else full_trajectory, t_stop)
+
+
+def simulate_human_estop_v2(env, full_trajectory, beta=2.0, gamma=1.0):
+    """
+    Simulates E-stop data based on the provided likelihood model.
+
+    Args:
+        env (NoisyLinearRewardFeaturizedGridWorldEnv): The environment instance.
+        full_trajectory (list): A full-length trajectory as [(state, action), ...].
+        beta (float): Sensitivity parameter for Boltzmann distribution.
+        gamma (float): Discount factor for cumulative rewards.
+
+    Returns:
+        tuple: (trajectory, stopping_time)
+    """
+    traj_len = len(full_trajectory)
+
+    # Compute cumulative reward for the entire trajectory
+    traj_reward = sum(env.compute_reward(s) for s, _ in full_trajectory)
+
+    # Initialize variables
+    cumulative_rewards = []
+    probabilities = []
+
+    # Compute cumulative rewards up to each time step and probabilities
+    for t in range(traj_len):
+        # Reward up to time t
+        reward_up_to_t = sum(env.compute_reward(s) for s, _ in full_trajectory[:t+1])
+
+        # Add repeated reward for the last step
+        reward_up_to_t += (traj_len - t - 1) * env.compute_reward(full_trajectory[t][0])
+
+        # Numerator and denominator for the stopping probability
+        numerator = np.exp(beta * reward_up_to_t)
+        denominator = np.exp(beta * traj_reward) + numerator
+
+        # Compute the probability of stopping at time t
+        stop_probability = numerator / denominator
+        probabilities.append(stop_probability)
+
+    # Normalize probabilities (to ensure numerical stability)
+    probabilities = np.array(probabilities)
+    probabilities /= probabilities.sum()
+
+    # Sample stopping point t_stop from the computed probabilities
+    #t_stop = np.random.choice(len(probabilities), p=probabilities)
+    t_stop = np.argmax(probabilities)
+
+    # Return the trajectory and the stopping point
+    return (full_trajectory, t_stop)

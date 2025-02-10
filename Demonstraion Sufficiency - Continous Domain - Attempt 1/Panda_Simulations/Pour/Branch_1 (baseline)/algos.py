@@ -73,38 +73,6 @@ def human_demo_2(env, xi, theta, n_samples, n_demos=50, filter=True):
     return top_XI, best_xi, top_Fs, best_fs, top_Rs
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def mcmc_double(env, D, n_outer_samples, n_inner_samples, n_burn, xi0, len_theta):
     theta = np.random.rand(len_theta)
     theta_samples = []

@@ -19,14 +19,15 @@ from data_generation.generate_data import GridWorldMDPDataGenerator
 from reward_learning.pbirl import PBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
-                                 calculate_expected_value_difference,
-                                 compute_infogain_log)
+                                 calculate_expected_value_difference,)
 from utils.env_helper import print_policy
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
-parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=False)
-parser.add_argument('--save_dir', type=str, help='Directory to save results', required=False)
+parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
+parser.add_argument('--beta', type=float, help='beta', required=True)
+parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
 args = parser.parse_args()
 
@@ -58,7 +59,7 @@ epsilon = float(config['algorithm_config']['epsilon'])
 
 num_steps = config['bayesian_irl_config']['num_steps']
 step_stdev = config['bayesian_irl_config']['step_stdev']
-beta = config['bayesian_irl_config']['beta']
+beta = beta = float(args.beta)
 normalize = config['bayesian_irl_config']['normalize']
 adaptive = config['bayesian_irl_config']['adaptive']
 burn_frac = config['bayesian_irl_config']['burn_frac']
@@ -90,17 +91,14 @@ custom_grid_features = [
 
 # Initialize environments
 # Define your feature weights list
-feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
+#feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
+feature_weights_list = np.load("grid_world_weights.npy")
 
 # Initialize environments with feature weights
 envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     color_to_feature_map=color_to_feature_map,
     grid_features=custom_grid_features,
-    custom_feature_weights=feat) for feat in feature_weights_list]
-
-# Loop through each environment and set feature weights
-#for env, weights in zip(envs, feature_weights_list):
-#    env.set_feature_weights(weights)
+    custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
 for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
@@ -115,12 +113,6 @@ pairwise_comparisons = [([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), 
                         ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,3), (2,1), (5,None)]),
                        ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,1), (4,3), (5,None)])]
 
-#pairwise_comparisons = [([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]), 
-#                        ([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]),
-#                        ([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)])]
-
-
-
 bounds_all_experiments = []
 num_demos_all_experiments = []
 true_evds_all_experiments = []
@@ -129,18 +121,17 @@ policy_optimalities_all_experiments = []
 confusion_matrices_all_experiments = []
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
-info_gain_all_experiments = []
+#info_gain_all_experiments = []
 
 # Run experiments for each world
 for i in range(50):
-    env = envs[0]
+    env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
     # Shuffle the pairwise comparisons
     pairwise_comparisons_shuffled = pairwise_comparisons.copy()
     random.shuffle(pairwise_comparisons_shuffled)
     logger.info(f"Shuffled pairwise comparisons: {pairwise_comparisons_shuffled}")
-
 
     # Initialize metrics for the current experiment
     bounds = {threshold: [] for threshold in thresholds}
@@ -153,7 +144,7 @@ for i in range(50):
     avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
     true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
 
-    info_gain = {i: [] for i in range(0, num_demonstration)}
+    #info_gain = {i: [] for i in range(0, num_demonstration)}
 
     # Run PBIRL for each demonstration
     for demonstration in range(num_demonstration):
@@ -192,9 +183,9 @@ for i in range(50):
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
         # Calculate Information gain
-        infogain = compute_infogain_log(env, pairwise_comparisons_shuffled[demonstration], mcmc_samples, beta)
-        info_gain[demonstration].append(infogain)
-        logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
+        #infogain = compute_infogain_log(env, pairwise_comparisons_shuffled[demonstration], mcmc_samples, beta)
+        #info_gain[demonstration].append(infogain)
+        #logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
 
         # Check sufficiency with threshold
         for threshold in thresholds:
@@ -228,9 +219,9 @@ for i in range(50):
     avg_bound_errors_all_experiments.append(avg_bound_errors)
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_all_experiments.append(confusion_matrices)
-    info_gain_all_experiments.append(info_gain)
+    #info_gain_all_experiments.append(info_gain)
 
-    if (i+1)%10 == 0:
+    if (i+1)%2 == 0:
         # Save results to files
         logger.info("\nSaving results to files...")
         np.save(os.path.join(save_dir, 'avar_bound_all_experiments.npy'), avar_bound_all_experiments)
@@ -241,7 +232,7 @@ for i in range(50):
         np.save(os.path.join(save_dir, 'avg_bound_errors_all_experiments.npy'), avg_bound_errors_all_experiments)
         np.save(os.path.join(save_dir, 'policy_optimalities_all_experiments.npy'), policy_optimalities_all_experiments)
         np.save(os.path.join(save_dir, 'confusion_matrices_all_experiments.npy'), confusion_matrices_all_experiments)
-        np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
+        #np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
             
 
         logger.info("Results saved successfully.")

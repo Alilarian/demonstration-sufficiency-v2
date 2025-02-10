@@ -15,11 +15,12 @@ sys.path.append(parent)
 
 from env import gridworld_env2
 from agent.q_learning_agent import ValueIteration
-from reward_learning.ebirl_v2 import EBIRL
+from reward_learning.ebirl import EBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
                                  calculate_expected_value_difference)
 from utils.env_helper import print_policy
+from data_generation.generate_data import generate_random_trajectory, simulate_human_estop, simulate_human_estop_v2
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
@@ -86,20 +87,15 @@ custom_grid_features = [
 # Initialize environments
 # Define your feature weights list
 
-#[-0.69171446 -0.20751434  0.69171446] This reward weights work in the previous experiment which did not work, because the the inequality 2w_1 > w_2 + w_3 did not hold.
-#feature_weights_list = [[-0.23570226, -0.94280904,  0.41247896]]
-feature_weights_list = [[-0.1622, -0.9512, 0.2624]]
-# To learn the reward in this environment using Estop, the inequality 2w_1 > w_2 + w_3 must hold true.
+
+#feature_weights_list = np.load("grid_world_weights.npy")
+feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
 
 # Initialize environments with feature weights
 envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     color_to_feature_map=color_to_feature_map,
     grid_features=custom_grid_features,
-    custom_feature_weights=feat) for feat in feature_weights_list]
-
-# Loop through each environment and set feature weights
-#for env, weights in zip(envs, feature_weights_list):
-#    env.set_feature_weights(weights)
+    custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
 for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
@@ -109,14 +105,14 @@ policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(num_worl
 print_policy(policies[0], 2, 3)
 logger.info(f"Generated optimal policies for all environments.")
 
-# Initialize metrics storage
-estops = [([(0, 1), (3, 3), (4, 0), (1, 3), (2, 1), (5, None)], 2),
- #([(0, 1), (3, 3), (4, 0), (1, 1), (4, 3), (5, None)], 2),
-  ([(0, 3), (1, 3), (2, 1), (5, None)], 0),
- #([(0, 1), (3, 3), (4, 1), (4, 0), (1, 3), (2, 1), (5, None)], 2),
- ([(0, 1), (3, 3), (4, 3), (5, None)], 3),]
- #([(3, 3), (4, 0), (1, 1), (4, 3), (5, None)], 0)]
 
+## Generate 10 random traj
+## Simulate the E-stop from them
+## In each iteration featch 4 of them and run experiments
+random_trajs = [generate_random_trajectory(envs[0], max_horizon=10) for i in range(5)]
+#estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
+
+estops = [simulate_human_estop(envs[0], i, beta=beta, fixed_length=None) for i in random_trajs]
 
 bounds_all_experiments = []
 num_demos_all_experiments = []
@@ -128,9 +124,13 @@ avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
 
 # Run experiments for each world
-for i in range(100):
+for i in range(50):
     env = envs[0]
-    logger.info(f"\nRunning experiment {i+1}/{100}...")
+    logger.info(f"\nRunning experiment {i+1}/{50}...")
+
+    #random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(5)]
+    #estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
+    #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
 
     estops_shuffled = estops
     random.shuffle(estops_shuffled)

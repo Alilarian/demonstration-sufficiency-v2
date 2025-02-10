@@ -42,36 +42,46 @@ class EBIRL:
         return init / np.linalg.norm(init)
 
     def calc_ll(self, hyp_reward):
+        """
+        Calculate the log-likelihood of the Estop model given a hypothetical reward function.
 
+        Args:
+            hyp_reward: Hypothetical reward function.
+
+        Returns:
+            Log-likelihood value.
+        """
         self.env.set_feature_weights(hyp_reward)
-        # Initialize the log_prior as 0, assuming an uninformative prior
+        # Initialize the log prior as 0, assuming an uninformative prior
         log_prior = 0.0
         log_sum = log_prior  # Start the log sum with the log prior value
 
         for estop in self.demonstrations:
-
-            # comput the reward until step ti (stopping point)
-
-            # compute reward for all time step in that trajectory (denominator)
-            # Sub-trajectory ξ_0:t (use cumulative rewards up to point t)
-
-            trajectory ,t = estop
+            # Unpack the trajectory and stopping point
+            trajectory, t = estop
             traj_len = len(trajectory)
+
+            # Compute the cumulative reward up to the stopping point t
             reward_up_to_t = sum(self.env.compute_reward(s) for s, _ in trajectory[:t+1])
-            
             stop_prob_numerator = self.beta * reward_up_to_t
 
-            #print("Nominator: ", stop_prob_numerator)
+            # Compute the cumulative rewards for all sub-trajectories
+            cumulative_rewards = [
+                sum(self.env.compute_reward(s) for s, _ in trajectory[:k+1]) 
+                for k in range(traj_len)
+            ]
             
+            # Use the Log-Sum-Exp trick to compute the denominator
+            max_reward = max(self.beta * r for r in cumulative_rewards)  # Maximum reward for numerical stability
+            stop_prob_denominator = max_reward + np.log(
+                sum(np.exp(self.beta * r - max_reward) for r in cumulative_rewards)
+            )
             
-            # Compute denominator (normalization factor for the entire trajectory)
-            stop_prob_denominator = sum(np.exp(self.beta * sum(self.env.compute_reward(s) for s, _ in trajectory[:k+1])) for k in range(traj_len))
-            
-            log_sum += stop_prob_numerator - np.log(stop_prob_denominator)
-            #print("denominator: ", np.log(stop_prob_denominator))
+            # Add the log probability to the log sum
+            log_sum += stop_prob_numerator - stop_prob_denominator
 
         return log_sum
-        
+
     def run_mcmc(self, samples, stepsize, normalize=True, adaptive=False):
         '''
             run metropolis hastings MCMC with Gaussian symmetric proposal and uniform prior

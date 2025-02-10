@@ -77,10 +77,21 @@ class EBIRL:
             # reward of the whole trajectory
             traj_reward = sum(self.env.compute_reward(s) for s, _ in trajectory[:])
             
-            denominator = np.exp(self.beta * traj_reward) + np.exp(stop_prob_numerator)
+            #denominator = np.exp(self.beta * traj_reward) + np.exp(stop_prob_numerator)
         
+            # Use the Log-Sum-Exp trick for the denominator
+            max_reward = max(self.beta * traj_reward, stop_prob_numerator)
+            log_denominator = max_reward + np.log(
+                np.exp(self.beta * traj_reward - max_reward) +
+                np.exp(stop_prob_numerator - max_reward)
+            )
+
             # Add the log probability to the log sum
-            log_sum += stop_prob_numerator - np.log(denominator)
+            log_sum += stop_prob_numerator - log_denominator
+
+
+            # Add the log probability to the log sum
+            #log_sum += stop_prob_numerator - np.log(denominator)
 
         return log_sum
 

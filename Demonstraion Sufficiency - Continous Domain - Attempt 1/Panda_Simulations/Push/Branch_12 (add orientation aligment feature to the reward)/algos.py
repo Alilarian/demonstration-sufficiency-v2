@@ -64,9 +64,9 @@ def human_demo_2(env, xi, theta, n_samples, n_demos=50):
     # Return the top n_demos (default is 10) elements with the highest R
     top_XI = XI[:n_demos]
     top_Fs = Fs[:n_demos]
-    best_reward = Rs[:n_demos][-1]
+    #best_reward = Rs[:n_demos][-1]
 
-    return top_XI, best_xi, top_Fs, best_fs, best_reward
+    return top_XI, best_xi, top_Fs, best_fs
 
 
 
