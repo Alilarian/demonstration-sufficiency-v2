@@ -15,7 +15,7 @@ sys.path.append(parent)
 
 from env import gridworld_env2
 from agent.q_learning_agent import ValueIteration
-from reward_learning.ebirl import EBIRL
+from reward_learning.ebirl_v2 import EBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
                                  calculate_expected_value_difference)
@@ -127,8 +127,8 @@ for i in range(50):
     env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    random_trajs = [generate_random_trajectory(env, max_horizon=5) for i in range(5)]
-    estops = [simulate_human_estop(env, i, beta=beta, gamma=1.0, fixed_length=5) for i in random_trajs]
+    random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(5)]
+    estops = [simulate_human_estop(env, i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
     #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
 
     estops_shuffled = estops

@@ -1099,3 +1099,33 @@ MAP Solution: [-0.13116289  0.50131901  0.85526344]
 True reward weights: [0.11119057 0.32495939 0.93916881]
 MAP Policy for current environment:
 Information gain 3 demonstrations: 0.002743
+0.85-VaR-max-normalization for 3 demonstrations: 0.003032
+0.9-VaR-max-normalization for 3 demonstrations: 0.003285
+0.95-VaR-max-normalization for 3 demonstrations: 0.003571
+0.99-VaR-max-normalization for 3 demonstrations: 0.003797
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.003571
+SUFFICIENT (0.003571 < 0.1)
+Avar bound for threshold 0.2: 0.003571
+SUFFICIENT (0.003571 < 0.2)
+Avar bound for threshold 0.3: 0.003571
+SUFFICIENT (0.003571 < 0.3)
+Avar bound for threshold 0.4: 0.003571
+SUFFICIENT (0.003571 < 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 9/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+
+Running PBIRL with 1 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.4833
+Using 1950 samples after burn-in.
+Stored 1950 MCMC samples for demonstration 1
+MAP Solution: [-0.42241196 -0.76934684  0.47924272]
+True reward weights: [-0.0505111  -0.01531811  0.99860602]
+MAP Policy for current environment:
+Information gain 1 demonstrations: -0.000773
+0.85-VaR-max-normalization for 1 demonstrations: 0.027298
+0.9-VaR-max-normalization for 1 demonstrations: 0.037945

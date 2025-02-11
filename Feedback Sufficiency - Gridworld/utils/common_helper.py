@@ -163,105 +163,104 @@ def logsumexp(x):
     max_x = np.max(x)
     return max_x + np.log(np.sum(np.exp(x - max_x)))
 
-def compute_infogain(env, demos, mcmc_samples_1, mcmc_samples_2, beta):
+import numpy as np
+from scipy.special import logsumexp
+
+def compute_infogain(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_func):
     """
     Compute information gain between posterior and prior MCMC samples for demonstrations.
-
+    
     Args:
         env: The GridWorld environment.
-        demos: List of demonstrations (state-action pairs).
+        demos: List of demonstrations (state-action pairs or preferences).
         mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
         mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
         beta: Rationality parameter.
-
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
     Returns:
         float: Information gain value.
     """
-
+    M1 = len(mcmc_samples_1)  # Number of prior samples
     M2 = len(mcmc_samples_2)  # Number of posterior samples
 
     # Handle initial condition (n=1)
     if len(demos) == 1:
-        # Only compute the second term
-        #posterior_denominator = sum(compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2)
-        posterior_denominator = logsumexp(
-            [compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2]
-        )
+        # Compute denominator using logsumexp for numerical stability
+        posterior_denominator = logsumexp([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2])
 
         print("posterior_denominator: ", posterior_denominator)
 
         second_term = 0
         for theta_posterior in mcmc_samples_2:
-            log_p_demos_posterior = compute_log_prob(env, demos, theta_posterior, beta)
+            log_p_demos_posterior = log_prob_func(env, demos, theta_posterior, beta)
             second_term += log_p_demos_posterior - posterior_denominator + np.log(M2)
         second_term /= M2
 
         return second_term
 
-    # General case for n > 1
-    M1 = len(mcmc_samples_1)  # Number of prior samples
+    # Compute log probabilities for prior and posterior samples
+    prior_log_probs = np.array([log_prob_func(env, demos[:-1], theta, beta) for theta in mcmc_samples_1])
+    posterior_log_probs = np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2])
 
-    # Precompute normalization term for prior
-    #prior_denominator = sum(compute_log_prob(env, demos[:-1], theta, beta) for theta in mcmc_samples_1)
-    prior_denominator = logsumexp(
-        [compute_log_prob(env, demos[:-1], theta, beta) for theta in mcmc_samples_1]
-    )
+    # Compute denominators using logsumexp
+    prior_denominator = logsumexp(prior_log_probs)
+    posterior_denominator = logsumexp(posterior_log_probs)
 
+    # Compute first term: Expectation over prior samples
+    first_term = np.mean(prior_denominator - prior_log_probs - np.log(M1))
 
-    first_term = 0
-    for theta_prior in mcmc_samples_1:
-        log_p_demos_prior = compute_log_prob(env, demos[:-1], theta_prior, beta)
-        first_term += prior_denominator - log_p_demos_prior - np.log(M1)
-    first_term /= M1
-
-    # Precompute normalization term for posterior
-    #posterior_denominator = sum(compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2)
-    posterior_denominator = logsumexp(
-            [compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2]
-        )
-
-    second_term = 0
-    for theta_posterior in mcmc_samples_2:
-        log_p_demos_posterior = compute_log_prob(env, demos, theta_posterior, beta)
-        second_term += log_p_demos_posterior - posterior_denominator + np.log(M2)
-    second_term /= M2
+    # Compute second term: Expectation over posterior samples
+    second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
 
     # Compute total information gain
     info_gain = first_term + second_term
 
     return info_gain
 
-def compute_log_prob(env, demos, theta, beta):
+
+def log_prob_demo(env, demos, theta, beta):
     """
-    Compute the log probability of the demonstrations given theta.
+    Computes the log probability of a set of demonstrations given a reward function.
 
     Args:
         env: The GridWorld environment.
-        demos: List of demonstrations (state-action pairs).
-        theta: Current reward weights (parameter vector).
-        beta: Rationality parameter.
+        demos: A list of (state, action) pairs representing demonstrations.
+        theta: The reward function parameters.
+        beta: The rationality parameter for the likelihood model.
 
     Returns:
-        float: Log probability.
+        float: The log-likelihood of the demonstrations given the reward function.
     """
-    
+    env.set_feature_weights(theta)
+    q_values = ValueIteration(env).get_q_values()
+
+    log_sum = 0.0
+    for s, a in demos:
+        if s not in env.terminal_states:
+            log_sum += beta * q_values[s][a] - logsumexp(beta * q_values[s])
+
+    return log_sum
+
+def log_prob_comparison(env, demos, theta, beta):
+    """
+    Computes the log probability of preference demonstrations using a Boltzmann distribution.
+
+    Args:
+        env: The GridWorld environment.
+        demos: A list of (trajectory1, trajectory2) pairs representing preference demonstrations.
+        theta: The reward function parameters.
+        beta: The rationality parameter for the likelihood model.
+
+    Returns:
+        float: The log-likelihood of the preferences given the reward function.
+    """
     env.set_feature_weights(theta)
 
-    val_iter = ValueIteration(env)
+    log_sum = 0.0
+    for traj1, traj2 in demos:
+        reward1 = compute_reward_for_trajectory(env, traj1)
+        reward2 = compute_reward_for_trajectory(env, traj2)
+        log_sum += beta * reward1 - logsumexp([beta * reward1, beta * reward2])
 
-    #if self.env in self.value_iters:
-        
-    #    q_values = calculate_q_values(self.env, V = self.value_iters[self.env], epsilon = self.epsilon)
-    #else:
-    #q_values = calculate_q_values(self.env, storage = self.value_iters, epsilon = self.epsilon)
-    q_values = val_iter.get_q_values()
-    #calculate the log likelihood of the reward hypothesis given the demonstrations
-    log_prior = 0.0  #assume unimformative prior
-    log_sum = log_prior
-    for s, a in demos:
-        if (s not in env.terminal_states):  # there are no counterfactuals in a terminal state
-
-            Z_exponents = beta * q_values[s]
-            log_sum += beta * q_values[s][a] - logsumexp(Z_exponents)
-            
     return log_sum
