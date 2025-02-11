@@ -183,12 +183,17 @@ def compute_infogain(env, demos, mcmc_samples_1, mcmc_samples_2, beta):
     # Handle initial condition (n=1)
     if len(demos) == 1:
         # Only compute the second term
-        posterior_denominator = sum(compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2)
+        #posterior_denominator = sum(compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2)
+        posterior_denominator = logsumexp(
+            [compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2]
+        )
+
+        print("posterior_denominator: ", posterior_denominator)
 
         second_term = 0
         for theta_posterior in mcmc_samples_2:
             log_p_demos_posterior = compute_log_prob(env, demos, theta_posterior, beta)
-            second_term += log_p_demos_posterior - np.log(posterior_denominator)
+            second_term += log_p_demos_posterior - posterior_denominator + np.log(M2)
         second_term /= M2
 
         return second_term
@@ -197,21 +202,28 @@ def compute_infogain(env, demos, mcmc_samples_1, mcmc_samples_2, beta):
     M1 = len(mcmc_samples_1)  # Number of prior samples
 
     # Precompute normalization term for prior
-    prior_denominator = sum(compute_log_prob(env, demos[:-1], theta, beta) for theta in mcmc_samples_1)
+    #prior_denominator = sum(compute_log_prob(env, demos[:-1], theta, beta) for theta in mcmc_samples_1)
+    prior_denominator = logsumexp(
+        [compute_log_prob(env, demos[:-1], theta, beta) for theta in mcmc_samples_1]
+    )
+
 
     first_term = 0
     for theta_prior in mcmc_samples_1:
         log_p_demos_prior = compute_log_prob(env, demos[:-1], theta_prior, beta)
-        first_term += np.log(prior_denominator) - log_p_demos_prior - np.log(M1)
+        first_term += prior_denominator - log_p_demos_prior - np.log(M1)
     first_term /= M1
 
     # Precompute normalization term for posterior
-    posterior_denominator = sum(compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2)
+    #posterior_denominator = sum(compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2)
+    posterior_denominator = logsumexp(
+            [compute_log_prob(env, demos, theta, beta) for theta in mcmc_samples_2]
+        )
 
     second_term = 0
     for theta_posterior in mcmc_samples_2:
         log_p_demos_posterior = compute_log_prob(env, demos, theta_posterior, beta)
-        second_term += log_p_demos_posterior - np.log(posterior_denominator) + np.log(M2)
+        second_term += log_p_demos_posterior - posterior_denominator + np.log(M2)
     second_term /= M2
 
     # Compute total information gain

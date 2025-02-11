@@ -202,13 +202,16 @@ for i in range(50):
         else:
             mcmc_sample_prior = mcmc_samples_history[demonstration]
 
-        #infogain = compute_infogain(env,
-        #                            demos=demos_shuffled[:demonstration+1],
-        #                            mcmc_samples_1 = demos_shuffled[:demonstration+1], 
-        #                            mcmc_samples_2 = mcmc_samples_history[demonstration + 1], 
-        #                            beta = beta)
-        #info_gain[demonstration].append(infogain)
-        #logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
+        print("mcmc_samples_1: ", mcmc_sample_prior)
+        print("mcmc_samples_2: ", mcmc_samples_history[demonstration + 1])
+
+        infogain = compute_infogain(env,
+                                    demos=demos_shuffled[:demonstration+1],
+                                    mcmc_samples_1 = mcmc_sample_prior, 
+                                    mcmc_samples_2 = mcmc_samples_history[demonstration + 1], 
+                                    beta = beta)
+        info_gain[demonstration].append(infogain)
+        logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
         
         # Calculate a-VaR for different alphas
         for alpha in alphas:
@@ -221,10 +224,6 @@ for i in range(50):
         true_avar_bounds[demonstration].append(true_bound)
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
-        # Calculate Information gain
-        ### infogain = compute_infogain_log(env, demos_shuffled[:demonstration+1], mcmc_samples, beta)
-        #### info_gain[demonstration].append(infogain)
-        ### logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
 
         # Check sufficiency with threshold
         for threshold in thresholds:
@@ -262,7 +261,7 @@ for i in range(50):
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_all_experiments.append(confusion_matrices)
 
-    #info_gain_all_experiments.append(info_gain)
+    info_gain_all_experiments.append(info_gain)
 
     if (i+1)%2 == 0:
         # Save results to files
@@ -275,5 +274,5 @@ for i in range(50):
         np.save(os.path.join(save_dir, 'avg_bound_errors_all_experiments.npy'), avg_bound_errors_all_experiments)
         np.save(os.path.join(save_dir, 'policy_optimalities_all_experiments.npy'), policy_optimalities_all_experiments)
         np.save(os.path.join(save_dir, 'confusion_matrices_all_experiments.npy'), confusion_matrices_all_experiments)
-        #np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
+        np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
         logger.info("Results saved successfully.")

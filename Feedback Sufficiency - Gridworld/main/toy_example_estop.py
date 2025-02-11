@@ -20,7 +20,7 @@ from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
                                  calculate_expected_value_difference)
 from utils.env_helper import print_policy
-from data_generation.generate_data import generate_random_trajectory, simulate_human_estop, simulate_human_estop_v2
+from data_generation.generate_data import generate_random_trajectory, simulate_human_estop
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
@@ -88,8 +88,8 @@ custom_grid_features = [
 # Define your feature weights list
 
 
-#feature_weights_list = np.load("grid_world_weights.npy")
-feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
+feature_weights_list = np.load("grid_world_weights.npy")
+#feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
 
 # Initialize environments with feature weights
 envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
@@ -105,14 +105,13 @@ policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(num_worl
 print_policy(policies[0], 2, 3)
 logger.info(f"Generated optimal policies for all environments.")
 
-
 ## Generate 10 random traj
 ## Simulate the E-stop from them
 ## In each iteration featch 4 of them and run experiments
-random_trajs = [generate_random_trajectory(envs[0], max_horizon=10) for i in range(5)]
+#random_trajs = [generate_random_trajectory(envs[0], max_horizon=6) for i in range(5)]
 #estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
 
-estops = [simulate_human_estop(envs[0], i, beta=beta, fixed_length=None) for i in random_trajs]
+#estops = [simulate_human_estop(envs[0], i, beta=beta, fixed_length=True) for i in random_trajs]
 
 bounds_all_experiments = []
 num_demos_all_experiments = []
@@ -125,11 +124,11 @@ true_avar_bounds_all_experiments = []
 
 # Run experiments for each world
 for i in range(50):
-    env = envs[0]
+    env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    #random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(5)]
-    #estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
+    random_trajs = [generate_random_trajectory(env, max_horizon=5) for i in range(5)]
+    estops = [simulate_human_estop(env, i, beta=beta, gamma=1.0, fixed_length=5) for i in random_trajs]
     #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
 
     estops_shuffled = estops
