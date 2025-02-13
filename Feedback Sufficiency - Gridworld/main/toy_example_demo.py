@@ -13,7 +13,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env2
+from envs import gridworld_env2
 from agent.q_learning_agent import ValueIteration
 from reward_learning.birl import BIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
@@ -27,7 +27,6 @@ parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
 parser.add_argument('--beta', type=float, help='beta', required=True)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
-
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
 args = parser.parse_args()
 
@@ -97,8 +96,8 @@ envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
 # Loop through each environment and set feature weights
-#for env, weights in zip(envs, feature_weights_list):
-#    env.set_feature_weights(weights)
+#for envs, weights in zip(envs, feature_weights_list):
+#    envs.set_feature_weights(weights)
 
 for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
@@ -194,7 +193,7 @@ for i in range(50):
         ## Computing Information gain
         # It takes nth and n-1th mcmc samples
         # mcmc_samples_history[demonstration + 1] and mcmc_samples_history[demonstration]
-        # demos_shuffled[:demonstration+1], beta, env
+        # demos_shuffled[:demonstration+1], beta, envs
 
         if demonstration == 0:
             mcmc_sample_prior = []
@@ -202,7 +201,7 @@ for i in range(50):
         else:
             mcmc_sample_prior = mcmc_samples_history[demonstration]
 
-        #infogain = compute_infogain(env,
+        #infogain = compute_infogain(envs,
         #                            demos=demos_shuffled[:demonstration+1],
         #                            mcmc_samples_1 = demos_shuffled[:demonstration+1], 
         #                            mcmc_samples_2 = mcmc_samples_history[demonstration + 1], 
@@ -222,7 +221,7 @@ for i in range(50):
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
         # Calculate Information gain
-        ### infogain = compute_infogain_log(env, demos_shuffled[:demonstration+1], mcmc_samples, beta)
+        ### infogain = compute_infogain_log(envs, demos_shuffled[:demonstration+1], mcmc_samples, beta)
         #### info_gain[demonstration].append(infogain)
         ### logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
 

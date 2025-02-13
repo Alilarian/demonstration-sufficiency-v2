@@ -13,7 +13,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env2
+from envs import gridworld_env2
 from agent.q_learning_agent import ValueIteration
 from reward_learning.ebirl import EBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
@@ -128,9 +128,9 @@ for i in range(50):
     env = envs[0]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    #random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(5)]
+    #random_trajs = [generate_random_trajectory(envs, max_horizon=10) for i in range(5)]
     #estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
-    #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
+    #estops = [simulate_human_estop(envs, i, beta=beta, fixed_length=None) for i in random_trajs]
 
     estops_shuffled = estops
     random.shuffle(estops_shuffled)

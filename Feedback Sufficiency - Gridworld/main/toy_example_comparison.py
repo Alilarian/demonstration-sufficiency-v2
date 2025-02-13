@@ -13,7 +13,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env2
+from envs import gridworld_env2
 from agent.q_learning_agent import ValueIteration
 from data_generation.generate_data import GridWorldMDPDataGenerator
 from reward_learning.pbirl import PBIRL
@@ -183,7 +183,7 @@ for i in range(50):
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
         # Calculate Information gain
-        #infogain = compute_infogain_log(env, pairwise_comparisons_shuffled[demonstration], mcmc_samples, beta)
+        #infogain = compute_infogain_log(envs, pairwise_comparisons_shuffled[demonstration], mcmc_samples, beta)
         #info_gain[demonstration].append(infogain)
         #logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
 
