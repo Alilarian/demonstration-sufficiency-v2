@@ -12,7 +12,7 @@ class BIRL:
 
         """
         Class for running and storing output of mcmc for Bayesian IRL
-        env: the mdp (we ignore the reward)
+        envs: the mdp (we ignore the reward)
         demos: list of (s,a) tuples 
         beta: the assumed boltzman rationality of the demonstrator
 
@@ -31,11 +31,11 @@ class BIRL:
 
         val_iter = ValueIteration(self.env)
 
-        #if self.env in self.value_iters:
+        #if self.envs in self.value_iters:
             
-        #    q_values = calculate_q_values(self.env, V = self.value_iters[self.env], epsilon = self.epsilon)
+        #    q_values = calculate_q_values(self.envs, V = self.value_iters[self.envs], epsilon = self.epsilon)
         #else:
-        #q_values = calculate_q_values(self.env, storage = self.value_iters, epsilon = self.epsilon)
+        #q_values = calculate_q_values(self.envs, storage = self.value_iters, epsilon = self.epsilon)
         q_values = val_iter.get_q_values()
         #calculate the log likelihood of the reward hypothesis given the demonstrations
         log_prior = 0.0  #assume unimformative prior

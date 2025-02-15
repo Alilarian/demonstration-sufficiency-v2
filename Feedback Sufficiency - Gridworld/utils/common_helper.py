@@ -237,11 +237,11 @@ def compute_log_prob(env, demos, theta, beta):
 
     val_iter = ValueIteration(env)
 
-    #if self.env in self.value_iters:
+    #if self.envs in self.value_iters:
         
-    #    q_values = calculate_q_values(self.env, V = self.value_iters[self.env], epsilon = self.epsilon)
+    #    q_values = calculate_q_values(self.envs, V = self.value_iters[self.envs], epsilon = self.epsilon)
     #else:
-    #q_values = calculate_q_values(self.env, storage = self.value_iters, epsilon = self.epsilon)
+    #q_values = calculate_q_values(self.envs, storage = self.value_iters, epsilon = self.epsilon)
     q_values = val_iter.get_q_values()
     #calculate the log likelihood of the reward hypothesis given the demonstrations
     log_prior = 0.0  #assume unimformative prior

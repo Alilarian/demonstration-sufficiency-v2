@@ -11,7 +11,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env
+from envs import gridworld_env
 from agent.q_learning_agent import ValueIteration, PolicyEvaluation
 from data_generation.generate_data import GridWorldMDPDataGenerator
 
@@ -43,7 +43,7 @@ print(env.feature_weights)
 
 env.reset(seed=seed)
 
-#env.set_feature_weights(np.random.rand(4))
+#envs.set_feature_weights(np.random.rand(4))
 
 val_iter = ValueIteration(mdp=env)
 state_values = val_iter.run_value_iteration(epsilon=epsilon)

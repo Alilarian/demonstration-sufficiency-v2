@@ -1,1 +1,1 @@
-from env import gridworld_env
+from envs import gridworld_env

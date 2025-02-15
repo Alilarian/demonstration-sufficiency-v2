@@ -16,7 +16,7 @@ sys.path.append(parent)
 
 from agent.q_learning_agent import ValueIteration, PolicyEvaluation
 from utils.common_helper import calculate_expected_value_difference
-from env import gridworld_env
+from envs import gridworld_env
 
 
 # Function to generate a random policy for each state

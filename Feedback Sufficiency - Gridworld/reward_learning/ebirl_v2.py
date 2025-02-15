@@ -16,7 +16,7 @@ class EBIRL:
 
         """
         Class for running and storing output of mcmc for Bayesian IRL
-        env: the mdp (we ignore the reward)
+        envs: the mdp (we ignore the reward)
         demos: list of (s,a) tuples 
         beta: the assumed boltzman rationality of the demonstrator
 

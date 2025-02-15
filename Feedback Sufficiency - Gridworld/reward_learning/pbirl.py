@@ -9,7 +9,7 @@ class PBIRL:
 
         """
         Class for running and storing output of mcmc for Preference-Based Bayesian IRL
-        env: the mdp (we ignore the reward)
+        envs: the mdp (we ignore the reward)
         demos: list of (s,a) tuples 
         beta: the assumed boltzman rationality of the demonstrator
 
@@ -37,7 +37,7 @@ class PBIRL:
         
         # Set the environment's reward weights according to the hypothetical reward
         self.env.set_feature_weights(hyp_reward)
-        #print(self.env.feature_weights)
+        #print(self.envs.feature_weights)
         
         # Initialize the log_prior as 0, assuming an uninformative prior
         log_prior = 0.0

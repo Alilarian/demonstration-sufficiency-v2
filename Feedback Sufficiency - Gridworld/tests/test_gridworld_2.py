@@ -10,7 +10,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env2
+from envs import gridworld_env2
 
 # Function to load YAML configuration
 def load_yaml_config(file_path):

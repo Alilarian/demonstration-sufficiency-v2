@@ -8,7 +8,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env
+from envs import gridworld_env
 from agent.q_learning_agent import ValueIteration
 from reward_learning.ebirl import EBIRL
 from data_generation.generate_data import GridWorldMDPDataGenerator
@@ -45,7 +45,7 @@ def test_birl(config):
     val_iter = ValueIteration(mdp=env)
     state_values = val_iter.run_value_iteration(epsilon=epsilon)
     true_policy = val_iter.get_optimal_policy()
-    #preferences = GridWorldMDPDataGenerator(env).generate_pairwise_comparisons(strategy="same_start_state", num_trajs=6)
+    #preferences = GridWorldMDPDataGenerator(envs).generate_pairwise_comparisons(strategy="same_start_state", num_trajs=6)
     estops = GridWorldMDPDataGenerator(env).generate_estop(beta=beta, num_trajs=10)
     
     # Step 2: Run BIRL to learn the MAP reward

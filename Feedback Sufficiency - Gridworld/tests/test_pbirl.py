@@ -8,7 +8,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from env import gridworld_env
+from envs import gridworld_env
 from agent.q_learning_agent import ValueIteration
 from reward_learning.pbirl import PBIRL
 
