@@ -224,7 +224,6 @@ for i in range(50):
         true_avar_bounds[demonstration].append(true_bound)
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
-
         # Check sufficiency with threshold
         for threshold in thresholds:
             avar_bound = avar_bounds[0.95][demonstration][0]
@@ -248,7 +247,6 @@ for i in range(50):
                 else:
                     confusion_matrices[threshold][1][1] += 1
 
-    
     # Store the experiment's MCMC samples
     mcmc_samples_all_experiments[i + 1] = mcmc_samples_history
     # Store results for the current experiment
@@ -260,7 +258,6 @@ for i in range(50):
     avg_bound_errors_all_experiments.append(avg_bound_errors)
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_all_experiments.append(confusion_matrices)
-
     info_gain_all_experiments.append(info_gain)
 
     if (i+1)%2 == 0:

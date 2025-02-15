@@ -219,6 +219,304 @@ def compute_infogain(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_
     return info_gain
 
 
+def compute_infogain_2(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(mcmc_samples_1)  # Number of prior samples
+    M2 = len(mcmc_samples_2)  # Number of posterior samples
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2]))
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        second_term = np.mean(np.log(posterior_log_probs)) + np.log(M2) - np.log(np.sum(posterior_log_probs))
+        
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    prior_log_probs = np.exp(np.array([log_prob_func(env, demos[:-1], theta, beta) for theta in mcmc_samples_1]))
+    posterior_log_probs = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2]))
+
+    second_term = np.mean(np.log(posterior_log_probs)) + np.log(M2) - np.log(np.sum(posterior_log_probs))
+
+    first_term = np.log(np.sum(prior_log_probs)) - np.log(M1) - np.mean(np.log(prior_log_probs))
+
+    # Compute total information gain
+    info_gain = first_term + second_term
+
+    return info_gain
+
+def compute_infogain_3(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(mcmc_samples_1)  # Number of prior samples
+    M2 = len(mcmc_samples_2)  # Number of posterior samples
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2]))
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        second_term = np.mean(np.log(posterior_log_probs)) + np.log(M2) - np.log(np.sum(posterior_log_probs))
+        
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    prior_log_probs = np.exp(np.array([log_prob_func(env, demos[:-1], theta, beta) for theta in mcmc_samples_1]))
+    posterior_log_probs = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2]))
+
+    second_term = np.mean(np.log(posterior_log_probs)) - np.log(np.sum(posterior_log_probs))
+
+    first_term = np.log(np.sum(prior_log_probs)) - np.mean(np.log(prior_log_probs))
+
+    # Compute total information gain
+    info_gain = first_term + second_term
+
+    return info_gain
+
+def compute_infogain_4(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(mcmc_samples_1)  # Number of prior samples
+    M2 = len(mcmc_samples_2)  # Number of posterior samples
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs = np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2])
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        second_term = np.mean(posterior_log_probs) + np.log(M2) - logsumexp(posterior_log_probs)
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    prior_log_probs = np.array([log_prob_func(env, demos[:-1], theta, beta) for theta in mcmc_samples_1])
+    posterior_log_probs = np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2])
+
+    second_term = np.mean(posterior_log_probs) + np.log(M2) - logsumexp(posterior_log_probs)
+
+    first_term = logsumexp(prior_log_probs) - np.log(M1) - np.mean(prior_log_probs)
+
+    # Compute total information gain
+    info_gain = first_term + second_term
+
+    return info_gain
+
+
+def compute_infogain_5(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(mcmc_samples_1)  # Number of prior samples
+    M2 = len(mcmc_samples_2)  # Number of posterior samples
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2]))
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        second_term = np.mean(posterior_log_probs) + np.log(M2) - logsumexp(posterior_log_probs)
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    prior_log_probs = np.exp(np.array([log_prob_func(env, demos[:-1], theta, beta) for theta in mcmc_samples_1]))
+    posterior_log_probs = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2]))
+
+    second_term = np.mean(posterior_log_probs) + np.log(M2) - logsumexp(posterior_log_probs)
+
+    first_term = logsumexp(prior_log_probs) - np.log(M1) - np.mean(prior_log_probs)
+
+    # Compute total information gain
+    info_gain = first_term + second_term
+
+    return info_gain
+
+def compute_infogain_6(env, demos, mcmc_samples_1, mcmc_samples_2, beta, log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(mcmc_samples_1)  # Number of prior samples
+    M2 = len(mcmc_samples_2)  # Number of posterior samples
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs = np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2])
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        second_term = M2* (np.mean(posterior_log_probs) + np.log(M2) - logsumexp(posterior_log_probs))
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    prior_log_probs = np.array([log_prob_func(env, demos[:-1], theta, beta) for theta in mcmc_samples_1])
+    posterior_log_probs = np.array([log_prob_func(env, demos, theta, beta) for theta in mcmc_samples_2])
+
+    second_term = np.mean(posterior_log_probs) + np.log(M2) - logsumexp(posterior_log_probs)
+
+    first_term = logsumexp(prior_log_probs) - np.log(M1) - np.mean(prior_log_probs)
+
+    # Compute total information gain
+    info_gain = M1*first_term + M2*second_term
+
+    return info_gain
+
+
+
+def compute_infogain_7(env, 
+                       demos, 
+                       inner_mcmc_samples_prior, 
+                       inner_mcmc_samples_post,
+                       outer_mcmc_samples_prior,
+                       outer_mcmc_samples_post,
+                        beta, 
+                        log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(outer_mcmc_samples_prior)  # Number of prior samples
+    M2 = len(outer_mcmc_samples_post)  # Number of posterior samples
+
+    M1_n = len(inner_mcmc_samples_prior)
+    M2_n = len(inner_mcmc_samples_post)
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_post]))
+        posterior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_post]))
+        
+        second_term = - np.log(np.sum(posterior_log_probs_inner)) + np.log(M2_n) + np.mean(posterior_log_probs_outer)
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        #second_term = np.mean(np.log(posterior_log_probs)) + np.log(M2) - np.log(np.sum(posterior_log_probs))
+        
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    posterior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_post]))
+    posterior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_post]))
+        
+    prior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_prior]))
+    prior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_prior]))
+    
+    
+    second_term = - np.log(np.sum(posterior_log_probs_inner)) + np.log(M2_n) + np.mean(posterior_log_probs_outer)
+        
+    first_term = np.log((np.sum(prior_log_probs_inner))) - np.log(M1_n) - np.mean(prior_log_probs_outer)
+
+    # Compute total information gain
+    info_gain = first_term + second_term
+
+    return info_gain
+
+
+def entropy(env,
+            demos,
+            inner_mcmc_samples_post,
+            outer_mcmc_samples_post,
+            beta,
+            log_prob_func):
+
+    M2_n = len(inner_mcmc_samples_post)
+
+    posterior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_post]))
+    posterior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_post]))
+        
+    entropy = np.log(np.sum(posterior_log_probs_inner)) - np.log(M2_n) - np.mean(posterior_log_probs_outer)
+
+    return entropy
+
 def log_prob_demo(env, demos, theta, beta):
     """
     Computes the log probability of a set of demonstrations given a reward function.

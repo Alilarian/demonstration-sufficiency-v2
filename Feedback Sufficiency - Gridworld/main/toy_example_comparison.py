@@ -19,13 +19,21 @@ from data_generation.generate_data import GridWorldMDPDataGenerator
 from reward_learning.pbirl import PBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
-                                 calculate_expected_value_difference,)
+                                 calculate_expected_value_difference,
+                                 compute_infogain_2,
+                                 compute_infogain_3,
+                                 compute_infogain_4,
+                                 compute_infogain_5,
+                                 compute_infogain_6,
+                                 compute_infogain_7,
+                                 entropy,
+                                 log_prob_comparison)
 from utils.env_helper import print_policy
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
-parser.add_argument('--beta', type=float, help='beta', required=True)
+parser.add_argument('--beta', type=float, help='beta', required=False)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
 
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
@@ -48,7 +56,6 @@ with open(parent+"/configs/gridworld_config.yaml", 'r') as file:
     config = yaml.safe_load(file)
 logger.info("Config file loaded successfully.")
 
-
 # Extract config parameters
 render_mode = config['env_config']['render_mode']
 size = config['env_config']['size']
@@ -59,7 +66,7 @@ epsilon = float(config['algorithm_config']['epsilon'])
 
 num_steps = config['bayesian_irl_config']['num_steps']
 step_stdev = config['bayesian_irl_config']['step_stdev']
-beta = beta = float(args.beta)
+beta = float(args.beta) if args.beta is not None else config['bayesian_irl_config']['beta']
 normalize = config['bayesian_irl_config']['normalize']
 adaptive = config['bayesian_irl_config']['adaptive']
 burn_frac = config['bayesian_irl_config']['burn_frac']
@@ -121,7 +128,9 @@ policy_optimalities_all_experiments = []
 confusion_matrices_all_experiments = []
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
-#info_gain_all_experiments = []
+info_gain_all_experiments = []
+entropy_uncertainty_all_experiments = []
+mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
 # Run experiments for each world
 for i in range(50):
@@ -143,9 +152,13 @@ for i in range(50):
 
     avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
     true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
+    info_gain = {i: [] for i in range(0, num_demonstration)}
+    entropy_uncertainty = {i: [] for i in range(0, num_demonstration)}
+    # Storage for each experiment
+    mcmc_samples_history = {}  # Track MCMC samples for this experiment
 
-    #info_gain = {i: [] for i in range(0, num_demonstration)}
-
+    max_entropy = 0
+    
     # Run PBIRL for each demonstration
     for demonstration in range(num_demonstration):
         logger.info(f"\nRunning PBIRL with {demonstration + 1} demonstrations for experiment {i+1}")
@@ -157,6 +170,10 @@ for i in range(50):
         burn_indx = int(len(birl.chain) * burn_frac)
         mcmc_samples = birl.chain[burn_indx::]
         logger.info(f"Using {len(mcmc_samples)} samples after burn-in.")
+
+        # Save MCMC samples history
+        mcmc_samples_history[demonstration + 1] = mcmc_samples
+        logger.info(f"Stored {len(mcmc_samples)} MCMC samples for demonstration {demonstration+1}")
 
         # Get MAP solution
         map_env = copy.deepcopy(env)
@@ -173,12 +190,14 @@ for i in range(50):
 
         # Calculate a-VaR for different alphas
         for alpha in alphas:
-            avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
+            #avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
+            avar_bound = 0
             avar_bounds[alpha][demonstration].append(avar_bound)
             logger.info(f"{alpha}-VaR-max-normalization for {demonstration + 1} demonstrations: {avar_bound:.6f}")
 
         # Calculate true expected value difference (EVD)
-        true_bound = calculate_expected_value_difference(eval_policy=map_policy, env=env, epsilon=epsilon, normalize_with_random_policy=random_normalization)
+        #true_bound = calculate_expected_value_difference(eval_policy=map_policy, env=env, epsilon=epsilon, normalize_with_random_policy=random_normalization)
+        true_bound = 0
         true_avar_bounds[demonstration].append(true_bound)
         logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
@@ -186,6 +205,61 @@ for i in range(50):
         #infogain = compute_infogain_log(env, pairwise_comparisons_shuffled[demonstration], mcmc_samples, beta)
         #info_gain[demonstration].append(infogain)
         #logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
+
+        if demonstration == 0:
+            mcmc_sample_prior = []
+            outer_mcmc_samples_prior = []
+
+        else:
+            mcmc_sample_prior = [sample for i in range(1, demonstration+1) for sample in mcmc_samples_history[i]]
+            outer_mcmc_samples_prior = mcmc_samples_history[demonstration]
+
+        
+        posterior_mcmc_samples = [sample for i in range(1, demonstration+2) for sample in mcmc_samples_history[i]]
+        
+        print("Len prior samples: ", len(mcmc_sample_prior))
+        print("Len posterior samples: ", len(posterior_mcmc_samples))
+
+        #print("mcmc_samples_1: ", mcmc_sample_prior)
+        #print("mcmc_samples_2: ", mcmc_samples_history[demonstration + 1])
+
+        #infogain = compute_infogain_2(env,
+        #                            demos=pairwise_comparisons_shuffled[:demonstration+1],
+        #                            mcmc_samples_1 = mcmc_sample_prior,
+        #                            mcmc_samples_2 = posterior_mcmc_samples,
+        #                            beta = beta,
+        #                            log_prob_func=log_prob_comparison)
+        
+        infogain = compute_infogain_7(env,
+                       demos=pairwise_comparisons_shuffled[:demonstration+1], 
+                       inner_mcmc_samples_prior=mcmc_sample_prior, 
+                       inner_mcmc_samples_post=posterior_mcmc_samples,
+                       outer_mcmc_samples_prior=outer_mcmc_samples_prior,
+                       outer_mcmc_samples_post=mcmc_samples_history[demonstration+1],
+                        beta=beta, 
+                        log_prob_func=log_prob_comparison)
+        
+        ## Save entropy after the first demo
+        
+        
+        if demonstration == 0:
+            max_entropy = entropy(env,
+                                  demos=pairwise_comparisons_shuffled[:demonstration+1],
+                                  inner_mcmc_samples_prior=posterior_mcmc_samples,
+                                  outer_mcmc_samples_prior=mcmc_samples_history[demonstration+1])
+        
+        else:
+            current_entropy = entropy(env,
+                                  demos=pairwise_comparisons_shuffled[:demonstration+1],
+                                  inner_mcmc_samples_prior=posterior_mcmc_samples,
+                                  outer_mcmc_samples_prior=mcmc_samples_history[demonstration+1])
+
+    
+        
+        ## Information gain / entropy(theta|D1:n-1) < 0.05 , 
+        
+        info_gain[demonstration].append(infogain)
+        logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
 
         # Check sufficiency with threshold
         for threshold in thresholds:
@@ -219,7 +293,7 @@ for i in range(50):
     avg_bound_errors_all_experiments.append(avg_bound_errors)
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_all_experiments.append(confusion_matrices)
-    #info_gain_all_experiments.append(info_gain)
+    info_gain_all_experiments.append(info_gain)
 
     if (i+1)%2 == 0:
         # Save results to files
@@ -232,7 +306,5 @@ for i in range(50):
         np.save(os.path.join(save_dir, 'avg_bound_errors_all_experiments.npy'), avg_bound_errors_all_experiments)
         np.save(os.path.join(save_dir, 'policy_optimalities_all_experiments.npy'), policy_optimalities_all_experiments)
         np.save(os.path.join(save_dir, 'confusion_matrices_all_experiments.npy'), confusion_matrices_all_experiments)
-        #np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
-            
-
+        np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
         logger.info("Results saved successfully.")
