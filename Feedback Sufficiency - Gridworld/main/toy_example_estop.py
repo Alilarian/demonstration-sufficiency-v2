@@ -127,8 +127,8 @@ for i in range(50):
     env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(5)]
-    estops = [simulate_human_estop(env, i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
+    random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(6)]
+    estops = [simulate_human_estop(env, i, beta=beta, gamma=gamma, fixed_length=10) for i in random_trajs]
     #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
 
     estops_shuffled = estops

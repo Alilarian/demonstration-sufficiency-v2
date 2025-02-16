@@ -11,7 +11,7 @@ algorithm_config:
   epsilon: 1e-5              # Convergence threshold for value iteration; smaller values yield more precise solutions
 
 bayesian_irl_config:
-  num_steps: 30000             # Number of steps the MCMC sampler will take
+  num_steps: 10000             # Number of steps the MCMC sampler will take
   step_stdev: 1.5            # Standard deviation for proposal distribution in the MCMC sampler
   beta: 100                    # Inverse temperature parameter to control exploration vs. exploitation
   burn_frac: 0.35              # Fraction of initial steps discarded as burn-in period
@@ -22,9 +22,13 @@ bayesian_irl_config:
 suff_config:
   alphas: [0.85, 0.90, 0.95, 0.99] # Alpha Var
   delta: 0.08
-  optimality_threshold: 0.96
+  optimality_threshold: 0.95
   random_normalization: true  # whether or not to normalize with random policy
   thresholds: [0.1, 0.2, 0.3, 0.4] # Thresholds to declare demonstration sufficiency
+  conv_thresholds : [1, 2, 3] # Needs to be changed based on the number of demonstrations
+  held_out_thresholds: [3, 4, 5, 6, 7]
+  normalized_infogain_thresholds : []
+  entropy_confidence_thresholds: []
 
 experiments:
   num_world: 1

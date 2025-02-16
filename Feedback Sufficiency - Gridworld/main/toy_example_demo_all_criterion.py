@@ -19,6 +19,7 @@ from reward_learning.birl import BIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  compute_policy_loss_avar_bound,
                                  calculate_expected_value_difference,
+                                 calculate_policy_accuracy,
                                 compute_infogain)
 from utils.env_helper import print_policy
 
@@ -111,30 +112,53 @@ logger.info(f"Generated optimal policies for all environments.")
 
 # Initialize metrics storage
 demos = [(0, 1), (2, 1), (4, 3)]
-#demos = [[(0, 1), (0, 1), (0, 1)], [(2, 1), (2, 1), (2, 1)], [(4, 3), (4, 3), (4, 3)], [(3, 3), (3, 3), (3, 3)]]
 
+
+########################################################################
+# Metrics for nEVD - all experiments
+########################################################################
 bounds_all_experiments = []
 num_demos_all_experiments = []
 true_evds_all_experiments = []
 avg_bound_errors_all_experiments = []
 policy_optimalities_all_experiments = []
-
 confusion_matrices_alphavar_all_experiments = []
-confusion_matrices_held_out_all_experiments = [] 
-confusion_matrices_conv_all_experiments = []
-confusion_matrices_normalized_infogain_all_experiments = []
-confusion_matrices_entropy_confidence_all_experiments = []
+percentage_of_states_needed = [] # not implemented
+
+
 
 
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
+
+
+
 info_gain_all_experiments = []
 normalized_info_gain_all_experiments = []
 entropy_confidence_all_experiments = []
 
+
+########################################################################
+# Metrics for convergence - all experiments
+########################################################################
+num_demos_conv_all = []
+pct_states_conv_all = []
+policy_optimalities_conv_all = []
+policy_accuracies_conv_all = []
+accuracies_conv_all = []
+cm100_conv_all = []
+cm95_conv_all = []
+cm90_conv_all = []
+cm5_conv_all = []
+cm4_conv_all = []
+cm3_conv_all = []
+cm2_conv_all = []
+cm1_conv_all = []
+
+
+
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
-
 experiment_same_demo = False
 
 # Run experiments for each world
@@ -142,67 +166,71 @@ for i in range(50):
     env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    if experiment_same_demo:
-        
-        random_index = np.random.choice(range(len(demos)))
-        demos_shuffled = demos[random_index]
-        logger.info(f"Same Demos: {demos_shuffled}")
 
-    else:
-        # Shuffle the pairwise comparisons
-        demos_shuffled = demos.copy()
-        random.shuffle(demos_shuffled)
-        logger.info(f"Shuffled Demos: {demos_shuffled}")
+    # Shuffle the pairwise comparisons
+    demos_shuffled = demos.copy()
+    random.shuffle(demos_shuffled)
+    logger.info(f"Shuffled Demos: {demos_shuffled}")
 
     # Storage for each experiment
     mcmc_samples_history = {}  # Track MCMC samples for this experiment
 
     #previous_mcmc_samples = None  # Initial prior: None (Uniform)
 
+    ########################################################################
     # Metrics to evaluate nEVD
+    ########################################################################
     bounds = {threshold: [] for threshold in thresholds}
     num_demos = {threshold: [] for threshold in thresholds}
     true_evds = {threshold: [] for threshold in thresholds}
     avg_bound_errors = {threshold: [] for threshold in thresholds}
     policy_optimalities = {threshold: [] for threshold in thresholds}
-    percentage_of_states_needed = {threshold: [] for threshold in thresholds}
+    percentage_of_states_needed = {threshold: [] for threshold in thresholds} # Not implemented
     confusion_matrices_alphavar = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}
-    pct_states = {threshold: [] for threshold in thresholds}
-    policy_accuracies = {threshold: [] for threshold in thresholds}
+    policy_accuracies = {threshold: [] for threshold in thresholds} # Not implemented
+    avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
+    true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
     
-    
+
+    ########################################################################
     # Metrics for convergence
-    num_demos_conv = {threshold: [] for threshold in thresholds}
-    pct_states_conv = {threshold: [] for threshold in thresholds}
-    policy_optimalities_conv = {threshold: [] for threshold in thresholds}
-    policy_accuracies_conv = {threshold: [] for threshold in thresholds}
-    accuracies = {threshold: [] for threshold in thresholds}
+    ########################################################################
+    num_demos_conv = {threshold: [] for threshold in conv_thresholds}
+    pct_states_conv = {threshold: [] for threshold in conv_thresholds}
+    policy_optimalities_conv = {threshold: [] for threshold in conv_thresholds}
+    policy_accuracies_conv = {threshold: [] for threshold in conv_thresholds}
+    accuracies_conv = {threshold: [] for threshold in conv_thresholds}
     # Predicted by true
-    cm100_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is if optimality = 100%/99%
-    cm95_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is if optimality = 95%/96%
-    cm90_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is if optimality = 90%/92%
-    cm5_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.5
-    cm4_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.4
-    cm3_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.3
-    cm2_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.2
-    cm1_conv = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.1
+    cm100_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is if optimality = 100%/99%
+    cm95_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is if optimality = 95%/96%
+    cm90_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is if optimality = 90%/92%
+    cm5_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is with nEVD threshold = 0.5
+    cm4_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is with nEVD threshold = 0.4
+    cm3_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is with nEVD threshold = 0.3
+    cm2_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is with nEVD threshold = 0.2
+    cm1_conv = {threshold: [[0, 0], [0, 0]] for threshold in conv_thresholds}  # actual positive is with nEVD threshold = 0.1
     
+    curr_map_pi = [-1 for _ in range(env.rows * env.columns)]
+    patience = 0
+    
+    ########################################################################
     # Metrics for held-out
-    num_demos_val = {threshold: [] for threshold in thresholds}
-    pct_states_val = {threshold: [] for threshold in thresholds}
-    policy_optimalities_val = {threshold: [] for threshold in thresholds}
+    ########################################################################
+    num_demos_val = {threshold: [] for threshold in held_out_thresholds}
+    pct_states_val = {threshold: [] for threshold in held_out_thresholds}
+    policy_optimalities_val = {threshold: [] for threshold in held_out_thresholds}
     # policy_accuracies = {threshold: [] for threshold in thresholds}
     # confidence = {threshold: set() for threshold in thresholds}
-    accuracies_val = {threshold: [] for threshold in thresholds}
+    accuracies_val = {threshold: [] for threshold in held_out_thresholds}
     # Predicted by true
-    cm100_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is if optimality = 100%/99%
-    cm95_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is if optimality = 95%/96%
-    cm90_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is if optimality = 90%/92%
-    cm5_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.5
-    cm4_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.4
-    cm3_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.3
-    cm2_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.2
-    cm1_val = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # actual positive is with nEVD threshold = 0.1
+    cm100_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is if optimality = 100%/99%
+    cm95_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is if optimality = 95%/96%
+    cm90_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is if optimality = 90%/92%
+    cm5_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.5
+    cm4_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.4
+    cm3_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.3
+    cm2_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.2
+    cm1_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.1
 
     # Metrics for nInfogain
     # Metrics for confidence-based entropy
@@ -211,8 +239,7 @@ for i in range(50):
     confusion_matrices_normalized_infogain = {threshold: [[0, 0], [0, 0]] for threshold in normalized_infogain_thresholds}
     confusion_matrices_entropy_confidence = {threshold: [[0, 0], [0, 0]] for threshold in entropy_confidence_thresholds}
     
-    avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
-    true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
+
 
     info_gain = {i: [] for i in range(0, num_demonstration)}
 
@@ -241,6 +268,16 @@ for i in range(50):
         map_env.set_feature_weights(map_solution)
         map_policy = ValueIteration(map_env).get_optimal_policy()
 
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
         # Visualize the map policy
         logger.info("MAP Policy for current environment:")
         print_policy(map_policy, 2, 3)
@@ -268,6 +305,10 @@ for i in range(50):
         info_gain[demonstration].append(infogain)
         logger.info(f"Information gain {demonstration + 1} demonstrations: {infogain :.6f}")
         
+        
+        ########################################################################
+        # nEVD
+        ########################################################################
         # Calculate a-VaR for different alphas
         for alpha in alphas:
             avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
@@ -303,28 +344,112 @@ for i in range(50):
                     confusion_matrices_alphavar[threshold][1][1] += 1
 
     
+
+        ########################################################################
+        # Convergence
+        ########################################################################
     
+        policy_match = calculate_policy_accuracy(curr_map_pi, map_policy)
     
+        if policy_match == 1.0:
+            patience += 1
+            # evaluate thresholds
+            for t in range(len(conv_thresholds)):
+                threshold = conv_thresholds[t]
+                actual_nevd = calculate_expected_value_difference(eval_policy=map_policy, env=env, epsilon=epsilon, normalize_with_random_policy=random_normalization)
+                optimality = calculate_percentage_optimal_actions(map_policy, env)
+                if patience == threshold:
+                    num_demos_conv[threshold].append(demonstration + 1)
+                    pct_states_conv[threshold].append((demonstration + 1) / (env.rows * env.columns))
+                    policy_optimalities_conv[threshold].append(optimality)
+                    policy_accuracies_conv[threshold].append(calculate_policy_accuracy(policies[i], map_policy))
+                    accuracies_conv[threshold].append(optimality >= optimality_threshold)
+                    curr_map_pi = map_policy
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                    # Evaluate actual positive by optimality
+                    if optimality >= 1.0:
+                        cm100_conv[threshold][0][0] += 1
+                    else:
+                        cm100_conv[threshold][0][1] += 1
+                    if optimality >= 0.95:
+                        cm95_conv[threshold][0][0] += 1
+                    else:
+                        cm95_conv[threshold][0][1] += 1
+                    if optimality >= 0.90:
+                        cm90_conv[threshold][0][0] += 1
+                    else:
+                        cm90_conv[threshold][0][1] += 1
+                    # Evaluate actual positive by nEVD
+                    if actual_nevd < 0.5:
+                        cm5_conv[threshold][0][0] += 1
+                    else:
+                        cm5_conv[threshold][0][1] += 1
+                    if actual_nevd < 0.4:
+                        cm4_conv[threshold][0][0] += 1
+                    else:
+                        cm4_conv[threshold][0][1] += 1
+                    if actual_nevd < 0.3:
+                        cm3_conv[threshold][0][0] += 1
+                    else:
+                        cm3_conv[threshold][0][1] += 1
+                    if actual_nevd < 0.2:
+                        cm2_conv[threshold][0][0] += 1
+                    else:
+                        cm2_conv[threshold][0][1] += 1
+                    if actual_nevd < 0.1:
+                        cm1_conv[threshold][0][0] += 1
+                    else:
+                        cm1_conv[threshold][0][1] += 1
+                else:
+                    # Evaluate actual positive by optimality
+                    if optimality >= 1.0:
+                        cm100_conv[threshold][1][0] += 1
+                    else:
+                        cm100_conv[threshold][1][1] += 1
+                    if optimality >= 0.95:
+                        cm95_conv[threshold][1][0] += 1
+                    else:
+                        cm95_conv[threshold][1][1] += 1
+                    if optimality >= 0.90:
+                        cm90_conv[threshold][1][0] += 1
+                    else:
+                        cm90_conv[threshold][1][1] += 1
+                    # Evaluate actual positive by nEVD
+                    if actual_nevd < 0.5:
+                        cm5_conv[threshold][1][0] += 1
+                    else:
+                        cm5_conv[threshold][1][1] += 1
+                    if actual_nevd < 0.4:
+                        cm4_conv[threshold][1][0] += 1
+                    else:
+                        cm4_conv[threshold][1][1] += 1
+                    if actual_nevd < 0.3:
+                        cm3_conv[threshold][1][0] += 1
+                    else:
+                        cm3_conv[threshold][1][1] += 1
+                    if actual_nevd < 0.2:
+                        cm2_conv[threshold][1][0] += 1
+                    else:
+                        cm2_conv[threshold][1][1] += 1
+                    if actual_nevd < 0.1:
+                        cm1_conv[threshold][1][0] += 1
+                    else:
+                        cm1_conv[threshold][1][1] += 1
+        else:
+            patience = 0
+            curr_map_pi = map_policy
     
     # Store the experiment's MCMC samples
     mcmc_samples_all_experiments[i + 1] = mcmc_samples_history
+    
+
+
+
+    
+    ########################################################################
+    # Store results for nEVD
+    ########################################################################
+
     # Store results for the current experiment
     avar_bound_all_experiments.append(avar_bounds)
     true_avar_bounds_all_experiments.append(true_avar_bounds)
@@ -334,11 +459,38 @@ for i in range(50):
     avg_bound_errors_all_experiments.append(avg_bound_errors)
     policy_optimalities_all_experiments.append(policy_optimalities)
     confusion_matrices_alphavar_all_experiments.append(confusion_matrices_alphavar)
+    #percentage_of_states_needed_all_experiments.append(ddd) # not implemented
+    
+    ########################################################################
+    # Store results for Convergence
+    ########################################################################
+    num_demos_conv_all.append(num_demos_conv)
+    pct_states_conv_all.append(pct_states_conv)
+    policy_optimalities_conv_all.append(policy_optimalities_conv)
+    policy_accuracies_conv_all.append(policy_accuracies_conv)
+    accuracies_conv_all.append(accuracies_conv)
+    cm100_conv_all.append(cm100_conv)
+    cm95_conv_all.append(cm95_conv)
+    cm90_conv_all.append(cm90_conv)
+    cm5_conv_all.append(cm5_conv)
+    cm4_conv_all.append(cm4_conv)
+    cm3_conv_all.append(cm3_conv)
+    cm2_conv_all.append(cm2_conv)
+    cm1_conv_all.append(cm1_conv)
+
+
+
+
+
+    
     info_gain_all_experiments.append(info_gain)
 
     if (i+1)%2 == 0:
         # Save results to files
         logger.info("\nSaving results to files...")
+        ########################################################################
+        # Save nEVD results in file
+        ########################################################################
         np.save(os.path.join(save_dir, 'avar_bound_all_experiments.npy'), avar_bound_all_experiments)
         np.save(os.path.join(save_dir, 'true_avar_bounds_all_experiments.npy'), true_avar_bounds_all_experiments)
         np.save(os.path.join(save_dir, 'bounds_all_experiments.npy'), bounds_all_experiments)
@@ -349,3 +501,7 @@ for i in range(50):
         np.save(os.path.join(save_dir, 'confusion_matrices_alphavar_all_experiments.npy'), confusion_matrices_alphavar_all_experiments)
         np.save(os.path.join(save_dir, 'info_gain_all_experiments.npy'), info_gain_all_experiments)
         logger.info("Results saved successfully.")
+
+        ########################################################################
+        # Save Convergence results in file
+        ########################################################################

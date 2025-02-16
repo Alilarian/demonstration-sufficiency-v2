@@ -269,9 +269,11 @@ def generate_random_trajectory(env, max_horizon=25):
     # Compute the raw index (integer) for the initial state.
     state = agent_position[0] * env.columns + agent_position[1]
 
-    for step in range(max_horizon + 1):
-        # Check if the current state is terminal.
+    for step in range(max_horizon):
+        # Append the current state and chosen action
         if state in terminal_states:
+            # Append terminal state with None action to indicate stopping
+            trajectory.append((state, None))
             break  # Stop generating the trajectory if a terminal state is reached.
 
         # Choose a random action uniformly.
@@ -286,7 +288,12 @@ def generate_random_trajectory(env, max_horizon=25):
         # Update state (now directly using raw index).
         state = next_state
 
+    # Ensure the terminal state is appended if the loop exits without adding it
+    if state in terminal_states and (len(trajectory) == 0 or trajectory[-1][0] != state):
+        trajectory.append((state, None))  # Append terminal state explicitly
+
     return trajectory
+
 
 def simulate_human_estop(env, full_trajectory, beta=2.0, gamma=1.0, fixed_length=None):
     """

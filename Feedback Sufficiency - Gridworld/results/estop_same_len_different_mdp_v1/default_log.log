@@ -5242,3 +5242,22 @@ MAP Policy for current environment:
 0.85-VaR-max-normalization for 4 demonstrations: 1.071106
 0.9-VaR-max-normalization for 4 demonstrations: 1.091308
 0.95-VaR-max-normalization for 4 demonstrations: 1.099377
+0.99-VaR-max-normalization for 4 demonstrations: 1.106180
+True EVD for 4 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.099377
+INSUFFICIENT (1.099377 >= 0.1)
+Avar bound for threshold 0.2: 1.099377
+INSUFFICIENT (1.099377 >= 0.2)
+Avar bound for threshold 0.3: 1.099377
+INSUFFICIENT (1.099377 >= 0.3)
+Avar bound for threshold 0.4: 1.099377
+INSUFFICIENT (1.099377 >= 0.4)
+
+Running PBIRL with 5 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.4620
+Using 1950 samples after burn-in.
+MAP Solution: [-0.10107777 -0.98178507  0.16087686]
+True reward weights: [-0.47840873 -0.41855607  0.77196885]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 5 demonstrations: 1.077134
+0.9-VaR-max-normalization for 5 demonstrations: 1.089855

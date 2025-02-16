@@ -5211,3 +5211,18 @@ MAP Solution: [-0.32338684 -0.56859169 -0.75638909]
 True reward weights: [-0.69171446 -0.20751434  0.69171446]
 MAP Policy for current environment:
 0.85-VaR-max-normalization for 5 demonstrations: 11.144857
+0.9-VaR-max-normalization for 5 demonstrations: 12.716477
+0.95-VaR-max-normalization for 5 demonstrations: 15.567339
+0.99-VaR-max-normalization for 5 demonstrations: 20.395733
+True EVD for 5 demonstrations: 11.705165
+Avar bound for threshold 0.1: 15.567339
+INSUFFICIENT (15.567339 >= 0.1)
+Avar bound for threshold 0.2: 15.567339
+INSUFFICIENT (15.567339 >= 0.2)
+Avar bound for threshold 0.3: 15.567339
+INSUFFICIENT (15.567339 >= 0.3)
+Avar bound for threshold 0.4: 15.567339
+INSUFFICIENT (15.567339 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
