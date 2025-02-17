@@ -84,6 +84,13 @@ def calculate_expected_value_difference(eval_policy, env, epsilon=0.0001, normal
     # Return the unnormalized difference in expected returns between optimal and eval_policy
     return np.mean(V_opt) - np.mean(V_eval)
 
+def calculate_policy_accuracy(opt_pi, eval_pi):
+    assert len(opt_pi) == len(eval_pi)
+    matches = 0
+    for i in range(len(opt_pi)):
+        matches += opt_pi[i] == eval_pi[i]
+    return matches / len(opt_pi)
+
 def compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta):
     """
     Computes the counterfactual policy losses and calculates the a-VaR (Value at Risk) bound.

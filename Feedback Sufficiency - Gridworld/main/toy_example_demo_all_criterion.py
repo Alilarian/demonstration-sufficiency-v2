@@ -126,8 +126,6 @@ confusion_matrices_alphavar_all_experiments = []
 percentage_of_states_needed = [] # not implemented
 
 
-
-
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
 
@@ -155,6 +153,23 @@ cm3_conv_all = []
 cm2_conv_all = []
 cm1_conv_all = []
 
+
+########################################################################
+# Metrics for held-out - all experiments
+########################################################################
+num_demos_held_all = []
+pct_states_held_all = []
+policy_optimalities_held_all = []
+policy_accuracies_held_all = []
+accuracies_held_all = []
+cm100_held_all = []
+cm95_held_all = []
+cm90_held_all = []
+cm5_held_all = []
+cm4_held_all = []
+cm3_held_all = []
+cm2_held_all = []
+cm1_held_all = []
 
 
 # Initialize MCMC storage
@@ -232,6 +247,16 @@ for i in range(50):
     cm2_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.2
     cm1_val = {threshold: [[0, 0], [0, 0]] for threshold in held_out_thresholds}  # actual positive is with nEVD threshold = 0.1
 
+    demo_counter = 0
+    total_demos = {threshold: [] for threshold in held_out_thresholds}
+    held_out_sets = {threshold: [] for threshold in held_out_thresholds}
+    
+    
+
+
+
+
+    
     # Metrics for nInfogain
     # Metrics for confidence-based entropy
     
@@ -240,11 +265,13 @@ for i in range(50):
     confusion_matrices_entropy_confidence = {threshold: [[0, 0], [0, 0]] for threshold in entropy_confidence_thresholds}
     
 
-
     info_gain = {i: [] for i in range(0, num_demonstration)}
 
     # Run PBIRL for each demonstration
     for demonstration in range(num_demonstration):
+
+        demo_counter += 1
+
         logger.info(f"\nRunning PBIRL with {demonstration + 1} demonstrations for experiment {i+1}")
         print(demos_shuffled[:demonstration+1])
         birl = BIRL(env, demos_shuffled[:demonstration+1], beta)
@@ -439,11 +466,21 @@ for i in range(50):
             patience = 0
             curr_map_pi = map_policy
     
-    # Store the experiment's MCMC samples
+        ########################################################################
+        # Held Out
+        ########################################################################
+        for t in range(len(held_out_thresholds)):
+            threshold = held_out_thresholds[t]
+            if demo_counter % threshold == 0:
+      
+
+
+
+    ########################################################################
+    # Store MCMC samples
+    ########################################################################
     mcmc_samples_all_experiments[i + 1] = mcmc_samples_history
     
-
-
 
     
     ########################################################################
@@ -478,10 +515,23 @@ for i in range(50):
     cm2_conv_all.append(cm2_conv)
     cm1_conv_all.append(cm1_conv)
 
+    ########################################################################
+    # Store results for held-out
+    ########################################################################
 
 
+    ########################################################################
+    # Store results for Infogain
+    ########################################################################
 
 
+    ########################################################################
+    # Store results for normalized Infogain
+    ########################################################################
+
+    ########################################################################
+    # Store results for entropy confidence
+    ########################################################################
     
     info_gain_all_experiments.append(info_gain)
 
@@ -504,4 +554,38 @@ for i in range(50):
 
         ########################################################################
         # Save Convergence results in file
+        ########################################################################
+        
+        np.save(os.path.join(save_dir, 'num_demos_conv_all.npy'), num_demos_conv_all)
+        np.save(os.path.join(save_dir, 'pct_states_conv_all.npy'), pct_states_conv_all)
+        np.save(os.path.join(save_dir, 'policy_optimalities_conv_all.npy'), policy_optimalities_conv_all)
+        np.save(os.path.join(save_dir, 'policy_accuracies_conv_all.npy'), policy_accuracies_conv_all)
+        np.save(os.path.join(save_dir, 'accuracies_conv_all.npy'), accuracies_conv_all)
+        np.save(os.path.join(save_dir, 'cm100_conv_all.npy'), cm100_conv_all)
+        np.save(os.path.join(save_dir, 'cm95_conv_all.npy'), cm95_conv_all)
+        np.save(os.path.join(save_dir, 'cm90_conv_all.npy'), cm90_conv_all)
+        np.save(os.path.join(save_dir, 'cm5_conv_all.npy'), cm5_conv_all)
+        np.save(os.path.join(save_dir, 'cm4_conv_all.npy'), cm4_conv_all)
+        np.save(os.path.join(save_dir, 'cm3_conv_all.npy'), cm3_conv_all)
+        np.save(os.path.join(save_dir, 'cm2_conv_all.npy'), cm2_conv_all)
+        np.save(os.path.join(save_dir, 'cm1_conv_all.npy'), cm1_conv_all)
+
+
+
+        ########################################################################
+        # Save results for held-out in file
+        ########################################################################
+
+
+        ########################################################################
+        # Save results for Infogain in file
+        ########################################################################
+
+
+        ########################################################################
+        # Save results for normalized Infogain in file
+        ########################################################################
+
+        ########################################################################
+        # Save results for entropy confidence in file
         ########################################################################
