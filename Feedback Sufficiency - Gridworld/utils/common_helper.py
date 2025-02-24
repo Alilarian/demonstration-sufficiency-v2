@@ -90,22 +90,9 @@ def calculate_policy_accuracy(opt_pi, eval_pi):
     for i in range(len(opt_pi)):
         matches += opt_pi[i] == eval_pi[i]
     return matches / len(opt_pi)
-
+'''
 def compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta):
-    """
-    Computes the counterfactual policy losses and calculates the a-VaR (Value at Risk) bound.
 
-    Args:
-        mcmc_samples (list): List of MCMC sampled rewards from the BIRL process.
-        env: The environment object.
-        map_policy: The MAP (Maximum a Posteriori) policy from BIRL.
-        random_normalization (bool): Whether to normalize using a random policy.
-        alpha (float): Confidence level parameter.
-        delta (float): Risk level parameter.
-
-    Returns:
-        float: The computed a-VaR bound.
-    """
     policy_losses = []
 
     # Step 1: Calculate policy loss for each MCMC sample
@@ -129,6 +116,73 @@ def compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normali
 
     # Return the computed a-VaR bound
     return policy_losses[k]
+'''
+def compute_policy_loss_avar_bounds(mcmc_samples, env, map_policy, random_normalization, alphas, delta):
+    """
+    Computes the counterfactual policy losses and calculates the a-VaR (Value at Risk) bound for multiple alpha values.
+
+    Args:
+        mcmc_samples (list): List of MCMC sampled rewards from the BIRL process.
+        env: The environment object.
+        map_policy: The MAP (Maximum a Posteriori) policy from BIRL.
+        random_normalization (bool): Whether to normalize using a random policy.
+        alphas (list of float): List of confidence level parameters.
+        delta (float): Risk level parameter.
+
+    Returns:
+        dict: A dictionary mapping each alpha to its computed a-VaR bound.
+    """
+    policy_losses = []
+
+    # Step 1: Calculate policy loss for each MCMC sample
+    for sample in mcmc_samples:
+        learned_env = copy.deepcopy(env)  # Create a copy of the environment
+        learned_env.set_feature_weights(sample)   # Set the reward function to the current sample
+        
+        # Calculate the policy loss (Expected Value Difference)
+        policy_loss = calculate_expected_value_difference(
+            map_policy, learned_env, normalize_with_random_policy=random_normalization
+        )
+        policy_losses.append(policy_loss)
+
+    # Step 2: Sort the policy losses
+    policy_losses.sort()
+
+    # Step 3: Compute the a-VaR bound for each alpha
+    N_burned = len(mcmc_samples)
+    avar_bounds = {}
+
+    for alpha in alphas:
+        k = math.ceil(N_burned * alpha + norm.ppf(1 - delta) * np.sqrt(N_burned * alpha * (1 - alpha)) - 0.5)
+        k = min(k, N_burned - 1)  # Ensure k doesn't exceed the number of samples
+        avar_bounds[alpha] = policy_losses[k]
+
+    return avar_bounds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def compute_reward_for_trajectory(env, trajectory, discount_factor=None):
     """
@@ -508,7 +562,69 @@ def compute_infogain_7(env,
     return info_gain
 
 
-def entropy(env,
+def compute_norm_infogain(env, 
+                       demos, 
+                       inner_mcmc_samples_prior, 
+                       inner_mcmc_samples_post,
+                       outer_mcmc_samples_prior,
+                       outer_mcmc_samples_post,
+                        beta, 
+                        log_prob_func):
+    """
+    Compute information gain between posterior and prior MCMC samples for demonstrations.
+    
+    Args:
+        env: The GridWorld environment.
+        demos: List of demonstrations (state-action pairs or preferences).
+        mcmc_samples_1: MCMC samples from prior \( \Theta_{n-1} \).
+        mcmc_samples_2: MCMC samples from posterior \( \Theta_n \).
+        beta: Rationality parameter.
+        log_prob_func: Function to compute log probability (either log_prob_demo or log_prob_comparison).
+    
+    Returns:
+        float: Information gain value.
+    """
+    M1 = len(outer_mcmc_samples_prior)  # Number of prior samples
+    M2 = len(outer_mcmc_samples_post)  # Number of posterior samples
+
+    M1_n = len(inner_mcmc_samples_prior)
+    M2_n = len(inner_mcmc_samples_post)
+
+    # Handle initial condition (n=1)
+    if len(demos) == 1:
+        posterior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_post]))
+        posterior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_post]))
+        
+        second_term = - np.log(np.sum(posterior_log_probs_inner)) + np.log(M2_n) + np.mean(posterior_log_probs_outer)
+        
+        ## Apply log on each component of posterior_log_probs
+        ## Sum them and take average
+        #second_term = np.mean(np.log(posterior_log_probs)) + np.log(M2) - np.log(np.sum(posterior_log_probs))
+        
+        #posterior_denominator = logsumexp(posterior_log_probs)
+
+        #second_term = np.mean(posterior_log_probs - posterior_denominator + np.log(M2))
+        return second_term
+
+    # Compute log probabilities for prior and posterior samples
+    posterior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_post]))
+    posterior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_post]))
+        
+    prior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_prior]))
+    prior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_prior]))
+    
+    
+    second_term = - np.log(np.sum(posterior_log_probs_inner)) + np.log(M2_n) + np.mean(posterior_log_probs_outer)
+        
+    first_term = np.log((np.sum(prior_log_probs_inner))) - np.log(M1_n) - np.mean(prior_log_probs_outer)
+
+    # Compute total information gain
+    info_gain = (first_term + second_term)/(first_term + np.log(M1))
+
+    return info_gain
+
+
+def compute_entropy(env,
             demos,
             inner_mcmc_samples_post,
             outer_mcmc_samples_post,
@@ -516,11 +632,12 @@ def entropy(env,
             log_prob_func):
 
     M2_n = len(inner_mcmc_samples_post)
+    M2 = len(outer_mcmc_samples_post)
 
     posterior_log_probs_outer = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in outer_mcmc_samples_post]))
     posterior_log_probs_inner = np.exp(np.array([log_prob_func(env, demos, theta, beta) for theta in inner_mcmc_samples_post]))
         
-    entropy = np.log(np.sum(posterior_log_probs_inner)) - np.log(M2_n) - np.mean(posterior_log_probs_outer)
+    entropy = np.log(np.sum(posterior_log_probs_inner)) - np.log(M2_n) - np.mean(posterior_log_probs_outer) + np.log(M2)
 
     return entropy
 

@@ -1,0 +1,3427 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.97266673 -0.03083248  0.23014951]
+Feature weights for environment: [-0.35835056 -0.08647525  0.92957351]
+Feature weights for environment: [-0.71046942 -0.64188771  0.28846728]
+Feature weights for environment: [-0.89578956 -0.24432685  0.37130237]
+Feature weights for environment: [-0.7282924  -0.22722733  0.64649665]
+Feature weights for environment: [-0.75022399 -0.57596895  0.32469021]
+Feature weights for environment: [-0.70842322 -0.26108332  0.65572254]
+Feature weights for environment: [-0.74635145 -0.57484795  0.33542412]
+Feature weights for environment: [-0.0505111  -0.01531811  0.99860602]
+Feature weights for environment: [-0.76518493 -0.64328377  0.02603879]
+Feature weights for environment: [-0.87829137 -0.24439244  0.41094598]
+Feature weights for environment: [-0.8497926  -0.50850291  0.13884283]
+Feature weights for environment: [-0.34477193 -0.32328333  0.88126058]
+Feature weights for environment: [-0.43088031 -0.17122291  0.88601629]
+Feature weights for environment: [-0.75433776 -0.02805593  0.65588674]
+Feature weights for environment: [-0.92032338 -0.11683579  0.37330186]
+Feature weights for environment: [-0.76208548 -0.28664819  0.58056743]
+Feature weights for environment: [-0.39174849 -0.30341429  0.86860399]
+Feature weights for environment: [-0.92648321 -0.16748955  0.33701054]
+Feature weights for environment: [-0.61012931 -0.3129562   0.72787406]
+Feature weights for environment: [-0.3738588  -0.3262014   0.86822937]
+Feature weights for environment: [-0.70965126 -0.6051058   0.36089066]
+Feature weights for environment: [-0.74528522 -0.55533186  0.36899385]
+Feature weights for environment: [-0.68144434 -0.29187893  0.6711485 ]
+Feature weights for environment: [-0.44714936 -0.30119858  0.84222139]
+Feature weights for environment: [-0.7333898  -0.47830978  0.48307263]
+Feature weights for environment: [-0.65557811 -0.01374154  0.75500233]
+Feature weights for environment: [-0.866301   -0.34967581  0.35672034]
+Feature weights for environment: [-0.6535586  -0.23072892  0.72085041]
+Feature weights for environment: [-0.81326386 -0.04441834  0.5801973 ]
+Feature weights for environment: [-0.27534761 -0.19938474  0.94044108]
+Feature weights for environment: [-0.90753571 -0.40234227  0.1204144 ]
+Feature weights for environment: [-0.32556312 -0.30396656  0.89532842]
+Feature weights for environment: [-0.839382   -0.393236    0.37523766]
+Feature weights for environment: [-0.94121751 -0.05112011  0.33391067]
+Feature weights for environment: [-0.05456508 -0.040557    0.99768621]
+Feature weights for environment: [-0.75478167 -0.33513042  0.563908  ]
+Feature weights for environment: [-0.49248773 -0.22865786  0.83974486]
+Feature weights for environment: [-0.56481614 -0.46100063  0.68444222]
+Feature weights for environment: [-0.6667631  -0.57474284  0.47444455]
+Feature weights for environment: [-0.46247666 -0.0267168   0.88622884]
+Feature weights for environment: [-0.71505276 -0.68463496  0.14133129]
+Feature weights for environment: [-0.94655708 -0.29794542  0.12352418]
+Feature weights for environment: [-0.88315502 -0.32822573  0.33511952]
+Feature weights for environment: [-0.83381491 -0.37890594  0.40147601]
+Feature weights for environment: [-0.82098277 -0.18440172  0.54035479]
+Feature weights for environment: [-0.73857451 -0.23755048  0.63093381]
+Feature weights for environment: [-0.95541883 -0.18852986  0.22722531]
+Feature weights for environment: [-0.98484463 -0.1489005   0.08893646]
+Feature weights for environment: [-0.47840873 -0.41855607  0.77196885]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.6230
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.64071396 -0.24108759  0.72894609]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.096032
+0.9-VaR-max-normalization for 1 demonstrations: 1.099588
+0.95-VaR-max-normalization for 1 demonstrations: 1.103542
+0.99-VaR-max-normalization for 1 demonstrations: 1.105861
+True EVD for 1 demonstrations: 0.004603
+Avar bound for threshold 0.1: 1.103542
+INSUFFICIENT (1.103542 >= 0.1)
+Avar bound for threshold 0.2: 1.103542
+INSUFFICIENT (1.103542 >= 0.2)
+Avar bound for threshold 0.3: 1.103542
+INSUFFICIENT (1.103542 >= 0.3)
+Avar bound for threshold 0.4: 1.103542
+INSUFFICIENT (1.103542 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.6204
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.71135046 -0.22327092  0.66643125]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095293
+0.9-VaR-max-normalization for 2 demonstrations: 1.098648
+0.95-VaR-max-normalization for 2 demonstrations: 1.102903
+0.99-VaR-max-normalization for 2 demonstrations: 1.105801
+True EVD for 2 demonstrations: 0.004603
+Avar bound for threshold 0.1: 1.102903
+INSUFFICIENT (1.102903 >= 0.1)
+Avar bound for threshold 0.2: 1.102903
+INSUFFICIENT (1.102903 >= 0.2)
+Avar bound for threshold 0.3: 1.102903
+INSUFFICIENT (1.102903 >= 0.3)
+Avar bound for threshold 0.4: 1.102903
+INSUFFICIENT (1.102903 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.6178
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.93514027 -0.11143922  0.33629448]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095870
+0.9-VaR-max-normalization for 3 demonstrations: 1.099310
+0.95-VaR-max-normalization for 3 demonstrations: 1.102336
+0.99-VaR-max-normalization for 3 demonstrations: 1.105242
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102336
+INSUFFICIENT (1.102336 >= 0.1)
+Avar bound for threshold 0.2: 1.102336
+INSUFFICIENT (1.102336 >= 0.2)
+Avar bound for threshold 0.3: 1.102336
+INSUFFICIENT (1.102336 >= 0.3)
+Avar bound for threshold 0.4: 1.102336
+INSUFFICIENT (1.102336 >= 0.4)
+
+Running experiment 2/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.6100
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.31356335  0.29821579 -0.90152391]
+True reward weights: [-0.35835056 -0.08647525  0.92957351]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.064225
+0.9-VaR-max-normalization for 1 demonstrations: 9.507065
+0.95-VaR-max-normalization for 1 demonstrations: 10.033341
+0.99-VaR-max-normalization for 1 demonstrations: 10.272388
+True EVD for 1 demonstrations: 9.818896
+Avar bound for threshold 0.1: 10.033341
+INSUFFICIENT (10.033341 >= 0.1)
+Avar bound for threshold 0.2: 10.033341
+INSUFFICIENT (10.033341 >= 0.2)
+Avar bound for threshold 0.3: 10.033341
+INSUFFICIENT (10.033341 >= 0.3)
+Avar bound for threshold 0.4: 10.033341
+INSUFFICIENT (10.033341 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.6254
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.70504212  0.22711678 -0.67181364]
+True reward weights: [-0.35835056 -0.08647525  0.92957351]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.625053
+0.9-VaR-max-normalization for 2 demonstrations: 9.439443
+0.95-VaR-max-normalization for 2 demonstrations: 10.003971
+0.99-VaR-max-normalization for 2 demonstrations: 10.248535
+True EVD for 2 demonstrations: 9.818896
+Avar bound for threshold 0.1: 10.003971
+INSUFFICIENT (10.003971 >= 0.1)
+Avar bound for threshold 0.2: 10.003971
+INSUFFICIENT (10.003971 >= 0.2)
+Avar bound for threshold 0.3: 10.003971
+INSUFFICIENT (10.003971 >= 0.3)
+Avar bound for threshold 0.4: 10.003971
+INSUFFICIENT (10.003971 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.6312
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [0.44964957 0.8142974  0.36706267]
+True reward weights: [-0.35835056 -0.08647525  0.92957351]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.829422
+0.9-VaR-max-normalization for 3 demonstrations: 9.459582
+0.95-VaR-max-normalization for 3 demonstrations: 9.918619
+0.99-VaR-max-normalization for 3 demonstrations: 10.242144
+True EVD for 3 demonstrations: 9.818896
+Avar bound for threshold 0.1: 9.918619
+INSUFFICIENT (9.918619 >= 0.1)
+Avar bound for threshold 0.2: 9.918619
+INSUFFICIENT (9.918619 >= 0.2)
+Avar bound for threshold 0.3: 9.918619
+INSUFFICIENT (9.918619 >= 0.3)
+Avar bound for threshold 0.4: 9.918619
+INSUFFICIENT (9.918619 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 3/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6218
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.47077966  0.2811011  -0.8362707 ]
+True reward weights: [-0.71046942 -0.64188771  0.28846728]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.042371
+0.9-VaR-max-normalization for 1 demonstrations: 9.564033
+0.95-VaR-max-normalization for 1 demonstrations: 10.044122
+0.99-VaR-max-normalization for 1 demonstrations: 10.341625
+True EVD for 1 demonstrations: 10.190396
+Avar bound for threshold 0.1: 10.044122
+INSUFFICIENT (10.044122 >= 0.1)
+Avar bound for threshold 0.2: 10.044122
+INSUFFICIENT (10.044122 >= 0.2)
+Avar bound for threshold 0.3: 10.044122
+INSUFFICIENT (10.044122 >= 0.3)
+Avar bound for threshold 0.4: 10.044122
+INSUFFICIENT (10.044122 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6300
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.68148239 -0.22926987  0.6949943 ]
+True reward weights: [-0.71046942 -0.64188771  0.28846728]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.094444
+0.9-VaR-max-normalization for 2 demonstrations: 1.098093
+0.95-VaR-max-normalization for 2 demonstrations: 1.102107
+0.99-VaR-max-normalization for 2 demonstrations: 1.105372
+True EVD for 2 demonstrations: 0.003318
+Avar bound for threshold 0.1: 1.102107
+INSUFFICIENT (1.102107 >= 0.1)
+Avar bound for threshold 0.2: 1.102107
+INSUFFICIENT (1.102107 >= 0.2)
+Avar bound for threshold 0.3: 1.102107
+INSUFFICIENT (1.102107 >= 0.3)
+Avar bound for threshold 0.4: 1.102107
+INSUFFICIENT (1.102107 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6208
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.8397098  -0.16926992  0.5159798 ]
+True reward weights: [-0.71046942 -0.64188771  0.28846728]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095893
+0.9-VaR-max-normalization for 3 demonstrations: 1.099260
+0.95-VaR-max-normalization for 3 demonstrations: 1.102567
+0.99-VaR-max-normalization for 3 demonstrations: 1.105313
+True EVD for 3 demonstrations: 0.003318
+Avar bound for threshold 0.1: 1.102567
+INSUFFICIENT (1.102567 >= 0.1)
+Avar bound for threshold 0.2: 1.102567
+INSUFFICIENT (1.102567 >= 0.2)
+Avar bound for threshold 0.3: 1.102567
+INSUFFICIENT (1.102567 >= 0.3)
+Avar bound for threshold 0.4: 1.102567
+INSUFFICIENT (1.102567 >= 0.4)
+
+Running experiment 4/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.6234
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.43707287  0.2838907  -0.85344793]
+True reward weights: [-0.89578956 -0.24432685  0.37130237]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.788960
+0.9-VaR-max-normalization for 1 demonstrations: 9.416188
+0.95-VaR-max-normalization for 1 demonstrations: 9.927353
+0.99-VaR-max-normalization for 1 demonstrations: 10.295725
+True EVD for 1 demonstrations: 8.462154
+Avar bound for threshold 0.1: 9.927353
+INSUFFICIENT (9.927353 >= 0.1)
+Avar bound for threshold 0.2: 9.927353
+INSUFFICIENT (9.927353 >= 0.2)
+Avar bound for threshold 0.3: 9.927353
+INSUFFICIENT (9.927353 >= 0.3)
+Avar bound for threshold 0.4: 9.927353
+INSUFFICIENT (9.927353 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.6176
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-9.99983309e-01  4.46037798e-04  5.76042207e-03]
+True reward weights: [-0.89578956 -0.24432685  0.37130237]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.980183
+0.9-VaR-max-normalization for 2 demonstrations: 1.064762
+0.95-VaR-max-normalization for 2 demonstrations: 1.119529
+0.99-VaR-max-normalization for 2 demonstrations: 1.165417
+True EVD for 2 demonstrations: 0.944896
+Avar bound for threshold 0.1: 1.119529
+INSUFFICIENT (1.119529 >= 0.1)
+Avar bound for threshold 0.2: 1.119529
+INSUFFICIENT (1.119529 >= 0.2)
+Avar bound for threshold 0.3: 1.119529
+INSUFFICIENT (1.119529 >= 0.3)
+Avar bound for threshold 0.4: 1.119529
+INSUFFICIENT (1.119529 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.6224
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.69938592 -0.22463767  0.67852579]
+True reward weights: [-0.89578956 -0.24432685  0.37130237]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094734
+0.9-VaR-max-normalization for 3 demonstrations: 1.098251
+0.95-VaR-max-normalization for 3 demonstrations: 1.101575
+0.99-VaR-max-normalization for 3 demonstrations: 1.105118
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.101575
+INSUFFICIENT (1.101575 >= 0.1)
+Avar bound for threshold 0.2: 1.101575
+INSUFFICIENT (1.101575 >= 0.2)
+Avar bound for threshold 0.3: 1.101575
+INSUFFICIENT (1.101575 >= 0.3)
+Avar bound for threshold 0.4: 1.101575
+INSUFFICIENT (1.101575 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 5/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6274
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99987453 -0.00741838  0.01399628]
+True reward weights: [-0.7282924  -0.22722733  0.64649665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095187
+0.9-VaR-max-normalization for 1 demonstrations: 1.098675
+0.95-VaR-max-normalization for 1 demonstrations: 1.102204
+0.99-VaR-max-normalization for 1 demonstrations: 1.105305
+True EVD for 1 demonstrations: 0.002499
+Avar bound for threshold 0.1: 1.102204
+INSUFFICIENT (1.102204 >= 0.1)
+Avar bound for threshold 0.2: 1.102204
+INSUFFICIENT (1.102204 >= 0.2)
+Avar bound for threshold 0.3: 1.102204
+INSUFFICIENT (1.102204 >= 0.3)
+Avar bound for threshold 0.4: 1.102204
+INSUFFICIENT (1.102204 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6282
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.94842856 -0.10193132  0.3001554 ]
+True reward weights: [-0.7282924  -0.22722733  0.64649665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095612
+0.9-VaR-max-normalization for 2 demonstrations: 1.098673
+0.95-VaR-max-normalization for 2 demonstrations: 1.102369
+0.99-VaR-max-normalization for 2 demonstrations: 1.105118
+True EVD for 2 demonstrations: 0.002499
+Avar bound for threshold 0.1: 1.102369
+INSUFFICIENT (1.102369 >= 0.1)
+Avar bound for threshold 0.2: 1.102369
+INSUFFICIENT (1.102369 >= 0.2)
+Avar bound for threshold 0.3: 1.102369
+INSUFFICIENT (1.102369 >= 0.3)
+Avar bound for threshold 0.4: 1.102369
+INSUFFICIENT (1.102369 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6084
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.99731502  0.02427664 -0.0690898 ]
+True reward weights: [-0.7282924  -0.22722733  0.64649665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 9.008253
+0.9-VaR-max-normalization for 3 demonstrations: 9.488634
+0.95-VaR-max-normalization for 3 demonstrations: 9.960154
+0.99-VaR-max-normalization for 3 demonstrations: 10.229673
+True EVD for 3 demonstrations: 9.245196
+Avar bound for threshold 0.1: 9.960154
+INSUFFICIENT (9.960154 >= 0.1)
+Avar bound for threshold 0.2: 9.960154
+INSUFFICIENT (9.960154 >= 0.2)
+Avar bound for threshold 0.3: 9.960154
+INSUFFICIENT (9.960154 >= 0.3)
+Avar bound for threshold 0.4: 9.960154
+INSUFFICIENT (9.960154 >= 0.4)
+
+Running experiment 6/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.6212
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.75210465 -0.21088048  0.62439413]
+True reward weights: [-0.75022399 -0.57596895  0.32469021]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.931319
+0.9-VaR-max-normalization for 1 demonstrations: 0.989218
+0.95-VaR-max-normalization for 1 demonstrations: 1.028289
+0.99-VaR-max-normalization for 1 demonstrations: 1.041585
+True EVD for 1 demonstrations: 0.000931
+Avar bound for threshold 0.1: 1.028289
+INSUFFICIENT (1.028289 >= 0.1)
+Avar bound for threshold 0.2: 1.028289
+INSUFFICIENT (1.028289 >= 0.2)
+Avar bound for threshold 0.3: 1.028289
+INSUFFICIENT (1.028289 >= 0.3)
+Avar bound for threshold 0.4: 1.028289
+INSUFFICIENT (1.028289 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.6096
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.57615899 -0.25604031  0.77619854]
+True reward weights: [-0.75022399 -0.57596895  0.32469021]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.907491
+0.9-VaR-max-normalization for 2 demonstrations: 0.962459
+0.95-VaR-max-normalization for 2 demonstrations: 1.014756
+0.99-VaR-max-normalization for 2 demonstrations: 1.039933
+True EVD for 2 demonstrations: 0.000931
+Avar bound for threshold 0.1: 1.014756
+INSUFFICIENT (1.014756 >= 0.1)
+Avar bound for threshold 0.2: 1.014756
+INSUFFICIENT (1.014756 >= 0.2)
+Avar bound for threshold 0.3: 1.014756
+INSUFFICIENT (1.014756 >= 0.3)
+Avar bound for threshold 0.4: 1.014756
+INSUFFICIENT (1.014756 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.6236
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [0.10944579 0.49050163 0.86454021]
+True reward weights: [-0.75022399 -0.57596895  0.32469021]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.874794
+0.9-VaR-max-normalization for 3 demonstrations: 0.967993
+0.95-VaR-max-normalization for 3 demonstrations: 1.016791
+0.99-VaR-max-normalization for 3 demonstrations: 1.040911
+True EVD for 3 demonstrations: 0.000931
+Avar bound for threshold 0.1: 1.016791
+INSUFFICIENT (1.016791 >= 0.1)
+Avar bound for threshold 0.2: 1.016791
+INSUFFICIENT (1.016791 >= 0.2)
+Avar bound for threshold 0.3: 1.016791
+INSUFFICIENT (1.016791 >= 0.3)
+Avar bound for threshold 0.4: 1.016791
+INSUFFICIENT (1.016791 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 7/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6302
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.40012147  0.28802262 -0.87002631]
+True reward weights: [-0.70842322 -0.26108332  0.65572254]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.997418
+0.9-VaR-max-normalization for 1 demonstrations: 9.491441
+0.95-VaR-max-normalization for 1 demonstrations: 10.012287
+0.99-VaR-max-normalization for 1 demonstrations: 10.317872
+True EVD for 1 demonstrations: 9.398750
+Avar bound for threshold 0.1: 10.012287
+INSUFFICIENT (10.012287 >= 0.1)
+Avar bound for threshold 0.2: 10.012287
+INSUFFICIENT (10.012287 >= 0.2)
+Avar bound for threshold 0.3: 10.012287
+INSUFFICIENT (10.012287 >= 0.3)
+Avar bound for threshold 0.4: 10.012287
+INSUFFICIENT (10.012287 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6270
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.92855005  0.11611079 -0.3525806 ]
+True reward weights: [-0.70842322 -0.26108332  0.65572254]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 9.022427
+0.9-VaR-max-normalization for 2 demonstrations: 9.648954
+0.95-VaR-max-normalization for 2 demonstrations: 9.986154
+0.99-VaR-max-normalization for 2 demonstrations: 10.275076
+True EVD for 2 demonstrations: 9.398750
+Avar bound for threshold 0.1: 9.986154
+INSUFFICIENT (9.986154 >= 0.1)
+Avar bound for threshold 0.2: 9.986154
+INSUFFICIENT (9.986154 >= 0.2)
+Avar bound for threshold 0.3: 9.986154
+INSUFFICIENT (9.986154 >= 0.3)
+Avar bound for threshold 0.4: 9.986154
+INSUFFICIENT (9.986154 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6248
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.85083342 -0.16387421  0.49922713]
+True reward weights: [-0.70842322 -0.26108332  0.65572254]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094521
+0.9-VaR-max-normalization for 3 demonstrations: 1.098855
+0.95-VaR-max-normalization for 3 demonstrations: 1.102285
+0.99-VaR-max-normalization for 3 demonstrations: 1.105709
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102285
+INSUFFICIENT (1.102285 >= 0.1)
+Avar bound for threshold 0.2: 1.102285
+INSUFFICIENT (1.102285 >= 0.2)
+Avar bound for threshold 0.3: 1.102285
+INSUFFICIENT (1.102285 >= 0.3)
+Avar bound for threshold 0.4: 1.102285
+INSUFFICIENT (1.102285 >= 0.4)
+
+Running experiment 8/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.6234
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99482028  0.00356213  0.101587  ]
+True reward weights: [-0.74635145 -0.57484795  0.33542412]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095202
+0.9-VaR-max-normalization for 1 demonstrations: 1.098789
+0.95-VaR-max-normalization for 1 demonstrations: 1.101806
+0.99-VaR-max-normalization for 1 demonstrations: 1.105147
+True EVD for 1 demonstrations: 0.005068
+Avar bound for threshold 0.1: 1.101806
+INSUFFICIENT (1.101806 >= 0.1)
+Avar bound for threshold 0.2: 1.101806
+INSUFFICIENT (1.101806 >= 0.2)
+Avar bound for threshold 0.3: 1.101806
+INSUFFICIENT (1.101806 >= 0.3)
+Avar bound for threshold 0.4: 1.101806
+INSUFFICIENT (1.101806 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.6182
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.42809907  0.28827399 -0.85652162]
+True reward weights: [-0.74635145 -0.57484795  0.33542412]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.279931
+0.9-VaR-max-normalization for 2 demonstrations: 9.256776
+0.95-VaR-max-normalization for 2 demonstrations: 9.901764
+0.99-VaR-max-normalization for 2 demonstrations: 10.224006
+True EVD for 2 demonstrations: 9.969959
+Avar bound for threshold 0.1: 9.901764
+INSUFFICIENT (9.901764 >= 0.1)
+Avar bound for threshold 0.2: 9.901764
+INSUFFICIENT (9.901764 >= 0.2)
+Avar bound for threshold 0.3: 9.901764
+INSUFFICIENT (9.901764 >= 0.3)
+Avar bound for threshold 0.4: 9.901764
+INSUFFICIENT (9.901764 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.6186
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.94777963 -0.10268038  0.30194454]
+True reward weights: [-0.74635145 -0.57484795  0.33542412]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094670
+0.9-VaR-max-normalization for 3 demonstrations: 1.097846
+0.95-VaR-max-normalization for 3 demonstrations: 1.102350
+0.99-VaR-max-normalization for 3 demonstrations: 1.105208
+True EVD for 3 demonstrations: 0.005068
+Avar bound for threshold 0.1: 1.102350
+INSUFFICIENT (1.102350 >= 0.1)
+Avar bound for threshold 0.2: 1.102350
+INSUFFICIENT (1.102350 >= 0.2)
+Avar bound for threshold 0.3: 1.102350
+INSUFFICIENT (1.102350 >= 0.3)
+Avar bound for threshold 0.4: 1.102350
+INSUFFICIENT (1.102350 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 9/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.6262
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.91069593  0.41002313  0.0501393 ]
+True reward weights: [-0.0505111  -0.01531811  0.99860602]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.763770
+0.9-VaR-max-normalization for 1 demonstrations: 9.477029
+0.95-VaR-max-normalization for 1 demonstrations: 10.062437
+0.99-VaR-max-normalization for 1 demonstrations: 10.306618
+True EVD for 1 demonstrations: 10.267589
+Avar bound for threshold 0.1: 10.062437
+INSUFFICIENT (10.062437 >= 0.1)
+Avar bound for threshold 0.2: 10.062437
+INSUFFICIENT (10.062437 >= 0.2)
+Avar bound for threshold 0.3: 10.062437
+INSUFFICIENT (10.062437 >= 0.3)
+Avar bound for threshold 0.4: 10.062437
+INSUFFICIENT (10.062437 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.6032
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.96022642 -0.08734969  0.26520794]
+True reward weights: [-0.0505111  -0.01531811  0.99860602]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.094217
+0.9-VaR-max-normalization for 2 demonstrations: 1.098052
+0.95-VaR-max-normalization for 2 demonstrations: 1.101646
+0.99-VaR-max-normalization for 2 demonstrations: 1.104609
+True EVD for 2 demonstrations: 0.008828
+Avar bound for threshold 0.1: 1.101646
+INSUFFICIENT (1.101646 >= 0.1)
+Avar bound for threshold 0.2: 1.101646
+INSUFFICIENT (1.101646 >= 0.2)
+Avar bound for threshold 0.3: 1.101646
+INSUFFICIENT (1.101646 >= 0.3)
+Avar bound for threshold 0.4: 1.101646
+INSUFFICIENT (1.101646 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.6202
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.89158339  0.14120164 -0.43028033]
+True reward weights: [-0.0505111  -0.01531811  0.99860602]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.783300
+0.9-VaR-max-normalization for 3 demonstrations: 9.513164
+0.95-VaR-max-normalization for 3 demonstrations: 9.994367
+0.99-VaR-max-normalization for 3 demonstrations: 10.251764
+True EVD for 3 demonstrations: 10.267589
+Avar bound for threshold 0.1: 9.994367
+INSUFFICIENT (9.994367 >= 0.1)
+Avar bound for threshold 0.2: 9.994367
+INSUFFICIENT (9.994367 >= 0.2)
+Avar bound for threshold 0.3: 9.994367
+INSUFFICIENT (9.994367 >= 0.3)
+Avar bound for threshold 0.4: 9.994367
+INSUFFICIENT (9.994367 >= 0.4)
+
+Running experiment 10/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6190
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.58500816 -0.25799632  0.76889749]
+True reward weights: [-0.76518493 -0.64328377  0.02603879]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.899537
+0.9-VaR-max-normalization for 1 demonstrations: 0.966410
+0.95-VaR-max-normalization for 1 demonstrations: 1.016150
+0.99-VaR-max-normalization for 1 demonstrations: 1.041466
+True EVD for 1 demonstrations: 0.001153
+Avar bound for threshold 0.1: 1.016150
+INSUFFICIENT (1.016150 >= 0.1)
+Avar bound for threshold 0.2: 1.016150
+INSUFFICIENT (1.016150 >= 0.2)
+Avar bound for threshold 0.3: 1.016150
+INSUFFICIENT (1.016150 >= 0.3)
+Avar bound for threshold 0.4: 1.016150
+INSUFFICIENT (1.016150 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6190
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.62039365 -0.24752547  0.7442062 ]
+True reward weights: [-0.76518493 -0.64328377  0.02603879]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.892400
+0.9-VaR-max-normalization for 2 demonstrations: 0.955581
+0.95-VaR-max-normalization for 2 demonstrations: 1.011701
+0.99-VaR-max-normalization for 2 demonstrations: 1.037248
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.011701
+INSUFFICIENT (1.011701 >= 0.1)
+Avar bound for threshold 0.2: 1.011701
+INSUFFICIENT (1.011701 >= 0.2)
+Avar bound for threshold 0.3: 1.011701
+INSUFFICIENT (1.011701 >= 0.3)
+Avar bound for threshold 0.4: 1.011701
+INSUFFICIENT (1.011701 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6190
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.81064359 -0.18754666  0.554692  ]
+True reward weights: [-0.76518493 -0.64328377  0.02603879]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.867038
+0.9-VaR-max-normalization for 3 demonstrations: 0.934319
+0.95-VaR-max-normalization for 3 demonstrations: 0.996018
+0.99-VaR-max-normalization for 3 demonstrations: 1.040661
+True EVD for 3 demonstrations: 0.001153
+Avar bound for threshold 0.1: 0.996018
+INSUFFICIENT (0.996018 >= 0.1)
+Avar bound for threshold 0.2: 0.996018
+INSUFFICIENT (0.996018 >= 0.2)
+Avar bound for threshold 0.3: 0.996018
+INSUFFICIENT (0.996018 >= 0.3)
+Avar bound for threshold 0.4: 0.996018
+INSUFFICIENT (0.996018 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 11/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.6134
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.75408893  0.20798116 -0.62297169]
+True reward weights: [-0.87829137 -0.24439244  0.41094598]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.982659
+0.9-VaR-max-normalization for 1 demonstrations: 9.605632
+0.95-VaR-max-normalization for 1 demonstrations: 10.046003
+0.99-VaR-max-normalization for 1 demonstrations: 10.291100
+True EVD for 1 demonstrations: 8.598725
+Avar bound for threshold 0.1: 10.046003
+INSUFFICIENT (10.046003 >= 0.1)
+Avar bound for threshold 0.2: 10.046003
+INSUFFICIENT (10.046003 >= 0.2)
+Avar bound for threshold 0.3: 10.046003
+INSUFFICIENT (10.046003 >= 0.3)
+Avar bound for threshold 0.4: 10.046003
+INSUFFICIENT (10.046003 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.6202
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.21166772  0.30906364 -0.92718738]
+True reward weights: [-0.87829137 -0.24439244  0.41094598]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.973939
+0.9-VaR-max-normalization for 2 demonstrations: 9.568760
+0.95-VaR-max-normalization for 2 demonstrations: 9.965618
+0.99-VaR-max-normalization for 2 demonstrations: 10.228736
+True EVD for 2 demonstrations: 8.598725
+Avar bound for threshold 0.1: 9.965618
+INSUFFICIENT (9.965618 >= 0.1)
+Avar bound for threshold 0.2: 9.965618
+INSUFFICIENT (9.965618 >= 0.2)
+Avar bound for threshold 0.3: 9.965618
+INSUFFICIENT (9.965618 >= 0.3)
+Avar bound for threshold 0.4: 9.965618
+INSUFFICIENT (9.965618 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.6190
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.97458713  0.0710844  -0.21243101]
+True reward weights: [-0.87829137 -0.24439244  0.41094598]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.777657
+0.9-VaR-max-normalization for 3 demonstrations: 9.547945
+0.95-VaR-max-normalization for 3 demonstrations: 10.024251
+0.99-VaR-max-normalization for 3 demonstrations: 10.245254
+True EVD for 3 demonstrations: 8.598725
+Avar bound for threshold 0.1: 10.024251
+INSUFFICIENT (10.024251 >= 0.1)
+Avar bound for threshold 0.2: 10.024251
+INSUFFICIENT (10.024251 >= 0.2)
+Avar bound for threshold 0.3: 10.024251
+INSUFFICIENT (10.024251 >= 0.3)
+Avar bound for threshold 0.4: 10.024251
+INSUFFICIENT (10.024251 >= 0.4)
+
+Running experiment 12/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.6364
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99901587  0.01480882 -0.04180887]
+True reward weights: [-0.8497926  -0.50850291  0.13884283]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.847061
+0.9-VaR-max-normalization for 1 demonstrations: 9.469799
+0.95-VaR-max-normalization for 1 demonstrations: 10.025306
+0.99-VaR-max-normalization for 1 demonstrations: 10.282867
+True EVD for 1 demonstrations: 9.327611
+Avar bound for threshold 0.1: 10.025306
+INSUFFICIENT (10.025306 >= 0.1)
+Avar bound for threshold 0.2: 10.025306
+INSUFFICIENT (10.025306 >= 0.2)
+Avar bound for threshold 0.3: 10.025306
+INSUFFICIENT (10.025306 >= 0.3)
+Avar bound for threshold 0.4: 10.025306
+INSUFFICIENT (10.025306 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.6274
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.56028208  0.8264103  -0.05594649]
+True reward weights: [-0.8497926  -0.50850291  0.13884283]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.863334
+0.9-VaR-max-normalization for 2 demonstrations: 9.523891
+0.95-VaR-max-normalization for 2 demonstrations: 9.933319
+0.99-VaR-max-normalization for 2 demonstrations: 10.254114
+True EVD for 2 demonstrations: 9.327611
+Avar bound for threshold 0.1: 9.933319
+INSUFFICIENT (9.933319 >= 0.1)
+Avar bound for threshold 0.2: 9.933319
+INSUFFICIENT (9.933319 >= 0.2)
+Avar bound for threshold 0.3: 9.933319
+INSUFFICIENT (9.933319 >= 0.3)
+Avar bound for threshold 0.4: 9.933319
+INSUFFICIENT (9.933319 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.6108
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.94266594 -0.10567959  0.31656398]
+True reward weights: [-0.8497926  -0.50850291  0.13884283]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095114
+0.9-VaR-max-normalization for 3 demonstrations: 1.098215
+0.95-VaR-max-normalization for 3 demonstrations: 1.101616
+0.99-VaR-max-normalization for 3 demonstrations: 1.104909
+True EVD for 3 demonstrations: 0.002672
+Avar bound for threshold 0.1: 1.101616
+INSUFFICIENT (1.101616 >= 0.1)
+Avar bound for threshold 0.2: 1.101616
+INSUFFICIENT (1.101616 >= 0.2)
+Avar bound for threshold 0.3: 1.101616
+INSUFFICIENT (1.101616 >= 0.3)
+Avar bound for threshold 0.4: 1.101616
+INSUFFICIENT (1.101616 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 13/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6256
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.92509195 -0.2303633  -0.30189011]
+True reward weights: [-0.34477193 -0.32328333  0.88126058]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.819011
+0.9-VaR-max-normalization for 1 demonstrations: 9.492288
+0.95-VaR-max-normalization for 1 demonstrations: 9.998202
+0.99-VaR-max-normalization for 1 demonstrations: 10.301351
+True EVD for 1 demonstrations: 10.301335
+Avar bound for threshold 0.1: 9.998202
+INSUFFICIENT (9.998202 >= 0.1)
+Avar bound for threshold 0.2: 9.998202
+INSUFFICIENT (9.998202 >= 0.2)
+Avar bound for threshold 0.3: 9.998202
+INSUFFICIENT (9.998202 >= 0.3)
+Avar bound for threshold 0.4: 9.998202
+INSUFFICIENT (9.998202 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6112
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.9957581   0.02869113 -0.08742213]
+True reward weights: [-0.34477193 -0.32328333  0.88126058]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.860077
+0.9-VaR-max-normalization for 2 demonstrations: 9.579702
+0.95-VaR-max-normalization for 2 demonstrations: 9.992736
+0.99-VaR-max-normalization for 2 demonstrations: 10.252088
+True EVD for 2 demonstrations: 10.301335
+Avar bound for threshold 0.1: 9.992736
+INSUFFICIENT (9.992736 >= 0.1)
+Avar bound for threshold 0.2: 9.992736
+INSUFFICIENT (9.992736 >= 0.2)
+Avar bound for threshold 0.3: 9.992736
+INSUFFICIENT (9.992736 >= 0.3)
+Avar bound for threshold 0.4: 9.992736
+INSUFFICIENT (9.992736 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6272
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.93568085 -0.11138996  0.33480385]
+True reward weights: [-0.34477193 -0.32328333  0.88126058]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.093760
+0.9-VaR-max-normalization for 3 demonstrations: 1.096693
+0.95-VaR-max-normalization for 3 demonstrations: 1.100822
+0.99-VaR-max-normalization for 3 demonstrations: 1.104304
+True EVD for 3 demonstrations: 0.009255
+Avar bound for threshold 0.1: 1.100822
+INSUFFICIENT (1.100822 >= 0.1)
+Avar bound for threshold 0.2: 1.100822
+INSUFFICIENT (1.100822 >= 0.2)
+Avar bound for threshold 0.3: 1.100822
+INSUFFICIENT (1.100822 >= 0.3)
+Avar bound for threshold 0.4: 1.100822
+INSUFFICIENT (1.100822 >= 0.4)
+
+Running experiment 14/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.6158
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.03351282 -0.31561042  0.94829687]
+True reward weights: [-0.43088031 -0.17122291  0.88601629]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.893510
+0.9-VaR-max-normalization for 1 demonstrations: 0.958616
+0.95-VaR-max-normalization for 1 demonstrations: 1.017230
+0.99-VaR-max-normalization for 1 demonstrations: 1.038311
+True EVD for 1 demonstrations: 0.000074
+Avar bound for threshold 0.1: 1.017230
+INSUFFICIENT (1.017230 >= 0.1)
+Avar bound for threshold 0.2: 1.017230
+INSUFFICIENT (1.017230 >= 0.2)
+Avar bound for threshold 0.3: 1.017230
+INSUFFICIENT (1.017230 >= 0.3)
+Avar bound for threshold 0.4: 1.017230
+INSUFFICIENT (1.017230 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.6240
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.05858015 -0.31511579  0.94724358]
+True reward weights: [-0.43088031 -0.17122291  0.88601629]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.916299
+0.9-VaR-max-normalization for 2 demonstrations: 0.970503
+0.95-VaR-max-normalization for 2 demonstrations: 1.010527
+0.99-VaR-max-normalization for 2 demonstrations: 1.037298
+True EVD for 2 demonstrations: 0.000074
+Avar bound for threshold 0.1: 1.010527
+INSUFFICIENT (1.010527 >= 0.1)
+Avar bound for threshold 0.2: 1.010527
+INSUFFICIENT (1.010527 >= 0.2)
+Avar bound for threshold 0.3: 1.010527
+INSUFFICIENT (1.010527 >= 0.3)
+Avar bound for threshold 0.4: 1.010527
+INSUFFICIENT (1.010527 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.6098
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.58064899 -0.25669712  0.77262756]
+True reward weights: [-0.43088031 -0.17122291  0.88601629]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.916719
+0.9-VaR-max-normalization for 3 demonstrations: 0.970429
+0.95-VaR-max-normalization for 3 demonstrations: 1.018142
+0.99-VaR-max-normalization for 3 demonstrations: 1.039251
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.018142
+INSUFFICIENT (1.018142 >= 0.1)
+Avar bound for threshold 0.2: 1.018142
+INSUFFICIENT (1.018142 >= 0.2)
+Avar bound for threshold 0.3: 1.018142
+INSUFFICIENT (1.018142 >= 0.3)
+Avar bound for threshold 0.4: 1.018142
+INSUFFICIENT (1.018142 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 15/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6240
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.60026169 -0.25256489  0.7588787 ]
+True reward weights: [-0.75433776 -0.02805593  0.65588674]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.903505
+0.9-VaR-max-normalization for 1 demonstrations: 0.969595
+0.95-VaR-max-normalization for 1 demonstrations: 1.026507
+0.99-VaR-max-normalization for 1 demonstrations: 1.045484
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.026507
+INSUFFICIENT (1.026507 >= 0.1)
+Avar bound for threshold 0.2: 1.026507
+INSUFFICIENT (1.026507 >= 0.2)
+Avar bound for threshold 0.3: 1.026507
+INSUFFICIENT (1.026507 >= 0.3)
+Avar bound for threshold 0.4: 1.026507
+INSUFFICIENT (1.026507 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6218
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.88632542 -0.14723274  0.43903277]
+True reward weights: [-0.75433776 -0.02805593  0.65588674]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.892366
+0.9-VaR-max-normalization for 2 demonstrations: 0.966111
+0.95-VaR-max-normalization for 2 demonstrations: 1.019250
+0.99-VaR-max-normalization for 2 demonstrations: 1.040295
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.019250
+INSUFFICIENT (1.019250 >= 0.1)
+Avar bound for threshold 0.2: 1.019250
+INSUFFICIENT (1.019250 >= 0.2)
+Avar bound for threshold 0.3: 1.019250
+INSUFFICIENT (1.019250 >= 0.3)
+Avar bound for threshold 0.4: 1.019250
+INSUFFICIENT (1.019250 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6210
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.70031057 -0.22293363  0.67813399]
+True reward weights: [-0.75433776 -0.02805593  0.65588674]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.820679
+0.9-VaR-max-normalization for 3 demonstrations: 0.917030
+0.95-VaR-max-normalization for 3 demonstrations: 0.985576
+0.99-VaR-max-normalization for 3 demonstrations: 1.035203
+True EVD for 3 demonstrations: 0.013438
+Avar bound for threshold 0.1: 0.985576
+INSUFFICIENT (0.985576 >= 0.1)
+Avar bound for threshold 0.2: 0.985576
+INSUFFICIENT (0.985576 >= 0.2)
+Avar bound for threshold 0.3: 0.985576
+INSUFFICIENT (0.985576 >= 0.3)
+Avar bound for threshold 0.4: 0.985576
+INSUFFICIENT (0.985576 >= 0.4)
+
+Running experiment 16/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.6194
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.62041807  0.24732689 -0.74425186]
+True reward weights: [-0.92032338 -0.11683579  0.37330186]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.828901
+0.9-VaR-max-normalization for 1 demonstrations: 9.471334
+0.95-VaR-max-normalization for 1 demonstrations: 9.990896
+0.99-VaR-max-normalization for 1 demonstrations: 10.304389
+True EVD for 1 demonstrations: 7.677389
+Avar bound for threshold 0.1: 9.990896
+INSUFFICIENT (9.990896 >= 0.1)
+Avar bound for threshold 0.2: 9.990896
+INSUFFICIENT (9.990896 >= 0.2)
+Avar bound for threshold 0.3: 9.990896
+INSUFFICIENT (9.990896 >= 0.3)
+Avar bound for threshold 0.4: 9.990896
+INSUFFICIENT (9.990896 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.6278
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.99583564  0.02588444 -0.0874149 ]
+True reward weights: [-0.92032338 -0.11683579  0.37330186]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 9.019720
+0.9-VaR-max-normalization for 2 demonstrations: 9.542580
+0.95-VaR-max-normalization for 2 demonstrations: 9.966559
+0.99-VaR-max-normalization for 2 demonstrations: 10.240813
+True EVD for 2 demonstrations: 7.677389
+Avar bound for threshold 0.1: 9.966559
+INSUFFICIENT (9.966559 >= 0.1)
+Avar bound for threshold 0.2: 9.966559
+INSUFFICIENT (9.966559 >= 0.2)
+Avar bound for threshold 0.3: 9.966559
+INSUFFICIENT (9.966559 >= 0.3)
+Avar bound for threshold 0.4: 9.966559
+INSUFFICIENT (9.966559 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.6252
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.86481172 -0.15779786  0.47665557]
+True reward weights: [-0.92032338 -0.11683579  0.37330186]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.097213
+0.9-VaR-max-normalization for 3 demonstrations: 1.100120
+0.95-VaR-max-normalization for 3 demonstrations: 1.103428
+0.99-VaR-max-normalization for 3 demonstrations: 1.105691
+True EVD for 3 demonstrations: 0.000785
+Avar bound for threshold 0.1: 1.103428
+INSUFFICIENT (1.103428 >= 0.1)
+Avar bound for threshold 0.2: 1.103428
+INSUFFICIENT (1.103428 >= 0.2)
+Avar bound for threshold 0.3: 1.103428
+INSUFFICIENT (1.103428 >= 0.3)
+Avar bound for threshold 0.4: 1.103428
+INSUFFICIENT (1.103428 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 17/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.6234
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.62158294 -0.24729704  0.74328919]
+True reward weights: [-0.76208548 -0.28664819  0.58056743]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.096456
+0.9-VaR-max-normalization for 1 demonstrations: 1.099653
+0.95-VaR-max-normalization for 1 demonstrations: 1.103029
+0.99-VaR-max-normalization for 1 demonstrations: 1.106318
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.103029
+INSUFFICIENT (1.103029 >= 0.1)
+Avar bound for threshold 0.2: 1.103029
+INSUFFICIENT (1.103029 >= 0.2)
+Avar bound for threshold 0.3: 1.103029
+INSUFFICIENT (1.103029 >= 0.3)
+Avar bound for threshold 0.4: 1.103029
+INSUFFICIENT (1.103029 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.6278
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.95895849 -0.0891242   0.26917558]
+True reward weights: [-0.76208548 -0.28664819  0.58056743]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.094626
+0.9-VaR-max-normalization for 2 demonstrations: 1.098488
+0.95-VaR-max-normalization for 2 demonstrations: 1.102553
+0.99-VaR-max-normalization for 2 demonstrations: 1.105226
+True EVD for 2 demonstrations: 0.002593
+Avar bound for threshold 0.1: 1.102553
+INSUFFICIENT (1.102553 >= 0.1)
+Avar bound for threshold 0.2: 1.102553
+INSUFFICIENT (1.102553 >= 0.2)
+Avar bound for threshold 0.3: 1.102553
+INSUFFICIENT (1.102553 >= 0.3)
+Avar bound for threshold 0.4: 1.102553
+INSUFFICIENT (1.102553 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.6092
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.4040219   0.28741662 -0.8684227 ]
+True reward weights: [-0.76208548 -0.28664819  0.58056743]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.753803
+0.9-VaR-max-normalization for 3 demonstrations: 9.419387
+0.95-VaR-max-normalization for 3 demonstrations: 9.827666
+0.99-VaR-max-normalization for 3 demonstrations: 10.180215
+True EVD for 3 demonstrations: 9.289987
+Avar bound for threshold 0.1: 9.827666
+INSUFFICIENT (9.827666 >= 0.1)
+Avar bound for threshold 0.2: 9.827666
+INSUFFICIENT (9.827666 >= 0.2)
+Avar bound for threshold 0.3: 9.827666
+INSUFFICIENT (9.827666 >= 0.3)
+Avar bound for threshold 0.4: 9.827666
+INSUFFICIENT (9.827666 >= 0.4)
+
+Running experiment 18/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.6256
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.97568003 -0.07071038  0.20748139]
+True reward weights: [-0.39174849 -0.30341429  0.86860399]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095856
+0.9-VaR-max-normalization for 1 demonstrations: 1.099208
+0.95-VaR-max-normalization for 1 demonstrations: 1.102415
+0.99-VaR-max-normalization for 1 demonstrations: 1.104952
+True EVD for 1 demonstrations: 0.007812
+Avar bound for threshold 0.1: 1.102415
+INSUFFICIENT (1.102415 >= 0.1)
+Avar bound for threshold 0.2: 1.102415
+INSUFFICIENT (1.102415 >= 0.2)
+Avar bound for threshold 0.3: 1.102415
+INSUFFICIENT (1.102415 >= 0.3)
+Avar bound for threshold 0.4: 1.102415
+INSUFFICIENT (1.102415 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.6072
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.76523284  0.20183625 -0.61129439]
+True reward weights: [-0.39174849 -0.30341429  0.86860399]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.855191
+0.9-VaR-max-normalization for 2 demonstrations: 9.520598
+0.95-VaR-max-normalization for 2 demonstrations: 9.992157
+0.99-VaR-max-normalization for 2 demonstrations: 10.265493
+True EVD for 2 demonstrations: 10.187150
+Avar bound for threshold 0.1: 9.992157
+INSUFFICIENT (9.992157 >= 0.1)
+Avar bound for threshold 0.2: 9.992157
+INSUFFICIENT (9.992157 >= 0.2)
+Avar bound for threshold 0.3: 9.992157
+INSUFFICIENT (9.992157 >= 0.3)
+Avar bound for threshold 0.4: 9.992157
+INSUFFICIENT (9.992157 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.6168
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.85402972 -0.16175306  0.49443825]
+True reward weights: [-0.39174849 -0.30341429  0.86860399]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094861
+0.9-VaR-max-normalization for 3 demonstrations: 1.097925
+0.95-VaR-max-normalization for 3 demonstrations: 1.101748
+0.99-VaR-max-normalization for 3 demonstrations: 1.105855
+True EVD for 3 demonstrations: 0.003284
+Avar bound for threshold 0.1: 1.101748
+INSUFFICIENT (1.101748 >= 0.1)
+Avar bound for threshold 0.2: 1.101748
+INSUFFICIENT (1.101748 >= 0.2)
+Avar bound for threshold 0.3: 1.101748
+INSUFFICIENT (1.101748 >= 0.3)
+Avar bound for threshold 0.4: 1.101748
+INSUFFICIENT (1.101748 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 19/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.6152
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.72600116  0.21831166 -0.65212141]
+True reward weights: [-0.92648321 -0.16748955  0.33701054]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.042820
+0.9-VaR-max-normalization for 1 demonstrations: 9.563015
+0.95-VaR-max-normalization for 1 demonstrations: 10.036067
+0.99-VaR-max-normalization for 1 demonstrations: 10.291090
+True EVD for 1 demonstrations: 7.847452
+Avar bound for threshold 0.1: 10.036067
+INSUFFICIENT (10.036067 >= 0.1)
+Avar bound for threshold 0.2: 10.036067
+INSUFFICIENT (10.036067 >= 0.2)
+Avar bound for threshold 0.3: 10.036067
+INSUFFICIENT (10.036067 >= 0.3)
+Avar bound for threshold 0.4: 10.036067
+INSUFFICIENT (10.036067 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.6158
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.31623478  0.29828782 -0.90056646]
+True reward weights: [-0.92648321 -0.16748955  0.33701054]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.827825
+0.9-VaR-max-normalization for 2 demonstrations: 9.440801
+0.95-VaR-max-normalization for 2 demonstrations: 9.880767
+0.99-VaR-max-normalization for 2 demonstrations: 10.234949
+True EVD for 2 demonstrations: 7.847452
+Avar bound for threshold 0.1: 9.880767
+INSUFFICIENT (9.880767 >= 0.1)
+Avar bound for threshold 0.2: 9.880767
+INSUFFICIENT (9.880767 >= 0.2)
+Avar bound for threshold 0.3: 9.880767
+INSUFFICIENT (9.880767 >= 0.3)
+Avar bound for threshold 0.4: 9.880767
+INSUFFICIENT (9.880767 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.6266
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.9991314  -0.01522643  0.03878907]
+True reward weights: [-0.92648321 -0.16748955  0.33701054]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095085
+0.9-VaR-max-normalization for 3 demonstrations: 1.098498
+0.95-VaR-max-normalization for 3 demonstrations: 1.101612
+0.99-VaR-max-normalization for 3 demonstrations: 1.105038
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.101612
+INSUFFICIENT (1.101612 >= 0.1)
+Avar bound for threshold 0.2: 1.101612
+INSUFFICIENT (1.101612 >= 0.2)
+Avar bound for threshold 0.3: 1.101612
+INSUFFICIENT (1.101612 >= 0.3)
+Avar bound for threshold 0.4: 1.101612
+INSUFFICIENT (1.101612 >= 0.4)
+
+Running experiment 20/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.6110
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.96656999  0.08074984 -0.24335554]
+True reward weights: [-0.61012931 -0.3129562   0.72787406]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.083620
+0.9-VaR-max-normalization for 1 demonstrations: 9.629059
+0.95-VaR-max-normalization for 1 demonstrations: 10.018247
+0.99-VaR-max-normalization for 1 demonstrations: 10.266279
+True EVD for 1 demonstrations: 9.783296
+Avar bound for threshold 0.1: 10.018247
+INSUFFICIENT (10.018247 >= 0.1)
+Avar bound for threshold 0.2: 10.018247
+INSUFFICIENT (10.018247 >= 0.2)
+Avar bound for threshold 0.3: 10.018247
+INSUFFICIENT (10.018247 >= 0.3)
+Avar bound for threshold 0.4: 10.018247
+INSUFFICIENT (10.018247 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.6250
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.22594707  0.40198968 -0.8873287 ]
+True reward weights: [-0.61012931 -0.3129562   0.72787406]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.835163
+0.9-VaR-max-normalization for 2 demonstrations: 9.442692
+0.95-VaR-max-normalization for 2 demonstrations: 9.939493
+0.99-VaR-max-normalization for 2 demonstrations: 10.265086
+True EVD for 2 demonstrations: 9.783296
+Avar bound for threshold 0.1: 9.939493
+INSUFFICIENT (9.939493 >= 0.1)
+Avar bound for threshold 0.2: 9.939493
+INSUFFICIENT (9.939493 >= 0.2)
+Avar bound for threshold 0.3: 9.939493
+INSUFFICIENT (9.939493 >= 0.3)
+Avar bound for threshold 0.4: 9.939493
+INSUFFICIENT (9.939493 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.6290
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.19506018  0.30813139 -0.93113188]
+True reward weights: [-0.61012931 -0.3129562   0.72787406]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.954974
+0.9-VaR-max-normalization for 3 demonstrations: 9.510946
+0.95-VaR-max-normalization for 3 demonstrations: 9.956652
+0.99-VaR-max-normalization for 3 demonstrations: 10.250135
+True EVD for 3 demonstrations: 9.783296
+Avar bound for threshold 0.1: 9.956652
+INSUFFICIENT (9.956652 >= 0.1)
+Avar bound for threshold 0.2: 9.956652
+INSUFFICIENT (9.956652 >= 0.2)
+Avar bound for threshold 0.3: 9.956652
+INSUFFICIENT (9.956652 >= 0.3)
+Avar bound for threshold 0.4: 9.956652
+INSUFFICIENT (9.956652 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 21/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 21
+MCMC completed with acceptance ratio: 0.6288
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.97313794 -0.07253233  0.21849854]
+True reward weights: [-0.3738588  -0.3262014   0.86822937]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.094971
+0.9-VaR-max-normalization for 1 demonstrations: 1.098813
+0.95-VaR-max-normalization for 1 demonstrations: 1.102215
+0.99-VaR-max-normalization for 1 demonstrations: 1.105122
+True EVD for 1 demonstrations: 0.008698
+Avar bound for threshold 0.1: 1.102215
+INSUFFICIENT (1.102215 >= 0.1)
+Avar bound for threshold 0.2: 1.102215
+INSUFFICIENT (1.102215 >= 0.2)
+Avar bound for threshold 0.3: 1.102215
+INSUFFICIENT (1.102215 >= 0.3)
+Avar bound for threshold 0.4: 1.102215
+INSUFFICIENT (1.102215 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 21
+MCMC completed with acceptance ratio: 0.6190
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.79085277 -0.19390853  0.58047514]
+True reward weights: [-0.3738588  -0.3262014   0.86822937]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095665
+0.9-VaR-max-normalization for 2 demonstrations: 1.098723
+0.95-VaR-max-normalization for 2 demonstrations: 1.102469
+0.99-VaR-max-normalization for 2 demonstrations: 1.105766
+True EVD for 2 demonstrations: 0.004011
+Avar bound for threshold 0.1: 1.102469
+INSUFFICIENT (1.102469 >= 0.1)
+Avar bound for threshold 0.2: 1.102469
+INSUFFICIENT (1.102469 >= 0.2)
+Avar bound for threshold 0.3: 1.102469
+INSUFFICIENT (1.102469 >= 0.3)
+Avar bound for threshold 0.4: 1.102469
+INSUFFICIENT (1.102469 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 21
+MCMC completed with acceptance ratio: 0.6082
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.69207651 -0.22565074  0.68564702]
+True reward weights: [-0.3738588  -0.3262014   0.86822937]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094819
+0.9-VaR-max-normalization for 3 demonstrations: 1.097940
+0.95-VaR-max-normalization for 3 demonstrations: 1.101955
+0.99-VaR-max-normalization for 3 demonstrations: 1.105402
+True EVD for 3 demonstrations: 0.004011
+Avar bound for threshold 0.1: 1.101955
+INSUFFICIENT (1.101955 >= 0.1)
+Avar bound for threshold 0.2: 1.101955
+INSUFFICIENT (1.101955 >= 0.2)
+Avar bound for threshold 0.3: 1.101955
+INSUFFICIENT (1.101955 >= 0.3)
+Avar bound for threshold 0.4: 1.101955
+INSUFFICIENT (1.101955 >= 0.4)
+
+Running experiment 22/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 22
+MCMC completed with acceptance ratio: 0.6160
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.79550769  0.18977474 -0.575459  ]
+True reward weights: [-0.70965126 -0.6051058   0.36089066]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.020726
+0.9-VaR-max-normalization for 1 demonstrations: 9.619845
+0.95-VaR-max-normalization for 1 demonstrations: 10.020615
+0.99-VaR-max-normalization for 1 demonstrations: 10.292383
+True EVD for 1 demonstrations: 10.123058
+Avar bound for threshold 0.1: 10.020615
+INSUFFICIENT (10.020615 >= 0.1)
+Avar bound for threshold 0.2: 10.020615
+INSUFFICIENT (10.020615 >= 0.2)
+Avar bound for threshold 0.3: 10.020615
+INSUFFICIENT (10.020615 >= 0.3)
+Avar bound for threshold 0.4: 10.020615
+INSUFFICIENT (10.020615 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 22
+MCMC completed with acceptance ratio: 0.6178
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.93182584  0.11283814 -0.3449176 ]
+True reward weights: [-0.70965126 -0.6051058   0.36089066]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.766067
+0.9-VaR-max-normalization for 2 demonstrations: 9.460804
+0.95-VaR-max-normalization for 2 demonstrations: 10.005831
+0.99-VaR-max-normalization for 2 demonstrations: 10.258601
+True EVD for 2 demonstrations: 10.123058
+Avar bound for threshold 0.1: 10.005831
+INSUFFICIENT (10.005831 >= 0.1)
+Avar bound for threshold 0.2: 10.005831
+INSUFFICIENT (10.005831 >= 0.2)
+Avar bound for threshold 0.3: 10.005831
+INSUFFICIENT (10.005831 >= 0.3)
+Avar bound for threshold 0.4: 10.005831
+INSUFFICIENT (10.005831 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 22
+MCMC completed with acceptance ratio: 0.6072
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.38030192  0.87646843 -0.29525165]
+True reward weights: [-0.70965126 -0.6051058   0.36089066]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 9.017959
+0.9-VaR-max-normalization for 3 demonstrations: 9.586912
+0.95-VaR-max-normalization for 3 demonstrations: 9.982194
+0.99-VaR-max-normalization for 3 demonstrations: 10.252311
+True EVD for 3 demonstrations: 10.123058
+Avar bound for threshold 0.1: 9.982194
+INSUFFICIENT (9.982194 >= 0.1)
+Avar bound for threshold 0.2: 9.982194
+INSUFFICIENT (9.982194 >= 0.2)
+Avar bound for threshold 0.3: 9.982194
+INSUFFICIENT (9.982194 >= 0.3)
+Avar bound for threshold 0.4: 9.982194
+INSUFFICIENT (9.982194 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 23/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 23
+MCMC completed with acceptance ratio: 0.6152
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.1592317  -0.31199361  0.93664575]
+True reward weights: [-0.74528522 -0.55533186  0.36899385]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.866838
+0.9-VaR-max-normalization for 1 demonstrations: 0.957297
+0.95-VaR-max-normalization for 1 demonstrations: 1.008694
+0.99-VaR-max-normalization for 1 demonstrations: 1.038129
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.008694
+INSUFFICIENT (1.008694 >= 0.1)
+Avar bound for threshold 0.2: 1.008694
+INSUFFICIENT (1.008694 >= 0.2)
+Avar bound for threshold 0.3: 1.008694
+INSUFFICIENT (1.008694 >= 0.3)
+Avar bound for threshold 0.4: 1.008694
+INSUFFICIENT (1.008694 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 23
+MCMC completed with acceptance ratio: 0.6196
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.08716466 -0.31370051  0.94551273]
+True reward weights: [-0.74528522 -0.55533186  0.36899385]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.879214
+0.9-VaR-max-normalization for 2 demonstrations: 0.961585
+0.95-VaR-max-normalization for 2 demonstrations: 1.013218
+0.99-VaR-max-normalization for 2 demonstrations: 1.035257
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.013218
+INSUFFICIENT (1.013218 >= 0.1)
+Avar bound for threshold 0.2: 1.013218
+INSUFFICIENT (1.013218 >= 0.2)
+Avar bound for threshold 0.3: 1.013218
+INSUFFICIENT (1.013218 >= 0.3)
+Avar bound for threshold 0.4: 1.013218
+INSUFFICIENT (1.013218 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 23
+MCMC completed with acceptance ratio: 0.6152
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.1803403  -0.31235313  0.93269121]
+True reward weights: [-0.74528522 -0.55533186  0.36899385]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.905147
+0.9-VaR-max-normalization for 3 demonstrations: 0.960154
+0.95-VaR-max-normalization for 3 demonstrations: 1.011051
+0.99-VaR-max-normalization for 3 demonstrations: 1.033012
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.011051
+INSUFFICIENT (1.011051 >= 0.1)
+Avar bound for threshold 0.2: 1.011051
+INSUFFICIENT (1.011051 >= 0.2)
+Avar bound for threshold 0.3: 1.011051
+INSUFFICIENT (1.011051 >= 0.3)
+Avar bound for threshold 0.4: 1.011051
+INSUFFICIENT (1.011051 >= 0.4)
+
+Running experiment 24/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 24
+MCMC completed with acceptance ratio: 0.6262
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.47140379 -0.27640898  0.83748226]
+True reward weights: [-0.68144434 -0.29187893  0.6711485 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.898464
+0.9-VaR-max-normalization for 1 demonstrations: 0.965336
+0.95-VaR-max-normalization for 1 demonstrations: 1.011534
+0.99-VaR-max-normalization for 1 demonstrations: 1.036704
+True EVD for 1 demonstrations: 0.003015
+Avar bound for threshold 0.1: 1.011534
+INSUFFICIENT (1.011534 >= 0.1)
+Avar bound for threshold 0.2: 1.011534
+INSUFFICIENT (1.011534 >= 0.2)
+Avar bound for threshold 0.3: 1.011534
+INSUFFICIENT (1.011534 >= 0.3)
+Avar bound for threshold 0.4: 1.011534
+INSUFFICIENT (1.011534 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 24
+MCMC completed with acceptance ratio: 0.6198
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.59414347 -0.25530236  0.76276749]
+True reward weights: [-0.68144434 -0.29187893  0.6711485 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.881045
+0.9-VaR-max-normalization for 2 demonstrations: 0.956875
+0.95-VaR-max-normalization for 2 demonstrations: 1.001218
+0.99-VaR-max-normalization for 2 demonstrations: 1.030068
+True EVD for 2 demonstrations: 0.003015
+Avar bound for threshold 0.1: 1.001218
+INSUFFICIENT (1.001218 >= 0.1)
+Avar bound for threshold 0.2: 1.001218
+INSUFFICIENT (1.001218 >= 0.2)
+Avar bound for threshold 0.3: 1.001218
+INSUFFICIENT (1.001218 >= 0.3)
+Avar bound for threshold 0.4: 1.001218
+INSUFFICIENT (1.001218 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 24
+MCMC completed with acceptance ratio: 0.6078
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.47057115 -0.87625406 -0.10364176]
+True reward weights: [-0.68144434 -0.29187893  0.6711485 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.687746
+0.9-VaR-max-normalization for 3 demonstrations: 10.203598
+0.95-VaR-max-normalization for 3 demonstrations: 12.983532
+0.99-VaR-max-normalization for 3 demonstrations: 17.194156
+True EVD for 3 demonstrations: 6.361734
+Avar bound for threshold 0.1: 12.983532
+INSUFFICIENT (12.983532 >= 0.1)
+Avar bound for threshold 0.2: 12.983532
+INSUFFICIENT (12.983532 >= 0.2)
+Avar bound for threshold 0.3: 12.983532
+INSUFFICIENT (12.983532 >= 0.3)
+Avar bound for threshold 0.4: 12.983532
+INSUFFICIENT (12.983532 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 25/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 25
+MCMC completed with acceptance ratio: 0.6316
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99326054 -0.03819771  0.10942777]
+True reward weights: [-0.44714936 -0.30119858  0.84222139]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.094754
+0.9-VaR-max-normalization for 1 demonstrations: 1.098613
+0.95-VaR-max-normalization for 1 demonstrations: 1.102072
+0.99-VaR-max-normalization for 1 demonstrations: 1.105629
+True EVD for 1 demonstrations: 0.006528
+Avar bound for threshold 0.1: 1.102072
+INSUFFICIENT (1.102072 >= 0.1)
+Avar bound for threshold 0.2: 1.102072
+INSUFFICIENT (1.102072 >= 0.2)
+Avar bound for threshold 0.3: 1.102072
+INSUFFICIENT (1.102072 >= 0.3)
+Avar bound for threshold 0.4: 1.102072
+INSUFFICIENT (1.102072 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 25
+MCMC completed with acceptance ratio: 0.6232
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.99566537  0.03050146 -0.08786433]
+True reward weights: [-0.44714936 -0.30119858  0.84222139]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 9.004839
+0.9-VaR-max-normalization for 2 demonstrations: 9.552786
+0.95-VaR-max-normalization for 2 demonstrations: 9.973420
+0.99-VaR-max-normalization for 2 demonstrations: 10.252664
+True EVD for 2 demonstrations: 10.085555
+Avar bound for threshold 0.1: 9.973420
+INSUFFICIENT (9.973420 >= 0.1)
+Avar bound for threshold 0.2: 9.973420
+INSUFFICIENT (9.973420 >= 0.2)
+Avar bound for threshold 0.3: 9.973420
+INSUFFICIENT (9.973420 >= 0.3)
+Avar bound for threshold 0.4: 9.973420
+INSUFFICIENT (9.973420 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 25
+MCMC completed with acceptance ratio: 0.6118
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.93615683  0.11059985 -0.33373352]
+True reward weights: [-0.44714936 -0.30119858  0.84222139]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.869636
+0.9-VaR-max-normalization for 3 demonstrations: 9.488856
+0.95-VaR-max-normalization for 3 demonstrations: 9.978069
+0.99-VaR-max-normalization for 3 demonstrations: 10.243010
+True EVD for 3 demonstrations: 10.085555
+Avar bound for threshold 0.1: 9.978069
+INSUFFICIENT (9.978069 >= 0.1)
+Avar bound for threshold 0.2: 9.978069
+INSUFFICIENT (9.978069 >= 0.2)
+Avar bound for threshold 0.3: 9.978069
+INSUFFICIENT (9.978069 >= 0.3)
+Avar bound for threshold 0.4: 9.978069
+INSUFFICIENT (9.978069 >= 0.4)
+
+Running experiment 26/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 26
+MCMC completed with acceptance ratio: 0.6212
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.96947498 -0.07738941  0.23265671]
+True reward weights: [-0.7333898  -0.47830978  0.48307263]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095644
+0.9-VaR-max-normalization for 1 demonstrations: 1.099246
+0.95-VaR-max-normalization for 1 demonstrations: 1.102476
+0.99-VaR-max-normalization for 1 demonstrations: 1.105670
+True EVD for 1 demonstrations: 0.003715
+Avar bound for threshold 0.1: 1.102476
+INSUFFICIENT (1.102476 >= 0.1)
+Avar bound for threshold 0.2: 1.102476
+INSUFFICIENT (1.102476 >= 0.2)
+Avar bound for threshold 0.3: 1.102476
+INSUFFICIENT (1.102476 >= 0.3)
+Avar bound for threshold 0.4: 1.102476
+INSUFFICIENT (1.102476 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 26
+MCMC completed with acceptance ratio: 0.6144
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.93033225  0.36221585 -0.05728514]
+True reward weights: [-0.7333898  -0.47830978  0.48307263]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.876114
+0.9-VaR-max-normalization for 2 demonstrations: 9.428714
+0.95-VaR-max-normalization for 2 demonstrations: 9.938465
+0.99-VaR-max-normalization for 2 demonstrations: 10.231527
+True EVD for 2 demonstrations: 9.823389
+Avar bound for threshold 0.1: 9.938465
+INSUFFICIENT (9.938465 >= 0.1)
+Avar bound for threshold 0.2: 9.938465
+INSUFFICIENT (9.938465 >= 0.2)
+Avar bound for threshold 0.3: 9.938465
+INSUFFICIENT (9.938465 >= 0.3)
+Avar bound for threshold 0.4: 9.938465
+INSUFFICIENT (9.938465 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 26
+MCMC completed with acceptance ratio: 0.6078
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.83404357 -0.17235122  0.52408624]
+True reward weights: [-0.7333898  -0.47830978  0.48307263]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.096346
+0.9-VaR-max-normalization for 3 demonstrations: 1.099630
+0.95-VaR-max-normalization for 3 demonstrations: 1.102585
+0.99-VaR-max-normalization for 3 demonstrations: 1.105423
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102585
+INSUFFICIENT (1.102585 >= 0.1)
+Avar bound for threshold 0.2: 1.102585
+INSUFFICIENT (1.102585 >= 0.2)
+Avar bound for threshold 0.3: 1.102585
+INSUFFICIENT (1.102585 >= 0.3)
+Avar bound for threshold 0.4: 1.102585
+INSUFFICIENT (1.102585 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 27/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 27
+MCMC completed with acceptance ratio: 0.6130
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.17378233  0.31032553 -0.93461103]
+True reward weights: [-0.65557811 -0.01374154  0.75500233]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.232579
+0.9-VaR-max-normalization for 1 demonstrations: 9.661570
+0.95-VaR-max-normalization for 1 demonstrations: 10.038723
+0.99-VaR-max-normalization for 1 demonstrations: 10.314196
+True EVD for 1 demonstrations: 8.805656
+Avar bound for threshold 0.1: 10.038723
+INSUFFICIENT (10.038723 >= 0.1)
+Avar bound for threshold 0.2: 10.038723
+INSUFFICIENT (10.038723 >= 0.2)
+Avar bound for threshold 0.3: 10.038723
+INSUFFICIENT (10.038723 >= 0.3)
+Avar bound for threshold 0.4: 10.038723
+INSUFFICIENT (10.038723 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 27
+MCMC completed with acceptance ratio: 0.6258
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.63689732 -0.244798    0.73105112]
+True reward weights: [-0.65557811 -0.01374154  0.75500233]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095874
+0.9-VaR-max-normalization for 2 demonstrations: 1.098576
+0.95-VaR-max-normalization for 2 demonstrations: 1.102493
+0.99-VaR-max-normalization for 2 demonstrations: 1.105383
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102493
+INSUFFICIENT (1.102493 >= 0.1)
+Avar bound for threshold 0.2: 1.102493
+INSUFFICIENT (1.102493 >= 0.2)
+Avar bound for threshold 0.3: 1.102493
+INSUFFICIENT (1.102493 >= 0.3)
+Avar bound for threshold 0.4: 1.102493
+INSUFFICIENT (1.102493 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 27
+MCMC completed with acceptance ratio: 0.6214
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.86379842 -0.22476116 -0.45092649]
+True reward weights: [-0.65557811 -0.01374154  0.75500233]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.808643
+0.9-VaR-max-normalization for 3 demonstrations: 9.376730
+0.95-VaR-max-normalization for 3 demonstrations: 9.856735
+0.99-VaR-max-normalization for 3 demonstrations: 10.246370
+True EVD for 3 demonstrations: 8.805656
+Avar bound for threshold 0.1: 9.856735
+INSUFFICIENT (9.856735 >= 0.1)
+Avar bound for threshold 0.2: 9.856735
+INSUFFICIENT (9.856735 >= 0.2)
+Avar bound for threshold 0.3: 9.856735
+INSUFFICIENT (9.856735 >= 0.3)
+Avar bound for threshold 0.4: 9.856735
+INSUFFICIENT (9.856735 >= 0.4)
+
+Running experiment 28/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 28
+MCMC completed with acceptance ratio: 0.6112
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.55679372  0.26560041 -0.78704332]
+True reward weights: [-0.866301   -0.34967581  0.35672034]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.086863
+0.9-VaR-max-normalization for 1 demonstrations: 9.625021
+0.95-VaR-max-normalization for 1 demonstrations: 10.026292
+0.99-VaR-max-normalization for 1 demonstrations: 10.277344
+True EVD for 1 demonstrations: 8.974658
+Avar bound for threshold 0.1: 10.026292
+INSUFFICIENT (10.026292 >= 0.1)
+Avar bound for threshold 0.2: 10.026292
+INSUFFICIENT (10.026292 >= 0.2)
+Avar bound for threshold 0.3: 10.026292
+INSUFFICIENT (10.026292 >= 0.3)
+Avar bound for threshold 0.4: 10.026292
+INSUFFICIENT (10.026292 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 28
+MCMC completed with acceptance ratio: 0.6178
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.4640017   0.28035232 -0.84030054]
+True reward weights: [-0.866301   -0.34967581  0.35672034]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.642005
+0.9-VaR-max-normalization for 2 demonstrations: 9.312382
+0.95-VaR-max-normalization for 2 demonstrations: 9.856540
+0.99-VaR-max-normalization for 2 demonstrations: 10.255670
+True EVD for 2 demonstrations: 8.974658
+Avar bound for threshold 0.1: 9.856540
+INSUFFICIENT (9.856540 >= 0.1)
+Avar bound for threshold 0.2: 9.856540
+INSUFFICIENT (9.856540 >= 0.2)
+Avar bound for threshold 0.3: 9.856540
+INSUFFICIENT (9.856540 >= 0.3)
+Avar bound for threshold 0.4: 9.856540
+INSUFFICIENT (9.856540 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 28
+MCMC completed with acceptance ratio: 0.6218
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.74544804  0.21300694 -0.63161322]
+True reward weights: [-0.866301   -0.34967581  0.35672034]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 9.167995
+0.9-VaR-max-normalization for 3 demonstrations: 9.676897
+0.95-VaR-max-normalization for 3 demonstrations: 10.025634
+0.99-VaR-max-normalization for 3 demonstrations: 10.241029
+True EVD for 3 demonstrations: 8.974658
+Avar bound for threshold 0.1: 10.025634
+INSUFFICIENT (10.025634 >= 0.1)
+Avar bound for threshold 0.2: 10.025634
+INSUFFICIENT (10.025634 >= 0.2)
+Avar bound for threshold 0.3: 10.025634
+INSUFFICIENT (10.025634 >= 0.3)
+Avar bound for threshold 0.4: 10.025634
+INSUFFICIENT (10.025634 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 29/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 29
+MCMC completed with acceptance ratio: 0.6158
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.92553081 -0.11941713  0.35934979]
+True reward weights: [-0.6535586  -0.23072892  0.72085041]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.093140
+0.9-VaR-max-normalization for 1 demonstrations: 1.097082
+0.95-VaR-max-normalization for 1 demonstrations: 1.101350
+0.99-VaR-max-normalization for 1 demonstrations: 1.105431
+True EVD for 1 demonstrations: 0.002990
+Avar bound for threshold 0.1: 1.101350
+INSUFFICIENT (1.101350 >= 0.1)
+Avar bound for threshold 0.2: 1.101350
+INSUFFICIENT (1.101350 >= 0.2)
+Avar bound for threshold 0.3: 1.101350
+INSUFFICIENT (1.101350 >= 0.3)
+Avar bound for threshold 0.4: 1.101350
+INSUFFICIENT (1.101350 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 29
+MCMC completed with acceptance ratio: 0.6102
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.98272618  0.0568624  -0.17611339]
+True reward weights: [-0.6535586  -0.23072892  0.72085041]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.791743
+0.9-VaR-max-normalization for 2 demonstrations: 9.524700
+0.95-VaR-max-normalization for 2 demonstrations: 9.986782
+0.99-VaR-max-normalization for 2 demonstrations: 10.277171
+True EVD for 2 demonstrations: 9.478972
+Avar bound for threshold 0.1: 9.986782
+INSUFFICIENT (9.986782 >= 0.1)
+Avar bound for threshold 0.2: 9.986782
+INSUFFICIENT (9.986782 >= 0.2)
+Avar bound for threshold 0.3: 9.986782
+INSUFFICIENT (9.986782 >= 0.3)
+Avar bound for threshold 0.4: 9.986782
+INSUFFICIENT (9.986782 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 29
+MCMC completed with acceptance ratio: 0.6126
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.12408711  0.314525   -0.94110383]
+True reward weights: [-0.6535586  -0.23072892  0.72085041]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 9.172955
+0.9-VaR-max-normalization for 3 demonstrations: 9.681108
+0.95-VaR-max-normalization for 3 demonstrations: 10.053694
+0.99-VaR-max-normalization for 3 demonstrations: 10.263634
+True EVD for 3 demonstrations: 9.478972
+Avar bound for threshold 0.1: 10.053694
+INSUFFICIENT (10.053694 >= 0.1)
+Avar bound for threshold 0.2: 10.053694
+INSUFFICIENT (10.053694 >= 0.2)
+Avar bound for threshold 0.3: 10.053694
+INSUFFICIENT (10.053694 >= 0.3)
+Avar bound for threshold 0.4: 10.053694
+INSUFFICIENT (10.053694 >= 0.4)
+
+Running experiment 30/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 30
+MCMC completed with acceptance ratio: 0.6136
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.36605686  0.28197807  0.88684313]
+True reward weights: [-0.81326386 -0.04441834  0.5801973 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.926008
+0.9-VaR-max-normalization for 1 demonstrations: 0.975812
+0.95-VaR-max-normalization for 1 demonstrations: 1.017126
+0.99-VaR-max-normalization for 1 demonstrations: 1.039799
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.017126
+INSUFFICIENT (1.017126 >= 0.1)
+Avar bound for threshold 0.2: 1.017126
+INSUFFICIENT (1.017126 >= 0.2)
+Avar bound for threshold 0.3: 1.017126
+INSUFFICIENT (1.017126 >= 0.3)
+Avar bound for threshold 0.4: 1.017126
+INSUFFICIENT (1.017126 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 30
+MCMC completed with acceptance ratio: 0.6182
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.54568199 -0.26676848  0.79439646]
+True reward weights: [-0.81326386 -0.04441834  0.5801973 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.900027
+0.9-VaR-max-normalization for 2 demonstrations: 0.973176
+0.95-VaR-max-normalization for 2 demonstrations: 1.017161
+0.99-VaR-max-normalization for 2 demonstrations: 1.040247
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.017161
+INSUFFICIENT (1.017161 >= 0.1)
+Avar bound for threshold 0.2: 1.017161
+INSUFFICIENT (1.017161 >= 0.2)
+Avar bound for threshold 0.3: 1.017161
+INSUFFICIENT (1.017161 >= 0.3)
+Avar bound for threshold 0.4: 1.017161
+INSUFFICIENT (1.017161 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 30
+MCMC completed with acceptance ratio: 0.6242
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.15435719 -0.3123899   0.9373294 ]
+True reward weights: [-0.81326386 -0.04441834  0.5801973 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.880527
+0.9-VaR-max-normalization for 3 demonstrations: 0.955072
+0.95-VaR-max-normalization for 3 demonstrations: 0.999623
+0.99-VaR-max-normalization for 3 demonstrations: 1.034824
+True EVD for 3 demonstrations: 0.015740
+Avar bound for threshold 0.1: 0.999623
+INSUFFICIENT (0.999623 >= 0.1)
+Avar bound for threshold 0.2: 0.999623
+INSUFFICIENT (0.999623 >= 0.2)
+Avar bound for threshold 0.3: 0.999623
+INSUFFICIENT (0.999623 >= 0.3)
+Avar bound for threshold 0.4: 0.999623
+INSUFFICIENT (0.999623 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 31/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 31
+MCMC completed with acceptance ratio: 0.6120
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.27046888  0.84827103 -0.45528326]
+True reward weights: [-0.27534761 -0.19938474  0.94044108]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.983627
+0.9-VaR-max-normalization for 1 demonstrations: 9.547136
+0.95-VaR-max-normalization for 1 demonstrations: 9.991267
+0.99-VaR-max-normalization for 1 demonstrations: 10.317597
+True EVD for 1 demonstrations: 10.204306
+Avar bound for threshold 0.1: 9.991267
+INSUFFICIENT (9.991267 >= 0.1)
+Avar bound for threshold 0.2: 9.991267
+INSUFFICIENT (9.991267 >= 0.2)
+Avar bound for threshold 0.3: 9.991267
+INSUFFICIENT (9.991267 >= 0.3)
+Avar bound for threshold 0.4: 9.991267
+INSUFFICIENT (9.991267 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 31
+MCMC completed with acceptance ratio: 0.6318
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.78841252 -0.19393273  0.58377718]
+True reward weights: [-0.27534761 -0.19938474  0.94044108]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095557
+0.9-VaR-max-normalization for 2 demonstrations: 1.099549
+0.95-VaR-max-normalization for 2 demonstrations: 1.102733
+0.99-VaR-max-normalization for 2 demonstrations: 1.105938
+True EVD for 2 demonstrations: 0.003462
+Avar bound for threshold 0.1: 1.102733
+INSUFFICIENT (1.102733 >= 0.1)
+Avar bound for threshold 0.2: 1.102733
+INSUFFICIENT (1.102733 >= 0.2)
+Avar bound for threshold 0.3: 1.102733
+INSUFFICIENT (1.102733 >= 0.3)
+Avar bound for threshold 0.4: 1.102733
+INSUFFICIENT (1.102733 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 31
+MCMC completed with acceptance ratio: 0.6114
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.72569768  0.22006751 -0.65186898]
+True reward weights: [-0.27534761 -0.19938474  0.94044108]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.976604
+0.9-VaR-max-normalization for 3 demonstrations: 9.555013
+0.95-VaR-max-normalization for 3 demonstrations: 9.951939
+0.99-VaR-max-normalization for 3 demonstrations: 10.249421
+True EVD for 3 demonstrations: 10.204306
+Avar bound for threshold 0.1: 9.951939
+INSUFFICIENT (9.951939 >= 0.1)
+Avar bound for threshold 0.2: 9.951939
+INSUFFICIENT (9.951939 >= 0.2)
+Avar bound for threshold 0.3: 9.951939
+INSUFFICIENT (9.951939 >= 0.3)
+Avar bound for threshold 0.4: 9.951939
+INSUFFICIENT (9.951939 >= 0.4)
+
+Running experiment 32/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 32
+MCMC completed with acceptance ratio: 0.6208
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.05076088 -0.31315657  0.94834398]
+True reward weights: [-0.90753571 -0.40234227  0.1204144 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.890736
+0.9-VaR-max-normalization for 1 demonstrations: 0.964804
+0.95-VaR-max-normalization for 1 demonstrations: 1.012659
+0.99-VaR-max-normalization for 1 demonstrations: 1.035415
+True EVD for 1 demonstrations: 0.012075
+Avar bound for threshold 0.1: 1.012659
+INSUFFICIENT (1.012659 >= 0.1)
+Avar bound for threshold 0.2: 1.012659
+INSUFFICIENT (1.012659 >= 0.2)
+Avar bound for threshold 0.3: 1.012659
+INSUFFICIENT (1.012659 >= 0.3)
+Avar bound for threshold 0.4: 1.012659
+INSUFFICIENT (1.012659 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 32
+MCMC completed with acceptance ratio: 0.6304
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.15818455 -0.31054571  0.93730412]
+True reward weights: [-0.90753571 -0.40234227  0.1204144 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.854239
+0.9-VaR-max-normalization for 2 demonstrations: 0.954059
+0.95-VaR-max-normalization for 2 demonstrations: 1.010500
+0.99-VaR-max-normalization for 2 demonstrations: 1.035079
+True EVD for 2 demonstrations: 0.012075
+Avar bound for threshold 0.1: 1.010500
+INSUFFICIENT (1.010500 >= 0.1)
+Avar bound for threshold 0.2: 1.010500
+INSUFFICIENT (1.010500 >= 0.2)
+Avar bound for threshold 0.3: 1.010500
+INSUFFICIENT (1.010500 >= 0.3)
+Avar bound for threshold 0.4: 1.010500
+INSUFFICIENT (1.010500 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 32
+MCMC completed with acceptance ratio: 0.6192
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.85451394 -0.16180571  0.49358368]
+True reward weights: [-0.90753571 -0.40234227  0.1204144 ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.326780
+0.9-VaR-max-normalization for 3 demonstrations: 10.134489
+0.95-VaR-max-normalization for 3 demonstrations: 13.216901
+0.99-VaR-max-normalization for 3 demonstrations: 17.509126
+True EVD for 3 demonstrations: 7.691872
+Avar bound for threshold 0.1: 13.216901
+INSUFFICIENT (13.216901 >= 0.1)
+Avar bound for threshold 0.2: 13.216901
+INSUFFICIENT (13.216901 >= 0.2)
+Avar bound for threshold 0.3: 13.216901
+INSUFFICIENT (13.216901 >= 0.3)
+Avar bound for threshold 0.4: 13.216901
+INSUFFICIENT (13.216901 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 33/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 33
+MCMC completed with acceptance ratio: 0.6182
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.94747682  0.31941999  0.01607901]
+True reward weights: [-0.32556312 -0.30396656  0.89532842]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.789582
+0.9-VaR-max-normalization for 1 demonstrations: 9.419089
+0.95-VaR-max-normalization for 1 demonstrations: 9.935097
+0.99-VaR-max-normalization for 1 demonstrations: 10.281016
+True EVD for 1 demonstrations: 10.300997
+Avar bound for threshold 0.1: 9.935097
+INSUFFICIENT (9.935097 >= 0.1)
+Avar bound for threshold 0.2: 9.935097
+INSUFFICIENT (9.935097 >= 0.2)
+Avar bound for threshold 0.3: 9.935097
+INSUFFICIENT (9.935097 >= 0.3)
+Avar bound for threshold 0.4: 9.935097
+INSUFFICIENT (9.935097 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 33
+MCMC completed with acceptance ratio: 0.6088
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.57475981  0.2595025  -0.77608608]
+True reward weights: [-0.32556312 -0.30396656  0.89532842]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.732628
+0.9-VaR-max-normalization for 2 demonstrations: 9.440593
+0.95-VaR-max-normalization for 2 demonstrations: 9.933867
+0.99-VaR-max-normalization for 2 demonstrations: 10.217005
+True EVD for 2 demonstrations: 10.300997
+Avar bound for threshold 0.1: 9.933867
+INSUFFICIENT (9.933867 >= 0.1)
+Avar bound for threshold 0.2: 9.933867
+INSUFFICIENT (9.933867 >= 0.2)
+Avar bound for threshold 0.3: 9.933867
+INSUFFICIENT (9.933867 >= 0.3)
+Avar bound for threshold 0.4: 9.933867
+INSUFFICIENT (9.933867 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 33
+MCMC completed with acceptance ratio: 0.6160
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.74631302 -0.34627854  0.56842593]
+True reward weights: [-0.32556312 -0.30396656  0.89532842]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.096038
+0.9-VaR-max-normalization for 3 demonstrations: 1.099242
+0.95-VaR-max-normalization for 3 demonstrations: 1.103098
+0.99-VaR-max-normalization for 3 demonstrations: 1.105635
+True EVD for 3 demonstrations: 0.004465
+Avar bound for threshold 0.1: 1.103098
+INSUFFICIENT (1.103098 >= 0.1)
+Avar bound for threshold 0.2: 1.103098
+INSUFFICIENT (1.103098 >= 0.2)
+Avar bound for threshold 0.3: 1.103098
+INSUFFICIENT (1.103098 >= 0.3)
+Avar bound for threshold 0.4: 1.103098
+INSUFFICIENT (1.103098 >= 0.4)
+
+Running experiment 34/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 34
+MCMC completed with acceptance ratio: 0.6296
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99516256  0.03111256 -0.09318518]
+True reward weights: [-0.839382   -0.393236    0.37523766]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.063998
+0.9-VaR-max-normalization for 1 demonstrations: 9.586422
+0.95-VaR-max-normalization for 1 demonstrations: 10.077469
+0.99-VaR-max-normalization for 1 demonstrations: 10.316807
+True EVD for 1 demonstrations: 9.232713
+Avar bound for threshold 0.1: 10.077469
+INSUFFICIENT (10.077469 >= 0.1)
+Avar bound for threshold 0.2: 10.077469
+INSUFFICIENT (10.077469 >= 0.2)
+Avar bound for threshold 0.3: 10.077469
+INSUFFICIENT (10.077469 >= 0.3)
+Avar bound for threshold 0.4: 10.077469
+INSUFFICIENT (10.077469 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 34
+MCMC completed with acceptance ratio: 0.6272
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.74555315 -0.20921204  0.63275653]
+True reward weights: [-0.839382   -0.393236    0.37523766]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095231
+0.9-VaR-max-normalization for 2 demonstrations: 1.098894
+0.95-VaR-max-normalization for 2 demonstrations: 1.102403
+0.99-VaR-max-normalization for 2 demonstrations: 1.105905
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102403
+INSUFFICIENT (1.102403 >= 0.1)
+Avar bound for threshold 0.2: 1.102403
+INSUFFICIENT (1.102403 >= 0.2)
+Avar bound for threshold 0.3: 1.102403
+INSUFFICIENT (1.102403 >= 0.3)
+Avar bound for threshold 0.4: 1.102403
+INSUFFICIENT (1.102403 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 34
+MCMC completed with acceptance ratio: 0.6178
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.98608783 -0.05247864  0.15772377]
+True reward weights: [-0.839382   -0.393236    0.37523766]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095234
+0.9-VaR-max-normalization for 3 demonstrations: 1.097980
+0.95-VaR-max-normalization for 3 demonstrations: 1.101499
+0.99-VaR-max-normalization for 3 demonstrations: 1.104764
+True EVD for 3 demonstrations: 0.002473
+Avar bound for threshold 0.1: 1.101499
+INSUFFICIENT (1.101499 >= 0.1)
+Avar bound for threshold 0.2: 1.101499
+INSUFFICIENT (1.101499 >= 0.2)
+Avar bound for threshold 0.3: 1.101499
+INSUFFICIENT (1.101499 >= 0.3)
+Avar bound for threshold 0.4: 1.101499
+INSUFFICIENT (1.101499 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 35/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 35
+MCMC completed with acceptance ratio: 0.6284
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.97131296 -0.07815684  0.22459441]
+True reward weights: [-0.94121751 -0.05112011  0.33391067]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.093996
+0.9-VaR-max-normalization for 1 demonstrations: 1.098280
+0.95-VaR-max-normalization for 1 demonstrations: 1.101913
+0.99-VaR-max-normalization for 1 demonstrations: 1.105520
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.101913
+INSUFFICIENT (1.101913 >= 0.1)
+Avar bound for threshold 0.2: 1.101913
+INSUFFICIENT (1.101913 >= 0.2)
+Avar bound for threshold 0.3: 1.101913
+INSUFFICIENT (1.101913 >= 0.3)
+Avar bound for threshold 0.4: 1.101913
+INSUFFICIENT (1.101913 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 35
+MCMC completed with acceptance ratio: 0.6222
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.98429483 -0.05333493  0.16828273]
+True reward weights: [-0.94121751 -0.05112011  0.33391067]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095332
+0.9-VaR-max-normalization for 2 demonstrations: 1.098701
+0.95-VaR-max-normalization for 2 demonstrations: 1.101731
+0.99-VaR-max-normalization for 2 demonstrations: 1.105123
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.101731
+INSUFFICIENT (1.101731 >= 0.1)
+Avar bound for threshold 0.2: 1.101731
+INSUFFICIENT (1.101731 >= 0.2)
+Avar bound for threshold 0.3: 1.101731
+INSUFFICIENT (1.101731 >= 0.3)
+Avar bound for threshold 0.4: 1.101731
+INSUFFICIENT (1.101731 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 35
+MCMC completed with acceptance ratio: 0.6284
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.65725144  0.23799833 -0.71510652]
+True reward weights: [-0.94121751 -0.05112011  0.33391067]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.793393
+0.9-VaR-max-normalization for 3 demonstrations: 9.302171
+0.95-VaR-max-normalization for 3 demonstrations: 9.934202
+0.99-VaR-max-normalization for 3 demonstrations: 10.233161
+True EVD for 3 demonstrations: 6.929262
+Avar bound for threshold 0.1: 9.934202
+INSUFFICIENT (9.934202 >= 0.1)
+Avar bound for threshold 0.2: 9.934202
+INSUFFICIENT (9.934202 >= 0.2)
+Avar bound for threshold 0.3: 9.934202
+INSUFFICIENT (9.934202 >= 0.3)
+Avar bound for threshold 0.4: 9.934202
+INSUFFICIENT (9.934202 >= 0.4)
+
+Running experiment 36/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 36
+MCMC completed with acceptance ratio: 0.6246
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.93453932 -0.11445046  0.33695303]
+True reward weights: [-0.05456508 -0.040557    0.99768621]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.859476
+0.9-VaR-max-normalization for 1 demonstrations: 0.967528
+0.95-VaR-max-normalization for 1 demonstrations: 1.020074
+0.99-VaR-max-normalization for 1 demonstrations: 1.041522
+True EVD for 1 demonstrations: 0.009365
+Avar bound for threshold 0.1: 1.020074
+INSUFFICIENT (1.020074 >= 0.1)
+Avar bound for threshold 0.2: 1.020074
+INSUFFICIENT (1.020074 >= 0.2)
+Avar bound for threshold 0.3: 1.020074
+INSUFFICIENT (1.020074 >= 0.3)
+Avar bound for threshold 0.4: 1.020074
+INSUFFICIENT (1.020074 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 36
+MCMC completed with acceptance ratio: 0.6292
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.75897807 -0.20726706  0.61724602]
+True reward weights: [-0.05456508 -0.040557    0.99768621]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.911550
+0.9-VaR-max-normalization for 2 demonstrations: 0.944001
+0.95-VaR-max-normalization for 2 demonstrations: 1.227988
+0.99-VaR-max-normalization for 2 demonstrations: 1.744105
+True EVD for 2 demonstrations: 0.447447
+Avar bound for threshold 0.1: 1.227988
+INSUFFICIENT (1.227988 >= 0.1)
+Avar bound for threshold 0.2: 1.227988
+INSUFFICIENT (1.227988 >= 0.2)
+Avar bound for threshold 0.3: 1.227988
+INSUFFICIENT (1.227988 >= 0.3)
+Avar bound for threshold 0.4: 1.227988
+INSUFFICIENT (1.227988 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 36
+MCMC completed with acceptance ratio: 0.6152
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.5826365  -0.25402766  0.77201337]
+True reward weights: [-0.05456508 -0.040557    0.99768621]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.892221
+0.9-VaR-max-normalization for 3 demonstrations: 0.959772
+0.95-VaR-max-normalization for 3 demonstrations: 1.007611
+0.99-VaR-max-normalization for 3 demonstrations: 1.034524
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.007611
+INSUFFICIENT (1.007611 >= 0.1)
+Avar bound for threshold 0.2: 1.007611
+INSUFFICIENT (1.007611 >= 0.2)
+Avar bound for threshold 0.3: 1.007611
+INSUFFICIENT (1.007611 >= 0.3)
+Avar bound for threshold 0.4: 1.007611
+INSUFFICIENT (1.007611 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 37/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 37
+MCMC completed with acceptance ratio: 0.6196
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.88795438 -0.14300987  0.43713293]
+True reward weights: [-0.75478167 -0.33513042  0.563908  ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095331
+0.9-VaR-max-normalization for 1 demonstrations: 1.098790
+0.95-VaR-max-normalization for 1 demonstrations: 1.102534
+0.99-VaR-max-normalization for 1 demonstrations: 1.105989
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102534
+INSUFFICIENT (1.102534 >= 0.1)
+Avar bound for threshold 0.2: 1.102534
+INSUFFICIENT (1.102534 >= 0.2)
+Avar bound for threshold 0.3: 1.102534
+INSUFFICIENT (1.102534 >= 0.3)
+Avar bound for threshold 0.4: 1.102534
+INSUFFICIENT (1.102534 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 37
+MCMC completed with acceptance ratio: 0.6150
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.93490723 -0.10979405  0.33748146]
+True reward weights: [-0.75478167 -0.33513042  0.563908  ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095051
+0.9-VaR-max-normalization for 2 demonstrations: 1.098405
+0.95-VaR-max-normalization for 2 demonstrations: 1.102535
+0.99-VaR-max-normalization for 2 demonstrations: 1.105037
+True EVD for 2 demonstrations: 0.002903
+Avar bound for threshold 0.1: 1.102535
+INSUFFICIENT (1.102535 >= 0.1)
+Avar bound for threshold 0.2: 1.102535
+INSUFFICIENT (1.102535 >= 0.2)
+Avar bound for threshold 0.3: 1.102535
+INSUFFICIENT (1.102535 >= 0.3)
+Avar bound for threshold 0.4: 1.102535
+INSUFFICIENT (1.102535 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 37
+MCMC completed with acceptance ratio: 0.6308
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.58705655  0.2532854  -0.76890254]
+True reward weights: [-0.75478167 -0.33513042  0.563908  ]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.796475
+0.9-VaR-max-normalization for 3 demonstrations: 9.424612
+0.95-VaR-max-normalization for 3 demonstrations: 9.934265
+0.99-VaR-max-normalization for 3 demonstrations: 10.265631
+True EVD for 3 demonstrations: 9.437514
+Avar bound for threshold 0.1: 9.934265
+INSUFFICIENT (9.934265 >= 0.1)
+Avar bound for threshold 0.2: 9.934265
+INSUFFICIENT (9.934265 >= 0.2)
+Avar bound for threshold 0.3: 9.934265
+INSUFFICIENT (9.934265 >= 0.3)
+Avar bound for threshold 0.4: 9.934265
+INSUFFICIENT (9.934265 >= 0.4)
+
+Running experiment 38/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 38
+MCMC completed with acceptance ratio: 0.6268
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.80754886 -0.18579981  0.55977073]
+True reward weights: [-0.49248773 -0.22865786  0.83974486]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.094967
+0.9-VaR-max-normalization for 1 demonstrations: 1.099004
+0.95-VaR-max-normalization for 1 demonstrations: 1.102900
+0.99-VaR-max-normalization for 1 demonstrations: 1.105939
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102900
+INSUFFICIENT (1.102900 >= 0.1)
+Avar bound for threshold 0.2: 1.102900
+INSUFFICIENT (1.102900 >= 0.2)
+Avar bound for threshold 0.3: 1.102900
+INSUFFICIENT (1.102900 >= 0.3)
+Avar bound for threshold 0.4: 1.102900
+INSUFFICIENT (1.102900 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 38
+MCMC completed with acceptance ratio: 0.6186
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.26601766  0.30606041 -0.9140906 ]
+True reward weights: [-0.49248773 -0.22865786  0.83974486]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.597599
+0.9-VaR-max-normalization for 2 demonstrations: 9.292607
+0.95-VaR-max-normalization for 2 demonstrations: 9.910252
+0.99-VaR-max-normalization for 2 demonstrations: 10.269142
+True EVD for 2 demonstrations: 9.860194
+Avar bound for threshold 0.1: 9.910252
+INSUFFICIENT (9.910252 >= 0.1)
+Avar bound for threshold 0.2: 9.910252
+INSUFFICIENT (9.910252 >= 0.2)
+Avar bound for threshold 0.3: 9.910252
+INSUFFICIENT (9.910252 >= 0.3)
+Avar bound for threshold 0.4: 9.910252
+INSUFFICIENT (9.910252 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 38
+MCMC completed with acceptance ratio: 0.6170
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.64767679 -0.2122896  -0.73174306]
+True reward weights: [-0.49248773 -0.22865786  0.83974486]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.887372
+0.9-VaR-max-normalization for 3 demonstrations: 9.595624
+0.95-VaR-max-normalization for 3 demonstrations: 9.878171
+0.99-VaR-max-normalization for 3 demonstrations: 10.247916
+True EVD for 3 demonstrations: 9.860194
+Avar bound for threshold 0.1: 9.878171
+INSUFFICIENT (9.878171 >= 0.1)
+Avar bound for threshold 0.2: 9.878171
+INSUFFICIENT (9.878171 >= 0.2)
+Avar bound for threshold 0.3: 9.878171
+INSUFFICIENT (9.878171 >= 0.3)
+Avar bound for threshold 0.4: 9.878171
+INSUFFICIENT (9.878171 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 39/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 39
+MCMC completed with acceptance ratio: 0.6252
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.79933011 -0.1898545   0.57011108]
+True reward weights: [-0.56481614 -0.46100063  0.68444222]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095369
+0.9-VaR-max-normalization for 1 demonstrations: 1.098245
+0.95-VaR-max-normalization for 1 demonstrations: 1.102539
+0.99-VaR-max-normalization for 1 demonstrations: 1.105778
+True EVD for 1 demonstrations: 0.002974
+Avar bound for threshold 0.1: 1.102539
+INSUFFICIENT (1.102539 >= 0.1)
+Avar bound for threshold 0.2: 1.102539
+INSUFFICIENT (1.102539 >= 0.2)
+Avar bound for threshold 0.3: 1.102539
+INSUFFICIENT (1.102539 >= 0.3)
+Avar bound for threshold 0.4: 1.102539
+INSUFFICIENT (1.102539 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 39
+MCMC completed with acceptance ratio: 0.6184
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.85336627  0.16188872 -0.49553814]
+True reward weights: [-0.56481614 -0.46100063  0.68444222]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 9.163164
+0.9-VaR-max-normalization for 2 demonstrations: 9.708328
+0.95-VaR-max-normalization for 2 demonstrations: 10.021796
+0.99-VaR-max-normalization for 2 demonstrations: 10.256006
+True EVD for 2 demonstrations: 10.157274
+Avar bound for threshold 0.1: 10.021796
+INSUFFICIENT (10.021796 >= 0.1)
+Avar bound for threshold 0.2: 10.021796
+INSUFFICIENT (10.021796 >= 0.2)
+Avar bound for threshold 0.3: 10.021796
+INSUFFICIENT (10.021796 >= 0.3)
+Avar bound for threshold 0.4: 10.021796
+INSUFFICIENT (10.021796 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 39
+MCMC completed with acceptance ratio: 0.6262
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.93904552 -0.10941182  0.32591803]
+True reward weights: [-0.56481614 -0.46100063  0.68444222]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094798
+0.9-VaR-max-normalization for 3 demonstrations: 1.098361
+0.95-VaR-max-normalization for 3 demonstrations: 1.101663
+0.99-VaR-max-normalization for 3 demonstrations: 1.104265
+True EVD for 3 demonstrations: 0.007435
+Avar bound for threshold 0.1: 1.101663
+INSUFFICIENT (1.101663 >= 0.1)
+Avar bound for threshold 0.2: 1.101663
+INSUFFICIENT (1.101663 >= 0.2)
+Avar bound for threshold 0.3: 1.101663
+INSUFFICIENT (1.101663 >= 0.3)
+Avar bound for threshold 0.4: 1.101663
+INSUFFICIENT (1.101663 >= 0.4)
+
+Running experiment 40/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 40
+MCMC completed with acceptance ratio: 0.6178
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.94138349 -0.1054841   0.32042196]
+True reward weights: [-0.6667631  -0.57474284  0.47444455]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.924159
+0.9-VaR-max-normalization for 1 demonstrations: 10.834491
+0.95-VaR-max-normalization for 1 demonstrations: 13.791567
+0.99-VaR-max-normalization for 1 demonstrations: 18.494361
+True EVD for 1 demonstrations: 5.654337
+Avar bound for threshold 0.1: 13.791567
+INSUFFICIENT (13.791567 >= 0.1)
+Avar bound for threshold 0.2: 13.791567
+INSUFFICIENT (13.791567 >= 0.2)
+Avar bound for threshold 0.3: 13.791567
+INSUFFICIENT (13.791567 >= 0.3)
+Avar bound for threshold 0.4: 13.791567
+INSUFFICIENT (13.791567 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 40
+MCMC completed with acceptance ratio: 0.6158
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.94133497 -0.10656672  0.3202062 ]
+True reward weights: [-0.6667631  -0.57474284  0.47444455]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.163772
+0.9-VaR-max-normalization for 2 demonstrations: 10.050388
+0.95-VaR-max-normalization for 2 demonstrations: 13.039400
+0.99-VaR-max-normalization for 2 demonstrations: 16.872827
+True EVD for 2 demonstrations: 5.654337
+Avar bound for threshold 0.1: 13.039400
+INSUFFICIENT (13.039400 >= 0.1)
+Avar bound for threshold 0.2: 13.039400
+INSUFFICIENT (13.039400 >= 0.2)
+Avar bound for threshold 0.3: 13.039400
+INSUFFICIENT (13.039400 >= 0.3)
+Avar bound for threshold 0.4: 13.039400
+INSUFFICIENT (13.039400 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 40
+MCMC completed with acceptance ratio: 0.6138
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.63944162 -0.24208909  0.72973097]
+True reward weights: [-0.6667631  -0.57474284  0.47444455]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.883604
+0.9-VaR-max-normalization for 3 demonstrations: 0.956392
+0.95-VaR-max-normalization for 3 demonstrations: 1.004510
+0.99-VaR-max-normalization for 3 demonstrations: 1.038662
+True EVD for 3 demonstrations: 0.003033
+Avar bound for threshold 0.1: 1.004510
+INSUFFICIENT (1.004510 >= 0.1)
+Avar bound for threshold 0.2: 1.004510
+INSUFFICIENT (1.004510 >= 0.2)
+Avar bound for threshold 0.3: 1.004510
+INSUFFICIENT (1.004510 >= 0.3)
+Avar bound for threshold 0.4: 1.004510
+INSUFFICIENT (1.004510 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 41/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 41
+MCMC completed with acceptance ratio: 0.6348
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.85858282 -0.15937434  0.48727339]
+True reward weights: [-0.46247666 -0.0267168   0.88622884]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095512
+0.9-VaR-max-normalization for 1 demonstrations: 1.099277
+0.95-VaR-max-normalization for 1 demonstrations: 1.103192
+0.99-VaR-max-normalization for 1 demonstrations: 1.106394
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.103192
+INSUFFICIENT (1.103192 >= 0.1)
+Avar bound for threshold 0.2: 1.103192
+INSUFFICIENT (1.103192 >= 0.2)
+Avar bound for threshold 0.3: 1.103192
+INSUFFICIENT (1.103192 >= 0.3)
+Avar bound for threshold 0.4: 1.103192
+INSUFFICIENT (1.103192 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 41
+MCMC completed with acceptance ratio: 0.6236
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.68473755  0.23113007 -0.69116813]
+True reward weights: [-0.46247666 -0.0267168   0.88622884]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.727631
+0.9-VaR-max-normalization for 2 demonstrations: 9.449012
+0.95-VaR-max-normalization for 2 demonstrations: 9.953223
+0.99-VaR-max-normalization for 2 demonstrations: 10.233366
+True EVD for 2 demonstrations: 9.418172
+Avar bound for threshold 0.1: 9.953223
+INSUFFICIENT (9.953223 >= 0.1)
+Avar bound for threshold 0.2: 9.953223
+INSUFFICIENT (9.953223 >= 0.2)
+Avar bound for threshold 0.3: 9.953223
+INSUFFICIENT (9.953223 >= 0.3)
+Avar bound for threshold 0.4: 9.953223
+INSUFFICIENT (9.953223 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 41
+MCMC completed with acceptance ratio: 0.6208
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.52214389  0.26869799 -0.80942396]
+True reward weights: [-0.46247666 -0.0267168   0.88622884]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.609137
+0.9-VaR-max-normalization for 3 demonstrations: 9.335518
+0.95-VaR-max-normalization for 3 demonstrations: 9.890114
+0.99-VaR-max-normalization for 3 demonstrations: 10.236511
+True EVD for 3 demonstrations: 9.418172
+Avar bound for threshold 0.1: 9.890114
+INSUFFICIENT (9.890114 >= 0.1)
+Avar bound for threshold 0.2: 9.890114
+INSUFFICIENT (9.890114 >= 0.2)
+Avar bound for threshold 0.3: 9.890114
+INSUFFICIENT (9.890114 >= 0.3)
+Avar bound for threshold 0.4: 9.890114
+INSUFFICIENT (9.890114 >= 0.4)
+
+Running experiment 42/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 42
+MCMC completed with acceptance ratio: 0.6372
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.42619916 -0.28560453  0.85836142]
+True reward weights: [-0.71505276 -0.68463496  0.14133129]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.884421
+0.9-VaR-max-normalization for 1 demonstrations: 0.951389
+0.95-VaR-max-normalization for 1 demonstrations: 1.012103
+0.99-VaR-max-normalization for 1 demonstrations: 1.038258
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.012103
+INSUFFICIENT (1.012103 >= 0.1)
+Avar bound for threshold 0.2: 1.012103
+INSUFFICIENT (1.012103 >= 0.2)
+Avar bound for threshold 0.3: 1.012103
+INSUFFICIENT (1.012103 >= 0.3)
+Avar bound for threshold 0.4: 1.012103
+INSUFFICIENT (1.012103 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 42
+MCMC completed with acceptance ratio: 0.6232
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.35624218 -0.02204588  0.93413355]
+True reward weights: [-0.71505276 -0.68463496  0.14133129]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.905411
+0.9-VaR-max-normalization for 2 demonstrations: 0.965150
+0.95-VaR-max-normalization for 2 demonstrations: 1.011260
+0.99-VaR-max-normalization for 2 demonstrations: 1.041651
+True EVD for 2 demonstrations: 0.004075
+Avar bound for threshold 0.1: 1.011260
+INSUFFICIENT (1.011260 >= 0.1)
+Avar bound for threshold 0.2: 1.011260
+INSUFFICIENT (1.011260 >= 0.2)
+Avar bound for threshold 0.3: 1.011260
+INSUFFICIENT (1.011260 >= 0.3)
+Avar bound for threshold 0.4: 1.011260
+INSUFFICIENT (1.011260 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 42
+MCMC completed with acceptance ratio: 0.6320
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.35115376 -0.29774214  0.88771654]
+True reward weights: [-0.71505276 -0.68463496  0.14133129]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.903252
+0.9-VaR-max-normalization for 3 demonstrations: 0.978304
+0.95-VaR-max-normalization for 3 demonstrations: 1.015093
+0.99-VaR-max-normalization for 3 demonstrations: 1.037187
+True EVD for 3 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.015093
+INSUFFICIENT (1.015093 >= 0.1)
+Avar bound for threshold 0.2: 1.015093
+INSUFFICIENT (1.015093 >= 0.2)
+Avar bound for threshold 0.3: 1.015093
+INSUFFICIENT (1.015093 >= 0.3)
+Avar bound for threshold 0.4: 1.015093
+INSUFFICIENT (1.015093 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 43/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 43
+MCMC completed with acceptance ratio: 0.6316
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.88270883  0.15096445 -0.44501107]
+True reward weights: [-0.94655708 -0.29794542  0.12352418]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 9.026943
+0.9-VaR-max-normalization for 1 demonstrations: 9.639221
+0.95-VaR-max-normalization for 1 demonstrations: 10.051378
+0.99-VaR-max-normalization for 1 demonstrations: 10.267052
+True EVD for 1 demonstrations: 7.803252
+Avar bound for threshold 0.1: 10.051378
+INSUFFICIENT (10.051378 >= 0.1)
+Avar bound for threshold 0.2: 10.051378
+INSUFFICIENT (10.051378 >= 0.2)
+Avar bound for threshold 0.3: 10.051378
+INSUFFICIENT (10.051378 >= 0.3)
+Avar bound for threshold 0.4: 10.051378
+INSUFFICIENT (10.051378 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 43
+MCMC completed with acceptance ratio: 0.6206
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.98530839 -0.05448458  0.16186044]
+True reward weights: [-0.94655708 -0.29794542  0.12352418]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.094339
+0.9-VaR-max-normalization for 2 demonstrations: 1.097358
+0.95-VaR-max-normalization for 2 demonstrations: 1.101665
+0.99-VaR-max-normalization for 2 demonstrations: 1.105282
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.101665
+INSUFFICIENT (1.101665 >= 0.1)
+Avar bound for threshold 0.2: 1.101665
+INSUFFICIENT (1.101665 >= 0.2)
+Avar bound for threshold 0.3: 1.101665
+INSUFFICIENT (1.101665 >= 0.3)
+Avar bound for threshold 0.4: 1.101665
+INSUFFICIENT (1.101665 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 43
+MCMC completed with acceptance ratio: 0.6138
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.27262302  0.30372481 -0.91292274]
+True reward weights: [-0.94655708 -0.29794542  0.12352418]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.939865
+0.9-VaR-max-normalization for 3 demonstrations: 9.476113
+0.95-VaR-max-normalization for 3 demonstrations: 9.938912
+0.99-VaR-max-normalization for 3 demonstrations: 10.242975
+True EVD for 3 demonstrations: 7.803252
+Avar bound for threshold 0.1: 9.938912
+INSUFFICIENT (9.938912 >= 0.1)
+Avar bound for threshold 0.2: 9.938912
+INSUFFICIENT (9.938912 >= 0.2)
+Avar bound for threshold 0.3: 9.938912
+INSUFFICIENT (9.938912 >= 0.3)
+Avar bound for threshold 0.4: 9.938912
+INSUFFICIENT (9.938912 >= 0.4)
+
+Running experiment 44/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 44
+MCMC completed with acceptance ratio: 0.6236
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.9666901  -0.08087784  0.24283539]
+True reward weights: [-0.88315502 -0.32822573  0.33511952]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.095280
+0.9-VaR-max-normalization for 1 demonstrations: 1.098350
+0.95-VaR-max-normalization for 1 demonstrations: 1.102555
+0.99-VaR-max-normalization for 1 demonstrations: 1.105069
+True EVD for 1 demonstrations: 0.001569
+Avar bound for threshold 0.1: 1.102555
+INSUFFICIENT (1.102555 >= 0.1)
+Avar bound for threshold 0.2: 1.102555
+INSUFFICIENT (1.102555 >= 0.2)
+Avar bound for threshold 0.3: 1.102555
+INSUFFICIENT (1.102555 >= 0.3)
+Avar bound for threshold 0.4: 1.102555
+INSUFFICIENT (1.102555 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 44
+MCMC completed with acceptance ratio: 0.6124
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.91130634  0.12355627  0.3927526 ]
+True reward weights: [-0.88315502 -0.32822573  0.33511952]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.093476
+0.9-VaR-max-normalization for 2 demonstrations: 1.097104
+0.95-VaR-max-normalization for 2 demonstrations: 1.100865
+0.99-VaR-max-normalization for 2 demonstrations: 1.104822
+True EVD for 2 demonstrations: 0.001569
+Avar bound for threshold 0.1: 1.100865
+INSUFFICIENT (1.100865 >= 0.1)
+Avar bound for threshold 0.2: 1.100865
+INSUFFICIENT (1.100865 >= 0.2)
+Avar bound for threshold 0.3: 1.100865
+INSUFFICIENT (1.100865 >= 0.3)
+Avar bound for threshold 0.4: 1.100865
+INSUFFICIENT (1.100865 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 44
+MCMC completed with acceptance ratio: 0.6060
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.87378422  0.15593199 -0.4606369 ]
+True reward weights: [-0.88315502 -0.32822573  0.33511952]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 9.006510
+0.9-VaR-max-normalization for 3 demonstrations: 9.487444
+0.95-VaR-max-normalization for 3 demonstrations: 9.997395
+0.99-VaR-max-normalization for 3 demonstrations: 10.261129
+True EVD for 3 demonstrations: 8.803021
+Avar bound for threshold 0.1: 9.997395
+INSUFFICIENT (9.997395 >= 0.1)
+Avar bound for threshold 0.2: 9.997395
+INSUFFICIENT (9.997395 >= 0.2)
+Avar bound for threshold 0.3: 9.997395
+INSUFFICIENT (9.997395 >= 0.3)
+Avar bound for threshold 0.4: 9.997395
+INSUFFICIENT (9.997395 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 45/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 45
+MCMC completed with acceptance ratio: 0.6272
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.16660024  0.3967805   0.90266804]
+True reward weights: [-0.83381491 -0.37890594  0.40147601]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.094102
+0.9-VaR-max-normalization for 1 demonstrations: 1.097754
+0.95-VaR-max-normalization for 1 demonstrations: 1.102190
+0.99-VaR-max-normalization for 1 demonstrations: 1.105798
+True EVD for 1 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102190
+INSUFFICIENT (1.102190 >= 0.1)
+Avar bound for threshold 0.2: 1.102190
+INSUFFICIENT (1.102190 >= 0.2)
+Avar bound for threshold 0.3: 1.102190
+INSUFFICIENT (1.102190 >= 0.3)
+Avar bound for threshold 0.4: 1.102190
+INSUFFICIENT (1.102190 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 45
+MCMC completed with acceptance ratio: 0.6168
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.17638056  0.30932911 -0.9344546 ]
+True reward weights: [-0.83381491 -0.37890594  0.40147601]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 9.059974
+0.9-VaR-max-normalization for 2 demonstrations: 9.624555
+0.95-VaR-max-normalization for 2 demonstrations: 9.985126
+0.99-VaR-max-normalization for 2 demonstrations: 10.216730
+True EVD for 2 demonstrations: 9.228542
+Avar bound for threshold 0.1: 9.985126
+INSUFFICIENT (9.985126 >= 0.1)
+Avar bound for threshold 0.2: 9.985126
+INSUFFICIENT (9.985126 >= 0.2)
+Avar bound for threshold 0.3: 9.985126
+INSUFFICIENT (9.985126 >= 0.3)
+Avar bound for threshold 0.4: 9.985126
+INSUFFICIENT (9.985126 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 45
+MCMC completed with acceptance ratio: 0.6202
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.96766077 -0.08182917  0.23861394]
+True reward weights: [-0.83381491 -0.37890594  0.40147601]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.094909
+0.9-VaR-max-normalization for 3 demonstrations: 1.098048
+0.95-VaR-max-normalization for 3 demonstrations: 1.101815
+0.99-VaR-max-normalization for 3 demonstrations: 1.104710
+True EVD for 3 demonstrations: 0.002464
+Avar bound for threshold 0.1: 1.101815
+INSUFFICIENT (1.101815 >= 0.1)
+Avar bound for threshold 0.2: 1.101815
+INSUFFICIENT (1.101815 >= 0.2)
+Avar bound for threshold 0.3: 1.101815
+INSUFFICIENT (1.101815 >= 0.3)
+Avar bound for threshold 0.4: 1.101815
+INSUFFICIENT (1.101815 >= 0.4)
+
+Running experiment 46/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 46
+MCMC completed with acceptance ratio: 0.6270
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99995204 -0.00497108  0.00843827]
+True reward weights: [-0.82098277 -0.18440172  0.54035479]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.050309
+0.9-VaR-max-normalization for 1 demonstrations: 1.053225
+0.95-VaR-max-normalization for 1 demonstrations: 1.057178
+0.99-VaR-max-normalization for 1 demonstrations: 1.060271
+True EVD for 1 demonstrations: 0.351377
+Avar bound for threshold 0.1: 1.057178
+INSUFFICIENT (1.057178 >= 0.1)
+Avar bound for threshold 0.2: 1.057178
+INSUFFICIENT (1.057178 >= 0.2)
+Avar bound for threshold 0.3: 1.057178
+INSUFFICIENT (1.057178 >= 0.3)
+Avar bound for threshold 0.4: 1.057178
+INSUFFICIENT (1.057178 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 46
+MCMC completed with acceptance ratio: 0.6294
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.9809373  -0.06017322  0.18477336]
+True reward weights: [-0.82098277 -0.18440172  0.54035479]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.093876
+0.9-VaR-max-normalization for 2 demonstrations: 1.097627
+0.95-VaR-max-normalization for 2 demonstrations: 1.101145
+0.99-VaR-max-normalization for 2 demonstrations: 1.104968
+True EVD for 2 demonstrations: 0.001430
+Avar bound for threshold 0.1: 1.101145
+INSUFFICIENT (1.101145 >= 0.1)
+Avar bound for threshold 0.2: 1.101145
+INSUFFICIENT (1.101145 >= 0.2)
+Avar bound for threshold 0.3: 1.101145
+INSUFFICIENT (1.101145 >= 0.3)
+Avar bound for threshold 0.4: 1.101145
+INSUFFICIENT (1.101145 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 46
+MCMC completed with acceptance ratio: 0.6176
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.98168385 -0.06106526  0.18046568]
+True reward weights: [-0.82098277 -0.18440172  0.54035479]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095372
+0.9-VaR-max-normalization for 3 demonstrations: 1.098358
+0.95-VaR-max-normalization for 3 demonstrations: 1.101521
+0.99-VaR-max-normalization for 3 demonstrations: 1.105092
+True EVD for 3 demonstrations: 0.001430
+Avar bound for threshold 0.1: 1.101521
+INSUFFICIENT (1.101521 >= 0.1)
+Avar bound for threshold 0.2: 1.101521
+INSUFFICIENT (1.101521 >= 0.2)
+Avar bound for threshold 0.3: 1.101521
+INSUFFICIENT (1.101521 >= 0.3)
+Avar bound for threshold 0.4: 1.101521
+INSUFFICIENT (1.101521 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 47/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 47
+MCMC completed with acceptance ratio: 0.6242
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.93250024 -0.11296636  0.34304795]
+True reward weights: [-0.73857451 -0.23755048  0.63093381]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.901740
+0.9-VaR-max-normalization for 1 demonstrations: 0.970571
+0.95-VaR-max-normalization for 1 demonstrations: 1.019815
+0.99-VaR-max-normalization for 1 demonstrations: 1.039232
+True EVD for 1 demonstrations: 0.002486
+Avar bound for threshold 0.1: 1.019815
+INSUFFICIENT (1.019815 >= 0.1)
+Avar bound for threshold 0.2: 1.019815
+INSUFFICIENT (1.019815 >= 0.2)
+Avar bound for threshold 0.3: 1.019815
+INSUFFICIENT (1.019815 >= 0.3)
+Avar bound for threshold 0.4: 1.019815
+INSUFFICIENT (1.019815 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 47
+MCMC completed with acceptance ratio: 0.6152
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.8496519  -0.1658918   0.50057124]
+True reward weights: [-0.73857451 -0.23755048  0.63093381]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.294749
+0.9-VaR-max-normalization for 2 demonstrations: 9.787377
+0.95-VaR-max-normalization for 2 demonstrations: 12.718911
+0.99-VaR-max-normalization for 2 demonstrations: 16.576080
+True EVD for 2 demonstrations: 6.800231
+Avar bound for threshold 0.1: 12.718911
+INSUFFICIENT (12.718911 >= 0.1)
+Avar bound for threshold 0.2: 12.718911
+INSUFFICIENT (12.718911 >= 0.2)
+Avar bound for threshold 0.3: 12.718911
+INSUFFICIENT (12.718911 >= 0.3)
+Avar bound for threshold 0.4: 12.718911
+INSUFFICIENT (12.718911 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 47
+MCMC completed with acceptance ratio: 0.6146
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.82675526 -0.17752225  0.53381793]
+True reward weights: [-0.73857451 -0.23755048  0.63093381]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 8.669807
+0.9-VaR-max-normalization for 3 demonstrations: 10.147090
+0.95-VaR-max-normalization for 3 demonstrations: 12.743182
+0.99-VaR-max-normalization for 3 demonstrations: 16.436582
+True EVD for 3 demonstrations: 6.800231
+Avar bound for threshold 0.1: 12.743182
+INSUFFICIENT (12.743182 >= 0.1)
+Avar bound for threshold 0.2: 12.743182
+INSUFFICIENT (12.743182 >= 0.2)
+Avar bound for threshold 0.3: 12.743182
+INSUFFICIENT (12.743182 >= 0.3)
+Avar bound for threshold 0.4: 12.743182
+INSUFFICIENT (12.743182 >= 0.4)
+
+Running experiment 48/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)])]
+
+Running PBIRL with 1 demonstrations for experiment 48
+MCMC completed with acceptance ratio: 0.6246
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.07082005 -0.31693744  0.9457987 ]
+True reward weights: [-0.95541883 -0.18852986  0.22722531]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 0.900554
+0.9-VaR-max-normalization for 1 demonstrations: 0.970990
+0.95-VaR-max-normalization for 1 demonstrations: 1.010300
+0.99-VaR-max-normalization for 1 demonstrations: 1.036633
+True EVD for 1 demonstrations: 0.024356
+Avar bound for threshold 0.1: 1.010300
+INSUFFICIENT (1.010300 >= 0.1)
+Avar bound for threshold 0.2: 1.010300
+INSUFFICIENT (1.010300 >= 0.2)
+Avar bound for threshold 0.3: 1.010300
+INSUFFICIENT (1.010300 >= 0.3)
+Avar bound for threshold 0.4: 1.010300
+INSUFFICIENT (1.010300 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 48
+MCMC completed with acceptance ratio: 0.6172
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.56749594 -0.26121866  0.78084132]
+True reward weights: [-0.95541883 -0.18852986  0.22722531]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 0.869194
+0.9-VaR-max-normalization for 2 demonstrations: 0.963022
+0.95-VaR-max-normalization for 2 demonstrations: 1.021953
+0.99-VaR-max-normalization for 2 demonstrations: 1.039789
+True EVD for 2 demonstrations: 0.001293
+Avar bound for threshold 0.1: 1.021953
+INSUFFICIENT (1.021953 >= 0.1)
+Avar bound for threshold 0.2: 1.021953
+INSUFFICIENT (1.021953 >= 0.2)
+Avar bound for threshold 0.3: 1.021953
+INSUFFICIENT (1.021953 >= 0.3)
+Avar bound for threshold 0.4: 1.021953
+INSUFFICIENT (1.021953 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 48
+MCMC completed with acceptance ratio: 0.6292
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.69573108 -0.22824564  0.6810743 ]
+True reward weights: [-0.95541883 -0.18852986  0.22722531]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 0.884736
+0.9-VaR-max-normalization for 3 demonstrations: 0.955269
+0.95-VaR-max-normalization for 3 demonstrations: 1.007621
+0.99-VaR-max-normalization for 3 demonstrations: 1.033046
+True EVD for 3 demonstrations: 0.024356
+Avar bound for threshold 0.1: 1.007621
+INSUFFICIENT (1.007621 >= 0.1)
+Avar bound for threshold 0.2: 1.007621
+INSUFFICIENT (1.007621 >= 0.2)
+Avar bound for threshold 0.3: 1.007621
+INSUFFICIENT (1.007621 >= 0.3)
+Avar bound for threshold 0.4: 1.007621
+INSUFFICIENT (1.007621 >= 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 49/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 49
+MCMC completed with acceptance ratio: 0.6290
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.78062206 -0.1950648   0.59378357]
+True reward weights: [-0.98484463 -0.1489005   0.08893646]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 1.094697
+0.9-VaR-max-normalization for 1 demonstrations: 1.098135
+0.95-VaR-max-normalization for 1 demonstrations: 1.102255
+0.99-VaR-max-normalization for 1 demonstrations: 1.105570
+True EVD for 1 demonstrations: 0.004463
+Avar bound for threshold 0.1: 1.102255
+INSUFFICIENT (1.102255 >= 0.1)
+Avar bound for threshold 0.2: 1.102255
+INSUFFICIENT (1.102255 >= 0.2)
+Avar bound for threshold 0.3: 1.102255
+INSUFFICIENT (1.102255 >= 0.3)
+Avar bound for threshold 0.4: 1.102255
+INSUFFICIENT (1.102255 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 49
+MCMC completed with acceptance ratio: 0.6246
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.92294893 -0.12442366  0.3642582 ]
+True reward weights: [-0.98484463 -0.1489005   0.08893646]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.095892
+0.9-VaR-max-normalization for 2 demonstrations: 1.099094
+0.95-VaR-max-normalization for 2 demonstrations: 1.102234
+0.99-VaR-max-normalization for 2 demonstrations: 1.105279
+True EVD for 2 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.102234
+INSUFFICIENT (1.102234 >= 0.1)
+Avar bound for threshold 0.2: 1.102234
+INSUFFICIENT (1.102234 >= 0.2)
+Avar bound for threshold 0.3: 1.102234
+INSUFFICIENT (1.102234 >= 0.3)
+Avar bound for threshold 0.4: 1.102234
+INSUFFICIENT (1.102234 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 49
+MCMC completed with acceptance ratio: 0.6084
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.85492814 -0.16157372  0.492942  ]
+True reward weights: [-0.98484463 -0.1489005   0.08893646]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095442
+0.9-VaR-max-normalization for 3 demonstrations: 1.099126
+0.95-VaR-max-normalization for 3 demonstrations: 1.101976
+0.99-VaR-max-normalization for 3 demonstrations: 1.105562
+True EVD for 3 demonstrations: 0.004463
+Avar bound for threshold 0.1: 1.101976
+INSUFFICIENT (1.101976 >= 0.1)
+Avar bound for threshold 0.2: 1.101976
+INSUFFICIENT (1.101976 >= 0.2)
+Avar bound for threshold 0.3: 1.101976
+INSUFFICIENT (1.101976 >= 0.3)
+Avar bound for threshold 0.4: 1.101976
+INSUFFICIENT (1.101976 >= 0.4)
+
+Running experiment 50/50...
+Same Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)])]
+
+Running PBIRL with 1 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.6216
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.99676415  0.02273318 -0.07710013]
+True reward weights: [-0.47840873 -0.41855607  0.77196885]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 8.660237
+0.9-VaR-max-normalization for 1 demonstrations: 9.505773
+0.95-VaR-max-normalization for 1 demonstrations: 9.993577
+0.99-VaR-max-normalization for 1 demonstrations: 10.300512
+True EVD for 1 demonstrations: 10.236648
+Avar bound for threshold 0.1: 9.993577
+INSUFFICIENT (9.993577 >= 0.1)
+Avar bound for threshold 0.2: 9.993577
+INSUFFICIENT (9.993577 >= 0.2)
+Avar bound for threshold 0.3: 9.993577
+INSUFFICIENT (9.993577 >= 0.3)
+Avar bound for threshold 0.4: 9.993577
+INSUFFICIENT (9.993577 >= 0.4)
+
+Running PBIRL with 2 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.6278
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.32391281  0.30042238 -0.89712144]
+True reward weights: [-0.47840873 -0.41855607  0.77196885]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 8.935317
+0.9-VaR-max-normalization for 2 demonstrations: 9.497975
+0.95-VaR-max-normalization for 2 demonstrations: 9.946596
+0.99-VaR-max-normalization for 2 demonstrations: 10.235966
+True EVD for 2 demonstrations: 10.236648
+Avar bound for threshold 0.1: 9.946596
+INSUFFICIENT (9.946596 >= 0.1)
+Avar bound for threshold 0.2: 9.946596
+INSUFFICIENT (9.946596 >= 0.2)
+Avar bound for threshold 0.3: 9.946596
+INSUFFICIENT (9.946596 >= 0.3)
+Avar bound for threshold 0.4: 9.946596
+INSUFFICIENT (9.946596 >= 0.4)
+
+Running PBIRL with 3 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.6118
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.77691034 -0.20014982  0.5969509 ]
+True reward weights: [-0.47840873 -0.41855607  0.77196885]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.095863
+0.9-VaR-max-normalization for 3 demonstrations: 1.098716
+0.95-VaR-max-normalization for 3 demonstrations: 1.102538
+0.99-VaR-max-normalization for 3 demonstrations: 1.105721
+True EVD for 3 demonstrations: 0.003798
+Avar bound for threshold 0.1: 1.102538
+INSUFFICIENT (1.102538 >= 0.1)
+Avar bound for threshold 0.2: 1.102538
+INSUFFICIENT (1.102538 >= 0.2)
+Avar bound for threshold 0.3: 1.102538
+INSUFFICIENT (1.102538 >= 0.3)
+Avar bound for threshold 0.4: 1.102538
+INSUFFICIENT (1.102538 >= 0.4)
+
+Saving results to files...
+Results saved successfully.

@@ -1,0 +1,1746 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.97266673 -0.03083248  0.23014951]
+Feature weights for environment: [-0.35835056 -0.08647525  0.92957351]
+Feature weights for environment: [-0.71046942 -0.64188771  0.28846728]
+Feature weights for environment: [-0.89578956 -0.24432685  0.37130237]
+Feature weights for environment: [-0.7282924  -0.22722733  0.64649665]
+Feature weights for environment: [-0.75022399 -0.57596895  0.32469021]
+Feature weights for environment: [-0.70842322 -0.26108332  0.65572254]
+Feature weights for environment: [-0.74635145 -0.57484795  0.33542412]
+Feature weights for environment: [-0.0505111  -0.01531811  0.99860602]
+Feature weights for environment: [-0.76518493 -0.64328377  0.02603879]
+Feature weights for environment: [-0.87829137 -0.24439244  0.41094598]
+Feature weights for environment: [-0.8497926  -0.50850291  0.13884283]
+Feature weights for environment: [-0.34477193 -0.32328333  0.88126058]
+Feature weights for environment: [-0.43088031 -0.17122291  0.88601629]
+Feature weights for environment: [-0.75433776 -0.02805593  0.65588674]
+Feature weights for environment: [-0.92032338 -0.11683579  0.37330186]
+Feature weights for environment: [-0.76208548 -0.28664819  0.58056743]
+Feature weights for environment: [-0.39174849 -0.30341429  0.86860399]
+Feature weights for environment: [-0.92648321 -0.16748955  0.33701054]
+Feature weights for environment: [-0.61012931 -0.3129562   0.72787406]
+Feature weights for environment: [-0.3738588  -0.3262014   0.86822937]
+Feature weights for environment: [-0.70965126 -0.6051058   0.36089066]
+Feature weights for environment: [-0.74528522 -0.55533186  0.36899385]
+Feature weights for environment: [-0.68144434 -0.29187893  0.6711485 ]
+Feature weights for environment: [-0.44714936 -0.30119858  0.84222139]
+Feature weights for environment: [-0.7333898  -0.47830978  0.48307263]
+Feature weights for environment: [-0.65557811 -0.01374154  0.75500233]
+Feature weights for environment: [-0.866301   -0.34967581  0.35672034]
+Feature weights for environment: [-0.6535586  -0.23072892  0.72085041]
+Feature weights for environment: [-0.81326386 -0.04441834  0.5801973 ]
+Feature weights for environment: [-0.27534761 -0.19938474  0.94044108]
+Feature weights for environment: [-0.90753571 -0.40234227  0.1204144 ]
+Feature weights for environment: [-0.32556312 -0.30396656  0.89532842]
+Feature weights for environment: [-0.839382   -0.393236    0.37523766]
+Feature weights for environment: [-0.94121751 -0.05112011  0.33391067]
+Feature weights for environment: [-0.05456508 -0.040557    0.99768621]
+Feature weights for environment: [-0.75478167 -0.33513042  0.563908  ]
+Feature weights for environment: [-0.49248773 -0.22865786  0.83974486]
+Feature weights for environment: [-0.56481614 -0.46100063  0.68444222]
+Feature weights for environment: [-0.6667631  -0.57474284  0.47444455]
+Feature weights for environment: [-0.46247666 -0.0267168   0.88622884]
+Feature weights for environment: [-0.71505276 -0.68463496  0.14133129]
+Feature weights for environment: [-0.94655708 -0.29794542  0.12352418]
+Feature weights for environment: [-0.88315502 -0.32822573  0.33511952]
+Feature weights for environment: [-0.83381491 -0.37890594  0.40147601]
+Feature weights for environment: [-0.82098277 -0.18440172  0.54035479]
+Feature weights for environment: [-0.73857451 -0.23755048  0.63093381]
+Feature weights for environment: [-0.95541883 -0.18852986  0.22722531]
+Feature weights for environment: [-0.98484463 -0.1489005   0.08893646]
+Feature weights for environment: [-0.47840873 -0.41855607  0.77196885]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.4866
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.29133541  0.383975    0.87617742]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.2974
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.87048947  0.04745514  0.48989396]
+True reward weights: [-0.27957152 -0.70838176  0.64810111]
+MAP Policy for current environment:
+Config file loaded successfully.
+Feature weights for environment: [-0.97266673 -0.03083248  0.23014951]
+Feature weights for environment: [-0.35835056 -0.08647525  0.92957351]
+Feature weights for environment: [-0.71046942 -0.64188771  0.28846728]
+Feature weights for environment: [-0.89578956 -0.24432685  0.37130237]
+Feature weights for environment: [-0.7282924  -0.22722733  0.64649665]
+Feature weights for environment: [-0.75022399 -0.57596895  0.32469021]
+Feature weights for environment: [-0.70842322 -0.26108332  0.65572254]
+Feature weights for environment: [-0.74635145 -0.57484795  0.33542412]
+Feature weights for environment: [-0.0505111  -0.01531811  0.99860602]
+Feature weights for environment: [-0.76518493 -0.64328377  0.02603879]
+Feature weights for environment: [-0.87829137 -0.24439244  0.41094598]
+Feature weights for environment: [-0.8497926  -0.50850291  0.13884283]
+Feature weights for environment: [-0.34477193 -0.32328333  0.88126058]
+Feature weights for environment: [-0.43088031 -0.17122291  0.88601629]
+Feature weights for environment: [-0.75433776 -0.02805593  0.65588674]
+Feature weights for environment: [-0.92032338 -0.11683579  0.37330186]
+Feature weights for environment: [-0.76208548 -0.28664819  0.58056743]
+Feature weights for environment: [-0.39174849 -0.30341429  0.86860399]
+Feature weights for environment: [-0.92648321 -0.16748955  0.33701054]
+Feature weights for environment: [-0.61012931 -0.3129562   0.72787406]
+Feature weights for environment: [-0.3738588  -0.3262014   0.86822937]
+Feature weights for environment: [-0.70965126 -0.6051058   0.36089066]
+Feature weights for environment: [-0.74528522 -0.55533186  0.36899385]
+Feature weights for environment: [-0.68144434 -0.29187893  0.6711485 ]
+Feature weights for environment: [-0.44714936 -0.30119858  0.84222139]
+Feature weights for environment: [-0.7333898  -0.47830978  0.48307263]
+Feature weights for environment: [-0.65557811 -0.01374154  0.75500233]
+Feature weights for environment: [-0.866301   -0.34967581  0.35672034]
+Feature weights for environment: [-0.6535586  -0.23072892  0.72085041]
+Feature weights for environment: [-0.81326386 -0.04441834  0.5801973 ]
+Feature weights for environment: [-0.27534761 -0.19938474  0.94044108]
+Feature weights for environment: [-0.90753571 -0.40234227  0.1204144 ]
+Feature weights for environment: [-0.32556312 -0.30396656  0.89532842]
+Feature weights for environment: [-0.839382   -0.393236    0.37523766]
+Feature weights for environment: [-0.94121751 -0.05112011  0.33391067]
+Feature weights for environment: [-0.05456508 -0.040557    0.99768621]
+Feature weights for environment: [-0.75478167 -0.33513042  0.563908  ]
+Feature weights for environment: [-0.49248773 -0.22865786  0.83974486]
+Feature weights for environment: [-0.56481614 -0.46100063  0.68444222]
+Feature weights for environment: [-0.6667631  -0.57474284  0.47444455]
+Feature weights for environment: [-0.46247666 -0.0267168   0.88622884]
+Feature weights for environment: [-0.71505276 -0.68463496  0.14133129]
+Feature weights for environment: [-0.94655708 -0.29794542  0.12352418]
+Feature weights for environment: [-0.88315502 -0.32822573  0.33511952]
+Feature weights for environment: [-0.83381491 -0.37890594  0.40147601]
+Feature weights for environment: [-0.82098277 -0.18440172  0.54035479]
+Feature weights for environment: [-0.73857451 -0.23755048  0.63093381]
+Feature weights for environment: [-0.95541883 -0.18852986  0.22722531]
+Feature weights for environment: [-0.98484463 -0.1489005   0.08893646]
+Feature weights for environment: [-0.47840873 -0.41855607  0.77196885]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.4866
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.01909565  0.26802674  0.96322221]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.4808
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.12312099  0.09400338  0.98792944]
+True reward weights: [-0.51133806 -0.83117615 -0.21835658]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123810
+
+Running PBIRL with 3 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3046
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.7030562   0.08347764  0.70621771]
+True reward weights: [-0.21079916  0.37338583  0.9034084 ]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.191431
+
+Running experiment 2/50...
+Shuffled Demos: [(4, 3), (0, 1), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.4842
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.33575913  0.25670714  0.90629314]
+True reward weights: [-0.35835056 -0.08647525  0.92957351]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2924
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.9460289  -0.0712022   0.31616383]
+True reward weights: [-0.01296585  0.1306258   0.99134696]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.169199
+
+Running PBIRL with 3 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2992
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.27888946  0.40214624  0.87206598]
+True reward weights: [-0.78193681  0.22890602  0.57980761]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153026
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 3/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.4858
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.19201099 -0.95154657 -0.2401893 ]
+True reward weights: [-0.71046942 -0.64188771  0.28846728]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.4830
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.41313734 -0.19114141  0.89038335]
+True reward weights: [-0.41311319 -0.88620561  0.20970721]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123655
+
+Running PBIRL with 3 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.2990
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.78345167 -0.00319306  0.62144451]
+True reward weights: [-0.74897785  0.32996866  0.5745893 ]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.185652
+
+Running experiment 4/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.4806
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [0.280166   0.36531359 0.88772349]
+True reward weights: [-0.89578956 -0.24432685  0.37130237]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.4822
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.39073209 -0.27708375  0.8778115 ]
+True reward weights: [ 0.41316876 -0.25858495  0.87316975]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124070
+
+Running PBIRL with 3 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.2932
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.90949542 -0.38246936  0.1628965 ]
+True reward weights: [-0.20030835  0.39384969  0.8970836 ]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.188012
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 5/50...
+Shuffled Demos: [(4, 3), (0, 1), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.4860
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.17136778 -0.97972502  0.10378811]
+True reward weights: [-0.7282924  -0.22722733  0.64649665]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.3028
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.85895017 -0.24254801  0.45097125]
+True reward weights: [ 0.21431825 -0.36466504  0.90613856]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.170560
+
+Running PBIRL with 3 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.3020
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.81795944  0.1361055   0.55894332]
+True reward weights: [-0.98335045 -0.16864909  0.06767111]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153125
+
+Running experiment 6/50...
+Shuffled Demos: [(4, 3), (0, 1), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.4728
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.43546214 -0.37094123  0.82022883]
+True reward weights: [-0.75022399 -0.57596895  0.32469021]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.2980
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.91187879 -0.01032733  0.41032964]
+True reward weights: [-0.86512991  0.13406437  0.48329804]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.166732
+
+Running PBIRL with 3 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.3024
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.88244319 -0.22801877  0.41146257]
+True reward weights: [-0.82144595 -0.5600898  -0.10735908]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.150736
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 7/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.4850
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.68058276 -0.70137606  0.211846  ]
+True reward weights: [-0.70842322 -0.26108332  0.65572254]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.2958
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.31554572  0.38707898  0.86637218]
+True reward weights: [-0.98460378 -0.05511236  0.16588559]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.169619
+
+Running PBIRL with 3 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.2922
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.90610589 -0.28213175  0.31523608]
+True reward weights: [-0.56923969  0.31654417  0.75879244]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153094
+
+Running experiment 8/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2974
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.87958443 -0.03441709  0.47449626]
+True reward weights: [-0.74635145 -0.57484795  0.33542412]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123953
+
+Running PBIRL with 2 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2962
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.59220923  0.27718152  0.75660996]
+True reward weights: [-0.76490421 -0.2435406   0.59633004]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.127483
+
+Running PBIRL with 3 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2956
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.9010991  -0.07830396  0.42648435]
+True reward weights: [-0.64676608  0.24940307  0.72075776]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.126218
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 9/50...
+Shuffled Demos: [(4, 3), (0, 1), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.4862
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.42550792 -0.58584107  0.68973419]
+True reward weights: [-0.0505111  -0.01531811  0.99860602]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.3006
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.41632173  0.42996905  0.80112598]
+True reward weights: [-0.60559632 -0.79352681  0.05973514]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.170819
+
+Running PBIRL with 3 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2924
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.84849205 -0.02769912  0.52848273]
+True reward weights: [-0.95814811 -0.22991504 -0.17056163]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153924
+
+Running experiment 10/50...
+Shuffled Demos: [(4, 3), (0, 1), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.4846
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.47628324  0.13356468  0.86908846]
+True reward weights: [-0.76518493 -0.64328377  0.02603879]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.2986
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.53682762  0.08947099  0.83893447]
+True reward weights: [ 0.40424461 -0.78179687  0.47474199]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.167667
+
+Running PBIRL with 3 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.2990
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.53546988  0.15921799  0.82941041]
+True reward weights: [-0.07298645  0.48518417  0.8713606 ]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.151258
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 11/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.4858
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.45977656 -0.71386404  0.52820795]
+True reward weights: [-0.87829137 -0.24439244  0.41094598]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.4896
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.75090662 -0.6316865  -0.19264322]
+True reward weights: [-0.57551701  0.26735935  0.77285131]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124085
+
+Running PBIRL with 3 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.2954
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.11770565  0.41043541  0.90426111]
+True reward weights: [-0.43872027 -0.86148876 -0.25565923]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.188811
+
+Running experiment 12/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2996
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.84241584 -0.27844028  0.46130962]
+True reward weights: [-0.8497926  -0.50850291  0.13884283]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124111
+
+Running PBIRL with 2 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2920
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.91983006 -0.08412548  0.38319128]
+True reward weights: [-0.42213525  0.2247797   0.87822316]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128638
+
+Running PBIRL with 3 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2892
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.88618445  0.03379207  0.46209872]
+True reward weights: [-0.79424389 -0.44999533 -0.40826566]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.127040
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 13/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.4758
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [0.15167945 0.37116206 0.91609611]
+True reward weights: [-0.34477193 -0.32328333  0.88126058]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.2890
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.28466948  0.38304344  0.87877244]
+True reward weights: [-0.29906891  0.29795931  0.90651974]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.172109
+
+Running PBIRL with 3 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.2988
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.91241746 -0.04287626  0.40700861]
+True reward weights: [-0.1826852   0.26846139  0.94580897]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153587
+
+Running experiment 14/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2934
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.79302806  0.13085811  0.59496441]
+True reward weights: [-0.43088031 -0.17122291  0.88601629]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124007
+
+Running PBIRL with 2 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2988
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.86070842  0.00697508  0.50905046]
+True reward weights: [-0.12064008  0.4202149   0.89936945]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128130
+
+Running PBIRL with 3 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.3000
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.60563668  0.17097638  0.7771559 ]
+True reward weights: [0.16589176 0.34689312 0.92311705]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.125021
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 15/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.2940
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.7202047   0.21319333  0.66019224]
+True reward weights: [-0.75433776 -0.02805593  0.65588674]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124417
+
+Running PBIRL with 2 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.2906
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.83038891  0.08133579  0.5512157 ]
+True reward weights: [-0.77336928  0.10440931  0.62529885]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.130752
+
+Running PBIRL with 3 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.3032
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.75015602 -0.15828705  0.64203672]
+True reward weights: [-0.84525868 -0.52597749 -0.09426263]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.128462
+
+Running experiment 16/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.4858
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.1612327  -0.98663857  0.02341673]
+True reward weights: [-0.92032338 -0.11683579  0.37330186]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.4880
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.13442886 -0.29447765  0.94615633]
+True reward weights: [-0.7712803  -0.60417848  0.20023753]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123984
+
+Running PBIRL with 3 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2870
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.4891693   0.18032862  0.85334341]
+True reward weights: [-0.80869434 -0.47884594  0.34164314]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.191073
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 17/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.4824
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.92109613 -0.3872033   0.04068824]
+True reward weights: [-0.76208548 -0.28664819  0.58056743]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.4870
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.63643765 -0.53001327  0.56038653]
+True reward weights: [-0.52057043 -0.60249766  0.60498181]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123885
+
+Running PBIRL with 3 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2946
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.89891601 -0.34316452  0.27237495]
+True reward weights: [-0.1350537  -0.22789466  0.96427409]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.190698
+
+Running experiment 18/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.4852
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.51577375 -0.81192088 -0.27342625]
+True reward weights: [-0.39174849 -0.30341429  0.86860399]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.4874
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.27706293 -0.11761046  0.95362671]
+True reward weights: [-0.16924071  0.54609417  0.82045033]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123713
+
+Running PBIRL with 3 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.2970
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.81691259 -0.10229125  0.56761811]
+True reward weights: [-0.43981582 -0.74548274  0.50081686]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.188013
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 19/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.4722
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.08548838 -0.89272662  0.44241486]
+True reward weights: [-0.92648321 -0.16748955  0.33701054]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.4816
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.54678681 -0.78980955  0.27789397]
+True reward weights: [-0.94985171 -0.00175771  0.31269575]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124046
+
+Running PBIRL with 3 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.3092
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.58266245  0.23538996  0.77787919]
+True reward weights: [-0.22165522 -0.68428685  0.69470891]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.188772
+
+Running experiment 20/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.2936
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.57531233  0.34445126  0.74186862]
+True reward weights: [-0.61012931 -0.3129562   0.72787406]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123786
+
+Running PBIRL with 2 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.3042
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.4890115   0.41634308  0.76650257]
+True reward weights: [-0.83758593 -0.26337191  0.47862829]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.125792
+
+Running PBIRL with 3 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.3016
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.83141645 -0.07768991  0.55019175]
+True reward weights: [-0.4190264   0.21029929  0.88328426]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124768
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 21/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 21
+MCMC completed with acceptance ratio: 0.4818
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.55757413 -0.66748611  0.49353154]
+True reward weights: [-0.3738588  -0.3262014   0.86822937]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 21
+MCMC completed with acceptance ratio: 0.2960
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.64846204  0.25185149  0.7183786 ]
+True reward weights: [0.01163621 0.60078345 0.79932712]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.168008
+
+Running PBIRL with 3 demonstrations for experiment 21
+MCMC completed with acceptance ratio: 0.2950
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.91620486 -0.28525467  0.28142215]
+True reward weights: [-0.47987011  0.0076781   0.87730595]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.152225
+
+Running experiment 22/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 22
+MCMC completed with acceptance ratio: 0.4868
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.11945484  0.50159705  0.85681441]
+True reward weights: [-0.70965126 -0.6051058   0.36089066]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 22
+MCMC completed with acceptance ratio: 0.4870
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.49405408 -0.674053    0.54914764]
+True reward weights: [-0.22806259 -0.61178935  0.75743069]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123663
+
+Running PBIRL with 3 demonstrations for experiment 22
+MCMC completed with acceptance ratio: 0.2938
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.43159439  0.20365189  0.8787788 ]
+True reward weights: [-0.51605982  0.07479476  0.85328073]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.189988
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 23/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 23
+MCMC completed with acceptance ratio: 0.4892
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.45531788 -0.3057292   0.83619094]
+True reward weights: [-0.74528522 -0.55533186  0.36899385]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 23
+MCMC completed with acceptance ratio: 0.3020
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.93192982 -0.26358597  0.24905673]
+True reward weights: [-0.80653043 -0.16616861  0.56735937]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.169882
+
+Running PBIRL with 3 demonstrations for experiment 23
+MCMC completed with acceptance ratio: 0.2924
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.45302064  0.12656041  0.88247083]
+True reward weights: [-0.67475846 -0.07813859  0.73389058]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.152354
+
+Running experiment 24/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 24
+MCMC completed with acceptance ratio: 0.2930
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.71135088 -0.13278097  0.69018052]
+True reward weights: [-0.68144434 -0.29187893  0.6711485 ]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123945
+
+Running PBIRL with 2 demonstrations for experiment 24
+MCMC completed with acceptance ratio: 0.3024
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.95032228 -0.12149821  0.2865759 ]
+True reward weights: [-0.73121683 -0.35474344  0.5826483 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.127506
+
+Running PBIRL with 3 demonstrations for experiment 24
+MCMC completed with acceptance ratio: 0.2936
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.88349472 -0.29478218  0.36406119]
+True reward weights: [-0.61669303 -0.3310855   0.71419332]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.126498
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 25/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 25
+MCMC completed with acceptance ratio: 0.4816
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.0368072   0.42244181  0.9056424 ]
+True reward weights: [-0.44714936 -0.30119858  0.84222139]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 25
+MCMC completed with acceptance ratio: 0.2996
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.91968765 -0.38753629  0.06316842]
+True reward weights: [ 0.33403957 -0.89716411  0.28898812]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.170522
+
+Running PBIRL with 3 demonstrations for experiment 25
+MCMC completed with acceptance ratio: 0.2950
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.61977796  0.12906787  0.77409093]
+True reward weights: [-0.77796562 -0.243522    0.57919472]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153121
+
+Running experiment 26/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 26
+MCMC completed with acceptance ratio: 0.4788
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.12711369 -0.83021279  0.54276039]
+True reward weights: [-0.7333898  -0.47830978  0.48307263]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123664
+
+Running PBIRL with 2 demonstrations for experiment 26
+MCMC completed with acceptance ratio: 0.4844
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.45087196 -0.38053617  0.80740739]
+True reward weights: [-0.27452942 -0.85704775  0.43600774]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123517
+
+Running PBIRL with 3 demonstrations for experiment 26
+MCMC completed with acceptance ratio: 0.2998
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.4184892   0.28375251  0.86275796]
+True reward weights: [ 0.16710302 -0.95183216  0.25708389]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.189733
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 27/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 27
+MCMC completed with acceptance ratio: 0.4866
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.86586604 -0.05205051  0.49756079]
+True reward weights: [-0.65557811 -0.01374154  0.75500233]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 27
+MCMC completed with acceptance ratio: 0.2960
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.73721802 -0.14230733  0.66049845]
+True reward weights: [ 0.29903076 -0.3353117   0.89339055]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.167886
+
+Running PBIRL with 3 demonstrations for experiment 27
+MCMC completed with acceptance ratio: 0.2970
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.07115253  0.42822021  0.9008689 ]
+True reward weights: [-0.86756806 -0.44649337 -0.21901899]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.151738
+
+Running experiment 28/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 28
+MCMC completed with acceptance ratio: 0.2906
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.33886703  0.20737661  0.91769498]
+True reward weights: [-0.866301   -0.34967581  0.35672034]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124179
+
+Running PBIRL with 2 demonstrations for experiment 28
+MCMC completed with acceptance ratio: 0.2984
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.70764045  0.25712579  0.65812712]
+True reward weights: [-0.80658326 -0.58467273 -0.08707037]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.129032
+
+Running PBIRL with 3 demonstrations for experiment 28
+MCMC completed with acceptance ratio: 0.2866
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.16133893  0.34839534  0.92335824]
+True reward weights: [-0.29601807 -0.0253492   0.95484591]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.127708
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 29/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 29
+MCMC completed with acceptance ratio: 0.4848
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.82396561 -0.22936765  0.51814202]
+True reward weights: [-0.6535586  -0.23072892  0.72085041]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 29
+MCMC completed with acceptance ratio: 0.4860
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.01662986 -0.70018701  0.71376578]
+True reward weights: [-0.33090956 -0.31447129  0.8897228 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123899
+
+Running PBIRL with 3 demonstrations for experiment 29
+MCMC completed with acceptance ratio: 0.2962
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.73476922  0.23460885  0.63645336]
+True reward weights: [0.28810181 0.15618988 0.9447762 ]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.187782
+
+Running experiment 30/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 30
+MCMC completed with acceptance ratio: 0.4768
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.13796555 -0.73315905  0.6659154 ]
+True reward weights: [-0.81326386 -0.04441834  0.5801973 ]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 30
+MCMC completed with acceptance ratio: 0.2982
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.5212614   0.08353135  0.84929916]
+True reward weights: [ 0.02272009 -0.99705023 -0.07331192]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.167214
+
+Running PBIRL with 3 demonstrations for experiment 30
+MCMC completed with acceptance ratio: 0.2958
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.46986251  0.38120922  0.79618387]
+True reward weights: [0.42393419 0.50763835 0.75005541]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.151063
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 31/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 31
+MCMC completed with acceptance ratio: 0.2982
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.80693036  0.06485206  0.58707546]
+True reward weights: [-0.27534761 -0.19938474  0.94044108]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124102
+
+Running PBIRL with 2 demonstrations for experiment 31
+MCMC completed with acceptance ratio: 0.2968
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.64587546  0.07160592  0.76007728]
+True reward weights: [-0.66111759 -0.61530821 -0.42932428]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128543
+
+Running PBIRL with 3 demonstrations for experiment 31
+MCMC completed with acceptance ratio: 0.3000
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.84948355 -0.02621405  0.5269635 ]
+True reward weights: [-0.90751741 -0.41792921 -0.04180096]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.127449
+
+Running experiment 32/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 32
+MCMC completed with acceptance ratio: 0.4774
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.20089866 -0.94515177 -0.25754195]
+True reward weights: [-0.90753571 -0.40234227  0.1204144 ]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 32
+MCMC completed with acceptance ratio: 0.2986
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.60770618  0.26381225  0.74906362]
+True reward weights: [-0.93454703  0.22694798  0.27407382]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.168564
+
+Running PBIRL with 3 demonstrations for experiment 32
+MCMC completed with acceptance ratio: 0.3068
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.92078151 -0.38067134  0.08515126]
+True reward weights: [-0.73632254 -0.53671586 -0.41202574]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.151379
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 33/50...
+Shuffled Demos: [(4, 3), (0, 1), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 33
+MCMC completed with acceptance ratio: 0.4848
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.25625526 -0.65032065  0.71513376]
+True reward weights: [-0.32556312 -0.30396656  0.89532842]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 33
+MCMC completed with acceptance ratio: 0.2996
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.52098473  0.2018331   0.82936018]
+True reward weights: [ 0.32546492 -0.7925513   0.51568887]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.170276
+
+Running PBIRL with 3 demonstrations for experiment 33
+MCMC completed with acceptance ratio: 0.3040
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [3.98408247e-04 4.82925486e-01 8.75661359e-01]
+True reward weights: [-0.75598258  0.21987887  0.61655788]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.152574
+
+Running experiment 34/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 34
+MCMC completed with acceptance ratio: 0.2956
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.87875603 -0.13840723  0.45676174]
+True reward weights: [-0.839382   -0.393236    0.37523766]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123830
+
+Running PBIRL with 2 demonstrations for experiment 34
+MCMC completed with acceptance ratio: 0.2934
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.51304207  0.27122561  0.81438597]
+True reward weights: [ 0.2722343   0.35487943 -0.89439872]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.125770
+
+Running PBIRL with 3 demonstrations for experiment 34
+MCMC completed with acceptance ratio: 0.2932
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.36759492  0.19870894  0.90850907]
+True reward weights: [-0.69893171  0.26196561  0.66548365]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.125489
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 35/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 35
+MCMC completed with acceptance ratio: 0.4918
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.66829031 -0.37398104  0.64306007]
+True reward weights: [-0.94121751 -0.05112011  0.33391067]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123664
+
+Running PBIRL with 2 demonstrations for experiment 35
+MCMC completed with acceptance ratio: 0.2924
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.8265732  -0.19638223  0.52745689]
+True reward weights: [-0.82283151 -0.51187669  0.24684116]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.169460
+
+Running PBIRL with 3 demonstrations for experiment 35
+MCMC completed with acceptance ratio: 0.2948
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.79690938  0.11807171  0.5924479 ]
+True reward weights: [-0.84283829 -0.21782956  0.49211167]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.151660
+
+Running experiment 36/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 36
+MCMC completed with acceptance ratio: 0.4798
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [0.29031145 0.01047106 0.95687492]
+True reward weights: [-0.05456508 -0.040557    0.99768621]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 36
+MCMC completed with acceptance ratio: 0.4792
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.00269962  0.3964543   0.91805049]
+True reward weights: [ 0.45129661 -0.70438254  0.54788375]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123783
+
+Running PBIRL with 3 demonstrations for experiment 36
+MCMC completed with acceptance ratio: 0.3020
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.47047215  0.17388704  0.86511228]
+True reward weights: [-0.43206979 -0.20348192  0.87858455]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.190638
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 37/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 37
+MCMC completed with acceptance ratio: 0.4826
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.35842536 -0.70911455  0.60719668]
+True reward weights: [-0.75478167 -0.33513042  0.563908  ]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 37
+MCMC completed with acceptance ratio: 0.4848
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.25644128  0.41697343  0.87199256]
+True reward weights: [-0.80627431 -0.24971971  0.5362479 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123656
+
+Running PBIRL with 3 demonstrations for experiment 37
+MCMC completed with acceptance ratio: 0.2990
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.30175326  0.25352117  0.91906038]
+True reward weights: [-0.41257923 -0.86387176 -0.28897052]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.191090
+
+Running experiment 38/50...
+Shuffled Demos: [(2, 1), (0, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 38
+MCMC completed with acceptance ratio: 0.4884
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.4162242  -0.89651893  0.15169451]
+True reward weights: [-0.49248773 -0.22865786  0.83974486]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 38
+MCMC completed with acceptance ratio: 0.3044
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.43610985  0.22931545  0.8701854 ]
+True reward weights: [-0.60075956 -0.77737001  0.18650423]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.170444
+
+Running PBIRL with 3 demonstrations for experiment 38
+MCMC completed with acceptance ratio: 0.3054
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.42145763  0.38499521  0.82106769]
+True reward weights: [-0.87486287 -0.44176458  0.19864294]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.152597
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 39/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 39
+MCMC completed with acceptance ratio: 0.4844
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [0.5952726  0.33033979 0.73247946]
+True reward weights: [-0.56481614 -0.46100063  0.68444222]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123667
+
+Running PBIRL with 2 demonstrations for experiment 39
+MCMC completed with acceptance ratio: 0.4870
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.41069756 -0.85061474  0.32830181]
+True reward weights: [0.64288951 0.40181069 0.65210524]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123976
+
+Running PBIRL with 3 demonstrations for experiment 39
+MCMC completed with acceptance ratio: 0.3010
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.53074919  0.15533999  0.83317152]
+True reward weights: [-0.72100643 -0.51042174 -0.46863566]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.188917
+
+Running experiment 40/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 40
+MCMC completed with acceptance ratio: 0.4970
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.38266709 -0.76878147  0.5123875 ]
+True reward weights: [-0.6667631  -0.57474284  0.47444455]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 40
+MCMC completed with acceptance ratio: 0.4786
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.22710006 -0.3660074   0.90247668]
+True reward weights: [ 0.34606725 -0.70879755  0.61468975]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123819
+
+Running PBIRL with 3 demonstrations for experiment 40
+MCMC completed with acceptance ratio: 0.2954
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.65259444  0.13275707  0.74598664]
+True reward weights: [0.07994588 0.20517375 0.97545496]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.189616
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 41/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 41
+MCMC completed with acceptance ratio: 0.4932
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.67512745 -0.56025906  0.47990906]
+True reward weights: [-0.46247666 -0.0267168   0.88622884]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 41
+MCMC completed with acceptance ratio: 0.4890
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.68270536 -0.26090172  0.68252742]
+True reward weights: [0.37405656 0.51878765 0.76872691]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123760
+
+Running PBIRL with 3 demonstrations for experiment 41
+MCMC completed with acceptance ratio: 0.2970
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.90957404 -0.35976863  0.20794614]
+True reward weights: [-0.6461162  -0.60325413  0.46756638]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.191966
+
+Running experiment 42/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 42
+MCMC completed with acceptance ratio: 0.2900
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.75641253 -0.04437327  0.652588  ]
+True reward weights: [-0.71505276 -0.68463496  0.14133129]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124005
+
+Running PBIRL with 2 demonstrations for experiment 42
+MCMC completed with acceptance ratio: 0.2990
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.7563534   0.17462323  0.63042546]
+True reward weights: [-0.27120519  0.64797688  0.71173992]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128255
+
+Running PBIRL with 3 demonstrations for experiment 42
+MCMC completed with acceptance ratio: 0.2968
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.8168289  -0.03459286  0.57584189]
+True reward weights: [-0.85111456 -0.4066918  -0.33197257]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.126582
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 43/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 43
+MCMC completed with acceptance ratio: 0.2982
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.80311236  0.09807487  0.58770048]
+True reward weights: [-0.94655708 -0.29794542  0.12352418]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124056
+
+Running PBIRL with 2 demonstrations for experiment 43
+MCMC completed with acceptance ratio: 0.2998
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.69880373 -0.1090209   0.70695671]
+True reward weights: [-0.80112375 -0.59633558  0.05083916]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128333
+
+Running PBIRL with 3 demonstrations for experiment 43
+MCMC completed with acceptance ratio: 0.2966
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.22468453  0.37634934  0.89882036]
+True reward weights: [-0.19808252  0.49561623  0.84565233]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.126392
+
+Running experiment 44/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 44
+MCMC completed with acceptance ratio: 0.3002
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.56926508  0.36173505  0.73829873]
+True reward weights: [-0.88315502 -0.32822573  0.33511952]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124116
+
+Running PBIRL with 2 demonstrations for experiment 44
+MCMC completed with acceptance ratio: 0.2944
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.80578955  0.15145179  0.57250812]
+True reward weights: [0.45026389 0.59415166 0.66651799]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128301
+
+Running PBIRL with 3 demonstrations for experiment 44
+MCMC completed with acceptance ratio: 0.2988
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.36161346  0.33620217  0.8695998 ]
+True reward weights: [-0.57268572  0.50459552  0.64607618]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.126617
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 45/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 45
+MCMC completed with acceptance ratio: 0.4758
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.11771929 -0.59531178  0.79482454]
+True reward weights: [-0.83381491 -0.37890594  0.40147601]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 45
+MCMC completed with acceptance ratio: 0.4790
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.06107071  0.27128893  0.96055853]
+True reward weights: [ 0.59045044 -0.50475871  0.62975147]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123773
+
+Running PBIRL with 3 demonstrations for experiment 45
+MCMC completed with acceptance ratio: 0.2970
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.52929469  0.04996042  0.84696581]
+True reward weights: [-0.35947595 -0.34500907  0.86703275]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.189932
+
+Running experiment 46/50...
+Shuffled Demos: [(0, 1), (4, 3), (2, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 46
+MCMC completed with acceptance ratio: 0.3010
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.44057098  0.11296783  0.89058154]
+True reward weights: [-0.82098277 -0.18440172  0.54035479]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123915
+
+Running PBIRL with 2 demonstrations for experiment 46
+MCMC completed with acceptance ratio: 0.2976
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.76720975 -0.08961838  0.63510452]
+True reward weights: [-0.70201195 -0.09350577  0.70599992]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.127230
+
+Running PBIRL with 3 demonstrations for experiment 46
+MCMC completed with acceptance ratio: 0.3026
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.67562108  0.2121612   0.70606217]
+True reward weights: [-0.95656312 -0.20011672  0.21199126]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.125919
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 47/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 47
+MCMC completed with acceptance ratio: 0.2944
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.72629488  0.07204576  0.68359721]
+True reward weights: [-0.73857451 -0.23755048  0.63093381]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123763
+
+Running PBIRL with 2 demonstrations for experiment 47
+MCMC completed with acceptance ratio: 0.3004
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.91162224 -0.33244756  0.24170958]
+True reward weights: [-0.5075224   0.32464172  0.79814082]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124864
+
+Running PBIRL with 3 demonstrations for experiment 47
+MCMC completed with acceptance ratio: 0.2994
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.82221761  0.12163939  0.55602343]
+True reward weights: [-0.03578349  0.23203612  0.97204875]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124719
+
+Running experiment 48/50...
+Shuffled Demos: [(0, 1), (2, 1), (4, 3)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 48
+MCMC completed with acceptance ratio: 0.2926
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.8883985  -0.0678934   0.45402487]
+True reward weights: [-0.95541883 -0.18852986  0.22722531]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.124173
+
+Running PBIRL with 2 demonstrations for experiment 48
+MCMC completed with acceptance ratio: 0.3006
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.55300005  0.31957518  0.76945607]
+True reward weights: [-0.89601815 -0.39164183 -0.2092084 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.128744
+
+Running PBIRL with 3 demonstrations for experiment 48
+MCMC completed with acceptance ratio: 0.3016
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.65633709  0.2509042   0.71152562]
+True reward weights: [-0.734052   -0.55555041 -0.39055268]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.127602
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 49/50...
+Shuffled Demos: [(2, 1), (4, 3), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 49
+MCMC completed with acceptance ratio: 0.4736
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.88381275 -0.4537967   0.1137698 ]
+True reward weights: [-0.98484463 -0.1489005   0.08893646]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 49
+MCMC completed with acceptance ratio: 0.4834
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.3948713  -0.83601797  0.38098636]
+True reward weights: [ 0.37660383 -0.44347627  0.81332549]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123877
+
+Running PBIRL with 3 demonstrations for experiment 49
+MCMC completed with acceptance ratio: 0.3022
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.32676786  0.31809262  0.88996621]
+True reward weights: [-0.73404423 -0.08603774  0.67362941]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.189859
+
+Running experiment 50/50...
+Shuffled Demos: [(4, 3), (2, 1), (0, 1)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.4810
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [0.04438095 0.52508414 0.84989233]
+True reward weights: [-0.47840873 -0.41855607  0.77196885]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.4918
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.52250594  0.056848    0.85073841]
+True reward weights: [ 0.0209545  -0.03636556  0.99911884]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123948
+
+Running PBIRL with 3 demonstrations for experiment 50
+MCMC completed with acceptance ratio: 0.2934
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.69218452 -0.03907655  0.72066193]
+True reward weights: [-0.59572471 -0.80071442  0.06299595]
+MAP Policy for current environment:

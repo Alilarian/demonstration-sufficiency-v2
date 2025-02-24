@@ -1,0 +1,14 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.21542894 -0.89013091  0.40156859]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Shuffled Estops: [([(0, 0), (0, 1), (3, 0), (0, 1), (3, 3), (4, 3), (5, None)], 0), ([(0, 3), (1, 2), (0, 2), (0, 2), (0, 3), (1, 0), (1, 2), (1, 2), (4, 2), (4, 0)], 0), ([(0, 3), (3, 2), (3, 2), (3, 1), (3, 1), (3, 0), (0, 2), (0, 3), (1, 2), (0, 3)], 0), ([(0, 3), (1, 0), (1, 3), (2, 0), (2, 1), (5, None)], 0), ([(0, 3), (1, 1), (4, 1), (4, 3), (5, None)], 0), ([(0, 0), (0, 3), (1, 0), (1, 1), (2, 3), (2, 0), (2, 0), (2, 2), (2, 0), (2, 0)], 0)]
+
+Running PBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.5954
+Using 3250 samples after burn-in.
+MAP Solution: [-0.35385059  0.8178494   0.4537754 ]
+True reward weights: [-0.21542894 -0.89013091  0.40156859]
+MAP Policy for current environment:
+0.9-VaR-max-normalization for 1 demonstrations: 0.573918

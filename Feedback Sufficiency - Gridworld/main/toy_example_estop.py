@@ -17,10 +17,11 @@ from env import gridworld_env2
 from agent.q_learning_agent import ValueIteration
 from reward_learning.ebirl_v2 import EBIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
-                                 compute_policy_loss_avar_bound,
-                                 calculate_expected_value_difference)
+                                 compute_policy_loss_avar_bounds,
+                                 calculate_expected_value_difference,
+                                 )
 from utils.env_helper import print_policy
-from data_generation.generate_data import generate_random_trajectory, simulate_human_estop
+from data_generation.generate_data import generate_random_trajectory, simulate_human_estop, generate_random_trajectory_diff_start
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
@@ -69,7 +70,7 @@ random_normalization = config['suff_config']['random_normalization']
 thresholds = config['suff_config']['thresholds']
 
 # Get values from argparse or fallback to YAML config
-num_world = config['experiments']['num_world']
+#num_world = config['experiments']['num_world']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
 
@@ -87,10 +88,21 @@ custom_grid_features = [
 # Initialize environments
 # Define your feature weights list
 
-
-feature_weights_list = np.load("grid_world_weights.npy")
-#feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
-
+#feature_weights_list = np.load("grid_world_weights.npy")
+#feature_weights_list = [[-0.21542894, -0.89013091,  0.40156859]]
+feature_weights_list = [[-0.1893847090172638, -0.433227452503042, 0.018744262652067665],
+[-0.5942365137793248, -2.7756917790434144, 1.1029717854287309],
+[-0.15577391704700666, -0.7177625769898232, 0.000991955274554213],
+[-0.5275640745683162, -2.097421544476589, 0.2538320913598963],
+[-0.5350207318488636, -1.7123836846675087, 0.47876964028151203],
+[-0.34334806943851354, -1.5487779480633281, 0.013555302598519897],
+[-0.4823876533972692, -1.0640115676990751, 0.4516747895081699],
+[-0.7884414377634731, -1.8516540898643266, 2.192485933578525],
+[-0.2687351469327862, -0.8427383623313465, 1.1405694556232537],
+[-0.15852920759124825, -0.8157435098169674, 0.9965384027058611],
+[-0.24865559926474912, -0.7649424359034633, 0.2663481135094544],
+[-0.48849273337568055, -1.5974820284361861, 1.905976905646326],
+]
 # Initialize environments with feature weights
 envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     color_to_feature_map=color_to_feature_map,
@@ -101,17 +113,15 @@ for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
 
 # Generate policies for each environment
-policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(num_world)]
+policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(len(envs))]
 print_policy(policies[0], 2, 3)
 logger.info(f"Generated optimal policies for all environments.")
 
 ## Generate 10 random traj
 ## Simulate the E-stop from them
 ## In each iteration featch 4 of them and run experiments
-#random_trajs = [generate_random_trajectory(envs[0], max_horizon=6) for i in range(5)]
-#estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=1.0, fixed_length=10) for i in random_trajs]
-
-#estops = [simulate_human_estop(envs[0], i, beta=beta, fixed_length=True) for i in random_trajs]
+#random_trajs = [generate_random_trajectory(envs[0], max_horizon=10) for i in range(6)]
+#estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=gamma, fixed_length=None) for i in random_trajs]
 
 bounds_all_experiments = []
 num_demos_all_experiments = []
@@ -127,10 +137,17 @@ for i in range(50):
     env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
-    random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(6)]
-    estops = [simulate_human_estop(env, i, beta=beta, gamma=gamma, fixed_length=10) for i in random_trajs]
+    #random_trajs = [generate_random_trajectory(env, max_horizon=10) for i in range(6)]
+    #estops = [simulate_human_estop(env, i, beta=beta, gamma=gamma, fixed_length=None) for i in random_trajs]
     #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
 
+    random_trajs = [generate_random_trajectory(env, max_horizon=6) for j in range(7)]
+    #random_trajs = [generate_random_trajectory_diff_start(envs[i], max_horizon=5) for j in range(6)]
+
+    #random_trajs = [[(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)], 
+    #    [(0,3), (1,3), (2,1), (5,None)],
+    #    [(0,3), (1,1), (4,3), (5,None)]]
+    estops = [simulate_human_estop(env, j, beta=beta, gamma=gamma, fixed_length=None) for j in random_trajs]
     estops_shuffled = estops
     random.shuffle(estops_shuffled)
     logger.info(f"Shuffled Estops: {estops_shuffled}")
@@ -171,11 +188,13 @@ for i in range(50):
         logger.info("MAP Policy for current environment:")
         print_policy(map_policy, 2, 3)
 
+        approx_avar_bounds = compute_policy_loss_avar_bounds(mcmc_samples, env, map_policy, random_normalization, alphas, delta)
+
         # Calculate a-VaR for different alphas
         for alpha in alphas:
-            avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
-            avar_bounds[alpha][demonstration].append(avar_bound)
-            logger.info(f"{alpha}-VaR-max-normalization for {demonstration + 1} demonstrations: {avar_bound:.6f}")
+            #avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
+            avar_bounds[alpha][demonstration].append(approx_avar_bounds[alpha])
+            logger.info(f"{alpha}-VaR-max-normalization for {demonstration + 1} demonstrations: {approx_avar_bounds[alpha]:.6f}")
 
         # Calculate true expected value difference (EVD)
         true_bound = calculate_expected_value_difference(eval_policy=map_policy, env=env, epsilon=epsilon, normalize_with_random_policy=random_normalization)

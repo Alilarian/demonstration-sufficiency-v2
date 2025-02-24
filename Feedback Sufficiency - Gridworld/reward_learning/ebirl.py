@@ -2,6 +2,7 @@ from agent.q_learning_agent import ValueIteration
 import numpy as np
 import copy
 from utils.common_helper import compute_reward_for_trajectory
+from scipy.special import logsumexp
 """
 In this version, I implemented the Estop model presented in the paper section 2.1:
 The Effect of Modeling Human Rationality Level on Learning Rewards from Multiple Feedback Types
@@ -72,10 +73,13 @@ class EBIRL:
             ]
             
             # Use the Log-Sum-Exp trick to compute the denominator
-            max_reward = max(self.beta * r for r in cumulative_rewards)  # Maximum reward for numerical stability
-            stop_prob_denominator = max_reward + np.log(
-                sum(np.exp(self.beta * r - max_reward) for r in cumulative_rewards)
-            )
+            #max_reward = max(self.beta * r for r in cumulative_rewards)  # Maximum reward for numerical stability
+            #stop_prob_denominator = max_reward + np.log(
+            #    sum(np.exp(self.beta * r - max_reward) for r in cumulative_rewards)
+            #)
+
+            stop_prob_denominator = logsumexp(self.beta * np.array(cumulative_rewards))
+
             
             # Add the log probability to the log sum
             log_sum += stop_prob_numerator - stop_prob_denominator

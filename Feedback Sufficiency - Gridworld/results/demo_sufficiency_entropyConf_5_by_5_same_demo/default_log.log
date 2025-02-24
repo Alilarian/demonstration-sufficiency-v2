@@ -1,0 +1,36 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+Feature weights for environment: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+Feature weights for environment: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+Feature weights for environment: [-0.69449962 -0.28165855  0.22055331  0.62425554]
+Feature weights for environment: [-0.58844088 -0.39506705 -0.37329827  0.59858814]
+Feature weights for environment: [-0.62480116 -0.58775562  0.29021502  0.42419581]
+Feature weights for environment: [-0.86648592 -0.43712062 -0.12519764  0.20604187]
+Feature weights for environment: [-0.66202557 -0.27713495  0.4113014   0.56191594]
+Feature weights for environment: [-0.70843905 -0.48585435  0.3607345   0.3632221 ]
+Feature weights for environment: [-0.59500066 -0.16244209  0.37080191  0.69432898]
+Feature weights for environment: [-0.0702138  -0.06544465  0.14444996  0.98484579]
+Feature weights for environment: [-0.58571354 -0.27832207  0.48101309  0.59000244]
+Feature weights for environment: [-0.83842198 -0.21600546  0.03565977  0.49911783]
+Feature weights for environment: [-0.27410583  0.06391249  0.48081808  0.83041867]
+Feature weights for environment: [-0.67868375 -0.62331644 -0.1171628   0.3703213 ]
+Feature weights for environment: [-0.92679793  0.00735039  0.0581375   0.37096037]
+Feature weights for environment: [-0.34813921  0.02418599  0.41049361  0.84244235]
+Feature weights for environment: [-0.70806601  0.20943992  0.21689523  0.63854045]
+Feature weights for environment: [-0.55653737  0.11873141  0.39462253  0.72141671]
+Initialized 19 GridWorld environments.
+Generated optimal policies for all environments.
+Shuffled demonstration order: [16, 12, 9, 19, 18, 6, 5, 10, 15, 21, 11, 17, 1, 14, 22, 13, 2, 23, 4, 24, 7, 8, 0, 3, 20]
+
+Running experiment 1/19...
+Same Demos: [(10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1), (10, 1)]
+Maximum entropy: 8.7796
+
+Running PBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3834
+Using 6500 samples after burn-in.
+Stored 6500 MCMC samples for demonstration 1
+MAP Solution: [-0.30964184  0.62871102  0.01452497  0.71318539]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.122514

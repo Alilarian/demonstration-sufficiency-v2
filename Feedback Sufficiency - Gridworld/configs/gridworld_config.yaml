@@ -1,7 +1,7 @@
 env_config:
   render_mode: "rgb_array"    # Render mode for the environment: "human" for GUI, "rgb_array" for image array output
-  size: 2                     # Grid size (5x5 grid in this case)
-  noise_prob: 0.1             # Probability of a noisy transition, introducing randomness to actions
+  size: 5                     # Grid size (5x5 grid in this case)
+  noise_prob: 0             # Probability of a noisy transition, introducing randomness to actions
   seed: 137                   # Random seed for reproducibility of results
   steps: 100                  # Maximum number of steps the agent can take per episode
   sleep_time: 0.5             # Time delay (in seconds) between each step during rendering
@@ -25,13 +25,14 @@ suff_config:
   optimality_threshold: 0.95
   random_normalization: true  # whether or not to normalize with random policy
   thresholds: [0.1, 0.2, 0.3, 0.4] # Thresholds to declare demonstration sufficiency
-  conv_thresholds : [1, 2, 3] # Needs to be changed based on the number of demonstrations
-  held_out_thresholds: [1]
+  conv_thresholds : [1, 2, 3, 4, 5, 6] # Needs to be changed based on the number of demonstrations
+  held_out_thresholds: [3, 4, 5, 6, 7, 8]
+  
   normalized_infogain_thresholds : []
   entropy_confidence_thresholds: []
 
 experiments:
-  num_world: 1
+  #num_world: 1
   num_demonstration: 10
 
 data_generation:

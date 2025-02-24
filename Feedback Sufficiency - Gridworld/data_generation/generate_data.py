@@ -10,6 +10,7 @@ import time
 import yaml
 import numpy as np
 import random
+from scipy.special import logsumexp
 
 # Get current and parent directory to handle import paths
 current = os.path.dirname(os.path.realpath(__file__))
@@ -29,8 +30,6 @@ class GridWorldMDPDataGenerator:
 
         if seed is not None:
             self._set_random_seed(seed=seed)
-
-    #def generate_random_demo()
 
     def generate_optimal_demo(self, num_trajs, start_states=None):
         """
@@ -97,7 +96,6 @@ class GridWorldMDPDataGenerator:
         :param start_states: Optional list of starting states. If not provided, random non-terminal states will be used.
         :return: A list of tuples where each tuple contains a random trajectory and its associated cumulative reward.
         """
-
         trajectories_with_rewards = []
 
         # Get all non-terminal states
@@ -105,7 +103,6 @@ class GridWorldMDPDataGenerator:
             s for s in range(self.env.get_num_states()) 
             if s not in self.env.terminal_states
         ]
-
         # Handle start states: If not provided, randomly select unique non-terminal starting states
         start_states = np.random.choice(non_terminal_states, size=num_trajs, replace=True)
 
@@ -185,12 +182,10 @@ class GridWorldMDPDataGenerator:
                 elif reward_2 > reward_1:
                     pairwise_comparisons.append((traj_2, traj_1))
                     
-
         else:
             raise ValueError(f"Invalid strategy: {strategy}")
 
         return pairwise_comparisons
-
 
     def generate_estop(self, beta, num_trajs, start_states=None):
         """
@@ -248,7 +243,6 @@ class GridWorldMDPDataGenerator:
         np.random.seed(seed)
         random.seed(seed)
 
-
 def generate_random_trajectory(env, max_horizon=25):
     """
     Generate a random trajectory of fixed length (max_horizon + 1) using random actions.
@@ -267,7 +261,11 @@ def generate_random_trajectory(env, max_horizon=25):
     terminal_states = obsv["terminal states"]  # List of terminal states as indices
 
     # Compute the raw index (integer) for the initial state.
-    state = agent_position[0] * env.columns + agent_position[1]
+    
+    try:
+        state = agent_position[0] * env.columns + agent_position[1]
+    except:
+        state = agent_position[0] * env.size + agent_position[1]
 
     for step in range(max_horizon):
         # Append the current state and chosen action
@@ -289,10 +287,103 @@ def generate_random_trajectory(env, max_horizon=25):
         state = next_state
 
     # Ensure the terminal state is appended if the loop exits without adding it
-    if state in terminal_states and (len(trajectory) == 0 or trajectory[-1][0] != state):
-        trajectory.append((state, None))  # Append terminal state explicitly
+    #if state in terminal_states and (len(trajectory) == 0 or trajectory[-1][0] != state):
+    #    trajectory.append((state, None))  # Append terminal state explicitly
 
     return trajectory
+
+def generate_pairwise_comparisons(env, num_trajs=10, max_horizon=25, num_comparisons=10):
+    """
+    Generates a fixed number of pairwise comparisons between randomly generated trajectories.
+
+    Args:
+        env: The GridWorld environment.
+        num_trajs (int): Number of trajectories to generate.
+        max_horizon (int): Maximum length of each trajectory.
+        num_comparisons (int): Number of comparisons to return.
+
+    Returns:
+        List of tuples containing a pair of trajectories for comparison.
+    """
+    pairwise_comparisons = []
+    trajectories = []
+
+    # Generate random trajectories
+    for _ in range(num_trajs):
+        traj = generate_random_trajectory(env, max_horizon)
+        total_reward = sum(env.compute_reward(state) for state, action in traj)  # Ignore terminal state
+        trajectories.append((traj, total_reward))
+
+    # Compare all unique trajectory pairs
+    for i in range(len(trajectories)):
+        for j in range(i + 1, len(trajectories)):  # Avoid duplicate comparisons
+            traj_1, reward_1 = trajectories[i]
+            traj_2, reward_2 = trajectories[j]
+
+            if reward_1 > reward_2:
+                pairwise_comparisons.append((traj_1, traj_2))
+            elif reward_2 > reward_1:
+                pairwise_comparisons.append((traj_2, traj_1))
+
+    # Ensure we return exactly `num_comparisons` comparisons
+    return random.sample(pairwise_comparisons, min(num_comparisons, len(pairwise_comparisons)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+def generate_random_trajectory_diff_start(env, max_horizon=25):
+    """
+    Generate a random trajectory of up to max_horizon steps using random actions.
+    The trajectory starts from a random non-terminal state and may or may not reach the goal.
+
+    Args:
+        env: The GridWorld environment.
+        max_horizon (int): Maximum length of the trajectory.
+
+    Returns:
+        list of (state_index, action) tuples.
+    """
+    trajectory = []
+
+    # Get all non-terminal states except goal
+    non_terminal_states = [s for s in range(env.num_states) if s not in env.terminal_states]
+    #non_terminal_states = [0, 3]
+
+    # Select a random start state (not the goal)
+    start_state = random.choice(non_terminal_states)
+    state = start_state
+
+    for step in range(max_horizon):
+        # Append current state and action
+        if state in env.terminal_states:
+            trajectory.append((state, None))  # Terminal state reached
+            break
+
+        # Choose a random action uniformly
+        action = np.random.choice(env.num_actions)
+
+        # Sample the next state based on transition probabilities
+        next_state = np.random.choice(env.num_states, p=env.transitions[state][action])
+
+        # Append (current state, chosen action) to the trajectory
+        trajectory.append((state, action))
+
+        # Update state
+        state = next_state
+
+    return trajectory
+
+
+
 
 
 def simulate_human_estop(env, full_trajectory, beta=2.0, gamma=1.0, fixed_length=None):
@@ -323,11 +414,18 @@ def simulate_human_estop(env, full_trajectory, beta=2.0, gamma=1.0, fixed_length
         current_reward += (gamma**k) * reward
         cumulative_rewards.append(current_reward)
 
-    # Compute stopping probabilities using Boltzmann distribution
-    probabilities = np.exp(beta * np.array(cumulative_rewards))
-    probabilities /= probabilities.sum()
+    # Convert to numpy array for stable computation
+    cumulative_rewards = np.array(cumulative_rewards)
 
-    # Use the stopping point with the highest cumulative reward
+    # Use `logsumexp` for numerical stability
+    log_denominator = logsumexp(beta * cumulative_rewards)
+    log_numerator = beta * cumulative_rewards  # Log of exp(beta * cumulative_rewards)
+
+    # Compute stopping probabilities in log-space
+    log_probabilities = log_numerator - log_denominator
+    probabilities = np.exp(log_probabilities)  # Convert back to normal probability values
+
+    # Select stopping time using highest probability
     t_stop = np.argmax(probabilities)
 
     # Pad the trajectory to ensure it matches the fixed length
@@ -337,7 +435,6 @@ def simulate_human_estop(env, full_trajectory, beta=2.0, gamma=1.0, fixed_length
             full_trajectory.append(last_step)
 
     return (full_trajectory[:fixed_length] if fixed_length else full_trajectory, t_stop)
-
 
 def simulate_human_estop_v2(env, full_trajectory, beta=2.0, gamma=1.0):
     """
@@ -370,16 +467,17 @@ def simulate_human_estop_v2(env, full_trajectory, beta=2.0, gamma=1.0):
         reward_up_to_t += (traj_len - t - 1) * env.compute_reward(full_trajectory[t][0])
 
         # Numerator and denominator for the stopping probability
-        numerator = np.exp(beta * reward_up_to_t)
-        denominator = np.exp(beta * traj_reward) + numerator
+        numerator = beta * reward_up_to_t
+        denominator = logsumexp([beta * traj_reward, numerator])
+        
 
         # Compute the probability of stopping at time t
-        stop_probability = numerator / denominator
+        stop_probability = numerator - denominator
         probabilities.append(stop_probability)
 
     # Normalize probabilities (to ensure numerical stability)
     probabilities = np.array(probabilities)
-    probabilities /= probabilities.sum()
+    #probabilities /= probabilities.sum()
 
     # Sample stopping point t_stop from the computed probabilities
     #t_stop = np.random.choice(len(probabilities), p=probabilities)

@@ -18,14 +18,20 @@ class NoisyLinearRewardFeaturizedGridWorldEnv(gym.Env):
         self.gamma = gamma  # Discount factor of MDP
 
         # Define feature vectors for each color in the grid
+        #self.colors_to_features = {
+        #    "blue": np.array([1, 0, 0, 0, 0, 0, 0]),
+        #    "red": np.array([0, 1, 0, 0, 0, 0, 0]),
+        #    "green": np.array([0, 0, 1, 0, 0, 0, 0]),
+        #    "yellow": np.array([0, 0, 0, 1, 0, 0, 0]),
+        #    "purple": np.array([0, 0, 0, 0, 1, 0, 0]),
+        #    "orange": np.array([0, 0, 0, 0, 0, 1, 0]),
+        #    "black": np.array([0, 0, 0, 0, 0, 0, 1])
+        #}
         self.colors_to_features = {
-            "blue": np.array([1, 0, 0, 0, 0, 0, 0]),
-            "red": np.array([0, 1, 0, 0, 0, 0, 0]),
-            "green": np.array([0, 0, 1, 0, 0, 0, 0]),
-            "yellow": np.array([0, 0, 0, 1, 0, 0, 0]),
-            "purple": np.array([0, 0, 0, 0, 1, 0, 0]),
-            "orange": np.array([0, 0, 0, 0, 0, 1, 0]),
-            "black": np.array([0, 0, 0, 0, 0, 0, 1])
+            "blue": np.array([1, 0, 0, 0]),
+            "red": np.array([0, 1, 0, 0]),
+            "green": np.array([0, 0, 1, 0]),
+            "black": np.array([0, 0, 0, 1]),
         }
 
         self.set_random_seed(42)

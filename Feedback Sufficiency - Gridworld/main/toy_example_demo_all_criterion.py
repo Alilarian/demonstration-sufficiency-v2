@@ -296,15 +296,6 @@ for i in range(50):
         map_policy = ValueIteration(map_env).get_optimal_policy()
 
         
-        
-        
-        
-        
-        
-        
-
-        
-        
         # Visualize the map policy
         logger.info("MAP Policy for current environment:")
         print_policy(map_policy, 2, 3)
@@ -469,9 +460,7 @@ for i in range(50):
         ########################################################################
         # Held Out
         ########################################################################
-        for t in range(len(held_out_thresholds)):
-            threshold = held_out_thresholds[t]
-            if demo_counter % threshold == 0:
+
       
 
 

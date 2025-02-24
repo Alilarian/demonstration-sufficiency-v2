@@ -18,9 +18,10 @@ from agent.q_learning_agent import ValueIteration
 from data_generation.generate_data import GridWorldMDPDataGenerator
 from reward_learning.birl import BIRL
 from utils.common_helper import (calculate_percentage_optimal_actions,
-                                 compute_policy_loss_avar_bound,
-                                 calculate_expected_value_difference)
-from utils.env_helper import print_policy
+                                 compute_policy_loss_avar_bounds,
+                                 calculate_expected_value_difference,
+                                 calculate_policy_accuracy)
+from utils.env_helper import print_policy_2
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
@@ -70,44 +71,43 @@ random_normalization = config['suff_config']['random_normalization']
 thresholds = config['suff_config']['thresholds']
 
 # Get values from argparse or fallback to YAML config
-num_world = config['experiments']['num_world']
+#num_world = config['experiments']['num_world']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
-logger.info(f"Running experiment with {num_world} worlds and {num_demonstration} demonstrations per world.")
+#logger.info(f"Running experiment with {num_world} worlds and {num_demonstration} demonstrations per world.")
 
 # Initialize environments
 # Define your feature weights list
 feature_weights_list = [
-[-0.7228937044187956, -0.6039866618031474, 0.716980698837855, 1.410272623044544, 1.9116754497034756, 2.2209327833693218, 2.838008562723217],
-[-1.5061238902756908, -1.0587568956026059, -0.5975650155356756, -0.46850302512248, -0.2559663879947577, 0.8252329567608293, 1.0683281996402703],
-[-0.28459900833585844, -0.12226180968411103, -0.10124999619840261, -0.0813868704426967, 0.4424891258702808, 0.6655145900777971, 0.7400782198099581],
-[-1.6951417620338811, -1.1385137971618406, -1.0164573091672138, -0.8149772041596924, 0.30368296600812406, 0.7273550479687881, 0.9531846595477876],
-[-1.163925272630476, -0.6504958044475895, 0.2010952575187768, 0.2947724632011124, 0.4832152228314785, 0.6545849844962435, 1.6178800831100657],
-[-1.5886722828551696, -0.5601279322371531, -0.33745488197426055, -0.24385512395984563, 0.5847131605868083, 1.3656957016021474, 1.3890070183145082],
-[-0.4246324339962069, -0.4194070000781329, 0.21137717541056272, 0.3597180668697446, 0.9708110103212171, 1.8009517781002586, 2.4308626364182246],
-[-1.7515266763018744, -1.022816937219687, -0.7875235853668652, -0.38131454325393627, -0.2359907807581513, -0.0076188936349312125, 0.3930885510295719],
-[-2.0494473859249482, -1.2529739383417635, -1.191745251600571, -1.173635662179249, -0.44286531494819126, 0.14925977513348077, 1.3517570437958357],
-[-1.2663059209692278, -0.16355580797106226, -0.08448018285321454, 0.9311977667904227, 1.480428811434332, 1.4943811336578663, 1.842971483323242],
-[-1.9814035067396374, -1.7739147247436253, -0.30950337314774706, 0.16185599569005263, 0.5971935855978966, 0.7539320095287584, 1.019668894025018],
-[-2.389550393534453, -1.2233085169355755, -1.0032110650717947, 0.2096579843735842, 0.32220030610525224, 1.1403637315574635, 1.420420166502473],
-[-2.8851314645277912, -0.859299414664153, -0.06707403259237905, 0.386955696760212, 0.560180351344327, 1.213254223171574, 1.2179612005602338],
-[-1.6935002095322327, -1.2105415491873401, -0.5419175106347648, -0.05262939655448498, 1.1876125995082725, 1.2059107029243492, 1.2566182804374377],
-[-0.9567457155348924, -0.009718831756065444, 0.24619730966058667, 0.3463996956848992, 0.511716022654165, 0.8964076068111253, 1.2078497639751637],
-[-1.8251267577295456, 0.04455146268936877, 0.1373730459762746, 0.16755930516572462, 0.2909711777583544, 0.33061258678988664, 0.6771338537238046],
-[-1.6595715160732576, -0.5775846924520861, -0.011239907555791195, 0.1346904611615679, 0.2343538897975466, 0.4092601112071007, 0.4891531488205212],
-[-2.009324083582754, -1.3842478843705863, -1.0016083962251447, -0.1274119082350621, -0.12694627351976517, -0.04064021299898549, 0.953728475796138],
-[-2.387306315622788, -0.10530812984473704, 0.08755228806505208, 0.168636999442987, 0.3994486557696571, 0.6355113899129147, 2.222396931650872],
-[-1.9064125343510276, -1.4822777477740723, -1.342019816500841, -0.9859885898721917, -0.14407329257098778, 0.36660673590601933, 0.9048719663230285],
+[-1.043896398189713, -0.4942330908379698, -0.226273043977835, 2.1048164480968876],
+[-0.17418442541958648, -0.003489576892883923, 0.32593002952435973, 0.65269980857079075],
+[-0.9280931904508574, -0.2881080257028875, 0.08962292282477151, 1.052187184051626],
+[-1.7231474630133796, -0.6988329431080711, 0.5472225722003625, 1.5488623949444609],
+[-1.0209494398790047, -0.6854443566443772, -0.6476753625995035, 1.0385550023579349],
+[-1.7845182158204707, -1.6787110627632869, 0.8288941048913488, 1.2115616873217196],
+[-2.174978537296403, -1.0972226428986527, -0.31426035106803707, 0.51718860993597364],
+[-1.3913605343466946, -0.5824467367040048, 0.8644205766780406, 1.1809629221011249],
+[-1.975898745939323, -1.355090466173791, 1.0061202083382523, 1.0130583574165686],
+[-1.156602653220867, -0.31576595791368006, 0.720789911816225, 1.349683775061085],
+[-0.12465340180602934, -0.11618654388446568, 0.2564478770411658, 1.74843665020275864],
+[-2.675729984600984, -1.271465736774545, 2.1974242730661526, 2.695323060703398],
+[-1.5168053078904342, -0.3907796306017249, 0.06451276795927917, 0.90296366497020824],
+[-0.5883530759377323, 0.1371846522458069, 1.0320495436626964, 1.7824479661009536],
+[-1.5972542927197892, -1.4669496080110351, -0.27573782848273937, 0.871535946685796],
+[-1.5034759991154618, 0.011924000946604054, 0.0943121849295515, 0.60178168103031955],
+[-1.0116227897104013, 0.07027963552571587, 1.1928121939469933, 2.447968680112173],
+[-1.261642036698053, 0.373183013830343, 0.38646698620288805, 1.1377604226071607],
+[-1.5018118880850853, 0.32039581205828177, 1.0648859103194126, 1.9467375399649056],
 ]
+num_world = len(feature_weights_list)
 
 # Initialize environments with feature weights
 envs = [gridworld_env.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma, size=size, noise_prob=noise_prob) 
-        for _ in range(num_world)]
+        for _ in range(len(feature_weights_list))]
 
 # Loop through each environment and set feature weights
 for env, weights in zip(envs, feature_weights_list):
     env.set_feature_weights(weights)
-
 
 for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
@@ -118,8 +118,9 @@ logger.info(f"Initialized {num_world} GridWorld environments.")
 policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(num_world)]
 logger.info(f"Generated optimal policies for all environments.")
 
+print_policy_2(policies[0], size=size)
+
 # Initialize metrics storage
-demos = [[] for _ in range(num_world)]
 demo_order = list(range(size * size))
 random.shuffle(demo_order)
 logger.info(f"Shuffled demonstration order: {demo_order}")
@@ -129,108 +130,145 @@ num_demos_all_experiments = []
 true_evds_all_experiments = []
 avg_bound_errors_all_experiments = []
 policy_optimalities_all_experiments = []
-confusion_matrices_all_experiments = []
+confusion_matrices_alphavar_all_experiments = []
+policy_accuracies_all_experiments = []
 avar_bound_all_experiments = []
 true_avar_bounds_all_experiments = []
+percentage_of_states_needed_all_experiments = []
 
+# Initialize MCMC storage
+mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
+
+same_demonstration =True
 
 # Begin world iteration
 for i in range(num_world):
-    logger.info(f"\nRunning world {i+1}/{num_world}")
     env = envs[i]
-    
-    avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
-    true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
-    
+    logger.info(f"\nRunning experiment {i+1}/{num_world}...")
+
+    # Randomly pick some states with their optimal demonstrations => I can pick them from policies
+    demos = random.sample(policies[i][:-1], k=num_demonstration)
+
+    if same_demonstration:
+            # Randomly select one pairwise comparison and replicate it
+        selected_demo = random.choice(demos)
+        demos_shuffled = [selected_demo] * num_demonstration  # Replicate the chosen demo
+        logger.info(f"Same Demos: {demos_shuffled}")
+
+    else:
+        # Shuffle the pairwise comparisons
+        demos_shuffled = demos.copy()
+        random.shuffle(demos_shuffled)
+        logger.info(f"Shuffled Demos: {demos_shuffled}")
+
+    # Storage for each experiment
+    mcmc_samples_history = {}  # Track MCMC samples for this experiment
+
+    # Metrics to evaluate nEVD
     bounds = {threshold: [] for threshold in thresholds}
     num_demos = {threshold: [] for threshold in thresholds}
     true_evds = {threshold: [] for threshold in thresholds}
     avg_bound_errors = {threshold: [] for threshold in thresholds}
     policy_optimalities = {threshold: [] for threshold in thresholds}
-    confusion_matrices = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}  # predicted by true
-    
-    # Begin demonstration iteration
-    for demonstration in range(num_demonstration):
-        state, optimal_action = policies[i][demo_order[demonstration]]
-        demos[i].append((state, optimal_action))
-        
-        logger.info(f"\nRunning BIRL with demonstration {demonstration+1}/{num_demonstration} in world {i+1}")
-        logger.info(f"Current demos: {demos[i]}")
-        
-        # Initialize BIRL with demos
-        birl = BIRL(env, demos[i], beta)
-        birl.run_mcmc(num_steps, step_stdev, adaptive=adaptive)
+    percentage_of_states_needed = {threshold: [] for threshold in thresholds} # Not implemented
+    confusion_matrices_alphavar = {threshold: [[0, 0], [0, 0]] for threshold in thresholds}
+    policy_accuracies = {threshold: [] for threshold in thresholds} # Not implemented
+    avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
+    true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
 
-        logger.info("MCMC sampling complete.")
-        logger.info(f"Acceptance ratio: {birl.accept_rate}")
-        
-        # Process MCMC samples
+    
+    avar_bounds = {k: {i: [] for i in range(0, num_demonstration)} for k in alphas}
+    true_avar_bounds = {i: [] for i in range(0, num_demonstration)}
+
+    # Run PBIRL for each demonstration
+    for demonstration in range(num_demonstration):
+        logger.info(f"\nRunning PBIRL with {demonstration + 1} demonstrations for experiment {i+1}")
+        print(demos_shuffled[:demonstration+1])
+        birl = BIRL(env, demos_shuffled[:demonstration+1], beta)
+        birl.run_mcmc(num_steps, step_stdev, adaptive=adaptive)
+        logger.info(f"MCMC completed with acceptance ratio: {birl.accept_rate:.4f}")
+
         burn_indx = int(len(birl.chain) * burn_frac)
         mcmc_samples = birl.chain[burn_indx::]
-        logger.info(f"Using {len(mcmc_samples)} samples after burn-in")
+        logger.info(f"Using {len(mcmc_samples)} samples after burn-in.")
 
-        # Get MAP solution and policy
+        # Save MCMC samples history
+        mcmc_samples_history[demonstration + 1] = mcmc_samples
+        logger.info(f"Stored {len(mcmc_samples)} MCMC samples for demonstration {demonstration+1}")
+
+        # Get MAP solution
         map_env = copy.deepcopy(env)
         map_solution = birl.get_map_solution()
+        logger.info(f"MAP Solution: {map_solution}")
+        logger.info(f"True reward weights: {env.feature_weights}")
+        
         map_env.set_feature_weights(map_solution)
         map_policy = ValueIteration(map_env).get_optimal_policy()
 
-        logger.info(f"MAP Solution Reward Weights: {map_solution}")
-        logger.info(f"True Reward Weights: {env.feature_weights}")
-        
-        # Visualize the policy
-        logger.info("Visualizing the learned policy:")
-        print_policy(map_policy, size)
-        
-        for alpha in alphas:
-            avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
-            avar_bounds[alpha][demonstration].append(avar_bound)
+        # Visualize the map policy
+        logger.info("MAP Policy for current environment:")
+        print_policy_2(map_policy, 2, size=size)
 
-            logger.info(f"{alpha}-VaR bound for {demonstration + 1} demonstrations: {avar_bound:.6f}")
         
-        # Calculate the true bound for the current map policy
+        ## Computing Information gain
+        # It takes nth and n-1th mcmc samples
+        # mcmc_samples_history[demonstration + 1] and mcmc_samples_history[demonstration]
+        # demos_shuffled[:demonstration+1], beta, env
+        
+        approx_avar_bounds = compute_policy_loss_avar_bounds(mcmc_samples, env, map_policy, random_normalization, alphas, delta)
+
+        # Calculate a-VaR for different alphas
+        for alpha in alphas:
+            #avar_bound = compute_policy_loss_avar_bound(mcmc_samples, env, map_policy, random_normalization, alpha, delta)
+            avar_bounds[alpha][demonstration].append(approx_avar_bounds[alpha])
+            logger.info(f"{alpha}-VaR-max-normalization for {demonstration + 1} demonstrations: {approx_avar_bounds[alpha]:.6f}")
+
+        # Calculate true expected value difference (EVD)
         true_bound = calculate_expected_value_difference(eval_policy=map_policy, env=env, epsilon=epsilon, normalize_with_random_policy=random_normalization)
         true_avar_bounds[demonstration].append(true_bound)
+        logger.info(f"True EVD for {demonstration + 1} demonstrations: {true_bound:.6f}")
 
-        logger.info(f"True expected value difference for MAP policy: {true_bound:.6f}")
-
-        # Evaluate threshold sufficiency for alpha=0.95
+        # Check sufficiency with threshold
         for threshold in thresholds:
-            avar_bound = avar_bounds[0.95][demonstration]
-            logger.info(f"Evaluating threshold {threshold} with avar bound: {avar_bound}")
-            
-            if avar_bound[0] < threshold:
-                logger.info(f"Threshold {threshold} SUFFICIENT with avar bound: {avar_bound[0]}")
+            avar_bound = avar_bounds[0.95][demonstration][0]
+            logger.info(f"Avar bound for threshold {threshold}: {avar_bound:.6f}")
+            if avar_bound < threshold:
+                logger.info(f"SUFFICIENT ({avar_bound:.6f} < {threshold})")
                 map_evd = true_bound
                 bounds[threshold].append(avar_bound)
                 num_demos[threshold].append(demonstration + 1)
+                percentage_of_states_needed[threshold].append((demonstration + 1) / (env.rows * env.columns))
                 true_evds[threshold].append(map_evd)
-                avg_bound_errors[threshold].append(avar_bound[0] - map_evd)
+                avg_bound_errors[threshold].append(avar_bound - map_evd)
+                policy_accuracies[threshold].append(calculate_policy_accuracy(policies[i], map_policy))
                 policy_optimalities[threshold].append(calculate_percentage_optimal_actions(map_policy, env))
-                
                 if true_bound < threshold:
-                    confusion_matrices[threshold][0][0] += 1
+                    confusion_matrices_alphavar[threshold][0][0] += 1
                 else:
-                    confusion_matrices[threshold][0][1] += 1
+                    confusion_matrices_alphavar[threshold][0][1] += 1
             else:
-                logger.info(f"Threshold {threshold} INSUFFICIENT")
+                logger.info(f"INSUFFICIENT ({avar_bound:.6f} >= {threshold})")
                 if true_bound < threshold:
-                    confusion_matrices[threshold][1][0] += 1
+                    confusion_matrices_alphavar[threshold][1][0] += 1
                 else:
-                    confusion_matrices[threshold][1][1] += 1
+                    confusion_matrices_alphavar[threshold][1][1] += 1
 
+    
+    # Store the experiment's MCMC samples
+    mcmc_samples_all_experiments[i + 1] = mcmc_samples_history
+    policy_accuracies_all_experiments.append(policy_accuracies)
+    percentage_of_states_needed_all_experiments.append(percentage_of_states_needed)
     avar_bound_all_experiments.append(avar_bounds)
     true_avar_bounds_all_experiments.append(true_avar_bounds)
-
     bounds_all_experiments.append(bounds)
     num_demos_all_experiments.append(num_demos)
     true_evds_all_experiments.append(true_evds)
     avg_bound_errors_all_experiments.append(avg_bound_errors)
     policy_optimalities_all_experiments.append(policy_optimalities)
-    confusion_matrices_all_experiments.append(confusion_matrices)
+    confusion_matrices_alphavar_all_experiments.append(confusion_matrices_alphavar)
 
 
-    if (i+1)%4 == 0:
+    if (i+1)%2 == 0:
         # Save results to files
         logger.info("\nSaving results to files...")
         np.save(os.path.join(save_dir, 'avar_bound_all_experiments.npy'), avar_bound_all_experiments)
@@ -240,6 +278,8 @@ for i in range(num_world):
         np.save(os.path.join(save_dir, 'true_evds_all_experiments.npy'), true_evds_all_experiments)
         np.save(os.path.join(save_dir, 'avg_bound_errors_all_experiments.npy'), avg_bound_errors_all_experiments)
         np.save(os.path.join(save_dir, 'policy_optimalities_all_experiments.npy'), policy_optimalities_all_experiments)
-        np.save(os.path.join(save_dir, 'confusion_matrices_all_experiments.npy'), confusion_matrices_all_experiments)
-
+        np.save(os.path.join(save_dir, 'confusion_matrices_alphavar_all_experiments.npy'), confusion_matrices_alphavar_all_experiments)
+        np.save(os.path.join(save_dir, 'policy_accuracies_all_experiments.npy'), policy_accuracies_all_experiments)
+        np.save(os.path.join(save_dir, 'percentage_of_states_needed_all_experiments.npy'), percentage_of_states_needed_all_experiments)
+ 
         logger.info("Results saved successfully.")

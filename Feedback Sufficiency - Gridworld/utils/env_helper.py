@@ -1,5 +1,5 @@
-"""
-def print_policy(policy, size):
+
+def print_policy_2(policy, size):
     '''
     Print the policy in a human-readable format.
     
@@ -23,7 +23,7 @@ def print_policy(policy, size):
     for row in grid_policy:
         print(" | ".join(row))
     print()  # Add an empty line for better formatting
-"""
+
 
 
 def print_policy(policy, rows, cols):
