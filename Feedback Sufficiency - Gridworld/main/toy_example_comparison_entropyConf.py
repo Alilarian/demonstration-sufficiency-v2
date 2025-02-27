@@ -140,7 +140,7 @@ cm1_entropyConf_all = []
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
-same_demonstration = True
+same_demonstration = False
 
 # Run experiments for each world
 for i in range(50):
@@ -183,9 +183,7 @@ for i in range(50):
     
 
     entropyConv_per_demo = {i: [] for i in range(0, num_demonstration)}
-    ########################################################################
-    # Metrics for held-out
-    ########################################################################
+    
     max_entropy = np.log(num_steps * (1 - burn_frac))
     logger.info(f"Maximum entropy: {max_entropy:.4f}")
     # Run PBIRL for each demonstration

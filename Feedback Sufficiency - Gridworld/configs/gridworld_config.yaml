@@ -25,7 +25,7 @@ suff_config:
   optimality_threshold: 0.95
   random_normalization: true  # whether or not to normalize with random policy
   thresholds: [0.1, 0.2, 0.3, 0.4] # Thresholds to declare demonstration sufficiency
-  conv_thresholds : [1, 2, 3, 4, 5, 6] # Needs to be changed based on the number of demonstrations
+  conv_thresholds : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 16, 17, 18, 19,  20] # Needs to be changed based on the number of demonstrations
   held_out_thresholds: [3, 4, 5, 6, 7, 8]
   
   normalized_infogain_thresholds : []

@@ -237,7 +237,7 @@ for i in range(num_world):
                 optimality = calculate_percentage_optimal_actions(map_policy, env)
                 if patience == threshold:
                     num_demos_conv[threshold].append(demonstration + 1)
-                    pct_states_conv[threshold].append((demonstration + 1) / (env.rows * env.columns))
+                    pct_states_conv[threshold].append((demonstration + 1) / (size * size))
                     policy_optimalities_conv[threshold].append(optimality)
                     policy_accuracies_conv[threshold].append(calculate_policy_accuracy(policies[i], map_policy))
                     accuracies_conv[threshold].append(optimality >= optimality_threshold)

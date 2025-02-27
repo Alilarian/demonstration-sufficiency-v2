@@ -69,8 +69,7 @@ alphas = config['suff_config']['alphas']
 delta = config['suff_config']['delta']
 optimality_threshold = config['suff_config']['optimality_threshold']
 random_normalization = config['suff_config']['random_normalization']
-entropyConf_thresholds  = [0.001, 0.0014, 0.00196, 0.002744, 0.0038415999999999997, 0.005378239999999999, 0.007529535999999999, 0.010541350399999998, 0.014757890559999997, 0.020661046783999996, 0.028925465497599993, 0.04049565169663999, 0.05669391237529598, 0.07937147732541437, 0.11112006825558012, 0.15556809555781215, 0.217795333780937, 0.30491346729331176, 0.4268788542106364, 0.597630395894891, 0.8366825542528473, 1.1713555759539862, 1.6398978063355807, 2.2958569288698127, 3.214199700417738, 4.499879580584833, 6.299831412818765, 8.81976397794627]
-
+entropyConf_thresholds  = [0.5, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
 
 # Get values from argparse or fallback to YAML config
 #num_world = config['experiments']['num_world']
@@ -147,7 +146,7 @@ cm1_entropyConf_all = []
 
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
-same_demonstration = True
+same_demonstration = False
 
 # Begin world iteration
 for i in range(num_world):
@@ -258,7 +257,7 @@ for i in range(num_world):
             optimality = calculate_percentage_optimal_actions(map_policy, env)
             if conf_ent >= threshold:
                 num_demos_entropyConf[threshold].append(demonstration + 1)
-                pct_states_entropyConf[threshold].append((demonstration + 1) / (env.rows * env.columns))
+                pct_states_entropyConf[threshold].append((demonstration + 1) / (size * size))
                 policy_optimalities_entropyConf[threshold].append(optimality)
                 policy_accuracies_entropyConf[threshold].append(calculate_policy_accuracy(policies[i], map_policy))
                 accuracies_entropyConf[threshold].append(optimality >= optimality_threshold)

@@ -2,7 +2,7 @@ from agent.q_learning_agent import ValueIteration
 import numpy as np
 import copy
 from utils.common_helper import compute_reward_for_trajectory
-
+from scipy.special import logsumexp
 
 class PBIRL:
     def __init__(self, env, demos, beta, epsilon=0.0001):
@@ -54,7 +54,8 @@ class PBIRL:
             reward2 = compute_reward_for_trajectory(self.env, traj2)
             
             # Compute the log denominator (Z) using logsumexp to ensure numerical stability
-            Z_exponents = np.log(np.exp(self.beta * reward1) + np.exp(self.beta * reward2))
+            #Z_exponents = np.log(np.exp(self.beta * reward1) + np.exp(self.beta * reward2))
+            Z_exponents = logsumexp([self.beta * reward1, self.beta * reward2])
             
             # Update the log likelihood sum with the log probability of preferring traj1 over traj2
             log_sum += self.beta * reward1 - Z_exponents

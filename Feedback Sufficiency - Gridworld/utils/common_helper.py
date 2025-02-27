@@ -159,31 +159,6 @@ def compute_policy_loss_avar_bounds(mcmc_samples, env, map_policy, random_normal
 
     return avar_bounds
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def compute_reward_for_trajectory(env, trajectory, discount_factor=None):
     """
     Computes the cumulative reward for a given trajectory in the environment. If a discount factor 

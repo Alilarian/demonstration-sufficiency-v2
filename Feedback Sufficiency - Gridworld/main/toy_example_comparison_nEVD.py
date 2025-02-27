@@ -73,6 +73,11 @@ thresholds = config['suff_config']['thresholds']
 #num_world = config['experiments']['num_world']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
+# Fixing Seeds
+random.seed(seed)  # Fix Python's built-in random module
+np.random.seed(seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+
 color_to_feature_map = {
     "red": [1, 0, 0],
     "blue": [0, 1, 0],

@@ -86,7 +86,6 @@ class GridWorldMDPDataGenerator:
 
         return trajectories_with_rewards
 
-
     def generate_random_demo(self, num_trajs, start_states=None):
         """
         Generates multiple random trajectories consisting of state-action pairs (s, a),
@@ -328,18 +327,6 @@ def generate_pairwise_comparisons(env, num_trajs=10, max_horizon=25, num_compari
     # Ensure we return exactly `num_comparisons` comparisons
     return random.sample(pairwise_comparisons, min(num_comparisons, len(pairwise_comparisons)))
 
-
-
-
-
-
-
-
-
-
-
-
-
 def generate_random_trajectory_diff_start(env, max_horizon=25):
     """
     Generate a random trajectory of up to max_horizon steps using random actions.
@@ -382,9 +369,59 @@ def generate_random_trajectory_diff_start(env, max_horizon=25):
 
     return trajectory
 
+def simulate_improvement_feedback(env, trajectory, optimal_policy):
+    """
+    Simulates improvement feedback by modifying a randomly chosen suboptimal step in the trajectory.
 
+    Args:
+        env: The GridWorld environment.
+        trajectory (list): A list of (state, action) tuples representing the original trajectory.
+        optimal_policy (list of tuples): A list of (state, optimal_action) pairs.
 
+    Returns:
+        tuple: (improved_trajectory, original_trajectory)
+            - improved_trajectory: The modified trajectory with an improved action sequence.
+            - original_trajectory: The input trajectory (unchanged).
+            - If the given trajectory was already optimal, improved_trajectory is an empty list.
+    """
+    # Convert optimal_policy from list of tuples to dictionary for fast lookup
+    optimal_policy_dict = dict(optimal_policy)
 
+    if len(trajectory) < 2:
+        return ([], trajectory)  # Too short to improve
+
+    # Find all suboptimal action indices
+    suboptimal_indices = [
+        i for i in range(len(trajectory) - 1)  # Exclude the last state
+        if trajectory[i][1] != optimal_policy_dict.get(trajectory[i][0], trajectory[i][1])
+    ]
+
+    if not suboptimal_indices:
+        return ([], trajectory)  # No suboptimal actions found, return empty improved trajectory
+
+    # Randomly select one of the suboptimal indices
+    suboptimal_index = random.choice(suboptimal_indices)
+    state, _ = trajectory[suboptimal_index]  # Start from the randomly chosen suboptimal state
+    optimal_action = optimal_policy_dict[state]  # Get the optimal action
+
+    # Create the improved trajectory
+    improved_trajectory = trajectory[:suboptimal_index]  # Keep trajectory up to this state
+
+    while state not in env.terminal_states:
+        improved_trajectory.append((state, optimal_action))
+
+        # Get next state probabilities based on transition model
+        next_state_probs = env.transitions[state][optimal_action]
+        state = np.random.choice(env.get_num_states(), p=next_state_probs)  # Sample next state
+
+        if state in env.terminal_states:
+            improved_trajectory.append((state, None))  # Append terminal state
+            break
+
+        # Update action based on the optimal policy
+        optimal_action = optimal_policy_dict.get(state, optimal_action)
+
+    return (improved_trajectory, trajectory)
 
 def simulate_human_estop(env, full_trajectory, beta=2.0, gamma=1.0, fixed_length=None):
     """
@@ -485,3 +522,5 @@ def simulate_human_estop_v2(env, full_trajectory, beta=2.0, gamma=1.0):
 
     # Return the trajectory and the stopping point
     return (full_trajectory, t_stop)
+
+

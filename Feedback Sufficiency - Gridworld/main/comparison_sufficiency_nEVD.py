@@ -143,7 +143,7 @@ percentage_of_states_needed_all_experiments = []
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
-same_demonstration = True
+same_demonstration = False
 
 
 # Run experiments for each world
@@ -238,7 +238,7 @@ for i in range(num_world):
                 map_evd = true_bound
                 bounds[threshold].append(avar_bound)
                 num_demos[threshold].append(demonstration + 1)
-                percentage_of_states_needed[threshold].append((demonstration + 1) / (env.rows * env.columns))
+                percentage_of_states_needed[threshold].append((demonstration + 1) / (size * size))
                 true_evds[threshold].append(map_evd)
                 avg_bound_errors[threshold].append(avar_bound - map_evd)
                 policy_accuracies[threshold].append(calculate_policy_accuracy(policies[i], map_policy))

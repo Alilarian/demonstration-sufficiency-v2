@@ -186,9 +186,7 @@ for i in range(50):
     curr_map_pi = [-1 for _ in range(env.rows * env.columns)]
     patience = 0
     
-    ########################################################################
-    # Metrics for held-out
-    ########################################################################
+
 
     # Run PBIRL for each demonstration
     for demonstration in range(num_demonstration):
