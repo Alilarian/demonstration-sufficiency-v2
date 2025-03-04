@@ -639,6 +639,54 @@ def log_prob_demo(env, demos, theta, beta):
 
     return log_sum
 
+def log_prob_estop(env, demos, theta, beta):
+    
+    env.set_feature_weights(theta)
+
+    # Initialize the log prior as 0, assuming an uninformative prior
+    log_prior = 0.0
+    log_sum = log_prior  # Start the log sum with the log prior value
+
+    for estop in demos:
+        # Unpack the trajectory and stopping point
+        trajectory, t = estop
+        traj_len = len(trajectory)
+
+        # Compute the cumulative reward up to the stopping point t
+        reward_up_to_t = sum(env.compute_reward(s) for s, _ in trajectory[:t+1])
+
+        # Add repeated rewards for the last step at time t until the trajectory horizon
+        reward_up_to_t += (traj_len - t - 1) * env.compute_reward(trajectory[t][0])
+
+        # Numerator: P(off | r, C) -> exp(beta * reward_up_to_t)
+        stop_prob_numerator = beta * reward_up_to_t
+
+        # reward of the whole trajectory
+        traj_reward = sum(env.compute_reward(s) for s, _ in trajectory[:])
+        
+        #denominator = np.exp(self.beta * traj_reward) + np.exp(stop_prob_numerator)
+    
+        # Use the Log-Sum-Exp trick for the denominator
+        max_reward = max(beta * traj_reward, stop_prob_numerator)
+        log_denominator = max_reward + np.log(
+            np.exp(beta * traj_reward - max_reward) +
+            np.exp(stop_prob_numerator - max_reward)
+        )
+
+        # Add the log probability to the log sum
+        log_sum += stop_prob_numerator - log_denominator
+
+
+        # Add the log probability to the log sum
+        #log_sum += stop_prob_numerator - np.log(denominator)
+    
+    return log_sum
+
+
+
+
+
+
 def log_prob_comparison(env, demos, theta, beta):
     """
     Computes the log probability of preference demonstrations using a Boltzmann distribution.

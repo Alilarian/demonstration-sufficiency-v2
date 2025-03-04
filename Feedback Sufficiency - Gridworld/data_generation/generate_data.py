@@ -507,7 +507,6 @@ def simulate_human_estop_v2(env, full_trajectory, beta=2.0, gamma=1.0):
         numerator = beta * reward_up_to_t
         denominator = logsumexp([beta * traj_reward, numerator])
         
-
         # Compute the probability of stopping at time t
         stop_probability = numerator - denominator
         probabilities.append(stop_probability)

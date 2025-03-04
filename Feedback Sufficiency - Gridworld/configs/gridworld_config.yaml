@@ -11,7 +11,7 @@ algorithm_config:
   epsilon: 1e-5              # Convergence threshold for value iteration; smaller values yield more precise solutions
 
 bayesian_irl_config:
-  num_steps: 10000             # Number of steps the MCMC sampler will take
+  num_steps: 5000             # Number of steps the MCMC sampler will take
   step_stdev: 1.5            # Standard deviation for proposal distribution in the MCMC sampler
   beta: 100                    # Inverse temperature parameter to control exploration vs. exploitation
   burn_frac: 0.35              # Fraction of initial steps discarded as burn-in period

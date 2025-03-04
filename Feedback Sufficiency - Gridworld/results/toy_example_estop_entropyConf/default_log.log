@@ -1,0 +1,207 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.97266673 -0.03083248  0.23014951]
+Feature weights for environment: [-0.35835056 -0.08647525  0.92957351]
+Feature weights for environment: [-0.71046942 -0.64188771  0.28846728]
+Feature weights for environment: [-0.89578956 -0.24432685  0.37130237]
+Feature weights for environment: [-0.7282924  -0.22722733  0.64649665]
+Feature weights for environment: [-0.75022399 -0.57596895  0.32469021]
+Feature weights for environment: [-0.70842322 -0.26108332  0.65572254]
+Feature weights for environment: [-0.74635145 -0.57484795  0.33542412]
+Feature weights for environment: [-0.0505111  -0.01531811  0.99860602]
+Feature weights for environment: [-0.76518493 -0.64328377  0.02603879]
+Feature weights for environment: [-0.87829137 -0.24439244  0.41094598]
+Feature weights for environment: [-0.8497926  -0.50850291  0.13884283]
+Feature weights for environment: [-0.34477193 -0.32328333  0.88126058]
+Feature weights for environment: [-0.43088031 -0.17122291  0.88601629]
+Feature weights for environment: [-0.75433776 -0.02805593  0.65588674]
+Feature weights for environment: [-0.92032338 -0.11683579  0.37330186]
+Feature weights for environment: [-0.76208548 -0.28664819  0.58056743]
+Feature weights for environment: [-0.39174849 -0.30341429  0.86860399]
+Feature weights for environment: [-0.92648321 -0.16748955  0.33701054]
+Feature weights for environment: [-0.61012931 -0.3129562   0.72787406]
+Feature weights for environment: [-0.3738588  -0.3262014   0.86822937]
+Feature weights for environment: [-0.70965126 -0.6051058   0.36089066]
+Feature weights for environment: [-0.74528522 -0.55533186  0.36899385]
+Feature weights for environment: [-0.68144434 -0.29187893  0.6711485 ]
+Feature weights for environment: [-0.44714936 -0.30119858  0.84222139]
+Feature weights for environment: [-0.7333898  -0.47830978  0.48307263]
+Feature weights for environment: [-0.65557811 -0.01374154  0.75500233]
+Feature weights for environment: [-0.866301   -0.34967581  0.35672034]
+Feature weights for environment: [-0.6535586  -0.23072892  0.72085041]
+Feature weights for environment: [-0.81326386 -0.04441834  0.5801973 ]
+Feature weights for environment: [-0.27534761 -0.19938474  0.94044108]
+Feature weights for environment: [-0.90753571 -0.40234227  0.1204144 ]
+Feature weights for environment: [-0.32556312 -0.30396656  0.89532842]
+Feature weights for environment: [-0.839382   -0.393236    0.37523766]
+Feature weights for environment: [-0.94121751 -0.05112011  0.33391067]
+Feature weights for environment: [-0.05456508 -0.040557    0.99768621]
+Feature weights for environment: [-0.75478167 -0.33513042  0.563908  ]
+Feature weights for environment: [-0.49248773 -0.22865786  0.83974486]
+Feature weights for environment: [-0.56481614 -0.46100063  0.68444222]
+Feature weights for environment: [-0.6667631  -0.57474284  0.47444455]
+Feature weights for environment: [-0.46247666 -0.0267168   0.88622884]
+Feature weights for environment: [-0.71505276 -0.68463496  0.14133129]
+Feature weights for environment: [-0.94655708 -0.29794542  0.12352418]
+Feature weights for environment: [-0.88315502 -0.32822573  0.33511952]
+Feature weights for environment: [-0.83381491 -0.37890594  0.40147601]
+Feature weights for environment: [-0.82098277 -0.18440172  0.54035479]
+Feature weights for environment: [-0.73857451 -0.23755048  0.63093381]
+Feature weights for environment: [-0.95541883 -0.18852986  0.22722531]
+Feature weights for environment: [-0.98484463 -0.1489005   0.08893646]
+Feature weights for environment: [-0.47840873 -0.41855607  0.77196885]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Shuffled Demos: [([(0, 1), (3, 1), (3, 2), (3, 3), (0, 1), (3, 2), (3, 2), (3, 1), (3, 0), (0, 0)], 0), ([(0, 0), (0, 2), (0, 0), (0, 3), (1, 3), (2, 3), (2, 0), (2, 1), (5, None)], 0), ([(0, 3), (1, 0), (1, 2), (0, 2), (3, 3), (4, 2), (4, 3), (5, None)], 0), ([(0, 2), (0, 0), (0, 2), (0, 1), (3, 3), (3, 1), (3, 3), (4, 2), (3, 3), (4, 2)], 0), ([(0, 3), (1, 3), (2, 2), (1, 0), (1, 0), (1, 1), (4, 3), (5, None)], 0), ([(0, 2), (0, 3), (1, 2), (0, 2), (0, 1), (1, 3), (2, 0), (2, 0), (2, 0), (2, 0)], 0)]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 1
+Config file loaded successfully.
+Feature weights for environment: [-0.97266673 -0.03083248  0.23014951]
+Feature weights for environment: [-0.35835056 -0.08647525  0.92957351]
+Feature weights for environment: [-0.71046942 -0.64188771  0.28846728]
+Feature weights for environment: [-0.89578956 -0.24432685  0.37130237]
+Feature weights for environment: [-0.7282924  -0.22722733  0.64649665]
+Feature weights for environment: [-0.75022399 -0.57596895  0.32469021]
+Feature weights for environment: [-0.70842322 -0.26108332  0.65572254]
+Feature weights for environment: [-0.74635145 -0.57484795  0.33542412]
+Feature weights for environment: [-0.0505111  -0.01531811  0.99860602]
+Feature weights for environment: [-0.76518493 -0.64328377  0.02603879]
+Feature weights for environment: [-0.87829137 -0.24439244  0.41094598]
+Feature weights for environment: [-0.8497926  -0.50850291  0.13884283]
+Feature weights for environment: [-0.34477193 -0.32328333  0.88126058]
+Feature weights for environment: [-0.43088031 -0.17122291  0.88601629]
+Feature weights for environment: [-0.75433776 -0.02805593  0.65588674]
+Feature weights for environment: [-0.92032338 -0.11683579  0.37330186]
+Feature weights for environment: [-0.76208548 -0.28664819  0.58056743]
+Feature weights for environment: [-0.39174849 -0.30341429  0.86860399]
+Feature weights for environment: [-0.92648321 -0.16748955  0.33701054]
+Feature weights for environment: [-0.61012931 -0.3129562   0.72787406]
+Feature weights for environment: [-0.3738588  -0.3262014   0.86822937]
+Feature weights for environment: [-0.70965126 -0.6051058   0.36089066]
+Feature weights for environment: [-0.74528522 -0.55533186  0.36899385]
+Feature weights for environment: [-0.68144434 -0.29187893  0.6711485 ]
+Feature weights for environment: [-0.44714936 -0.30119858  0.84222139]
+Feature weights for environment: [-0.7333898  -0.47830978  0.48307263]
+Feature weights for environment: [-0.65557811 -0.01374154  0.75500233]
+Feature weights for environment: [-0.866301   -0.34967581  0.35672034]
+Feature weights for environment: [-0.6535586  -0.23072892  0.72085041]
+Feature weights for environment: [-0.81326386 -0.04441834  0.5801973 ]
+Feature weights for environment: [-0.27534761 -0.19938474  0.94044108]
+Feature weights for environment: [-0.90753571 -0.40234227  0.1204144 ]
+Feature weights for environment: [-0.32556312 -0.30396656  0.89532842]
+Feature weights for environment: [-0.839382   -0.393236    0.37523766]
+Feature weights for environment: [-0.94121751 -0.05112011  0.33391067]
+Feature weights for environment: [-0.05456508 -0.040557    0.99768621]
+Feature weights for environment: [-0.75478167 -0.33513042  0.563908  ]
+Feature weights for environment: [-0.49248773 -0.22865786  0.83974486]
+Feature weights for environment: [-0.56481614 -0.46100063  0.68444222]
+Feature weights for environment: [-0.6667631  -0.57474284  0.47444455]
+Feature weights for environment: [-0.46247666 -0.0267168   0.88622884]
+Feature weights for environment: [-0.71505276 -0.68463496  0.14133129]
+Feature weights for environment: [-0.94655708 -0.29794542  0.12352418]
+Feature weights for environment: [-0.88315502 -0.32822573  0.33511952]
+Feature weights for environment: [-0.83381491 -0.37890594  0.40147601]
+Feature weights for environment: [-0.82098277 -0.18440172  0.54035479]
+Feature weights for environment: [-0.73857451 -0.23755048  0.63093381]
+Feature weights for environment: [-0.95541883 -0.18852986  0.22722531]
+Feature weights for environment: [-0.98484463 -0.1489005   0.08893646]
+Feature weights for environment: [-0.47840873 -0.41855607  0.77196885]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Shuffled Demos: [([(0, 1), (3, 1), (3, 2), (3, 3), (0, 1), (3, 2), (3, 2), (3, 1), (3, 0), (0, 0)], 0), ([(0, 0), (0, 2), (0, 0), (0, 3), (1, 3), (2, 3), (2, 0), (2, 1), (5, None)], 0), ([(0, 3), (1, 0), (1, 2), (0, 2), (3, 3), (4, 2), (4, 3), (5, None)], 0), ([(0, 2), (0, 0), (0, 2), (0, 1), (3, 3), (3, 1), (3, 3), (4, 2), (3, 3), (4, 2)], 0), ([(0, 3), (1, 3), (2, 2), (1, 0), (1, 0), (1, 1), (4, 3), (5, None)], 0), ([(0, 2), (0, 3), (1, 2), (0, 2), (0, 1), (1, 3), (2, 0), (2, 0), (2, 0), (2, 0)], 0)]
+Maximum entropy: 8.0864
+
+Running EBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 1.0000
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.1108282  -0.96242967  0.24788351]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.147550
+
+Running EBIRL with 2 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.5874
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.14786828  0.98063069  0.12844616]
+True reward weights: [ 0.04034363 -0.80649057  0.58986893]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.182407
+
+Running EBIRL with 3 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.5696
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [0.39286738 0.91331576 0.10728257]
+True reward weights: [-0.44998656  0.89260982  0.02756464]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.174828
+
+Running EBIRL with 4 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.5646
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.56157724  0.82428609 -0.07199619]
+True reward weights: [-0.4026063   0.44341063  0.80080908]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.222380
+
+Running EBIRL with 5 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.5516
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.1494253   0.84747367 -0.5093726 ]
+True reward weights: [-0.97280972 -0.2211973  -0.06865139]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.223377
+
+Running EBIRL with 6 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.5318
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [0.46250555 0.83489659 0.29838951]
+True reward weights: [-0.85381007  0.18378192 -0.48706527]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.226920
+
+Running experiment 2/50...
+Shuffled Demos: [([(0, 3), (1, 0), (1, 3), (2, 2), (1, 0), (1, 1), (0, 0), (0, 1), (0, 1), (3, 2)], 0), ([(0, 1), (1, 3), (2, 1), (5, None)], 3), ([(0, 3), (1, 0), (1, 2), (4, 1), (5, None)], 4), ([(0, 2), (0, 1), (1, 1), (4, 2), (3, 0), (0, 0), (0, 1), (3, 3), (4, 3), (5, None)], 9), ([(0, 2), (0, 2), (0, 2), (0, 0), (0, 0), (1, 3), (2, 0), (2, 1), (5, None)], 8), ([(0, 0), (0, 1), (3, 0), (0, 3), (0, 0), (0, 0), (0, 2), (0, 2), (0, 3), (1, 2)], 0)]
+Maximum entropy: 8.0864
+
+Running EBIRL with 1 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.5940
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.21207031  0.79733906 -0.56504566]
+True reward weights: [-0.35835056 -0.08647525  0.92957351]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123664
+
+Running EBIRL with 2 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.5868
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.55503076  0.7994232   0.22992044]
+True reward weights: [-0.91114478 -0.36391382 -0.19334404]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.147617
+
+Running EBIRL with 3 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.5862
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.4784413   0.52755373  0.70198361]
+True reward weights: [-0.84769882  0.43713952 -0.30052578]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.202521
+
+Running EBIRL with 4 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.5832
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [0.18018348 0.88986328 0.41913871]
+True reward weights: [0.14844945 0.65834773 0.73793023]
+MAP Policy for current environment:

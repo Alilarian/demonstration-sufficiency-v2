@@ -1,0 +1,1799 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+Feature weights for environment: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+Feature weights for environment: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+Feature weights for environment: [-0.69449962 -0.28165855  0.22055331  0.62425554]
+Feature weights for environment: [-0.58844088 -0.39506705 -0.37329827  0.59858814]
+Feature weights for environment: [-0.62480116 -0.58775562  0.29021502  0.42419581]
+Feature weights for environment: [-0.86648592 -0.43712062 -0.12519764  0.20604187]
+Feature weights for environment: [-0.66202557 -0.27713495  0.4113014   0.56191594]
+Feature weights for environment: [-0.70843905 -0.48585435  0.3607345   0.3632221 ]
+Feature weights for environment: [-0.59500066 -0.16244209  0.37080191  0.69432898]
+Feature weights for environment: [-0.0702138  -0.06544465  0.14444996  0.98484579]
+Feature weights for environment: [-0.58571354 -0.27832207  0.48101309  0.59000244]
+Feature weights for environment: [-0.83842198 -0.21600546  0.03565977  0.49911783]
+Feature weights for environment: [-0.27410583  0.06391249  0.48081808  0.83041867]
+Feature weights for environment: [-0.67868375 -0.62331644 -0.1171628   0.3703213 ]
+Feature weights for environment: [-0.92679793  0.00735039  0.0581375   0.37096037]
+Feature weights for environment: [-0.34813921  0.02418599  0.41049361  0.84244235]
+Feature weights for environment: [-0.70806601  0.20943992  0.21689523  0.63854045]
+Feature weights for environment: [-0.55653737  0.11873141  0.39462253  0.72141671]
+Initialized 19 GridWorld environments.
+Generated optimal policies for all environments.
+Shuffled demonstration order: [16, 12, 9, 19, 18, 6, 5, 10, 15, 21, 11, 17, 1, 14, 22, 13, 2, 23, 4, 24, 7, 8, 0, 3, 20]
+
+Running experiment for environment 1/19...
+Shuffled Demos: [([(5, 3), (6, 1), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(5, 3), (6, 1), (11, 3), (12, 1), (17, 3), (18, 1), (23, 3), (24, None)]), ([(1, 0), (1, 1), (6, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(1, 0), (1, 1), (6, 2), (5, 0), (0, 3), (1, 3), (2, 1), (7, 1), (12, 3), (13, 1)]), ([(7, 2), (6, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(7, 2), (6, 2), (5, 2), (5, 3), (6, 2), (5, 3), (6, 1), (11, 3), (12, 0), (7, 0)]), ([(5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(5, 2), (5, 1), (10, 1), (15, 3), (16, 1), (21, 1), (21, 1), (21, 3), (22, 3), (23, 1)]), ([(8, 1), (13, 0), (8, 3), (9, 2), (8, 1), (13, 0), (8, 0), (3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(8, 1), (13, 0), (8, 3), (9, 2), (8, 1), (13, 0), (8, 0), (3, 3), (4, 3), (4, 0)]), ([(15, 0), (10, 0), (5, 3), (6, 1), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(15, 0), (10, 0), (5, 3), (6, 1), (11, 1), (16, 1), (21, 0), (16, 2), (15, 1), (20, 1)]), ([(2, 1), (7, 3), (8, 0), (3, 3), (4, 1), (9, 1), (14, 0), (9, 1), (14, 1), (19, 1), (24, None)], [(2, 1), (7, 3), (8, 0), (3, 3), (4, 1), (9, 1), (14, 0), (9, 3), (9, 3), (9, 0)]), ([(6, 2), (5, 3), (6, 2), (5, 1), (10, 1), (15, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(6, 2), (5, 3), (6, 2), (5, 1), (10, 1), (15, 0), (10, 0), (5, 0), (0, 0), (0, 2)]), ([(17, 3), (18, 1), (23, 3), (24, None)], [(17, 3), (18, 3), (19, 3), (19, 1), (24, None)]), ([(8, 1), (13, 3), (14, 1), (19, 1), (24, None)], [(8, 1), (13, 3), (14, 0), (9, 3), (9, 0), (4, 3), (4, 0), (4, 1), (9, 0), (4, 0)]), ([(3, 3), (4, 2), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 3), (4, 2), (3, 3), (4, 1), (9, 0), (4, 2), (3, 3), (4, 2), (3, 1), (8, 3)]), ([(1, 0), (1, 3), (2, 1), (7, 3), (8, 0), (3, 1), (8, 3), (9, 2), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(1, 0), (1, 3), (2, 1), (7, 3), (8, 0), (3, 1), (8, 3), (9, 2), (8, 0), (3, 3)]), ([(11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(11, 2), (10, 3), (11, 1), (16, 0), (11, 1), (16, 3), (17, 3), (18, 0), (13, 3), (14, 2)]), ([(11, 0), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 0), (6, 3), (7, 1), (12, 0), (7, 2), (6, 1), (11, 1), (16, 1), (21, 3), (22, 2)]), ([(11, 3), (12, 3), (13, 1), (18, 1), (23, 3), (24, None)], [(11, 3), (12, 3), (13, 3), (14, 3), (14, 1), (19, 1), (24, None)]), ([(2, 2), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 2), (1, 3), (2, 2), (1, 3), (2, 2), (1, 3), (2, 3), (3, 3), (4, 2), (3, 2)]), ([(7, 0), (2, 2), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(7, 0), (2, 2), (1, 1), (6, 2), (5, 2), (5, 2), (5, 1), (10, 1), (15, 3), (16, 2)]), ([(16, 1), (21, 3), (22, 0), (17, 1), (22, 2), (21, 2), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(16, 1), (21, 3), (22, 0), (17, 1), (22, 2), (21, 2), (20, 2), (20, 0), (15, 0), (10, 3)]), ([(13, 1), (18, 0), (13, 3), (14, 2), (13, 2), (12, 1), (17, 0), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(13, 1), (18, 0), (13, 3), (14, 2), (13, 2), (12, 1), (17, 0), (12, 2), (11, 1), (16, 2)]), ([], [(8, 3), (9, 1), (14, 1), (19, 1), (24, None)]), ([(16, 1), (21, 3), (22, 3), (23, 2), (22, 1), (22, 0), (17, 2), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(16, 1), (21, 3), (22, 3), (23, 2), (22, 1), (22, 0), (17, 2), (16, 0), (11, 3), (12, 1)]), ([(16, 2), (15, 1), (20, 0), (15, 0), (10, 3), (11, 3), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(16, 2), (15, 1), (20, 0), (15, 0), (10, 3), (11, 3), (12, 3), (13, 0), (8, 3), (9, 0)]), ([(5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(5, 3), (6, 3), (7, 3), (8, 2), (7, 1), (12, 1), (17, 2), (16, 0), (11, 2), (10, 1)]), ([(18, 3), (19, 1), (24, None)], [(18, 3), (19, 3), (19, 1), (24, None)]), ([(10, 2), (10, 0), (5, 0), (0, 0), (0, 1), (5, 1), (10, 1), (15, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(10, 2), (10, 0), (5, 0), (0, 0), (0, 1), (5, 1), (10, 1), (15, 1), (20, 1), (20, 2)]), ([(8, 3), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(8, 3), (9, 3), (9, 2), (8, 3), (9, 0), (4, 1), (9, 3), (9, 3), (9, 2), (8, 1)]), ([(6, 3), (7, 0), (2, 2), (1, 3), (2, 0), (2, 3), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(6, 3), (7, 0), (2, 2), (1, 3), (2, 0), (2, 3), (3, 3), (4, 3), (4, 1), (9, 1)]), ([(17, 1), (22, 3), (23, 3), (24, None)], [(17, 1), (22, 1), (22, 1), (22, 3), (23, 3), (24, None)]), ([(7, 3), (8, 0), (3, 0), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(7, 3), (8, 0), (3, 0), (3, 3), (4, 2), (3, 1), (8, 1), (13, 3), (14, 2), (13, 2)]), ([(0, 1), (5, 1), (10, 3), (11, 3), (12, 2), (11, 0), (6, 0), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(0, 1), (5, 1), (10, 3), (11, 3), (12, 2), (11, 0), (6, 0), (1, 3), (2, 3), (3, 3)]), ([(3, 3), (4, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 3), (4, 3), (4, 0), (4, 3), (4, 3), (4, 1), (9, 3), (9, 2), (8, 1), (13, 3)]), ([(10, 3), (11, 2), (10, 0), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(10, 3), (11, 2), (10, 0), (5, 0), (0, 1), (5, 1), (10, 3), (11, 3), (12, 0), (7, 3)]), ([(11, 0), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 0), (6, 1), (11, 1), (16, 1), (21, 2), (20, 2), (20, 1), (20, 3), (21, 1), (21, 2)]), ([(2, 3), (3, 3), (4, 2), (3, 0), (3, 2), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 3), (3, 3), (4, 2), (3, 0), (3, 2), (2, 1), (7, 3), (8, 0), (3, 0), (3, 3)]), ([(0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(0, 0), (0, 3), (1, 0), (1, 1), (6, 0), (1, 2), (0, 2), (0, 1), (5, 0), (0, 3)]), ([(15, 1), (20, 0), (15, 3), (16, 0), (11, 1), (16, 2), (15, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(15, 1), (20, 0), (15, 3), (16, 0), (11, 1), (16, 2), (15, 1), (20, 2), (20, 0), (15, 0)]), ([(8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(8, 1), (13, 2), (12, 0), (7, 1), (12, 0), (7, 1), (12, 2), (11, 0), (6, 1), (11, 3)]), ([(3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 1), (8, 1), (13, 0), (8, 1), (13, 0), (8, 1), (13, 1), (18, 0), (13, 1), (18, 1)]), ([(11, 3), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 3), (12, 1), (17, 3), (18, 3), (19, 1), (24, None)]), ([(11, 0), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 0), (6, 2), (5, 2), (5, 1), (10, 0), (5, 3), (6, 0), (1, 3), (2, 1), (7, 0)])]
+Generated pairwise comparisons  for 40 demonstrations.
+
+Running PBIRL with 1 demonstrations for environment 1
+MCMC completed with acceptance ratio: 1.0000
+Using 6500 samples after burn-in.
+MAP Solution: [-0.79854855 -0.0251282  -0.38875957 -0.45886249]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+Config file loaded successfully.
+Feature weights for environment: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+Feature weights for environment: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+Feature weights for environment: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+Feature weights for environment: [-0.69449962 -0.28165855  0.22055331  0.62425554]
+Feature weights for environment: [-0.58844088 -0.39506705 -0.37329827  0.59858814]
+Feature weights for environment: [-0.62480116 -0.58775562  0.29021502  0.42419581]
+Feature weights for environment: [-0.86648592 -0.43712062 -0.12519764  0.20604187]
+Feature weights for environment: [-0.66202557 -0.27713495  0.4113014   0.56191594]
+Feature weights for environment: [-0.70843905 -0.48585435  0.3607345   0.3632221 ]
+Feature weights for environment: [-0.59500066 -0.16244209  0.37080191  0.69432898]
+Feature weights for environment: [-0.0702138  -0.06544465  0.14444996  0.98484579]
+Feature weights for environment: [-0.58571354 -0.27832207  0.48101309  0.59000244]
+Feature weights for environment: [-0.83842198 -0.21600546  0.03565977  0.49911783]
+Feature weights for environment: [-0.27410583  0.06391249  0.48081808  0.83041867]
+Feature weights for environment: [-0.67868375 -0.62331644 -0.1171628   0.3703213 ]
+Feature weights for environment: [-0.92679793  0.00735039  0.0581375   0.37096037]
+Feature weights for environment: [-0.34813921  0.02418599  0.41049361  0.84244235]
+Feature weights for environment: [-0.70806601  0.20943992  0.21689523  0.63854045]
+Feature weights for environment: [-0.55653737  0.11873141  0.39462253  0.72141671]
+Initialized 19 GridWorld environments.
+Generated optimal policies for all environments.
+Shuffled demonstration order: [16, 12, 9, 19, 18, 6, 5, 10, 15, 21, 11, 17, 1, 14, 22, 13, 2, 23, 4, 24, 7, 8, 0, 3, 20]
+
+Running experiment for environment 1/19...
+Shuffled Demos: [([(1, 1), (6, 0), (1, 3), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(1, 1), (6, 0), (1, 3), (2, 0), (2, 1), (7, 0), (2, 2), (1, 2), (0, 1), (5, 0), (0, 3), (1, 3), (2, 3), (3, 2), (2, 3), (3, 0), (3, 1), (8, 3), (9, 3), (9, 2), (8, 1), (13, 3), (14, 3), (14, 1), (19, 3)]), ([(6, 0), (1, 3), (2, 3), (3, 0), (3, 0), (3, 2), (2, 1), (7, 2), (6, 2), (5, 2), (5, 1), (10, 1), (15, 3), (16, 2), (15, 0), (10, 3), (11, 1), (16, 3), (17, 0), (12, 1), (17, 3), (18, 2), (17, 1), (22, 3), (23, 3), (24, None)], [(6, 0), (1, 3), (2, 3), (3, 0), (3, 0), (3, 2), (2, 1), (7, 2), (6, 2), (5, 2), (5, 1), (10, 1), (15, 3), (16, 2), (15, 0), (10, 3), (11, 1), (16, 3), (17, 0), (12, 1), (17, 3), (18, 2), (17, 0), (12, 3), (13, 0)]), ([(11, 1), (16, 0), (11, 3), (12, 1), (17, 0), (12, 0), (7, 3), (8, 0), (3, 3), (4, 3), (4, 1), (9, 2), (8, 0), (3, 1), (8, 3), (9, 0), (4, 0), (4, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(11, 1), (16, 0), (11, 3), (12, 1), (17, 0), (12, 0), (7, 3), (8, 0), (3, 3), (4, 3), (4, 1), (9, 2), (8, 0), (3, 1), (8, 3), (9, 0), (4, 0), (4, 0), (4, 0), (4, 3), (4, 3), (4, 2), (3, 1), (8, 3), (9, 1)]), ([(18, 1), (23, 3), (24, None)], [(18, 0), (13, 1), (18, 1), (23, 3), (24, None)]), ([(8, 0), (3, 1), (8, 1), (13, 2), (12, 3), (13, 2), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(8, 0), (3, 1), (8, 1), (13, 2), (12, 3), (13, 2), (12, 0), (7, 3), (8, 1), (13, 0), (8, 3), (9, 1), (14, 1), (19, 0), (14, 1), (19, 1), (24, None)]), ([(5, 3), (6, 2), (5, 1), (10, 3), (11, 0), (6, 1), (11, 2), (10, 2), (10, 2), (10, 0), (5, 0), (0, 3), (1, 1), (6, 0), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(5, 3), (6, 2), (5, 1), (10, 3), (11, 0), (6, 1), (11, 2), (10, 2), (10, 2), (10, 0), (5, 0), (0, 3), (1, 1), (6, 0), (1, 3), (2, 2), (1, 1), (6, 0), (1, 0), (1, 3), (2, 3), (3, 0), (3, 1), (8, 3), (9, 0)]), ([(11, 1), (16, 2), (15, 2), (15, 1), (20, 3), (21, 1), (21, 2), (20, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(11, 1), (16, 2), (15, 2), (15, 1), (20, 3), (21, 1), (21, 2), (20, 1), (20, 2), (20, 0), (15, 1), (20, 0), (15, 1), (20, 2), (20, 0), (15, 1), (20, 3), (21, 3), (22, 1), (22, 3), (23, 3), (24, None)]), ([(2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 2), (1, 1), (6, 1), (11, 2), (10, 0), (5, 2), (5, 1), (10, 2), (10, 0), (5, 0), (0, 0), (0, 1), (5, 1), (10, 1), (15, 1), (20, 1), (20, 2), (20, 0), (15, 3), (16, 1), (21, 0), (16, 2), (15, 1), (20, 1), (20, 1)]), ([(13, 2), (12, 2), (11, 2), (10, 2), (10, 2), (10, 1), (15, 3), (16, 0), (11, 0), (6, 1), (11, 3), (12, 2), (11, 0), (6, 0), (1, 3), (2, 1), (7, 0), (2, 0), (2, 3), (3, 0), (3, 0), (3, 0), (3, 2), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(13, 2), (12, 2), (11, 2), (10, 2), (10, 2), (10, 1), (15, 3), (16, 0), (11, 0), (6, 1), (11, 3), (12, 2), (11, 0), (6, 0), (1, 3), (2, 1), (7, 0), (2, 0), (2, 3), (3, 0), (3, 0), (3, 0), (3, 2), (2, 3), (3, 0)]), ([(11, 0), (6, 2), (5, 0), (0, 3), (1, 3), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 0), (6, 2), (5, 0), (0, 3), (1, 3), (2, 0), (2, 1), (7, 3), (8, 2), (7, 1), (12, 3), (13, 0), (8, 1), (13, 1), (18, 1), (23, 0), (18, 2), (17, 1), (22, 3), (23, 3), (24, None)]), ([(6, 3), (7, 0), (2, 3), (3, 0), (3, 1), (8, 0), (3, 0), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(6, 3), (7, 0), (2, 3), (3, 0), (3, 1), (8, 0), (3, 0), (3, 3), (4, 3), (4, 3), (4, 3), (4, 1), (9, 1), (14, 1), (19, 3), (19, 0), (14, 3), (14, 1), (19, 1), (24, None)]), ([(12, 1), (17, 2), (16, 0), (11, 2), (10, 1), (15, 2), (15, 0), (10, 3), (11, 2), (10, 3), (11, 0), (6, 3), (7, 3), (8, 3), (9, 0), (4, 0), (4, 1), (9, 2), (8, 3), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(12, 1), (17, 2), (16, 0), (11, 2), (10, 1), (15, 2), (15, 0), (10, 3), (11, 2), (10, 3), (11, 0), (6, 3), (7, 3), (8, 3), (9, 0), (4, 0), (4, 1), (9, 2), (8, 3), (9, 3), (9, 2), (8, 2), (7, 2), (6, 2), (5, 1)]), ([(6, 0), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(6, 0), (1, 3), (2, 0), (2, 3), (3, 3), (4, 2), (3, 2), (2, 2), (1, 0), (1, 0), (1, 3), (2, 3), (3, 3), (4, 3), (4, 2), (3, 3), (4, 3), (4, 0), (4, 1), (9, 1), (14, 0), (9, 3), (9, 1), (14, 3), (14, 0)]), ([(3, 3), (4, 0), (4, 3), (4, 3), (4, 1), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 3), (4, 0), (4, 3), (4, 3), (4, 1), (9, 3), (9, 2), (8, 1), (13, 3), (14, 1), (19, 0), (14, 3), (14, 0), (9, 1), (14, 2), (13, 1), (18, 2), (17, 0), (12, 0), (7, 2), (6, 3), (7, 1), (12, 0), (7, 1), (12, 3)]), ([(17, 3), (18, 1), (23, 3), (24, None)], [(17, 3), (18, 2), (17, 3), (18, 0), (13, 2), (12, 3), (13, 2), (12, 0), (7, 2), (6, 2), (5, 0), (0, 3), (1, 0), (1, 1), (6, 0), (1, 2), (0, 2), (0, 0), (0, 2), (0, 2), (0, 3), (1, 2), (0, 3), (1, 0), (1, 3)]), ([(17, 0), (12, 2), (11, 3), (12, 0), (7, 3), (8, 3), (9, 3), (9, 1), (14, 1), (19, 3), (19, 2), (18, 0), (13, 0), (8, 1), (13, 1), (18, 3), (19, 3), (19, 0), (14, 1), (19, 1), (24, None)], [(17, 0), (12, 2), (11, 3), (12, 0), (7, 3), (8, 3), (9, 3), (9, 1), (14, 1), (19, 3), (19, 2), (18, 0), (13, 0), (8, 1), (13, 1), (18, 3), (19, 3), (19, 0), (14, 3), (14, 1), (19, 1), (24, None)]), ([(2, 2), (1, 3), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 2), (1, 3), (2, 1), (7, 0), (2, 0), (2, 1), (7, 0), (2, 0), (2, 0), (2, 0), (2, 0), (2, 2), (1, 0), (1, 0), (1, 3), (2, 1), (7, 0), (2, 3), (3, 2), (2, 1), (7, 0), (2, 2), (1, 1), (6, 1), (11, 3)]), ([(8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(8, 1), (13, 1), (18, 3), (19, 3), (19, 0), (14, 1), (19, 1), (24, None)]), ([(1, 1), (6, 3), (7, 3), (8, 1), (13, 2), (12, 1), (17, 0), (12, 0), (7, 3), (8, 3), (9, 3), (9, 0), (4, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(1, 1), (6, 3), (7, 3), (8, 1), (13, 2), (12, 1), (17, 0), (12, 0), (7, 3), (8, 3), (9, 3), (9, 0), (4, 3), (4, 0), (4, 2), (3, 3), (4, 2), (3, 1), (8, 1), (13, 0), (8, 0), (3, 0), (3, 0), (3, 2), (2, 3)]), ([(12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(12, 1), (17, 3), (18, 1), (23, 3), (24, None)]), ([(13, 2), (12, 1), (17, 1), (22, 2), (21, 0), (16, 0), (11, 1), (16, 1), (21, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(13, 2), (12, 1), (17, 1), (22, 2), (21, 0), (16, 0), (11, 1), (16, 1), (21, 1), (21, 3), (22, 2), (21, 3), (22, 3), (23, 3), (24, None)]), ([(13, 1), (18, 3), (19, 3), (19, 2), (18, 0), (13, 0), (8, 3), (9, 3), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(13, 1), (18, 3), (19, 3), (19, 2), (18, 0), (13, 0), (8, 3), (9, 3), (9, 3), (9, 0), (4, 0), (4, 3), (4, 1), (9, 1), (14, 1), (19, 0), (14, 2), (13, 1), (18, 1), (23, 1), (23, 3), (24, None)]), ([(0, 0), (0, 1), (5, 3), (6, 0), (1, 0), (1, 2), (0, 0), (0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(0, 0), (0, 1), (5, 3), (6, 0), (1, 0), (1, 2), (0, 0), (0, 2), (0, 1), (5, 3), (6, 2), (5, 2), (5, 3), (6, 0), (1, 3), (2, 1), (7, 3), (8, 0), (3, 3), (4, 0), (4, 0), (4, 3), (4, 1), (9, 2), (8, 0)]), ([(7, 3), (8, 0), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(7, 3), (8, 0), (3, 3), (4, 2), (3, 3), (4, 3), (4, 3), (4, 1), (9, 0), (4, 1), (9, 2), (8, 0), (3, 3), (4, 3), (4, 1), (9, 1), (14, 3), (14, 1), (19, 1), (24, None)]), ([(13, 2), (12, 2), (11, 1), (16, 0), (11, 3), (12, 0), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(13, 2), (12, 2), (11, 1), (16, 0), (11, 3), (12, 0), (7, 3), (8, 1), (13, 0), (8, 2), (7, 2), (6, 2), (5, 3), (6, 2), (5, 3), (6, 1), (11, 3), (12, 0), (7, 0), (2, 2), (1, 1), (6, 1), (11, 3), (12, 1), (17, 1)]), ([(16, 2), (15, 3), (16, 2), (15, 3), (16, 2), (15, 3), (16, 3), (17, 1), (22, 3), (23, 3), (24, None)], [(16, 2), (15, 3), (16, 2), (15, 3), (16, 2), (15, 3), (16, 3), (17, 3), (18, 2), (17, 2), (16, 3), (17, 1), (22, 1), (22, 1), (22, 3), (23, 2), (22, 3), (23, 1), (23, 0), (18, 2), (17, 3), (18, 2), (17, 1), (22, 3), (23, 1)]), ([(1, 3), (2, 3), (3, 1), (8, 1), (13, 0), (8, 0), (3, 2), (2, 1), (7, 0), (2, 3), (3, 1), (8, 0), (3, 0), (3, 0), (3, 0), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(1, 3), (2, 3), (3, 1), (8, 1), (13, 0), (8, 0), (3, 2), (2, 1), (7, 0), (2, 3), (3, 1), (8, 0), (3, 0), (3, 0), (3, 0), (3, 3), (4, 2), (3, 0), (3, 0), (3, 1), (8, 1), (13, 1), (18, 0), (13, 2), (12, 2)]), ([(1, 2), (0, 0), (0, 3), (1, 0), (1, 0), (1, 2), (0, 2), (0, 1), (5, 0), (0, 1), (5, 3), (6, 3), (7, 0), (2, 1), (7, 2), (6, 3), (7, 2), (6, 0), (1, 3), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(1, 2), (0, 0), (0, 3), (1, 0), (1, 0), (1, 2), (0, 2), (0, 1), (5, 0), (0, 1), (5, 3), (6, 3), (7, 0), (2, 1), (7, 2), (6, 3), (7, 2), (6, 0), (1, 3), (2, 1), (7, 2), (6, 3), (7, 1), (12, 1), (17, 3)]), ([(5, 3), (6, 1), (11, 3), (12, 1), (17, 0), (12, 0), (7, 3), (8, 2), (7, 1), (12, 2), (11, 3), (12, 3), (13, 0), (8, 3), (9, 2), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(5, 3), (6, 1), (11, 3), (12, 1), (17, 0), (12, 0), (7, 3), (8, 2), (7, 1), (12, 2), (11, 3), (12, 3), (13, 0), (8, 3), (9, 2), (8, 3), (9, 1), (14, 0), (9, 2), (8, 2), (7, 1), (12, 3), (13, 3), (14, 2), (13, 1)]), ([(16, 0), (11, 3), (12, 0), (7, 3), (8, 2), (7, 2), (6, 0), (1, 0), (1, 0), (1, 0), (1, 3), (2, 0), (2, 2), (1, 3), (2, 0), (2, 0), (2, 0), (2, 2), (1, 0), (1, 1), (6, 1), (11, 1), (16, 3), (17, 1), (22, 3), (23, 3), (24, None)], [(16, 0), (11, 3), (12, 0), (7, 3), (8, 2), (7, 2), (6, 0), (1, 0), (1, 0), (1, 0), (1, 3), (2, 0), (2, 2), (1, 3), (2, 0), (2, 0), (2, 0), (2, 2), (1, 0), (1, 1), (6, 1), (11, 1), (16, 3), (17, 3), (18, 0)]), ([(0, 1), (5, 0), (0, 3), (1, 3), (2, 0), (2, 2), (1, 0), (1, 1), (6, 3), (7, 1), (12, 2), (11, 2), (10, 0), (5, 3), (6, 3), (7, 3), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(0, 1), (5, 0), (0, 3), (1, 3), (2, 0), (2, 2), (1, 0), (1, 1), (6, 3), (7, 1), (12, 2), (11, 2), (10, 0), (5, 3), (6, 3), (7, 3), (8, 1), (13, 0), (8, 2), (7, 3), (8, 1), (13, 2), (12, 3), (13, 2), (12, 2)]), ([(5, 3), (6, 1), (11, 0), (6, 0), (1, 0), (1, 1), (6, 1), (11, 0), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(5, 3), (6, 1), (11, 0), (6, 0), (1, 0), (1, 1), (6, 1), (11, 0), (6, 3), (7, 2), (6, 2), (5, 3), (6, 2), (5, 0), (0, 3), (1, 1), (6, 3), (7, 3), (8, 0), (3, 0), (3, 3), (4, 3), (4, 3), (4, 0), (4, 3)]), ([(18, 3), (19, 2), (18, 1), (23, 0), (18, 2), (17, 1), (22, 3), (23, 3), (24, None)], [(18, 3), (19, 2), (18, 1), (23, 0), (18, 2), (17, 0), (12, 3), (13, 1), (18, 3), (19, 0), (14, 0), (9, 3), (9, 2), (8, 1), (13, 1), (18, 3), (19, 2), (18, 2), (17, 1), (22, 1), (22, 0), (17, 1), (22, 0), (17, 1), (22, 1)]), ([(17, 0), (12, 2), (11, 0), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(17, 0), (12, 2), (11, 0), (6, 1), (11, 2), (10, 3), (11, 2), (10, 0), (5, 0), (0, 3), (1, 3), (2, 0), (2, 0), (2, 0), (2, 1), (7, 2), (6, 2), (5, 0), (0, 1), (5, 0), (0, 1), (5, 3), (6, 0), (1, 2), (0, 0)]), ([(6, 3), (7, 1), (12, 1), (17, 3), (18, 3), (19, 2), (18, 0), (13, 3), (14, 2), (13, 1), (18, 0), (13, 0), (8, 0), (3, 2), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(6, 3), (7, 1), (12, 1), (17, 3), (18, 3), (19, 2), (18, 0), (13, 3), (14, 2), (13, 1), (18, 0), (13, 0), (8, 0), (3, 2), (2, 1), (7, 2), (6, 2), (5, 2), (5, 1), (10, 0), (5, 0), (0, 2), (0, 3), (1, 3), (2, 1)]), ([(1, 1), (6, 2), (5, 2), (5, 2), (5, 0), (0, 1), (5, 3), (6, 1), (11, 0), (6, 0), (1, 3), (2, 0), (2, 1), (7, 3), (8, 0), (3, 1), (8, 0), (3, 2), (2, 3), (3, 0), (3, 3), (4, 1), (9, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(1, 1), (6, 2), (5, 2), (5, 2), (5, 0), (0, 1), (5, 3), (6, 1), (11, 0), (6, 0), (1, 3), (2, 0), (2, 1), (7, 3), (8, 0), (3, 1), (8, 0), (3, 2), (2, 3), (3, 0), (3, 3), (4, 1), (9, 0), (4, 3), (4, 2)]), ([(8, 2), (7, 0), (2, 0), (2, 1), (7, 3), (8, 2), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(8, 2), (7, 0), (2, 0), (2, 1), (7, 3), (8, 2), (7, 3), (8, 3), (9, 3), (9, 3), (9, 0), (4, 0), (4, 3), (4, 1), (9, 2), (8, 0), (3, 0), (3, 2), (2, 0), (2, 0), (2, 1), (7, 1), (12, 1), (17, 1), (22, 0)]), ([(2, 2), (1, 0), (1, 2), (0, 3), (1, 1), (6, 0), (1, 2), (0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 2), (1, 0), (1, 2), (0, 3), (1, 1), (6, 0), (1, 2), (0, 2), (0, 1), (5, 2), (5, 1), (10, 0), (5, 1), (10, 1), (15, 1), (20, 1), (20, 3), (21, 3), (22, 0), (17, 0), (12, 2), (11, 0), (6, 1), (11, 3), (12, 1)]), ([(0, 1), (5, 2), (5, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(0, 1), (5, 2), (5, 2), (5, 2), (5, 0), (0, 2), (0, 2), (0, 1), (5, 2), (5, 1), (10, 2), (10, 3), (11, 3), (12, 3), (13, 3), (14, 0), (9, 3), (9, 3), (9, 3), (9, 3), (9, 3), (9, 1), (14, 2), (13, 3), (14, 1)]), ([(17, 1), (22, 3), (23, 1), (23, 0), (18, 1), (23, 3), (24, None)], [(17, 1), (22, 3), (23, 1), (23, 0), (18, 3), (19, 2), (18, 2), (17, 1), (22, 0), (17, 2), (16, 1), (21, 2), (20, 3), (21, 3), (22, 2), (21, 0), (16, 2), (15, 1), (20, 3), (21, 0), (16, 0), (11, 3), (12, 3), (13, 3), (14, 3)])]
+Generated pairwise comparisons  for 40 demonstrations.
+
+Running PBIRL with 1 demonstrations for environment 1
+MCMC completed with acceptance ratio: 1.0000
+Using 6500 samples after burn-in.
+MAP Solution: [ 0.24302614 -0.59170459 -0.50144924 -0.58255698]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 2.606718
+0.9-VaR-max-normalization for 1 demonstrations: 3.005240
+0.95-VaR-max-normalization for 1 demonstrations: 3.705037
+0.99-VaR-max-normalization for 1 demonstrations: 5.061301
+True EVD for 1 demonstrations: 2.658582
+Avar bound for threshold 0.1: 3.705037
+INSUFFICIENT (3.705037 >= 0.1)
+Avar bound for threshold 0.2: 3.705037
+INSUFFICIENT (3.705037 >= 0.2)
+Avar bound for threshold 0.3: 3.705037
+INSUFFICIENT (3.705037 >= 0.3)
+Avar bound for threshold 0.4: 3.705037
+INSUFFICIENT (3.705037 >= 0.4)
+
+Running PBIRL with 2 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.6022
+Using 6500 samples after burn-in.
+MAP Solution: [-0.79005552 -0.03890357 -0.10674813  0.60241483]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 1.217282
+0.9-VaR-max-normalization for 2 demonstrations: 1.292006
+0.95-VaR-max-normalization for 2 demonstrations: 1.389152
+0.99-VaR-max-normalization for 2 demonstrations: 1.578556
+True EVD for 2 demonstrations: 0.000574
+Avar bound for threshold 0.1: 1.389152
+INSUFFICIENT (1.389152 >= 0.1)
+Avar bound for threshold 0.2: 1.389152
+INSUFFICIENT (1.389152 >= 0.2)
+Avar bound for threshold 0.3: 1.389152
+INSUFFICIENT (1.389152 >= 0.3)
+Avar bound for threshold 0.4: 1.389152
+INSUFFICIENT (1.389152 >= 0.4)
+
+Running PBIRL with 3 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.4161
+Using 6500 samples after burn-in.
+MAP Solution: [-0.6727022  -0.38567796 -0.51408312 -0.36666444]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.195339
+0.9-VaR-max-normalization for 3 demonstrations: 1.289956
+0.95-VaR-max-normalization for 3 demonstrations: 1.399327
+0.99-VaR-max-normalization for 3 demonstrations: 1.613541
+True EVD for 3 demonstrations: 0.002085
+Avar bound for threshold 0.1: 1.399327
+INSUFFICIENT (1.399327 >= 0.1)
+Avar bound for threshold 0.2: 1.399327
+INSUFFICIENT (1.399327 >= 0.2)
+Avar bound for threshold 0.3: 1.399327
+INSUFFICIENT (1.399327 >= 0.3)
+Avar bound for threshold 0.4: 1.399327
+INSUFFICIENT (1.399327 >= 0.4)
+
+Running PBIRL with 4 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.3626
+Using 6500 samples after burn-in.
+MAP Solution: [-0.26998035 -0.68730118 -0.66997987 -0.07651587]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 4 demonstrations: 1.239235
+0.9-VaR-max-normalization for 4 demonstrations: 1.328312
+0.95-VaR-max-normalization for 4 demonstrations: 1.464676
+0.99-VaR-max-normalization for 4 demonstrations: 1.621661
+True EVD for 4 demonstrations: 0.013911
+Avar bound for threshold 0.1: 1.464676
+INSUFFICIENT (1.464676 >= 0.1)
+Avar bound for threshold 0.2: 1.464676
+INSUFFICIENT (1.464676 >= 0.2)
+Avar bound for threshold 0.3: 1.464676
+INSUFFICIENT (1.464676 >= 0.3)
+Avar bound for threshold 0.4: 1.464676
+INSUFFICIENT (1.464676 >= 0.4)
+
+Running PBIRL with 5 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.3604
+Using 6500 samples after burn-in.
+MAP Solution: [-0.90429643 -0.20539289  0.05364075  0.37038411]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 5 demonstrations: 1.194676
+0.9-VaR-max-normalization for 5 demonstrations: 1.314335
+0.95-VaR-max-normalization for 5 demonstrations: 1.453144
+0.99-VaR-max-normalization for 5 demonstrations: 1.655090
+True EVD for 5 demonstrations: 0.002843
+Avar bound for threshold 0.1: 1.453144
+INSUFFICIENT (1.453144 >= 0.1)
+Avar bound for threshold 0.2: 1.453144
+INSUFFICIENT (1.453144 >= 0.2)
+Avar bound for threshold 0.3: 1.453144
+INSUFFICIENT (1.453144 >= 0.3)
+Avar bound for threshold 0.4: 1.453144
+INSUFFICIENT (1.453144 >= 0.4)
+
+Running PBIRL with 6 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2619
+Using 6500 samples after burn-in.
+MAP Solution: [-0.79626407  0.36940729 -0.4424486  -0.1836873 ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 6 demonstrations: 2.389780
+0.9-VaR-max-normalization for 6 demonstrations: 2.667420
+0.95-VaR-max-normalization for 6 demonstrations: 3.109044
+0.99-VaR-max-normalization for 6 demonstrations: 3.932121
+True EVD for 6 demonstrations: 2.183130
+Avar bound for threshold 0.1: 3.109044
+INSUFFICIENT (3.109044 >= 0.1)
+Avar bound for threshold 0.2: 3.109044
+INSUFFICIENT (3.109044 >= 0.2)
+Avar bound for threshold 0.3: 3.109044
+INSUFFICIENT (3.109044 >= 0.3)
+Avar bound for threshold 0.4: 3.109044
+INSUFFICIENT (3.109044 >= 0.4)
+
+Running PBIRL with 7 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2588
+Using 6500 samples after burn-in.
+MAP Solution: [-0.87787043  0.29444848 -0.2949098   0.23594873]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 7 demonstrations: 2.709249
+0.9-VaR-max-normalization for 7 demonstrations: 3.013902
+0.95-VaR-max-normalization for 7 demonstrations: 3.388188
+0.99-VaR-max-normalization for 7 demonstrations: 4.119056
+True EVD for 7 demonstrations: 2.183130
+Avar bound for threshold 0.1: 3.388188
+INSUFFICIENT (3.388188 >= 0.1)
+Avar bound for threshold 0.2: 3.388188
+INSUFFICIENT (3.388188 >= 0.2)
+Avar bound for threshold 0.3: 3.388188
+INSUFFICIENT (3.388188 >= 0.3)
+Avar bound for threshold 0.4: 3.388188
+INSUFFICIENT (3.388188 >= 0.4)
+
+Running PBIRL with 8 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2487
+Using 6500 samples after burn-in.
+MAP Solution: [-0.84064471 -0.35941002 -0.14919792  0.3766708 ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 8 demonstrations: 1.219052
+0.9-VaR-max-normalization for 8 demonstrations: 1.326030
+0.95-VaR-max-normalization for 8 demonstrations: 1.486150
+0.99-VaR-max-normalization for 8 demonstrations: 1.675406
+True EVD for 8 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.486150
+INSUFFICIENT (1.486150 >= 0.1)
+Avar bound for threshold 0.2: 1.486150
+INSUFFICIENT (1.486150 >= 0.2)
+Avar bound for threshold 0.3: 1.486150
+INSUFFICIENT (1.486150 >= 0.3)
+Avar bound for threshold 0.4: 1.486150
+INSUFFICIENT (1.486150 >= 0.4)
+
+Running PBIRL with 9 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2394
+Using 6500 samples after burn-in.
+MAP Solution: [-0.42069179 -0.36241313 -0.079441    0.8278673 ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 9 demonstrations: 1.107223
+0.9-VaR-max-normalization for 9 demonstrations: 1.182778
+0.95-VaR-max-normalization for 9 demonstrations: 1.300203
+0.99-VaR-max-normalization for 9 demonstrations: 1.552872
+True EVD for 9 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.300203
+INSUFFICIENT (1.300203 >= 0.1)
+Avar bound for threshold 0.2: 1.300203
+INSUFFICIENT (1.300203 >= 0.2)
+Avar bound for threshold 0.3: 1.300203
+INSUFFICIENT (1.300203 >= 0.3)
+Avar bound for threshold 0.4: 1.300203
+INSUFFICIENT (1.300203 >= 0.4)
+
+Running PBIRL with 10 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2343
+Using 6500 samples after burn-in.
+MAP Solution: [-0.7319859   0.2087771  -0.07998784  0.64359203]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 10 demonstrations: 1.122071
+0.9-VaR-max-normalization for 10 demonstrations: 1.222240
+0.95-VaR-max-normalization for 10 demonstrations: 1.353820
+0.99-VaR-max-normalization for 10 demonstrations: 1.499126
+True EVD for 10 demonstrations: 0.000574
+Avar bound for threshold 0.1: 1.353820
+INSUFFICIENT (1.353820 >= 0.1)
+Avar bound for threshold 0.2: 1.353820
+INSUFFICIENT (1.353820 >= 0.2)
+Avar bound for threshold 0.3: 1.353820
+INSUFFICIENT (1.353820 >= 0.3)
+Avar bound for threshold 0.4: 1.353820
+INSUFFICIENT (1.353820 >= 0.4)
+
+Running PBIRL with 11 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2240
+Using 6500 samples after burn-in.
+MAP Solution: [-0.95369422  0.11886061 -0.23326705 -0.14807421]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 11 demonstrations: 2.550950
+0.9-VaR-max-normalization for 11 demonstrations: 2.720664
+0.95-VaR-max-normalization for 11 demonstrations: 2.992647
+0.99-VaR-max-normalization for 11 demonstrations: 3.486209
+True EVD for 11 demonstrations: 2.183130
+Avar bound for threshold 0.1: 2.992647
+INSUFFICIENT (2.992647 >= 0.1)
+Avar bound for threshold 0.2: 2.992647
+INSUFFICIENT (2.992647 >= 0.2)
+Avar bound for threshold 0.3: 2.992647
+INSUFFICIENT (2.992647 >= 0.3)
+Avar bound for threshold 0.4: 2.992647
+INSUFFICIENT (2.992647 >= 0.4)
+
+Running PBIRL with 12 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1996
+Using 6500 samples after burn-in.
+MAP Solution: [-0.90206148 -0.30925045  0.27810202 -0.11536256]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 12 demonstrations: 2.289042
+0.9-VaR-max-normalization for 12 demonstrations: 2.467112
+0.95-VaR-max-normalization for 12 demonstrations: 2.768192
+0.99-VaR-max-normalization for 12 demonstrations: 3.119540
+True EVD for 12 demonstrations: 1.951541
+Avar bound for threshold 0.1: 2.768192
+INSUFFICIENT (2.768192 >= 0.1)
+Avar bound for threshold 0.2: 2.768192
+INSUFFICIENT (2.768192 >= 0.2)
+Avar bound for threshold 0.3: 2.768192
+INSUFFICIENT (2.768192 >= 0.3)
+Avar bound for threshold 0.4: 2.768192
+INSUFFICIENT (2.768192 >= 0.4)
+
+Running PBIRL with 13 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2056
+Using 6500 samples after burn-in.
+MAP Solution: [-0.9519425   0.26721871 -0.13930169  0.05472365]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 13 demonstrations: 2.621155
+0.9-VaR-max-normalization for 13 demonstrations: 2.798755
+0.95-VaR-max-normalization for 13 demonstrations: 3.149765
+0.99-VaR-max-normalization for 13 demonstrations: 3.657832
+True EVD for 13 demonstrations: 2.183130
+Avar bound for threshold 0.1: 3.149765
+INSUFFICIENT (3.149765 >= 0.1)
+Avar bound for threshold 0.2: 3.149765
+INSUFFICIENT (3.149765 >= 0.2)
+Avar bound for threshold 0.3: 3.149765
+INSUFFICIENT (3.149765 >= 0.3)
+Avar bound for threshold 0.4: 3.149765
+INSUFFICIENT (3.149765 >= 0.4)
+
+Running PBIRL with 14 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2074
+Using 6500 samples after burn-in.
+MAP Solution: [-0.62296311 -0.66432823  0.1801171   0.37167566]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 14 demonstrations: 1.004700
+0.9-VaR-max-normalization for 14 demonstrations: 1.142672
+0.95-VaR-max-normalization for 14 demonstrations: 1.255833
+0.99-VaR-max-normalization for 14 demonstrations: 1.434455
+True EVD for 14 demonstrations: 0.003058
+Avar bound for threshold 0.1: 1.255833
+INSUFFICIENT (1.255833 >= 0.1)
+Avar bound for threshold 0.2: 1.255833
+INSUFFICIENT (1.255833 >= 0.2)
+Avar bound for threshold 0.3: 1.255833
+INSUFFICIENT (1.255833 >= 0.3)
+Avar bound for threshold 0.4: 1.255833
+INSUFFICIENT (1.255833 >= 0.4)
+
+Running PBIRL with 15 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2004
+Using 6500 samples after burn-in.
+MAP Solution: [-0.8464634  -0.16216621 -0.47603377  0.17491051]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 15 demonstrations: 0.946472
+0.9-VaR-max-normalization for 15 demonstrations: 1.081384
+0.95-VaR-max-normalization for 15 demonstrations: 1.205380
+0.99-VaR-max-normalization for 15 demonstrations: 1.362856
+True EVD for 15 demonstrations: 0.000574
+Avar bound for threshold 0.1: 1.205380
+INSUFFICIENT (1.205380 >= 0.1)
+Avar bound for threshold 0.2: 1.205380
+INSUFFICIENT (1.205380 >= 0.2)
+Avar bound for threshold 0.3: 1.205380
+INSUFFICIENT (1.205380 >= 0.3)
+Avar bound for threshold 0.4: 1.205380
+INSUFFICIENT (1.205380 >= 0.4)
+
+Running PBIRL with 16 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1948
+Using 6500 samples after burn-in.
+MAP Solution: [-0.88031016 -0.4461097   0.02641206 -0.15919348]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 16 demonstrations: 2.235762
+0.9-VaR-max-normalization for 16 demonstrations: 2.406578
+0.95-VaR-max-normalization for 16 demonstrations: 2.654113
+0.99-VaR-max-normalization for 16 demonstrations: 3.045978
+True EVD for 16 demonstrations: 1.951541
+Avar bound for threshold 0.1: 2.654113
+INSUFFICIENT (2.654113 >= 0.1)
+Avar bound for threshold 0.2: 2.654113
+INSUFFICIENT (2.654113 >= 0.2)
+Avar bound for threshold 0.3: 2.654113
+INSUFFICIENT (2.654113 >= 0.3)
+Avar bound for threshold 0.4: 2.654113
+INSUFFICIENT (2.654113 >= 0.4)
+
+Running PBIRL with 17 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1998
+Using 6500 samples after burn-in.
+MAP Solution: [-0.84484579 -0.26872358 -0.46218033  0.02031201]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 17 demonstrations: 0.993488
+0.9-VaR-max-normalization for 17 demonstrations: 1.114398
+0.95-VaR-max-normalization for 17 demonstrations: 1.239547
+0.99-VaR-max-normalization for 17 demonstrations: 1.423082
+True EVD for 17 demonstrations: 0.000574
+Avar bound for threshold 0.1: 1.239547
+INSUFFICIENT (1.239547 >= 0.1)
+Avar bound for threshold 0.2: 1.239547
+INSUFFICIENT (1.239547 >= 0.2)
+Avar bound for threshold 0.3: 1.239547
+INSUFFICIENT (1.239547 >= 0.3)
+Avar bound for threshold 0.4: 1.239547
+INSUFFICIENT (1.239547 >= 0.4)
+
+Running PBIRL with 18 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.2010
+Using 6500 samples after burn-in.
+MAP Solution: [-0.9818128   0.16339381 -0.06099155  0.0750075 ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 18 demonstrations: 2.656512
+0.9-VaR-max-normalization for 18 demonstrations: 2.907729
+0.95-VaR-max-normalization for 18 demonstrations: 3.177149
+0.99-VaR-max-normalization for 18 demonstrations: 3.813971
+True EVD for 18 demonstrations: 2.183130
+Avar bound for threshold 0.1: 3.177149
+INSUFFICIENT (3.177149 >= 0.1)
+Avar bound for threshold 0.2: 3.177149
+INSUFFICIENT (3.177149 >= 0.2)
+Avar bound for threshold 0.3: 3.177149
+INSUFFICIENT (3.177149 >= 0.3)
+Avar bound for threshold 0.4: 3.177149
+INSUFFICIENT (3.177149 >= 0.4)
+
+Running PBIRL with 19 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1922
+Using 6500 samples after burn-in.
+MAP Solution: [-0.43804496 -0.68676849 -0.00906495  0.57998576]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 19 demonstrations: 1.078182
+0.9-VaR-max-normalization for 19 demonstrations: 1.188416
+0.95-VaR-max-normalization for 19 demonstrations: 1.298573
+0.99-VaR-max-normalization for 19 demonstrations: 1.389242
+True EVD for 19 demonstrations: 0.004423
+Avar bound for threshold 0.1: 1.298573
+INSUFFICIENT (1.298573 >= 0.1)
+Avar bound for threshold 0.2: 1.298573
+INSUFFICIENT (1.298573 >= 0.2)
+Avar bound for threshold 0.3: 1.298573
+INSUFFICIENT (1.298573 >= 0.3)
+Avar bound for threshold 0.4: 1.298573
+INSUFFICIENT (1.298573 >= 0.4)
+
+Running PBIRL with 20 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1957
+Using 6500 samples after burn-in.
+MAP Solution: [-0.71000743 -0.28631868 -0.2467993   0.59413901]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 20 demonstrations: 1.014770
+0.9-VaR-max-normalization for 20 demonstrations: 1.125714
+0.95-VaR-max-normalization for 20 demonstrations: 1.246083
+0.99-VaR-max-normalization for 20 demonstrations: 1.383892
+True EVD for 20 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.246083
+INSUFFICIENT (1.246083 >= 0.1)
+Avar bound for threshold 0.2: 1.246083
+INSUFFICIENT (1.246083 >= 0.2)
+Avar bound for threshold 0.3: 1.246083
+INSUFFICIENT (1.246083 >= 0.3)
+Avar bound for threshold 0.4: 1.246083
+INSUFFICIENT (1.246083 >= 0.4)
+
+Running PBIRL with 21 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1105
+Using 6500 samples after burn-in.
+MAP Solution: [-0.64040384  0.08050441 -0.25564949  0.71975364]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 21 demonstrations: 0.718242
+0.9-VaR-max-normalization for 21 demonstrations: 0.923280
+0.95-VaR-max-normalization for 21 demonstrations: 1.141273
+0.99-VaR-max-normalization for 21 demonstrations: 1.279418
+True EVD for 21 demonstrations: 0.000574
+Avar bound for threshold 0.1: 1.141273
+INSUFFICIENT (1.141273 >= 0.1)
+Avar bound for threshold 0.2: 1.141273
+INSUFFICIENT (1.141273 >= 0.2)
+Avar bound for threshold 0.3: 1.141273
+INSUFFICIENT (1.141273 >= 0.3)
+Avar bound for threshold 0.4: 1.141273
+INSUFFICIENT (1.141273 >= 0.4)
+
+Running PBIRL with 22 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.1176
+Using 6500 samples after burn-in.
+MAP Solution: [-0.70723265 -0.25812943 -0.24080063  0.6125408 ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 22 demonstrations: 0.652280
+0.9-VaR-max-normalization for 22 demonstrations: 0.852594
+0.95-VaR-max-normalization for 22 demonstrations: 1.025397
+0.99-VaR-max-normalization for 22 demonstrations: 1.246441
+True EVD for 22 demonstrations: 0.000000
+Avar bound for threshold 0.1: 1.025397
+INSUFFICIENT (1.025397 >= 0.1)
+Avar bound for threshold 0.2: 1.025397
+INSUFFICIENT (1.025397 >= 0.2)
+Avar bound for threshold 0.3: 1.025397
+INSUFFICIENT (1.025397 >= 0.3)
+Avar bound for threshold 0.4: 1.025397
+INSUFFICIENT (1.025397 >= 0.4)
+
+Running PBIRL with 23 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0673
+Using 6500 samples after burn-in.
+MAP Solution: [-0.54736171 -0.78680575 -0.19380289  0.20921833]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 23 demonstrations: 0.013222
+0.9-VaR-max-normalization for 23 demonstrations: 0.016162
+0.95-VaR-max-normalization for 23 demonstrations: 0.021385
+0.99-VaR-max-normalization for 23 demonstrations: 0.039218
+True EVD for 23 demonstrations: 0.004423
+Avar bound for threshold 0.1: 0.021385
+SUFFICIENT (0.021385 < 0.1)
+Avar bound for threshold 0.2: 0.021385
+SUFFICIENT (0.021385 < 0.2)
+Avar bound for threshold 0.3: 0.021385
+SUFFICIENT (0.021385 < 0.3)
+Avar bound for threshold 0.4: 0.021385
+SUFFICIENT (0.021385 < 0.4)
+
+Running PBIRL with 24 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0664
+Using 6500 samples after burn-in.
+MAP Solution: [-0.70090196 -0.49032939 -0.31960459  0.40763518]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 24 demonstrations: 0.005487
+0.9-VaR-max-normalization for 24 demonstrations: 0.007045
+0.95-VaR-max-normalization for 24 demonstrations: 0.010421
+0.99-VaR-max-normalization for 24 demonstrations: 0.193458
+True EVD for 24 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.010421
+SUFFICIENT (0.010421 < 0.1)
+Avar bound for threshold 0.2: 0.010421
+SUFFICIENT (0.010421 < 0.2)
+Avar bound for threshold 0.3: 0.010421
+SUFFICIENT (0.010421 < 0.3)
+Avar bound for threshold 0.4: 0.010421
+SUFFICIENT (0.010421 < 0.4)
+
+Running PBIRL with 25 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0671
+Using 6500 samples after burn-in.
+MAP Solution: [-0.52354293 -0.39601378 -0.11670886  0.74528849]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 25 demonstrations: 0.004433
+0.9-VaR-max-normalization for 25 demonstrations: 0.005540
+0.95-VaR-max-normalization for 25 demonstrations: 0.007733
+0.99-VaR-max-normalization for 25 demonstrations: 0.014281
+True EVD for 25 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.007733
+SUFFICIENT (0.007733 < 0.1)
+Avar bound for threshold 0.2: 0.007733
+SUFFICIENT (0.007733 < 0.2)
+Avar bound for threshold 0.3: 0.007733
+SUFFICIENT (0.007733 < 0.3)
+Avar bound for threshold 0.4: 0.007733
+SUFFICIENT (0.007733 < 0.4)
+
+Running PBIRL with 26 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0675
+Using 6500 samples after burn-in.
+MAP Solution: [-0.47303922 -0.46080073 -0.03754663  0.74999122]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 26 demonstrations: 0.004903
+0.9-VaR-max-normalization for 26 demonstrations: 0.006251
+0.95-VaR-max-normalization for 26 demonstrations: 0.008112
+0.99-VaR-max-normalization for 26 demonstrations: 0.012317
+True EVD for 26 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.008112
+SUFFICIENT (0.008112 < 0.1)
+Avar bound for threshold 0.2: 0.008112
+SUFFICIENT (0.008112 < 0.2)
+Avar bound for threshold 0.3: 0.008112
+SUFFICIENT (0.008112 < 0.3)
+Avar bound for threshold 0.4: 0.008112
+SUFFICIENT (0.008112 < 0.4)
+
+Running PBIRL with 27 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0647
+Using 6500 samples after burn-in.
+MAP Solution: [-0.67471884 -0.61419782 -0.18752597  0.36379876]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 27 demonstrations: 0.005957
+0.9-VaR-max-normalization for 27 demonstrations: 0.006899
+0.95-VaR-max-normalization for 27 demonstrations: 0.009369
+0.99-VaR-max-normalization for 27 demonstrations: 0.013539
+True EVD for 27 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.009369
+SUFFICIENT (0.009369 < 0.1)
+Avar bound for threshold 0.2: 0.009369
+SUFFICIENT (0.009369 < 0.2)
+Avar bound for threshold 0.3: 0.009369
+SUFFICIENT (0.009369 < 0.3)
+Avar bound for threshold 0.4: 0.009369
+SUFFICIENT (0.009369 < 0.4)
+
+Running PBIRL with 28 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0632
+Using 6500 samples after burn-in.
+MAP Solution: [-0.67231282 -0.66035899 -0.31010105  0.12553414]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 28 demonstrations: 0.003865
+0.9-VaR-max-normalization for 28 demonstrations: 0.005310
+0.95-VaR-max-normalization for 28 demonstrations: 0.007894
+0.99-VaR-max-normalization for 28 demonstrations: 0.011113
+True EVD for 28 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.007894
+SUFFICIENT (0.007894 < 0.1)
+Avar bound for threshold 0.2: 0.007894
+SUFFICIENT (0.007894 < 0.2)
+Avar bound for threshold 0.3: 0.007894
+SUFFICIENT (0.007894 < 0.3)
+Avar bound for threshold 0.4: 0.007894
+SUFFICIENT (0.007894 < 0.4)
+
+Running PBIRL with 29 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0665
+Using 6500 samples after burn-in.
+MAP Solution: [-0.59873914 -0.72991593 -0.19781744  0.26382275]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 29 demonstrations: 0.011325
+0.9-VaR-max-normalization for 29 demonstrations: 0.013985
+0.95-VaR-max-normalization for 29 demonstrations: 0.016866
+0.99-VaR-max-normalization for 29 demonstrations: 0.032445
+True EVD for 29 demonstrations: 0.003058
+Avar bound for threshold 0.1: 0.016866
+SUFFICIENT (0.016866 < 0.1)
+Avar bound for threshold 0.2: 0.016866
+SUFFICIENT (0.016866 < 0.2)
+Avar bound for threshold 0.3: 0.016866
+SUFFICIENT (0.016866 < 0.3)
+Avar bound for threshold 0.4: 0.016866
+SUFFICIENT (0.016866 < 0.4)
+
+Running PBIRL with 30 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0674
+Using 6500 samples after burn-in.
+MAP Solution: [-0.61148077 -0.37040317 -0.26320661  0.647777  ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 30 demonstrations: 0.004736
+0.9-VaR-max-normalization for 30 demonstrations: 0.006090
+0.95-VaR-max-normalization for 30 demonstrations: 0.008055
+0.99-VaR-max-normalization for 30 demonstrations: 0.011400
+True EVD for 30 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.008055
+SUFFICIENT (0.008055 < 0.1)
+Avar bound for threshold 0.2: 0.008055
+SUFFICIENT (0.008055 < 0.2)
+Avar bound for threshold 0.3: 0.008055
+SUFFICIENT (0.008055 < 0.3)
+Avar bound for threshold 0.4: 0.008055
+SUFFICIENT (0.008055 < 0.4)
+
+Running PBIRL with 31 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0622
+Using 6500 samples after burn-in.
+MAP Solution: [-0.43041388 -0.56585098 -0.06014968  0.70067009]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 31 demonstrations: 0.011380
+0.9-VaR-max-normalization for 31 demonstrations: 0.015300
+0.95-VaR-max-normalization for 31 demonstrations: 0.017304
+0.99-VaR-max-normalization for 31 demonstrations: 0.025774
+True EVD for 31 demonstrations: 0.003058
+Avar bound for threshold 0.1: 0.017304
+SUFFICIENT (0.017304 < 0.1)
+Avar bound for threshold 0.2: 0.017304
+SUFFICIENT (0.017304 < 0.2)
+Avar bound for threshold 0.3: 0.017304
+SUFFICIENT (0.017304 < 0.3)
+Avar bound for threshold 0.4: 0.017304
+SUFFICIENT (0.017304 < 0.4)
+
+Running PBIRL with 32 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0681
+Using 6500 samples after burn-in.
+MAP Solution: [-0.72739882 -0.5606356  -0.33433864  0.21165149]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 32 demonstrations: 0.005028
+0.9-VaR-max-normalization for 32 demonstrations: 0.006754
+0.95-VaR-max-normalization for 32 demonstrations: 0.007969
+0.99-VaR-max-normalization for 32 demonstrations: 0.012480
+True EVD for 32 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.007969
+SUFFICIENT (0.007969 < 0.1)
+Avar bound for threshold 0.2: 0.007969
+SUFFICIENT (0.007969 < 0.2)
+Avar bound for threshold 0.3: 0.007969
+SUFFICIENT (0.007969 < 0.3)
+Avar bound for threshold 0.4: 0.007969
+SUFFICIENT (0.007969 < 0.4)
+
+Running PBIRL with 33 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0488
+Using 6500 samples after burn-in.
+MAP Solution: [-0.54693766 -0.3998283  -0.19894015  0.7081097 ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 33 demonstrations: 0.003517
+0.9-VaR-max-normalization for 33 demonstrations: 0.004234
+0.95-VaR-max-normalization for 33 demonstrations: 0.005627
+0.99-VaR-max-normalization for 33 demonstrations: 0.008015
+True EVD for 33 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.005627
+SUFFICIENT (0.005627 < 0.1)
+Avar bound for threshold 0.2: 0.005627
+SUFFICIENT (0.005627 < 0.2)
+Avar bound for threshold 0.3: 0.005627
+SUFFICIENT (0.005627 < 0.3)
+Avar bound for threshold 0.4: 0.005627
+SUFFICIENT (0.005627 < 0.4)
+
+Running PBIRL with 34 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0516
+Using 6500 samples after burn-in.
+MAP Solution: [-0.39116847 -0.21340597 -0.01795123  0.89505468]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 34 demonstrations: 0.004438
+0.9-VaR-max-normalization for 34 demonstrations: 0.006042
+0.95-VaR-max-normalization for 34 demonstrations: 0.006866
+0.99-VaR-max-normalization for 34 demonstrations: 0.010437
+True EVD for 34 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.006866
+SUFFICIENT (0.006866 < 0.1)
+Avar bound for threshold 0.2: 0.006866
+SUFFICIENT (0.006866 < 0.2)
+Avar bound for threshold 0.3: 0.006866
+SUFFICIENT (0.006866 < 0.3)
+Avar bound for threshold 0.4: 0.006866
+SUFFICIENT (0.006866 < 0.4)
+
+Running PBIRL with 35 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0493
+Using 6500 samples after burn-in.
+MAP Solution: [-0.65768606 -0.45858557 -0.24065182  0.54702379]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 35 demonstrations: 0.004047
+0.9-VaR-max-normalization for 35 demonstrations: 0.004614
+0.95-VaR-max-normalization for 35 demonstrations: 0.006931
+0.99-VaR-max-normalization for 35 demonstrations: 0.010609
+True EVD for 35 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.006931
+SUFFICIENT (0.006931 < 0.1)
+Avar bound for threshold 0.2: 0.006931
+SUFFICIENT (0.006931 < 0.2)
+Avar bound for threshold 0.3: 0.006931
+SUFFICIENT (0.006931 < 0.3)
+Avar bound for threshold 0.4: 0.006931
+SUFFICIENT (0.006931 < 0.4)
+
+Running PBIRL with 36 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0530
+Using 6500 samples after burn-in.
+MAP Solution: [-0.70155635 -0.48073902 -0.32482309  0.41376158]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 36 demonstrations: 0.004132
+0.9-VaR-max-normalization for 36 demonstrations: 0.004869
+0.95-VaR-max-normalization for 36 demonstrations: 0.006302
+0.99-VaR-max-normalization for 36 demonstrations: 0.008588
+True EVD for 36 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.006302
+SUFFICIENT (0.006302 < 0.1)
+Avar bound for threshold 0.2: 0.006302
+SUFFICIENT (0.006302 < 0.2)
+Avar bound for threshold 0.3: 0.006302
+SUFFICIENT (0.006302 < 0.3)
+Avar bound for threshold 0.4: 0.006302
+SUFFICIENT (0.006302 < 0.4)
+
+Running PBIRL with 37 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0513
+Using 6500 samples after burn-in.
+MAP Solution: [-0.62913839 -0.37934958 -0.26684102  0.62375849]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 37 demonstrations: 0.003569
+0.9-VaR-max-normalization for 37 demonstrations: 0.004834
+0.95-VaR-max-normalization for 37 demonstrations: 0.006622
+0.99-VaR-max-normalization for 37 demonstrations: 0.009870
+True EVD for 37 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.006622
+SUFFICIENT (0.006622 < 0.1)
+Avar bound for threshold 0.2: 0.006622
+SUFFICIENT (0.006622 < 0.2)
+Avar bound for threshold 0.3: 0.006622
+SUFFICIENT (0.006622 < 0.3)
+Avar bound for threshold 0.4: 0.006622
+SUFFICIENT (0.006622 < 0.4)
+
+Running PBIRL with 38 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0528
+Using 6500 samples after burn-in.
+MAP Solution: [-0.68277027 -0.41563702 -0.24680312  0.54786754]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 38 demonstrations: 0.003630
+0.9-VaR-max-normalization for 38 demonstrations: 0.004525
+0.95-VaR-max-normalization for 38 demonstrations: 0.005793
+0.99-VaR-max-normalization for 38 demonstrations: 0.009471
+True EVD for 38 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.005793
+SUFFICIENT (0.005793 < 0.1)
+Avar bound for threshold 0.2: 0.005793
+SUFFICIENT (0.005793 < 0.2)
+Avar bound for threshold 0.3: 0.005793
+SUFFICIENT (0.005793 < 0.3)
+Avar bound for threshold 0.4: 0.005793
+SUFFICIENT (0.005793 < 0.4)
+
+Running PBIRL with 39 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0123
+Using 6500 samples after burn-in.
+MAP Solution: [-0.39058728  0.02418152 -0.13365244  0.910491  ]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 39 demonstrations: 0.005545
+0.9-VaR-max-normalization for 39 demonstrations: 0.006320
+0.95-VaR-max-normalization for 39 demonstrations: 0.007141
+0.99-VaR-max-normalization for 39 demonstrations: 0.008872
+True EVD for 39 demonstrations: 0.000574
+Avar bound for threshold 0.1: 0.007141
+SUFFICIENT (0.007141 < 0.1)
+Avar bound for threshold 0.2: 0.007141
+SUFFICIENT (0.007141 < 0.2)
+Avar bound for threshold 0.3: 0.007141
+SUFFICIENT (0.007141 < 0.3)
+Avar bound for threshold 0.4: 0.007141
+SUFFICIENT (0.007141 < 0.4)
+
+Running PBIRL with 40 demonstrations for environment 1
+MCMC completed with acceptance ratio: 0.0144
+Using 6500 samples after burn-in.
+MAP Solution: [-0.29356109 -0.14858181 -0.08021295  0.94090978]
+True reward weights: [-0.43287867 -0.20494655 -0.09382998  0.87281665]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 40 demonstrations: 0.002477
+0.9-VaR-max-normalization for 40 demonstrations: 0.002986
+0.95-VaR-max-normalization for 40 demonstrations: 0.003384
+0.99-VaR-max-normalization for 40 demonstrations: 0.006838
+True EVD for 40 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.003384
+SUFFICIENT (0.003384 < 0.1)
+Avar bound for threshold 0.2: 0.003384
+SUFFICIENT (0.003384 < 0.2)
+Avar bound for threshold 0.3: 0.003384
+SUFFICIENT (0.003384 < 0.3)
+Avar bound for threshold 0.4: 0.003384
+SUFFICIENT (0.003384 < 0.4)
+
+Running experiment for environment 2/19...
+Shuffled Demos: [([(12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(12, 3), (13, 2), (12, 1), (17, 3), (18, 2), (17, 2), (16, 1), (21, 3), (22, 1), (22, 1), (22, 3), (23, 3), (24, None)]), ([(1, 1), (6, 1), (11, 1), (16, 3), (17, 2), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(1, 1), (6, 1), (11, 1), (16, 3), (17, 2), (16, 3), (17, 0), (12, 3), (13, 2), (12, 1), (17, 1), (22, 3), (23, 2), (22, 1), (22, 1), (22, 2), (21, 3), (22, 0), (17, 3), (18, 1), (23, 3), (24, None)]), ([(10, 1), (15, 1), (20, 2), (20, 2), (20, 0), (15, 0), (10, 1), (15, 0), (10, 1), (15, 2), (15, 0), (10, 0), (5, 0), (0, 2), (0, 2), (0, 1), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(10, 1), (15, 1), (20, 2), (20, 2), (20, 0), (15, 0), (10, 1), (15, 0), (10, 1), (15, 2), (15, 0), (10, 0), (5, 0), (0, 2), (0, 2), (0, 1), (5, 3), (6, 1), (11, 0), (6, 2), (5, 1), (10, 0), (5, 0), (0, 0), (0, 2)]), ([(1, 3), (2, 3), (3, 2), (2, 0), (2, 0), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(1, 3), (2, 3), (3, 2), (2, 0), (2, 0), (2, 3), (3, 3), (4, 3), (4, 2), (3, 0), (3, 0), (3, 3), (4, 1), (9, 2), (8, 3), (9, 1), (14, 3), (14, 3), (14, 0), (9, 1), (14, 2), (13, 1), (18, 2), (17, 1), (22, 0)]), ([(2, 0), (2, 1), (7, 0), (2, 0), (2, 2), (1, 2), (0, 3), (1, 3), (2, 3), (3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(2, 0), (2, 1), (7, 0), (2, 0), (2, 2), (1, 2), (0, 3), (1, 3), (2, 3), (3, 0), (3, 0), (3, 0), (3, 1), (8, 1), (13, 2), (12, 0), (7, 3), (8, 3), (9, 1), (14, 2), (13, 2), (12, 3), (13, 0), (8, 3), (9, 2)]), ([(17, 0), (12, 0), (7, 3), (8, 3), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(17, 0), (12, 0), (7, 3), (8, 3), (9, 3), (9, 1), (14, 1), (19, 2), (18, 3), (19, 1), (24, None)]), ([(12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(12, 1), (17, 3), (18, 0), (13, 1), (18, 2), (17, 1), (22, 0), (17, 0), (12, 0), (7, 2), (6, 3), (7, 0), (2, 2), (1, 0), (1, 0), (1, 3), (2, 3), (3, 1), (8, 3), (9, 1), (14, 0), (9, 0), (4, 3), (4, 2), (3, 2)]), ([(0, 2), (0, 1), (5, 3), (6, 1), (11, 1), (16, 0), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(0, 2), (0, 1), (5, 3), (6, 1), (11, 1), (16, 0), (11, 2), (10, 0), (5, 3), (6, 1), (11, 2), (10, 0), (5, 1), (10, 0), (5, 2), (5, 3), (6, 1), (11, 3), (12, 0), (7, 1), (12, 2), (11, 2), (10, 3), (11, 0), (6, 0)]), ([(2, 2), (1, 1), (6, 1), (11, 3), (12, 0), (7, 3), (8, 1), (13, 3), (14, 1), (19, 2), (18, 3), (19, 2), (18, 3), (19, 2), (18, 3), (19, 2), (18, 2), (17, 3), (18, 0), (13, 0), (8, 2), (7, 1), (12, 2), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(2, 2), (1, 1), (6, 1), (11, 3), (12, 0), (7, 3), (8, 1), (13, 3), (14, 1), (19, 2), (18, 3), (19, 2), (18, 3), (19, 2), (18, 3), (19, 2), (18, 2), (17, 3), (18, 0), (13, 0), (8, 2), (7, 1), (12, 2), (11, 0), (6, 1)]), ([(2, 3), (3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(2, 3), (3, 3), (4, 3), (4, 3), (4, 1), (9, 1), (14, 1), (19, 2), (18, 3), (19, 1), (24, None)]), ([(8, 3), (9, 0), (4, 1), (9, 2), (8, 3), (9, 2), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(8, 3), (9, 0), (4, 1), (9, 2), (8, 3), (9, 2), (8, 1), (13, 2), (12, 2), (11, 3), (12, 1), (17, 2), (16, 1), (21, 3), (22, 3), (23, 2), (22, 0), (17, 3), (18, 2), (17, 1), (22, 2), (21, 3), (22, 1), (22, 0), (17, 0)]), ([(18, 2), (17, 0), (12, 0), (7, 0), (2, 1), (7, 3), (8, 3), (9, 2), (8, 0), (3, 0), (3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(18, 2), (17, 0), (12, 0), (7, 0), (2, 1), (7, 3), (8, 3), (9, 2), (8, 0), (3, 0), (3, 3), (4, 2), (3, 2), (2, 3), (3, 1), (8, 0), (3, 0), (3, 1), (8, 3), (9, 2), (8, 3), (9, 0), (4, 3), (4, 2), (3, 2)]), ([(2, 3), (3, 2), (2, 2), (1, 3), (2, 2), (1, 3), (2, 2), (1, 3), (2, 0), (2, 1), (7, 3), (8, 0), (3, 1), (8, 1), (13, 2), (12, 0), (7, 0), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 3), (3, 2), (2, 2), (1, 3), (2, 2), (1, 3), (2, 2), (1, 3), (2, 0), (2, 1), (7, 3), (8, 0), (3, 1), (8, 1), (13, 2), (12, 0), (7, 0), (2, 1), (7, 2), (6, 0), (1, 1), (6, 0), (1, 0), (1, 3), (2, 1)]), ([(1, 3), (2, 1), (7, 1), (12, 3), (13, 0), (8, 3), (9, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(1, 3), (2, 1), (7, 1), (12, 3), (13, 0), (8, 3), (9, 0), (4, 2), (3, 2), (2, 1), (7, 1), (12, 2), (11, 0), (6, 0), (1, 2), (0, 3), (1, 3), (2, 1), (7, 1), (12, 3), (13, 0), (8, 2), (7, 1), (12, 2), (11, 1)]), ([(0, 1), (5, 1), (10, 1), (15, 1), (20, 1), (20, 1), (20, 2), (20, 2), (20, 3), (21, 2), (20, 3), (21, 1), (21, 3), (22, 2), (21, 3), (22, 3), (23, 3), (24, None)], [(0, 1), (5, 1), (10, 1), (15, 1), (20, 1), (20, 1), (20, 2), (20, 2), (20, 3), (21, 2), (20, 3), (21, 1), (21, 3), (22, 2), (21, 2), (20, 1), (20, 2), (20, 1), (20, 3), (21, 2), (20, 3), (21, 1), (21, 3), (22, 1), (22, 1)]), ([(18, 1), (23, 3), (24, None)], [(18, 3), (19, 1), (24, None)]), ([(6, 2), (5, 2), (5, 2), (5, 0), (0, 0), (0, 3), (1, 0), (1, 3), (2, 0), (2, 3), (3, 2), (2, 1), (7, 1), (12, 3), (13, 0), (8, 0), (3, 0), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(6, 2), (5, 2), (5, 2), (5, 0), (0, 0), (0, 3), (1, 0), (1, 3), (2, 0), (2, 3), (3, 2), (2, 1), (7, 1), (12, 3), (13, 0), (8, 0), (3, 0), (3, 3), (4, 1), (9, 3), (9, 0), (4, 2), (3, 2), (2, 3), (3, 2)]), ([(13, 3), (14, 0), (9, 2), (8, 0), (3, 1), (8, 0), (3, 1), (8, 0), (3, 0), (3, 0), (3, 1), (8, 0), (3, 0), (3, 2), (2, 0), (2, 2), (1, 2), (0, 1), (5, 1), (10, 0), (5, 0), (0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(13, 3), (14, 0), (9, 2), (8, 0), (3, 1), (8, 0), (3, 1), (8, 0), (3, 0), (3, 0), (3, 1), (8, 0), (3, 0), (3, 2), (2, 0), (2, 2), (1, 2), (0, 1), (5, 1), (10, 0), (5, 0), (0, 0), (0, 1), (5, 2), (5, 2)]), ([(15, 1), (20, 2), (20, 0), (15, 1), (20, 0), (15, 1), (20, 1), (20, 2), (20, 2), (20, 3), (21, 0), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(15, 1), (20, 2), (20, 0), (15, 1), (20, 0), (15, 1), (20, 1), (20, 2), (20, 2), (20, 3), (21, 0), (16, 1), (21, 2), (20, 0), (15, 3), (16, 3), (17, 1), (22, 3), (23, 2), (22, 3), (23, 3), (24, None)]), ([(12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(12, 3), (13, 3), (14, 1), (19, 1), (24, None)]), ([(7, 0), (2, 2), (1, 2), (0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(7, 0), (2, 2), (1, 2), (0, 1), (5, 0), (0, 0), (0, 2), (0, 1), (5, 1), (10, 1), (15, 3), (16, 1), (21, 1), (21, 2), (20, 0), (15, 1), (20, 1), (20, 2), (20, 3), (21, 2), (20, 0), (15, 0), (10, 1), (15, 0), (10, 0)]), ([(16, 0), (11, 3), (12, 0), (7, 1), (12, 0), (7, 1), (12, 3), (13, 3), (14, 0), (9, 3), (9, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(16, 0), (11, 3), (12, 0), (7, 1), (12, 0), (7, 1), (12, 3), (13, 3), (14, 0), (9, 3), (9, 0), (4, 1), (9, 3), (9, 3), (9, 3), (9, 0), (4, 1), (9, 3), (9, 2), (8, 3), (9, 1), (14, 2), (13, 1), (18, 0), (13, 3)]), ([(3, 1), (8, 2), (7, 0), (2, 3), (3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 1), (8, 2), (7, 0), (2, 3), (3, 0), (3, 3), (4, 2), (3, 2), (2, 2), (1, 0), (1, 0), (1, 3), (2, 1), (7, 1), (12, 0), (7, 3), (8, 0), (3, 0), (3, 2), (2, 2), (1, 2), (0, 1), (5, 2), (5, 1), (10, 1)]), ([(6, 0), (1, 1), (6, 2), (5, 1), (10, 0), (5, 1), (10, 2), (10, 1), (15, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(6, 0), (1, 1), (6, 2), (5, 1), (10, 0), (5, 1), (10, 2), (10, 0), (5, 3), (6, 1), (11, 0), (6, 2), (5, 1), (10, 2), (10, 1), (15, 3), (16, 2), (15, 1), (20, 2), (20, 3), (21, 2), (20, 1), (20, 0), (15, 0), (10, 0)]), ([(12, 3), (13, 0), (8, 0), (3, 0), (3, 3), (4, 2), (3, 1), (8, 2), (7, 1), (12, 0), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(12, 3), (13, 0), (8, 0), (3, 0), (3, 3), (4, 2), (3, 1), (8, 2), (7, 1), (12, 0), (7, 3), (8, 3), (9, 3), (9, 1), (14, 0), (9, 0), (4, 3), (4, 1), (9, 0), (4, 0), (4, 1), (9, 0), (4, 1), (9, 2), (8, 2)]), ([(0, 1), (5, 0), (0, 0), (0, 2), (0, 0), (0, 3), (1, 0), (1, 3), (2, 1), (7, 1), (12, 0), (7, 2), (6, 1), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(0, 1), (5, 0), (0, 0), (0, 2), (0, 0), (0, 3), (1, 0), (1, 3), (2, 1), (7, 1), (12, 0), (7, 2), (6, 1), (11, 3), (12, 3), (13, 3), (14, 0), (9, 0), (4, 3), (4, 3), (4, 0), (4, 1), (9, 3), (9, 3), (9, 3)]), ([(3, 1), (8, 2), (7, 2), (6, 1), (11, 3), (12, 1), (17, 1), (22, 1), (22, 0), (17, 1), (22, 3), (23, 3), (24, None)], [(3, 1), (8, 2), (7, 2), (6, 1), (11, 3), (12, 1), (17, 1), (22, 1), (22, 0), (17, 1), (22, 1), (22, 2), (21, 2), (20, 2), (20, 0), (15, 3), (16, 3), (17, 2), (16, 2), (15, 2), (15, 1), (20, 2), (20, 1), (20, 1), (20, 1)]), ([(1, 2), (0, 0), (0, 0), (0, 1), (5, 1), (10, 1), (15, 2), (15, 2), (15, 3), (16, 3), (17, 0), (12, 1), (17, 0), (12, 2), (11, 2), (10, 3), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(1, 2), (0, 0), (0, 0), (0, 1), (5, 1), (10, 1), (15, 2), (15, 2), (15, 3), (16, 3), (17, 0), (12, 1), (17, 0), (12, 2), (11, 2), (10, 3), (11, 2), (10, 1), (15, 0), (10, 1), (15, 2), (15, 0), (10, 2), (10, 3), (11, 1)]), ([(5, 3), (6, 3), (7, 0), (2, 2), (1, 2), (0, 2), (0, 3), (1, 3), (2, 3), (3, 2), (2, 3), (3, 1), (8, 3), (9, 2), (8, 3), (9, 2), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(5, 3), (6, 3), (7, 0), (2, 2), (1, 2), (0, 2), (0, 3), (1, 3), (2, 3), (3, 2), (2, 3), (3, 1), (8, 3), (9, 2), (8, 3), (9, 2), (8, 3), (9, 0), (4, 2), (3, 0), (3, 0), (3, 2), (2, 1), (7, 1), (12, 3)]), ([(16, 0), (11, 1), (16, 1), (21, 3), (22, 1), (22, 1), (22, 1), (22, 1), (22, 2), (21, 1), (21, 0), (16, 3), (17, 1), (22, 3), (23, 3), (24, None)], [(16, 0), (11, 1), (16, 1), (21, 3), (22, 1), (22, 1), (22, 1), (22, 1), (22, 2), (21, 1), (21, 0), (16, 3), (17, 0), (12, 1), (17, 1), (22, 1), (22, 2), (21, 0), (16, 3), (17, 1), (22, 3), (23, 1), (23, 0), (18, 1), (23, 3)]), ([(17, 3), (18, 0), (13, 1), (18, 3), (19, 2), (18, 3), (19, 2), (18, 3), (19, 3), (19, 3), (19, 0), (14, 1), (19, 1), (24, None)], [(17, 3), (18, 0), (13, 1), (18, 3), (19, 2), (18, 3), (19, 2), (18, 3), (19, 3), (19, 3), (19, 0), (14, 0), (9, 1), (14, 1), (19, 1), (24, None)]), ([(5, 3), (6, 1), (11, 0), (6, 1), (11, 0), (6, 1), (11, 2), (10, 0), (5, 1), (10, 2), (10, 1), (15, 3), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(5, 3), (6, 1), (11, 0), (6, 1), (11, 0), (6, 1), (11, 2), (10, 0), (5, 1), (10, 2), (10, 1), (15, 3), (16, 2), (15, 1), (20, 2), (20, 1), (20, 0), (15, 2), (15, 3), (16, 1), (21, 1), (21, 1), (21, 2), (20, 1), (20, 1)]), ([(3, 3), (4, 1), (9, 0), (4, 0), (4, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 3), (4, 1), (9, 0), (4, 0), (4, 3), (4, 1), (9, 3), (9, 2), (8, 1), (13, 3), (14, 3), (14, 1), (19, 1), (24, None)]), ([(13, 3), (14, 0), (9, 2), (8, 3), (9, 3), (9, 0), (4, 2), (3, 2), (2, 0), (2, 1), (7, 0), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(13, 3), (14, 0), (9, 2), (8, 3), (9, 3), (9, 0), (4, 2), (3, 2), (2, 0), (2, 1), (7, 0), (2, 2), (1, 3), (2, 1), (7, 0), (2, 2), (1, 0), (1, 2), (0, 3), (1, 3), (2, 0), (2, 1), (7, 1), (12, 2), (11, 1)]), ([(11, 0), (6, 0), (1, 1), (6, 1), (11, 2), (10, 0), (5, 1), (10, 0), (5, 3), (6, 2), (5, 3), (6, 0), (1, 2), (0, 2), (0, 3), (1, 2), (0, 1), (5, 3), (6, 0), (1, 2), (0, 1), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 0), (6, 0), (1, 1), (6, 1), (11, 2), (10, 0), (5, 1), (10, 0), (5, 3), (6, 2), (5, 3), (6, 0), (1, 2), (0, 2), (0, 3), (1, 2), (0, 1), (5, 3), (6, 0), (1, 2), (0, 1), (5, 0), (0, 0), (0, 3), (1, 2)]), ([(10, 2), (10, 1), (15, 1), (20, 2), (20, 1), (20, 2), (20, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(10, 2), (10, 1), (15, 1), (20, 2), (20, 1), (20, 2), (20, 1), (20, 1), (20, 3), (21, 1), (21, 3), (22, 3), (23, 3), (24, None)]), ([(17, 2), (16, 1), (21, 2), (20, 2), (20, 3), (21, 2), (20, 1), (20, 2), (20, 3), (21, 0), (16, 2), (15, 0), (10, 2), (10, 0), (5, 3), (6, 2), (5, 0), (0, 0), (0, 2), (0, 0), (0, 1), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(17, 2), (16, 1), (21, 2), (20, 2), (20, 3), (21, 2), (20, 1), (20, 2), (20, 3), (21, 0), (16, 2), (15, 0), (10, 2), (10, 0), (5, 3), (6, 2), (5, 0), (0, 0), (0, 2), (0, 0), (0, 1), (5, 2), (5, 3), (6, 2), (5, 1)]), ([(3, 0), (3, 1), (8, 3), (9, 3), (9, 0), (4, 0), (4, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 0), (3, 1), (8, 3), (9, 3), (9, 0), (4, 0), (4, 0), (4, 2), (3, 0), (3, 1), (8, 3), (9, 2), (8, 3), (9, 3), (9, 0), (4, 2), (3, 3), (4, 0), (4, 0), (4, 3), (4, 0), (4, 1), (9, 2), (8, 0), (3, 2)]), ([(7, 2), (6, 2), (5, 0), (0, 2), (0, 3), (1, 2), (0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(7, 2), (6, 2), (5, 0), (0, 2), (0, 3), (1, 2), (0, 2), (0, 3), (1, 1), (6, 1), (11, 1), (16, 0), (11, 3), (12, 3), (13, 1), (18, 0), (13, 1), (18, 0), (13, 0), (8, 1), (13, 0), (8, 1), (13, 2), (12, 2), (11, 0)]), ([(11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(11, 3), (12, 2), (11, 3), (12, 3), (13, 3), (14, 0), (9, 1), (14, 0), (9, 0), (4, 3), (4, 1), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)])]
+Generated pairwise comparisons  for 40 demonstrations.
+
+Running PBIRL with 1 demonstrations for environment 2
+MCMC completed with acceptance ratio: 1.0000
+Using 6500 samples after burn-in.
+MAP Solution: [ 0.66516009 -0.60904949  0.42158508  0.09426979]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 2.475762
+0.9-VaR-max-normalization for 1 demonstrations: 2.901354
+0.95-VaR-max-normalization for 1 demonstrations: 3.579174
+0.99-VaR-max-normalization for 1 demonstrations: 4.689915
+True EVD for 1 demonstrations: 3.001450
+Avar bound for threshold 0.1: 3.579174
+INSUFFICIENT (3.579174 >= 0.1)
+Avar bound for threshold 0.2: 3.579174
+INSUFFICIENT (3.579174 >= 0.2)
+Avar bound for threshold 0.3: 3.579174
+INSUFFICIENT (3.579174 >= 0.3)
+Avar bound for threshold 0.4: 3.579174
+INSUFFICIENT (3.579174 >= 0.4)
+
+Running PBIRL with 2 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.6072
+Using 6500 samples after burn-in.
+MAP Solution: [-0.94064074  0.08880792  0.29247394 -0.14753696]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 2.326869
+0.9-VaR-max-normalization for 2 demonstrations: 2.632795
+0.95-VaR-max-normalization for 2 demonstrations: 3.143705
+0.99-VaR-max-normalization for 2 demonstrations: 4.025500
+True EVD for 2 demonstrations: 1.156413
+Avar bound for threshold 0.1: 3.143705
+INSUFFICIENT (3.143705 >= 0.1)
+Avar bound for threshold 0.2: 3.143705
+INSUFFICIENT (3.143705 >= 0.2)
+Avar bound for threshold 0.3: 3.143705
+INSUFFICIENT (3.143705 >= 0.3)
+Avar bound for threshold 0.4: 3.143705
+INSUFFICIENT (3.143705 >= 0.4)
+
+Running PBIRL with 3 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.5074
+Using 6500 samples after burn-in.
+MAP Solution: [-0.44941743  0.03485579 -0.89247368  0.01731416]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 3.144338
+0.9-VaR-max-normalization for 3 demonstrations: 3.450743
+0.95-VaR-max-normalization for 3 demonstrations: 3.994476
+0.99-VaR-max-normalization for 3 demonstrations: 5.026255
+True EVD for 3 demonstrations: 2.372754
+Avar bound for threshold 0.1: 3.994476
+INSUFFICIENT (3.994476 >= 0.1)
+Avar bound for threshold 0.2: 3.994476
+INSUFFICIENT (3.994476 >= 0.2)
+Avar bound for threshold 0.3: 3.994476
+INSUFFICIENT (3.994476 >= 0.3)
+Avar bound for threshold 0.4: 3.994476
+INSUFFICIENT (3.994476 >= 0.4)
+
+Running PBIRL with 4 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.4233
+Using 6500 samples after burn-in.
+MAP Solution: [-0.54732395 -0.7609723  -0.31242526 -0.15410425]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 4 demonstrations: 1.139159
+0.9-VaR-max-normalization for 4 demonstrations: 1.234032
+0.95-VaR-max-normalization for 4 demonstrations: 1.355718
+0.99-VaR-max-normalization for 4 demonstrations: 1.566663
+True EVD for 4 demonstrations: 0.000448
+Avar bound for threshold 0.1: 1.355718
+INSUFFICIENT (1.355718 >= 0.1)
+Avar bound for threshold 0.2: 1.355718
+INSUFFICIENT (1.355718 >= 0.2)
+Avar bound for threshold 0.3: 1.355718
+INSUFFICIENT (1.355718 >= 0.3)
+Avar bound for threshold 0.4: 1.355718
+INSUFFICIENT (1.355718 >= 0.4)
+
+Running PBIRL with 5 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.4098
+Using 6500 samples after burn-in.
+MAP Solution: [-0.53342386 -0.77972063 -0.30973609 -0.10750939]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 5 demonstrations: 1.163493
+0.9-VaR-max-normalization for 5 demonstrations: 1.247001
+0.95-VaR-max-normalization for 5 demonstrations: 1.356420
+0.99-VaR-max-normalization for 5 demonstrations: 1.547467
+True EVD for 5 demonstrations: 0.000448
+Avar bound for threshold 0.1: 1.356420
+INSUFFICIENT (1.356420 >= 0.1)
+Avar bound for threshold 0.2: 1.356420
+INSUFFICIENT (1.356420 >= 0.2)
+Avar bound for threshold 0.3: 1.356420
+INSUFFICIENT (1.356420 >= 0.3)
+Avar bound for threshold 0.4: 1.356420
+INSUFFICIENT (1.356420 >= 0.4)
+
+Running PBIRL with 6 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0621
+Using 6500 samples after burn-in.
+MAP Solution: [-0.07942944 -0.18383962 -0.23437338  0.95129547]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 6 demonstrations: 0.330123
+0.9-VaR-max-normalization for 6 demonstrations: 0.644609
+0.95-VaR-max-normalization for 6 demonstrations: 0.760356
+0.99-VaR-max-normalization for 6 demonstrations: 0.894623
+True EVD for 6 demonstrations: 0.028149
+Avar bound for threshold 0.1: 0.760356
+INSUFFICIENT (0.760356 >= 0.1)
+Avar bound for threshold 0.2: 0.760356
+INSUFFICIENT (0.760356 >= 0.2)
+Avar bound for threshold 0.3: 0.760356
+INSUFFICIENT (0.760356 >= 0.3)
+Avar bound for threshold 0.4: 0.760356
+INSUFFICIENT (0.760356 >= 0.4)
+
+Running PBIRL with 7 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0612
+Using 6500 samples after burn-in.
+MAP Solution: [-0.14213517 -0.07121599 -0.17264845  0.97206913]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 7 demonstrations: 0.044602
+0.9-VaR-max-normalization for 7 demonstrations: 0.067111
+0.95-VaR-max-normalization for 7 demonstrations: 0.336031
+0.99-VaR-max-normalization for 7 demonstrations: 0.639484
+True EVD for 7 demonstrations: 0.022736
+Avar bound for threshold 0.1: 0.336031
+INSUFFICIENT (0.336031 >= 0.1)
+Avar bound for threshold 0.2: 0.336031
+INSUFFICIENT (0.336031 >= 0.2)
+Avar bound for threshold 0.3: 0.336031
+INSUFFICIENT (0.336031 >= 0.3)
+Avar bound for threshold 0.4: 0.336031
+SUFFICIENT (0.336031 < 0.4)
+
+Running PBIRL with 8 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0443
+Using 6500 samples after burn-in.
+MAP Solution: [-0.10514367  0.10742612 -0.21833661  0.96422692]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 8 demonstrations: 0.031311
+0.9-VaR-max-normalization for 8 demonstrations: 0.036665
+0.95-VaR-max-normalization for 8 demonstrations: 0.187845
+0.99-VaR-max-normalization for 8 demonstrations: 0.684212
+True EVD for 8 demonstrations: 0.024518
+Avar bound for threshold 0.1: 0.187845
+INSUFFICIENT (0.187845 >= 0.1)
+Avar bound for threshold 0.2: 0.187845
+SUFFICIENT (0.187845 < 0.2)
+Avar bound for threshold 0.3: 0.187845
+SUFFICIENT (0.187845 < 0.3)
+Avar bound for threshold 0.4: 0.187845
+SUFFICIENT (0.187845 < 0.4)
+
+Running PBIRL with 9 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0430
+Using 6500 samples after burn-in.
+MAP Solution: [-0.20494348  0.14695758 -0.1120901   0.96116463]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 9 demonstrations: 0.023495
+0.9-VaR-max-normalization for 9 demonstrations: 0.027491
+0.95-VaR-max-normalization for 9 demonstrations: 0.370707
+0.99-VaR-max-normalization for 9 demonstrations: 0.735807
+True EVD for 9 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.370707
+INSUFFICIENT (0.370707 >= 0.1)
+Avar bound for threshold 0.2: 0.370707
+INSUFFICIENT (0.370707 >= 0.2)
+Avar bound for threshold 0.3: 0.370707
+INSUFFICIENT (0.370707 >= 0.3)
+Avar bound for threshold 0.4: 0.370707
+SUFFICIENT (0.370707 < 0.4)
+
+Running PBIRL with 10 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0312
+Using 6500 samples after burn-in.
+MAP Solution: [-0.19454907  0.12802529 -0.11960785  0.96511872]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 10 demonstrations: 0.022682
+0.9-VaR-max-normalization for 10 demonstrations: 0.029635
+0.95-VaR-max-normalization for 10 demonstrations: 0.374444
+0.99-VaR-max-normalization for 10 demonstrations: 0.588029
+True EVD for 10 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.374444
+INSUFFICIENT (0.374444 >= 0.1)
+Avar bound for threshold 0.2: 0.374444
+INSUFFICIENT (0.374444 >= 0.2)
+Avar bound for threshold 0.3: 0.374444
+INSUFFICIENT (0.374444 >= 0.3)
+Avar bound for threshold 0.4: 0.374444
+SUFFICIENT (0.374444 < 0.4)
+
+Running PBIRL with 11 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0325
+Using 6500 samples after burn-in.
+MAP Solution: [-0.24648598  0.1419516  -0.05776013  0.95695254]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 11 demonstrations: 0.032602
+0.9-VaR-max-normalization for 11 demonstrations: 0.284659
+0.95-VaR-max-normalization for 11 demonstrations: 0.569531
+0.99-VaR-max-normalization for 11 demonstrations: 0.799341
+True EVD for 11 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.569531
+INSUFFICIENT (0.569531 >= 0.1)
+Avar bound for threshold 0.2: 0.569531
+INSUFFICIENT (0.569531 >= 0.2)
+Avar bound for threshold 0.3: 0.569531
+INSUFFICIENT (0.569531 >= 0.3)
+Avar bound for threshold 0.4: 0.569531
+INSUFFICIENT (0.569531 >= 0.4)
+
+Running PBIRL with 12 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0322
+Using 6500 samples after burn-in.
+MAP Solution: [-0.21602879  0.16714415 -0.07260994  0.95923   ]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 12 demonstrations: 0.141029
+0.9-VaR-max-normalization for 12 demonstrations: 0.425713
+0.95-VaR-max-normalization for 12 demonstrations: 0.595190
+0.99-VaR-max-normalization for 12 demonstrations: 0.790089
+True EVD for 12 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.595190
+INSUFFICIENT (0.595190 >= 0.1)
+Avar bound for threshold 0.2: 0.595190
+INSUFFICIENT (0.595190 >= 0.2)
+Avar bound for threshold 0.3: 0.595190
+INSUFFICIENT (0.595190 >= 0.3)
+Avar bound for threshold 0.4: 0.595190
+INSUFFICIENT (0.595190 >= 0.4)
+
+Running PBIRL with 13 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0293
+Using 6500 samples after burn-in.
+MAP Solution: [-0.24059657  0.09952436 -0.07047972  0.96293343]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 13 demonstrations: 0.058550
+0.9-VaR-max-normalization for 13 demonstrations: 0.415946
+0.95-VaR-max-normalization for 13 demonstrations: 0.715110
+0.99-VaR-max-normalization for 13 demonstrations: 0.863790
+True EVD for 13 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.715110
+INSUFFICIENT (0.715110 >= 0.1)
+Avar bound for threshold 0.2: 0.715110
+INSUFFICIENT (0.715110 >= 0.2)
+Avar bound for threshold 0.3: 0.715110
+INSUFFICIENT (0.715110 >= 0.3)
+Avar bound for threshold 0.4: 0.715110
+INSUFFICIENT (0.715110 >= 0.4)
+
+Running PBIRL with 14 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0282
+Using 6500 samples after burn-in.
+MAP Solution: [-0.31883672  0.03831608 -0.00594887  0.94701617]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 14 demonstrations: 0.024142
+0.9-VaR-max-normalization for 14 demonstrations: 0.031399
+0.95-VaR-max-normalization for 14 demonstrations: 0.372262
+0.99-VaR-max-normalization for 14 demonstrations: 0.509803
+True EVD for 14 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.372262
+INSUFFICIENT (0.372262 >= 0.1)
+Avar bound for threshold 0.2: 0.372262
+INSUFFICIENT (0.372262 >= 0.2)
+Avar bound for threshold 0.3: 0.372262
+INSUFFICIENT (0.372262 >= 0.3)
+Avar bound for threshold 0.4: 0.372262
+SUFFICIENT (0.372262 < 0.4)
+
+Running PBIRL with 15 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0322
+Using 6500 samples after burn-in.
+MAP Solution: [-0.28597958  0.15243879 -0.01326463  0.94593982]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 15 demonstrations: 0.024832
+0.9-VaR-max-normalization for 15 demonstrations: 0.117719
+0.95-VaR-max-normalization for 15 demonstrations: 0.394621
+0.99-VaR-max-normalization for 15 demonstrations: 0.687668
+True EVD for 15 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.394621
+INSUFFICIENT (0.394621 >= 0.1)
+Avar bound for threshold 0.2: 0.394621
+INSUFFICIENT (0.394621 >= 0.2)
+Avar bound for threshold 0.3: 0.394621
+INSUFFICIENT (0.394621 >= 0.3)
+Avar bound for threshold 0.4: 0.394621
+SUFFICIENT (0.394621 < 0.4)
+
+Running PBIRL with 16 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0290
+Using 6500 samples after burn-in.
+MAP Solution: [-0.20542153  0.15681429 -0.10682304  0.96010422]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 16 demonstrations: 0.026004
+0.9-VaR-max-normalization for 16 demonstrations: 0.029142
+0.95-VaR-max-normalization for 16 demonstrations: 0.128823
+0.99-VaR-max-normalization for 16 demonstrations: 0.646970
+True EVD for 16 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.128823
+INSUFFICIENT (0.128823 >= 0.1)
+Avar bound for threshold 0.2: 0.128823
+SUFFICIENT (0.128823 < 0.2)
+Avar bound for threshold 0.3: 0.128823
+SUFFICIENT (0.128823 < 0.3)
+Avar bound for threshold 0.4: 0.128823
+SUFFICIENT (0.128823 < 0.4)
+
+Running PBIRL with 17 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0080
+Using 6500 samples after burn-in.
+MAP Solution: [-0.22503196  0.16496634 -0.07248856  0.95754484]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 17 demonstrations: 0.005900
+0.9-VaR-max-normalization for 17 demonstrations: 0.006191
+0.95-VaR-max-normalization for 17 demonstrations: 0.007860
+0.99-VaR-max-normalization for 17 demonstrations: 0.008214
+True EVD for 17 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.007860
+SUFFICIENT (0.007860 < 0.1)
+Avar bound for threshold 0.2: 0.007860
+SUFFICIENT (0.007860 < 0.2)
+Avar bound for threshold 0.3: 0.007860
+SUFFICIENT (0.007860 < 0.3)
+Avar bound for threshold 0.4: 0.007860
+SUFFICIENT (0.007860 < 0.4)
+
+Running PBIRL with 18 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0081
+Using 6500 samples after burn-in.
+MAP Solution: [-0.24455222  0.12893946 -0.07707555  0.95792911]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 18 demonstrations: 0.002429
+0.9-VaR-max-normalization for 18 demonstrations: 0.003924
+0.95-VaR-max-normalization for 18 demonstrations: 0.004763
+0.99-VaR-max-normalization for 18 demonstrations: 0.008533
+True EVD for 18 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.004763
+SUFFICIENT (0.004763 < 0.1)
+Avar bound for threshold 0.2: 0.004763
+SUFFICIENT (0.004763 < 0.2)
+Avar bound for threshold 0.3: 0.004763
+SUFFICIENT (0.004763 < 0.3)
+Avar bound for threshold 0.4: 0.004763
+SUFFICIENT (0.004763 < 0.4)
+
+Running PBIRL with 19 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0073
+Using 6500 samples after burn-in.
+MAP Solution: [-0.21462431  0.14955501 -0.06472694  0.96300578]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 19 demonstrations: 0.001037
+0.9-VaR-max-normalization for 19 demonstrations: 0.003049
+0.95-VaR-max-normalization for 19 demonstrations: 0.003162
+0.99-VaR-max-normalization for 19 demonstrations: 0.005226
+True EVD for 19 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.003162
+SUFFICIENT (0.003162 < 0.1)
+Avar bound for threshold 0.2: 0.003162
+SUFFICIENT (0.003162 < 0.2)
+Avar bound for threshold 0.3: 0.003162
+SUFFICIENT (0.003162 < 0.3)
+Avar bound for threshold 0.4: 0.003162
+SUFFICIENT (0.003162 < 0.4)
+
+Running PBIRL with 20 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0083
+Using 6500 samples after burn-in.
+MAP Solution: [-0.30953986  0.02961665 -0.0037979   0.95041754]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 20 demonstrations: 0.001755
+0.9-VaR-max-normalization for 20 demonstrations: 0.003370
+0.95-VaR-max-normalization for 20 demonstrations: 0.005640
+0.99-VaR-max-normalization for 20 demonstrations: 0.008945
+True EVD for 20 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.005640
+SUFFICIENT (0.005640 < 0.1)
+Avar bound for threshold 0.2: 0.005640
+SUFFICIENT (0.005640 < 0.2)
+Avar bound for threshold 0.3: 0.005640
+SUFFICIENT (0.005640 < 0.3)
+Avar bound for threshold 0.4: 0.005640
+SUFFICIENT (0.005640 < 0.4)
+
+Running PBIRL with 21 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0066
+Using 6500 samples after burn-in.
+MAP Solution: [-0.27136884  0.04477991  0.02763647  0.96103587]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 21 demonstrations: 0.001971
+0.9-VaR-max-normalization for 21 demonstrations: 0.003576
+0.95-VaR-max-normalization for 21 demonstrations: 0.004985
+0.99-VaR-max-normalization for 21 demonstrations: 0.004985
+True EVD for 21 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.004985
+SUFFICIENT (0.004985 < 0.1)
+Avar bound for threshold 0.2: 0.004985
+SUFFICIENT (0.004985 < 0.2)
+Avar bound for threshold 0.3: 0.004985
+SUFFICIENT (0.004985 < 0.3)
+Avar bound for threshold 0.4: 0.004985
+SUFFICIENT (0.004985 < 0.4)
+
+Running PBIRL with 22 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0067
+Using 6500 samples after burn-in.
+MAP Solution: [-0.29153645  0.08134518 -0.01125328  0.95302824]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 22 demonstrations: 0.001376
+0.9-VaR-max-normalization for 22 demonstrations: 0.001898
+0.95-VaR-max-normalization for 22 demonstrations: 0.003864
+0.99-VaR-max-normalization for 22 demonstrations: 0.006502
+True EVD for 22 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.003864
+SUFFICIENT (0.003864 < 0.1)
+Avar bound for threshold 0.2: 0.003864
+SUFFICIENT (0.003864 < 0.2)
+Avar bound for threshold 0.3: 0.003864
+SUFFICIENT (0.003864 < 0.3)
+Avar bound for threshold 0.4: 0.003864
+SUFFICIENT (0.003864 < 0.4)
+
+Running PBIRL with 23 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0064
+Using 6500 samples after burn-in.
+MAP Solution: [-0.30362444  0.04410081 -0.03108839  0.95126275]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 23 demonstrations: 0.003895
+0.9-VaR-max-normalization for 23 demonstrations: 0.005140
+0.95-VaR-max-normalization for 23 demonstrations: 0.005140
+0.99-VaR-max-normalization for 23 demonstrations: 0.007179
+True EVD for 23 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.005140
+SUFFICIENT (0.005140 < 0.1)
+Avar bound for threshold 0.2: 0.005140
+SUFFICIENT (0.005140 < 0.2)
+Avar bound for threshold 0.3: 0.005140
+SUFFICIENT (0.005140 < 0.3)
+Avar bound for threshold 0.4: 0.005140
+SUFFICIENT (0.005140 < 0.4)
+
+Running PBIRL with 24 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0064
+Using 6500 samples after burn-in.
+MAP Solution: [-0.34951293  0.0329112   0.01802395  0.93617984]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 24 demonstrations: 0.004365
+0.9-VaR-max-normalization for 24 demonstrations: 0.007899
+0.95-VaR-max-normalization for 24 demonstrations: 0.011124
+0.99-VaR-max-normalization for 24 demonstrations: 0.011124
+True EVD for 24 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.011124
+SUFFICIENT (0.011124 < 0.1)
+Avar bound for threshold 0.2: 0.011124
+SUFFICIENT (0.011124 < 0.2)
+Avar bound for threshold 0.3: 0.011124
+SUFFICIENT (0.011124 < 0.3)
+Avar bound for threshold 0.4: 0.011124
+SUFFICIENT (0.011124 < 0.4)
+
+Running PBIRL with 25 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0060
+Using 6500 samples after burn-in.
+MAP Solution: [-0.25821549  0.04974764 -0.02115692  0.96457365]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 25 demonstrations: 0.003775
+0.9-VaR-max-normalization for 25 demonstrations: 0.005645
+0.95-VaR-max-normalization for 25 demonstrations: 0.005645
+0.99-VaR-max-normalization for 25 demonstrations: 0.005913
+True EVD for 25 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.005645
+SUFFICIENT (0.005645 < 0.1)
+Avar bound for threshold 0.2: 0.005645
+SUFFICIENT (0.005645 < 0.2)
+Avar bound for threshold 0.3: 0.005645
+SUFFICIENT (0.005645 < 0.3)
+Avar bound for threshold 0.4: 0.005645
+SUFFICIENT (0.005645 < 0.4)
+
+Running PBIRL with 26 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0061
+Using 6500 samples after burn-in.
+MAP Solution: [-0.18486885  0.06849228 -0.14358201  0.96980231]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 26 demonstrations: 0.005573
+0.9-VaR-max-normalization for 26 demonstrations: 0.005666
+0.95-VaR-max-normalization for 26 demonstrations: 0.006334
+0.99-VaR-max-normalization for 26 demonstrations: 0.007294
+True EVD for 26 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.006334
+SUFFICIENT (0.006334 < 0.1)
+Avar bound for threshold 0.2: 0.006334
+SUFFICIENT (0.006334 < 0.2)
+Avar bound for threshold 0.3: 0.006334
+SUFFICIENT (0.006334 < 0.3)
+Avar bound for threshold 0.4: 0.006334
+SUFFICIENT (0.006334 < 0.4)
+
+Running PBIRL with 27 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0063
+Using 6500 samples after burn-in.
+MAP Solution: [-0.32642691  0.03071823  0.02119574  0.94448537]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 27 demonstrations: 0.003355
+0.9-VaR-max-normalization for 27 demonstrations: 0.005309
+0.95-VaR-max-normalization for 27 demonstrations: 0.005810
+0.99-VaR-max-normalization for 27 demonstrations: 0.006141
+True EVD for 27 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.005810
+SUFFICIENT (0.005810 < 0.1)
+Avar bound for threshold 0.2: 0.005810
+SUFFICIENT (0.005810 < 0.2)
+Avar bound for threshold 0.3: 0.005810
+SUFFICIENT (0.005810 < 0.3)
+Avar bound for threshold 0.4: 0.005810
+SUFFICIENT (0.005810 < 0.4)
+
+Running PBIRL with 28 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0074
+Using 6500 samples after burn-in.
+MAP Solution: [-0.325295   -0.02799666  0.01387174  0.94509625]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 28 demonstrations: 0.004345
+0.9-VaR-max-normalization for 28 demonstrations: 0.005324
+0.95-VaR-max-normalization for 28 demonstrations: 0.008621
+0.99-VaR-max-normalization for 28 demonstrations: 0.009231
+True EVD for 28 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.008621
+SUFFICIENT (0.008621 < 0.1)
+Avar bound for threshold 0.2: 0.008621
+SUFFICIENT (0.008621 < 0.2)
+Avar bound for threshold 0.3: 0.008621
+SUFFICIENT (0.008621 < 0.3)
+Avar bound for threshold 0.4: 0.008621
+SUFFICIENT (0.008621 < 0.4)
+
+Running PBIRL with 29 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0055
+Using 6500 samples after burn-in.
+MAP Solution: [-0.27322645  0.02565173 -0.03441952  0.96099146]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 29 demonstrations: 0.003193
+0.9-VaR-max-normalization for 29 demonstrations: 0.003193
+0.95-VaR-max-normalization for 29 demonstrations: 0.003447
+0.99-VaR-max-normalization for 29 demonstrations: 0.005659
+True EVD for 29 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.003447
+SUFFICIENT (0.003447 < 0.1)
+Avar bound for threshold 0.2: 0.003447
+SUFFICIENT (0.003447 < 0.2)
+Avar bound for threshold 0.3: 0.003447
+SUFFICIENT (0.003447 < 0.3)
+Avar bound for threshold 0.4: 0.003447
+SUFFICIENT (0.003447 < 0.4)
+
+Running PBIRL with 30 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0058
+Using 6500 samples after burn-in.
+MAP Solution: [-0.27480805  0.07439419 -0.06262864  0.95656871]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 30 demonstrations: 0.002231
+0.9-VaR-max-normalization for 30 demonstrations: 0.002378
+0.95-VaR-max-normalization for 30 demonstrations: 0.002409
+0.99-VaR-max-normalization for 30 demonstrations: 0.002926
+True EVD for 30 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.002409
+SUFFICIENT (0.002409 < 0.1)
+Avar bound for threshold 0.2: 0.002409
+SUFFICIENT (0.002409 < 0.2)
+Avar bound for threshold 0.3: 0.002409
+SUFFICIENT (0.002409 < 0.3)
+Avar bound for threshold 0.4: 0.002409
+SUFFICIENT (0.002409 < 0.4)
+
+Running PBIRL with 31 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0050
+Using 6500 samples after burn-in.
+MAP Solution: [-0.3128696   0.03323213  0.00648174  0.94919241]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 31 demonstrations: 0.002054
+0.9-VaR-max-normalization for 31 demonstrations: 0.002117
+0.95-VaR-max-normalization for 31 demonstrations: 0.003076
+0.99-VaR-max-normalization for 31 demonstrations: 0.003775
+True EVD for 31 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.003076
+SUFFICIENT (0.003076 < 0.1)
+Avar bound for threshold 0.2: 0.003076
+SUFFICIENT (0.003076 < 0.2)
+Avar bound for threshold 0.3: 0.003076
+SUFFICIENT (0.003076 < 0.3)
+Avar bound for threshold 0.4: 0.003076
+SUFFICIENT (0.003076 < 0.4)
+
+Running PBIRL with 32 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0052
+Using 6500 samples after burn-in.
+MAP Solution: [-0.27227792 -0.05578451  0.00310286  0.96059523]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 32 demonstrations: 0.003790
+0.9-VaR-max-normalization for 32 demonstrations: 0.003832
+0.95-VaR-max-normalization for 32 demonstrations: 0.004900
+0.99-VaR-max-normalization for 32 demonstrations: 0.006870
+True EVD for 32 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.004900
+SUFFICIENT (0.004900 < 0.1)
+Avar bound for threshold 0.2: 0.004900
+SUFFICIENT (0.004900 < 0.2)
+Avar bound for threshold 0.3: 0.004900
+SUFFICIENT (0.004900 < 0.3)
+Avar bound for threshold 0.4: 0.004900
+SUFFICIENT (0.004900 < 0.4)
+
+Running PBIRL with 33 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0052
+Using 6500 samples after burn-in.
+MAP Solution: [-0.35875933 -0.03498527  0.01576658  0.93264098]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 33 demonstrations: 0.005693
+0.9-VaR-max-normalization for 33 demonstrations: 0.006606
+0.95-VaR-max-normalization for 33 demonstrations: 0.007275
+0.99-VaR-max-normalization for 33 demonstrations: 0.007275
+True EVD for 33 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.007275
+SUFFICIENT (0.007275 < 0.1)
+Avar bound for threshold 0.2: 0.007275
+SUFFICIENT (0.007275 < 0.2)
+Avar bound for threshold 0.3: 0.007275
+SUFFICIENT (0.007275 < 0.3)
+Avar bound for threshold 0.4: 0.007275
+SUFFICIENT (0.007275 < 0.4)
+
+Running PBIRL with 34 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0063
+Using 6500 samples after burn-in.
+MAP Solution: [-0.29532858 -0.02114398 -0.02109985  0.95492867]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 34 demonstrations: 0.003504
+0.9-VaR-max-normalization for 34 demonstrations: 0.003504
+0.95-VaR-max-normalization for 34 demonstrations: 0.004137
+0.99-VaR-max-normalization for 34 demonstrations: 0.005326
+True EVD for 34 demonstrations: 0.005856
+Avar bound for threshold 0.1: 0.004137
+SUFFICIENT (0.004137 < 0.1)
+Avar bound for threshold 0.2: 0.004137
+SUFFICIENT (0.004137 < 0.2)
+Avar bound for threshold 0.3: 0.004137
+SUFFICIENT (0.004137 < 0.3)
+Avar bound for threshold 0.4: 0.004137
+SUFFICIENT (0.004137 < 0.4)
+
+Running PBIRL with 35 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0047
+Using 6500 samples after burn-in.
+MAP Solution: [-0.34293659 -0.00579445  0.01558564  0.93921138]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 35 demonstrations: 0.002496
+0.9-VaR-max-normalization for 35 demonstrations: 0.003706
+0.95-VaR-max-normalization for 35 demonstrations: 0.006348
+0.99-VaR-max-normalization for 35 demonstrations: 0.006647
+True EVD for 35 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.006348
+SUFFICIENT (0.006348 < 0.1)
+Avar bound for threshold 0.2: 0.006348
+SUFFICIENT (0.006348 < 0.2)
+Avar bound for threshold 0.3: 0.006348
+SUFFICIENT (0.006348 < 0.3)
+Avar bound for threshold 0.4: 0.006348
+SUFFICIENT (0.006348 < 0.4)
+
+Running PBIRL with 36 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0054
+Using 6500 samples after burn-in.
+MAP Solution: [-0.17780841  0.05186927 -0.14985297  0.97120432]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 36 demonstrations: 0.001511
+0.9-VaR-max-normalization for 36 demonstrations: 0.001597
+0.95-VaR-max-normalization for 36 demonstrations: 0.005267
+0.99-VaR-max-normalization for 36 demonstrations: 0.005267
+True EVD for 36 demonstrations: 0.015135
+Avar bound for threshold 0.1: 0.005267
+SUFFICIENT (0.005267 < 0.1)
+Avar bound for threshold 0.2: 0.005267
+SUFFICIENT (0.005267 < 0.2)
+Avar bound for threshold 0.3: 0.005267
+SUFFICIENT (0.005267 < 0.3)
+Avar bound for threshold 0.4: 0.005267
+SUFFICIENT (0.005267 < 0.4)
+
+Running PBIRL with 37 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0056
+Using 6500 samples after burn-in.
+MAP Solution: [-0.31223436 -0.02657314 -0.01383737  0.94953257]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 37 demonstrations: 0.006685
+0.9-VaR-max-normalization for 37 demonstrations: 0.007275
+0.95-VaR-max-normalization for 37 demonstrations: 0.009218
+0.99-VaR-max-normalization for 37 demonstrations: 0.009218
+True EVD for 37 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.009218
+SUFFICIENT (0.009218 < 0.1)
+Avar bound for threshold 0.2: 0.009218
+SUFFICIENT (0.009218 < 0.2)
+Avar bound for threshold 0.3: 0.009218
+SUFFICIENT (0.009218 < 0.3)
+Avar bound for threshold 0.4: 0.009218
+SUFFICIENT (0.009218 < 0.4)
+
+Running PBIRL with 38 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0046
+Using 6500 samples after burn-in.
+MAP Solution: [-0.24308718  0.00820851 -0.01714244  0.96981822]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 38 demonstrations: 0.000897
+0.9-VaR-max-normalization for 38 demonstrations: 0.002094
+0.95-VaR-max-normalization for 38 demonstrations: 0.002233
+0.99-VaR-max-normalization for 38 demonstrations: 0.002886
+True EVD for 38 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.002233
+SUFFICIENT (0.002233 < 0.1)
+Avar bound for threshold 0.2: 0.002233
+SUFFICIENT (0.002233 < 0.2)
+Avar bound for threshold 0.3: 0.002233
+SUFFICIENT (0.002233 < 0.3)
+Avar bound for threshold 0.4: 0.002233
+SUFFICIENT (0.002233 < 0.4)
+
+Running PBIRL with 39 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0054
+Using 6500 samples after burn-in.
+MAP Solution: [-0.32674031 -0.05485102 -0.00264438  0.94351743]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 39 demonstrations: 0.006837
+0.9-VaR-max-normalization for 39 demonstrations: 0.007590
+0.95-VaR-max-normalization for 39 demonstrations: 0.007954
+0.99-VaR-max-normalization for 39 demonstrations: 0.007954
+True EVD for 39 demonstrations: 0.000000
+Avar bound for threshold 0.1: 0.007954
+SUFFICIENT (0.007954 < 0.1)
+Avar bound for threshold 0.2: 0.007954
+SUFFICIENT (0.007954 < 0.2)
+Avar bound for threshold 0.3: 0.007954
+SUFFICIENT (0.007954 < 0.3)
+Avar bound for threshold 0.4: 0.007954
+SUFFICIENT (0.007954 < 0.4)
+
+Running PBIRL with 40 demonstrations for environment 2
+MCMC completed with acceptance ratio: 0.0047
+Using 6500 samples after burn-in.
+MAP Solution: [-0.23983721  0.00201328 -0.00828667  0.97077566]
+True reward weights: [-0.2322253  -0.00465236  0.43453482  0.87018921]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 40 demonstrations: 0.004241
+0.9-VaR-max-normalization for 40 demonstrations: 0.004685
+0.95-VaR-max-normalization for 40 demonstrations: 0.005350
+0.99-VaR-max-normalization for 40 demonstrations: 0.005350
+True EVD for 40 demonstrations: 0.013853
+Avar bound for threshold 0.1: 0.005350
+SUFFICIENT (0.005350 < 0.1)
+Avar bound for threshold 0.2: 0.005350
+SUFFICIENT (0.005350 < 0.2)
+Avar bound for threshold 0.3: 0.005350
+SUFFICIENT (0.005350 < 0.3)
+Avar bound for threshold 0.4: 0.005350
+SUFFICIENT (0.005350 < 0.4)
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment for environment 3/19...
+Shuffled Demos: [([(6, 1), (11, 0), (6, 3), (7, 3), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(6, 1), (11, 0), (6, 3), (7, 3), (8, 3), (9, 2), (8, 3), (9, 0), (4, 1), (9, 2), (8, 1), (13, 3), (14, 0), (9, 1), (14, 0), (9, 1), (14, 3), (14, 0), (9, 1), (14, 3), (14, 2), (13, 2), (12, 1), (17, 2), (16, 0)]), ([(3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 0), (3, 1), (8, 0), (3, 0), (3, 0), (3, 0), (3, 3), (4, 1), (9, 2), (8, 3), (9, 1), (14, 2), (13, 2), (12, 0), (7, 1), (12, 2), (11, 0), (6, 0), (1, 3), (2, 0), (2, 3), (3, 1), (8, 2), (7, 2), (6, 3)]), ([(3, 0), (3, 3), (4, 3), (4, 1), (9, 2), (8, 3), (9, 0), (4, 0), (4, 1), (9, 0), (4, 3), (4, 0), (4, 3), (4, 1), (9, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 0), (3, 3), (4, 3), (4, 1), (9, 2), (8, 3), (9, 0), (4, 0), (4, 1), (9, 0), (4, 3), (4, 0), (4, 3), (4, 1), (9, 3), (9, 2), (8, 1), (13, 1), (18, 2), (17, 2), (16, 1), (21, 2), (20, 3), (21, 1), (21, 3)]), ([(1, 2), (0, 0), (0, 3), (1, 3), (2, 0), (2, 2), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(1, 2), (0, 0), (0, 3), (1, 3), (2, 0), (2, 2), (1, 3), (2, 0), (2, 1), (7, 2), (6, 0), (1, 2), (0, 0), (0, 3), (1, 0), (1, 3), (2, 1), (7, 3), (8, 1), (13, 3), (14, 3), (14, 3), (14, 0), (9, 0), (4, 1)]), ([(13, 3), (14, 1), (19, 1), (24, None)], [(13, 3), (14, 2), (13, 2), (12, 2), (11, 1), (16, 1), (21, 3), (22, 3), (23, 1), (23, 0), (18, 2), (17, 1), (22, 2), (21, 2), (20, 0), (15, 3), (16, 0), (11, 1), (16, 1), (21, 3), (22, 0), (17, 3), (18, 2), (17, 3), (18, 3)]), ([(16, 2), (15, 0), (10, 2), (10, 0), (5, 0), (0, 1), (5, 2), (5, 0), (0, 1), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(16, 2), (15, 0), (10, 2), (10, 0), (5, 0), (0, 1), (5, 2), (5, 0), (0, 1), (5, 0), (0, 3), (1, 1), (6, 2), (5, 0), (0, 1), (5, 1), (10, 1), (15, 3), (16, 2), (15, 1), (20, 0), (15, 0), (10, 2), (10, 2), (10, 3)]), ([(2, 0), (2, 0), (2, 1), (7, 0), (2, 3), (3, 1), (8, 2), (7, 3), (8, 3), (9, 2), (8, 1), (13, 2), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 0), (2, 0), (2, 1), (7, 0), (2, 3), (3, 1), (8, 2), (7, 3), (8, 3), (9, 2), (8, 1), (13, 2), (12, 3), (13, 3), (14, 3), (14, 3), (14, 2), (13, 1), (18, 1), (23, 0), (18, 2), (17, 0), (12, 2), (11, 3), (12, 1)]), ([(0, 3), (1, 1), (6, 1), (11, 0), (6, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(0, 3), (1, 1), (6, 1), (11, 0), (6, 2), (5, 0), (0, 3), (1, 3), (2, 0), (2, 1), (7, 2), (6, 3), (7, 1), (12, 3), (13, 1), (18, 3), (19, 1), (24, None)]), ([(18, 1), (23, 3), (24, None)], [(18, 3), (19, 1), (24, None)]), ([(11, 0), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 0), (6, 0), (1, 2), (0, 2), (0, 1), (5, 1), (10, 3), (11, 1), (16, 0), (11, 2), (10, 2), (10, 0), (5, 0), (0, 3), (1, 3), (2, 3), (3, 3), (4, 2), (3, 3), (4, 2), (3, 0), (3, 3), (4, 2), (3, 0), (3, 3)]), ([(11, 2), (10, 0), (5, 1), (10, 1), (15, 1), (20, 2), (20, 2), (20, 1), (20, 3), (21, 3), (22, 2), (21, 3), (22, 0), (17, 1), (22, 3), (23, 3), (24, None)], [(11, 2), (10, 0), (5, 1), (10, 1), (15, 1), (20, 2), (20, 2), (20, 1), (20, 3), (21, 3), (22, 2), (21, 3), (22, 0), (17, 1), (22, 2), (21, 1), (21, 2), (20, 0), (15, 1), (20, 0), (15, 0), (10, 3), (11, 1), (16, 3), (17, 3)]), ([(5, 3), (6, 0), (1, 0), (1, 1), (6, 1), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(5, 3), (6, 0), (1, 0), (1, 1), (6, 1), (11, 2), (10, 1), (15, 3), (16, 2), (15, 1), (20, 2), (20, 0), (15, 3), (16, 2), (15, 2), (15, 3), (16, 1), (21, 2), (20, 3), (21, 3), (22, 0), (17, 2), (16, 3), (17, 2), (16, 2)]), ([(3, 1), (8, 3), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 1), (8, 1), (13, 3), (14, 1), (19, 3), (19, 1), (24, None)]), ([(0, 0), (0, 2), (0, 3), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(0, 0), (0, 2), (0, 3), (1, 0), (1, 1), (6, 1), (11, 0), (6, 1), (11, 3), (12, 1), (17, 1), (22, 1), (22, 3), (23, 3), (24, None)]), ([(5, 1), (10, 2), (10, 1), (15, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(5, 1), (10, 2), (10, 3), (11, 1), (16, 0), (11, 1), (16, 1), (21, 3), (22, 1), (22, 3), (23, 1), (23, 3), (24, None)]), ([(1, 2), (0, 2), (0, 2), (0, 3), (1, 0), (1, 1), (6, 1), (11, 3), (12, 2), (11, 1), (16, 2), (15, 3), (16, 2), (15, 3), (16, 2), (15, 0), (10, 0), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(1, 2), (0, 2), (0, 2), (0, 3), (1, 0), (1, 1), (6, 1), (11, 3), (12, 2), (11, 1), (16, 2), (15, 3), (16, 2), (15, 3), (16, 2), (15, 0), (10, 0), (5, 3), (6, 2), (5, 1), (10, 1), (15, 2), (15, 1), (20, 3), (21, 2)]), ([(12, 0), (7, 0), (2, 0), (2, 1), (7, 1), (12, 3), (13, 3), (14, 2), (13, 3), (14, 0), (9, 2), (8, 0), (3, 1), (8, 3), (9, 3), (9, 3), (9, 3), (9, 1), (14, 0), (9, 3), (9, 0), (4, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(12, 0), (7, 0), (2, 0), (2, 1), (7, 1), (12, 3), (13, 3), (14, 2), (13, 3), (14, 0), (9, 2), (8, 0), (3, 1), (8, 3), (9, 3), (9, 3), (9, 3), (9, 1), (14, 0), (9, 3), (9, 0), (4, 3), (4, 1), (9, 0), (4, 1)]), ([(15, 2), (15, 3), (16, 0), (11, 3), (12, 3), (13, 3), (14, 0), (9, 1), (14, 1), (19, 1), (24, None)], [(15, 2), (15, 3), (16, 0), (11, 3), (12, 3), (13, 3), (14, 0), (9, 2), (8, 1), (13, 3), (14, 3), (14, 2), (13, 1), (18, 0), (13, 0), (8, 3), (9, 1), (14, 1), (19, 2), (18, 1), (23, 3), (24, None)]), ([(18, 3), (19, 3), (19, 2), (18, 2), (17, 1), (22, 0), (17, 1), (22, 0), (17, 1), (22, 3), (23, 3), (24, None)], [(18, 3), (19, 3), (19, 2), (18, 2), (17, 1), (22, 0), (17, 1), (22, 0), (17, 3), (18, 3), (19, 0), (14, 1), (19, 0), (14, 0), (9, 0), (4, 2), (3, 1), (8, 2), (7, 2), (6, 3), (7, 2), (6, 0), (1, 3), (2, 2), (1, 2)]), ([(13, 1), (18, 1), (23, 3), (24, None)], [(13, 3), (14, 1), (19, 2), (18, 1), (23, 3), (24, None)]), ([(8, 3), (9, 2), (8, 2), (7, 0), (2, 0), (2, 0), (2, 3), (3, 3), (4, 2), (3, 2), (2, 1), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(8, 3), (9, 2), (8, 2), (7, 0), (2, 0), (2, 0), (2, 3), (3, 3), (4, 2), (3, 2), (2, 0), (2, 2), (1, 2), (0, 0), (0, 0), (0, 2), (0, 1), (5, 1), (10, 3), (11, 1), (16, 0), (11, 0), (6, 0), (1, 1), (6, 0)]), ([(16, 2), (15, 0), (10, 1), (15, 1), (20, 2), (20, 2), (20, 0), (15, 1), (20, 1), (20, 2), (20, 0), (15, 0), (10, 3), (11, 3), (12, 2), (11, 1), (16, 3), (17, 0), (12, 0), (7, 1), (12, 0), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(16, 2), (15, 0), (10, 1), (15, 1), (20, 2), (20, 2), (20, 0), (15, 1), (20, 1), (20, 2), (20, 0), (15, 0), (10, 3), (11, 3), (12, 2), (11, 1), (16, 3), (17, 0), (12, 0), (7, 1), (12, 0), (7, 2), (6, 3), (7, 1), (12, 2)]), ([(15, 3), (16, 0), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(15, 3), (16, 0), (11, 0), (6, 1), (11, 3), (12, 3), (13, 3), (14, 1), (19, 1), (24, None)]), ([(7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(7, 1), (12, 0), (7, 2), (6, 1), (11, 1), (16, 0), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)]), ([(2, 0), (2, 2), (1, 1), (6, 0), (1, 0), (1, 1), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 0), (2, 2), (1, 1), (6, 0), (1, 0), (1, 0), (1, 3), (2, 3), (3, 0), (3, 1), (8, 1), (13, 1), (18, 0), (13, 3), (14, 2), (13, 2), (12, 1), (17, 3), (18, 3), (19, 1), (24, None)]), ([(17, 0), (12, 1), (17, 3), (18, 1), (23, 3), (24, None)], [(17, 0), (12, 1), (17, 3), (18, 0), (13, 1), (18, 1), (23, 2), (22, 3), (23, 3), (24, None)]), ([(5, 2), (5, 3), (6, 1), (11, 2), (10, 3), (11, 3), (12, 2), (11, 0), (6, 2), (5, 2), (5, 3), (6, 1), (11, 0), (6, 1), (11, 1), (16, 2), (15, 1), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(5, 2), (5, 3), (6, 1), (11, 2), (10, 3), (11, 3), (12, 2), (11, 0), (6, 2), (5, 2), (5, 3), (6, 1), (11, 0), (6, 1), (11, 1), (16, 2), (15, 0), (10, 2), (10, 1), (15, 2), (15, 1), (20, 0), (15, 0), (10, 1), (15, 0)]), ([(1, 0), (1, 1), (6, 3), (7, 2), (6, 3), (7, 0), (2, 3), (3, 1), (8, 0), (3, 3), (4, 0), (4, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(1, 0), (1, 1), (6, 3), (7, 2), (6, 3), (7, 0), (2, 3), (3, 1), (8, 0), (3, 3), (4, 0), (4, 0), (4, 0), (4, 3), (4, 2), (3, 3), (4, 3), (4, 0), (4, 0), (4, 2), (3, 3), (4, 0), (4, 2), (3, 0), (3, 3)]), ([(16, 3), (17, 2), (16, 2), (15, 0), (10, 0), (5, 3), (6, 2), (5, 3), (6, 2), (5, 1), (10, 1), (15, 3), (16, 1), (21, 3), (22, 2), (21, 1), (21, 2), (20, 2), (20, 3), (21, 3), (22, 3), (23, 3), (24, None)], [(16, 3), (17, 2), (16, 2), (15, 0), (10, 0), (5, 3), (6, 2), (5, 3), (6, 2), (5, 1), (10, 1), (15, 3), (16, 1), (21, 3), (22, 2), (21, 1), (21, 2), (20, 2), (20, 1), (20, 2), (20, 0), (15, 0), (10, 2), (10, 3), (11, 2)]), ([(12, 0), (7, 3), (8, 3), (9, 0), (4, 0), (4, 3), (4, 0), (4, 3), (4, 2), (3, 2), (2, 0), (2, 0), (2, 0), (2, 2), (1, 3), (2, 3), (3, 3), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(12, 0), (7, 3), (8, 3), (9, 0), (4, 0), (4, 3), (4, 0), (4, 3), (4, 2), (3, 2), (2, 0), (2, 0), (2, 0), (2, 2), (1, 3), (2, 3), (3, 3), (4, 2), (3, 3), (4, 3), (4, 3), (4, 2), (3, 3), (4, 3), (4, 1)]), ([(18, 1), (23, 0), (18, 0), (13, 2), (12, 2), (11, 1), (16, 2), (15, 0), (10, 0), (5, 2), (5, 0), (0, 1), (5, 0), (0, 0), (0, 0), (0, 0), (0, 2), (0, 3), (1, 1), (6, 2), (5, 2), (5, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(18, 1), (23, 0), (18, 0), (13, 2), (12, 2), (11, 1), (16, 2), (15, 0), (10, 0), (5, 2), (5, 0), (0, 1), (5, 0), (0, 0), (0, 0), (0, 0), (0, 2), (0, 3), (1, 1), (6, 2), (5, 2), (5, 2), (5, 0), (0, 0), (0, 1)]), ([(6, 3), (7, 2), (6, 3), (7, 1), (12, 2), (11, 0), (6, 1), (11, 3), (12, 2), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(6, 3), (7, 2), (6, 3), (7, 1), (12, 2), (11, 0), (6, 1), (11, 3), (12, 2), (11, 2), (10, 1), (15, 1), (20, 0), (15, 1), (20, 1), (20, 3), (21, 2), (20, 2), (20, 2), (20, 2), (20, 1), (20, 3), (21, 1), (21, 1), (21, 2)]), ([(15, 2), (15, 0), (10, 0), (5, 1), (10, 0), (5, 0), (0, 0), (0, 1), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(15, 2), (15, 0), (10, 0), (5, 1), (10, 0), (5, 0), (0, 0), (0, 1), (5, 3), (6, 3), (7, 1), (12, 3), (13, 3), (14, 3), (14, 2), (13, 0), (8, 3), (9, 0), (4, 2), (3, 2), (2, 1), (7, 2), (6, 3), (7, 3), (8, 0)]), ([(17, 2), (16, 1), (21, 0), (16, 0), (11, 3), (12, 1), (17, 1), (22, 1), (22, 2), (21, 2), (20, 0), (15, 0), (10, 3), (11, 1), (16, 1), (21, 3), (22, 3), (23, 3), (24, None)], [(17, 2), (16, 1), (21, 0), (16, 0), (11, 3), (12, 1), (17, 1), (22, 1), (22, 2), (21, 2), (20, 0), (15, 0), (10, 3), (11, 3), (12, 2), (11, 0), (6, 1), (11, 2), (10, 2), (10, 1), (15, 3), (16, 2), (15, 2), (15, 3), (16, 0)]), ([(8, 0), (3, 2), (2, 0), (2, 3), (3, 1), (8, 1), (13, 1), (18, 1), (23, 3), (24, None)], [(8, 0), (3, 2), (2, 0), (2, 3), (3, 1), (8, 1), (13, 2), (12, 1), (17, 2), (16, 2), (15, 2), (15, 1), (20, 1), (20, 0), (15, 2), (15, 2), (15, 3), (16, 2), (15, 1), (20, 0), (15, 3), (16, 2), (15, 3), (16, 2), (15, 0)]), ([(5, 0), (0, 3), (1, 1), (6, 3), (7, 1), (12, 2), (11, 0), (6, 0), (1, 0), (1, 1), (6, 2), (5, 0), (0, 2), (0, 2), (0, 2), (0, 2), (0, 1), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(5, 0), (0, 3), (1, 1), (6, 3), (7, 1), (12, 2), (11, 0), (6, 0), (1, 0), (1, 1), (6, 2), (5, 0), (0, 2), (0, 2), (0, 2), (0, 2), (0, 1), (5, 3), (6, 1), (11, 2), (10, 0), (5, 3), (6, 3), (7, 2), (6, 2)]), ([(6, 1), (11, 2), (10, 1), (15, 1), (20, 3), (21, 0), (16, 0), (11, 0), (6, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(6, 1), (11, 2), (10, 1), (15, 1), (20, 3), (21, 0), (16, 0), (11, 0), (6, 2), (5, 0), (0, 0), (0, 3), (1, 3), (2, 3), (3, 1), (8, 2), (7, 0), (2, 0), (2, 2), (1, 2), (0, 2), (0, 2), (0, 1), (5, 3), (6, 0)]), ([(2, 0), (2, 2), (1, 0), (1, 3), (2, 1), (7, 3), (8, 2), (7, 3), (8, 1), (13, 2), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(2, 0), (2, 2), (1, 0), (1, 3), (2, 1), (7, 3), (8, 2), (7, 3), (8, 1), (13, 2), (12, 2), (11, 3), (12, 3), (13, 1), (18, 0), (13, 1), (18, 0), (13, 0), (8, 1), (13, 3), (14, 1), (19, 2), (18, 3), (19, 2), (18, 2)]), ([(6, 1), (11, 1), (16, 2), (15, 3), (16, 2), (15, 0), (10, 2), (10, 2), (10, 3), (11, 3), (12, 1), (17, 2), (16, 0), (11, 1), (16, 0), (11, 2), (10, 0), (5, 2), (5, 3), (6, 3), (7, 1), (12, 1), (17, 1), (22, 3), (23, 3), (24, None)], [(6, 1), (11, 1), (16, 2), (15, 3), (16, 2), (15, 0), (10, 2), (10, 2), (10, 3), (11, 3), (12, 1), (17, 2), (16, 0), (11, 1), (16, 0), (11, 2), (10, 0), (5, 2), (5, 3), (6, 1), (11, 2), (10, 0), (5, 0), (0, 3), (1, 0)]), ([(3, 2), (2, 3), (3, 3), (4, 0), (4, 1), (9, 2), (8, 3), (9, 3), (9, 1), (14, 2), (13, 2), (12, 3), (13, 0), (8, 2), (7, 2), (6, 3), (7, 1), (12, 0), (7, 3), (8, 3), (9, 0), (4, 1), (9, 1), (14, 1), (19, 1), (24, None)], [(3, 2), (2, 3), (3, 3), (4, 0), (4, 1), (9, 2), (8, 3), (9, 3), (9, 1), (14, 2), (13, 2), (12, 3), (13, 0), (8, 2), (7, 2), (6, 3), (7, 1), (12, 0), (7, 3), (8, 3), (9, 0), (4, 0), (4, 0), (4, 1), (9, 1)])]
+Generated pairwise comparisons  for 40 demonstrations.
+
+Running PBIRL with 1 demonstrations for environment 3
+MCMC completed with acceptance ratio: 1.0000
+Using 6500 samples after burn-in.
+MAP Solution: [-0.52859129  0.27084008 -0.75448088 -0.27927675]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 1 demonstrations: 2.602999
+0.9-VaR-max-normalization for 1 demonstrations: 3.024766
+0.95-VaR-max-normalization for 1 demonstrations: 3.685749
+0.99-VaR-max-normalization for 1 demonstrations: 4.906375
+True EVD for 1 demonstrations: 2.193505
+Avar bound for threshold 0.1: 3.685749
+INSUFFICIENT (3.685749 >= 0.1)
+Avar bound for threshold 0.2: 3.685749
+INSUFFICIENT (3.685749 >= 0.2)
+Avar bound for threshold 0.3: 3.685749
+INSUFFICIENT (3.685749 >= 0.3)
+Avar bound for threshold 0.4: 3.685749
+INSUFFICIENT (3.685749 >= 0.4)
+
+Running PBIRL with 2 demonstrations for environment 3
+MCMC completed with acceptance ratio: 0.6040
+Using 6500 samples after burn-in.
+MAP Solution: [ 0.66796923 -0.22914439 -0.48311064  0.51760416]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 2 demonstrations: 3.136543
+0.9-VaR-max-normalization for 2 demonstrations: 3.554651
+0.95-VaR-max-normalization for 2 demonstrations: 4.161095
+0.99-VaR-max-normalization for 2 demonstrations: 5.537980
+True EVD for 2 demonstrations: 3.260596
+Avar bound for threshold 0.1: 4.161095
+INSUFFICIENT (4.161095 >= 0.1)
+Avar bound for threshold 0.2: 4.161095
+INSUFFICIENT (4.161095 >= 0.2)
+Avar bound for threshold 0.3: 4.161095
+INSUFFICIENT (4.161095 >= 0.3)
+Avar bound for threshold 0.4: 4.161095
+INSUFFICIENT (4.161095 >= 0.4)
+
+Running PBIRL with 3 demonstrations for environment 3
+MCMC completed with acceptance ratio: 0.5482
+Using 6500 samples after burn-in.
+MAP Solution: [-0.81090254  0.04940237 -0.53045224  0.24210926]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 3 demonstrations: 1.204747
+0.9-VaR-max-normalization for 3 demonstrations: 1.283107
+0.95-VaR-max-normalization for 3 demonstrations: 1.379703
+0.99-VaR-max-normalization for 3 demonstrations: 1.559447
+True EVD for 3 demonstrations: 0.001313
+Avar bound for threshold 0.1: 1.379703
+INSUFFICIENT (1.379703 >= 0.1)
+Avar bound for threshold 0.2: 1.379703
+INSUFFICIENT (1.379703 >= 0.2)
+Avar bound for threshold 0.3: 1.379703
+INSUFFICIENT (1.379703 >= 0.3)
+Avar bound for threshold 0.4: 1.379703
+INSUFFICIENT (1.379703 >= 0.4)
+
+Running PBIRL with 4 demonstrations for environment 3
+MCMC completed with acceptance ratio: 0.5308
+Using 6500 samples after burn-in.
+MAP Solution: [-0.46298815 -0.85908222  0.10643685  0.19050172]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 4 demonstrations: 1.229862
+0.9-VaR-max-normalization for 4 demonstrations: 1.301347
+0.95-VaR-max-normalization for 4 demonstrations: 1.398703
+0.99-VaR-max-normalization for 4 demonstrations: 1.573102
+True EVD for 4 demonstrations: 0.017842
+Avar bound for threshold 0.1: 1.398703
+INSUFFICIENT (1.398703 >= 0.1)
+Avar bound for threshold 0.2: 1.398703
+INSUFFICIENT (1.398703 >= 0.2)
+Avar bound for threshold 0.3: 1.398703
+INSUFFICIENT (1.398703 >= 0.3)
+Avar bound for threshold 0.4: 1.398703
+INSUFFICIENT (1.398703 >= 0.4)
+
+Running PBIRL with 5 demonstrations for environment 3
+MCMC completed with acceptance ratio: 0.4914
+Using 6500 samples after burn-in.
+MAP Solution: [ 0.33042591 -0.33161123 -0.61217649 -0.637254  ]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 5 demonstrations: 3.052105
+0.9-VaR-max-normalization for 5 demonstrations: 3.424029
+0.95-VaR-max-normalization for 5 demonstrations: 4.045329
+0.99-VaR-max-normalization for 5 demonstrations: 5.444231
+True EVD for 5 demonstrations: 3.260596
+Avar bound for threshold 0.1: 4.045329
+INSUFFICIENT (4.045329 >= 0.1)
+Avar bound for threshold 0.2: 4.045329
+INSUFFICIENT (4.045329 >= 0.2)
+Avar bound for threshold 0.3: 4.045329
+INSUFFICIENT (4.045329 >= 0.3)
+Avar bound for threshold 0.4: 4.045329
+INSUFFICIENT (4.045329 >= 0.4)
+
+Running PBIRL with 6 demonstrations for environment 3
+MCMC completed with acceptance ratio: 0.4792
+Using 6500 samples after burn-in.
+MAP Solution: [-0.83656521 -0.00724373  0.03650874 -0.54660158]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
+0.85-VaR-max-normalization for 6 demonstrations: 3.172062
+0.9-VaR-max-normalization for 6 demonstrations: 3.500984
+0.95-VaR-max-normalization for 6 demonstrations: 3.932789
+0.99-VaR-max-normalization for 6 demonstrations: 4.812568
+True EVD for 6 demonstrations: 1.557065
+Avar bound for threshold 0.1: 3.932789
+INSUFFICIENT (3.932789 >= 0.1)
+Avar bound for threshold 0.2: 3.932789
+INSUFFICIENT (3.932789 >= 0.2)
+Avar bound for threshold 0.3: 3.932789
+INSUFFICIENT (3.932789 >= 0.3)
+Avar bound for threshold 0.4: 3.932789
+INSUFFICIENT (3.932789 >= 0.4)
+
+Running PBIRL with 7 demonstrations for environment 3
+MCMC completed with acceptance ratio: 0.4470
+Using 6500 samples after burn-in.
+MAP Solution: [ 0.25358148  0.4979019  -0.78633973 -0.26355257]
+True reward weights: [-0.6467127  -0.20075906  0.06245093  0.73318372]
+MAP Policy for current environment:
