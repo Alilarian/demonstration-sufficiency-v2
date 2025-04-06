@@ -16,6 +16,7 @@ sys.path.append(parent)
 from env import gridworld_env2
 from agent.q_learning_agent import ValueIteration
 from reward_learning.pbirl import PBIRL
+from data_generation.generate_data import generate_pairwise_comparisons
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  calculate_expected_value_difference,
                                  calculate_policy_accuracy,
@@ -26,7 +27,6 @@ from utils.env_helper import print_policy
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
-parser.add_argument('--beta', type=float, help='beta', required=False)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
 
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
@@ -59,7 +59,7 @@ epsilon = float(config['algorithm_config']['epsilon'])
 
 num_steps = config['bayesian_irl_config']['num_steps']
 step_stdev = config['bayesian_irl_config']['step_stdev']
-beta = float(args.beta) if args.beta else config['bayesian_irl_config']['beta']
+beta = config['bayesian_irl_config']['beta']
 normalize = config['bayesian_irl_config']['normalize']
 adaptive = config['bayesian_irl_config']['adaptive']
 burn_frac = config['bayesian_irl_config']['burn_frac']
@@ -73,6 +73,11 @@ random_normalization = config['suff_config']['random_normalization']
 entropyConf_thresholds  = [0.5, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
 #num_world = config['experiments']['num_world']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
+
+# Fixing Seeds
+random.seed(seed)  # Fix Python's built-in random module
+np.random.seed(seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
 
 color_to_feature_map = {
     "red": [1, 0, 0],
@@ -96,6 +101,8 @@ envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     grid_features=custom_grid_features,
     custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
+num_world = len(envs)
+
 # Loop through each environment and set feature weights
 #for env, weights in zip(envs, feature_weights_list):
 #    env.set_feature_weights(weights)
@@ -108,15 +115,12 @@ policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(len(envs
 
 logger.info(f"Generated optimal policies for all environments.")
 
-# Initialize metrics storage
-#pairwise_comparisons = [([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]), 
-#                        ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,3), (2,1), (5,None)]),
-#                       ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,1), (4,3), (5,None)])]
-
 # Giving same data to the agent 
 pairwise_comparisons = [([(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)]), 
                         ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,3), (2,1), (5,None)]),
                        ([(0,1), (3,3), (4,3), (5,None)], [(0,3), (1,1), (4,3), (5,None)])]
+
+
 
 ########################################################################
 # Metrics for entropyConfergence - all experiments
@@ -143,10 +147,13 @@ mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 same_demonstration = False
 
 # Run experiments for each world
-for i in range(50):
+for i in range(num_world):
     env = envs[i]
-    logger.info(f"\nRunning experiment {i+1}/{50}...")
+    logger.info(f"\nRunning experiment {i+1}/{num_world}...")
 
+    
+    pairwise_comparisons += generate_pairwise_comparisons(env, num_trajs=10, max_horizon=5, num_comparisons=5)
+    
     if same_demonstration:
             # Randomly select one pairwise comparison and replicate it
         selected_demo = random.choice(pairwise_comparisons)

@@ -1,7 +1,6 @@
 from agent.q_learning_agent import ValueIteration
 import numpy as np
 import copy
-from utils.common_helper import compute_reward_for_trajectory
 from scipy.special import logsumexp
 """
 In this version, I implemented the Estop model presented in the paper section 2.1:

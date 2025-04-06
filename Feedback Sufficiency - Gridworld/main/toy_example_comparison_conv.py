@@ -24,7 +24,6 @@ from utils.env_helper import print_policy
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
-parser.add_argument('--beta', type=float, help='beta', required=False)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
 
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
@@ -57,7 +56,7 @@ epsilon = float(config['algorithm_config']['epsilon'])
 
 num_steps = config['bayesian_irl_config']['num_steps']
 step_stdev = config['bayesian_irl_config']['step_stdev']
-beta = float(args.beta) if args.beta else config['bayesian_irl_config']['beta']
+beta = config['bayesian_irl_config']['beta']
 normalize = config['bayesian_irl_config']['normalize']
 adaptive = config['bayesian_irl_config']['adaptive']
 burn_frac = config['bayesian_irl_config']['burn_frac']
@@ -87,7 +86,7 @@ custom_grid_features = [
 # Define your feature weights list
 #feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
 feature_weights_list = np.load("grid_world_weights.npy")
-print(len(feature_weights_list))
+
 
 
 # Initialize environments with feature weights
@@ -136,14 +135,10 @@ cm3_conv_all = []
 cm2_conv_all = []
 cm1_conv_all = []
 
-
-
-
-
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
-same_demonstration = True
+same_demonstration = False
 
 # Run experiments for each world
 for i in range(50):

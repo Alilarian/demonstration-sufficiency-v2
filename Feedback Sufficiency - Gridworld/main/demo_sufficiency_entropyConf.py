@@ -21,6 +21,7 @@ from utils.common_helper import (calculate_percentage_optimal_actions,
                                  calculate_expected_value_difference,
                                  calculate_policy_accuracy,
                                 compute_entropy,
+                                compute_entropy_parallel,
                                 log_prob_demo)
 from utils.env_helper import print_policy_2
 
@@ -237,12 +238,21 @@ for i in range(num_world):
         print("Len prior samples: ", len(mcmc_sample_prior))
         print("Len posterior samples: ", len(posterior_mcmc_samples))
         
-        entropy = compute_entropy(env,
-            demos=demos_shuffled[:demonstration+1],
-            inner_mcmc_samples_post=posterior_mcmc_samples,
-            outer_mcmc_samples_post=mcmc_samples_history[demonstration+1],
-            beta=beta,
-            log_prob_func=log_prob_demo)
+        
+        entropy = compute_entropy_parallel(env, 
+                                 demos=demos_shuffled[:demonstration+1],
+                                inner_mcmc_samples_post=posterior_mcmc_samples,
+                                outer_mcmc_samples_post=mcmc_samples_history[demonstration+1],
+                                beta=beta, 
+                                log_prob_func=log_prob_demo)
+        
+        
+        #entropy = compute_entropy(env,
+        #    demos=demos_shuffled[:demonstration+1],
+        #    inner_mcmc_samples_post=posterior_mcmc_samples,
+        #    outer_mcmc_samples_post=mcmc_samples_history[demonstration+1],
+        #    beta=beta,
+        #    log_prob_func=log_prob_demo)
         
         conf_ent = 1 - (entropy / max_entropy)
         #conf_ent = max_entropy - entropy

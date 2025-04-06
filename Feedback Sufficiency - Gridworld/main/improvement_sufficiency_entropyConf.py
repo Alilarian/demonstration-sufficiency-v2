@@ -17,7 +17,7 @@ from env import gridworld_env
 from agent.q_learning_agent import ValueIteration
 from reward_learning.pbirl import PBIRL
 from data_generation.generate_data import (generate_random_trajectory, 
-                                           simulate_improvement_feedback)
+                                           simulate_improvement_feedback_v2)
 
 from utils.common_helper import (calculate_percentage_optimal_actions,
                                  calculate_expected_value_difference,
@@ -29,9 +29,9 @@ from utils.env_helper import print_policy_2
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
-parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=False)
-parser.add_argument('--save_dir', type=str, help='Directory to save results', required=False)
-#parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
+parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
+parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+parser.add_argument('--seed', type=int, required=True)
 args = parser.parse_args()
 
 # Set the save directory in the parent folder's "results" directory
@@ -78,9 +78,9 @@ entropyConf_thresholds  = [0.5, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
 # Fixing Seeds
-random.seed(seed)  # Fix Python's built-in random module
-np.random.seed(seed)  # Fix NumPy
-os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+random.seed(args.seed)  # Fix Python's built-in random module
+np.random.seed(args.seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(args.seed)  # Ensure deterministic hashing
 
 # Initialize environments
 # Define your feature weights list
@@ -154,13 +154,13 @@ same_demonstration = False
 
 
 # Run experiments for each world
-for i in range(50):
+for i in range(num_world):
     env = envs[i]
     logger.info(f"\nRunning experiment {i+1}/{50}...")
 
     random_trajs = [generate_random_trajectory(envs[i], max_horizon=size*size) for j in range(num_demonstration)]
 
-    improvement_feedbacks = [simulate_improvement_feedback(envs[i], j, policies[0]) for j in random_trajs]
+    improvement_feedbacks = [simulate_improvement_feedback_v2(envs[i], j, policies[0]) for j in random_trajs]
     
     if same_demonstration:
             # Randomly select one pairwise comparison and replicate it

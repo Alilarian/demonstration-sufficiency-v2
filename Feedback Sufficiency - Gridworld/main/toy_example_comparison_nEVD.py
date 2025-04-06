@@ -25,7 +25,6 @@ from utils.env_helper import print_policy
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
-parser.add_argument('--beta', type=float, help='beta', required=False)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
 
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
@@ -100,6 +99,8 @@ envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     grid_features=custom_grid_features,
     custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
+num_world = len(envs)
+
 # Loop through each environment and set feature weights
 #for env, weights in zip(envs, feature_weights_list):
 #    env.set_feature_weights(weights)
@@ -130,12 +131,12 @@ percentage_of_states_needed_all_experiments = []
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
-same_demonstration = True
+same_demonstration = False
 
 # Run experiments for each world
-for i in range(50):
+for i in range(num_world):
     env = envs[i]
-    logger.info(f"\nRunning experiment {i+1}/{50}...")
+    logger.info(f"\nRunning experiment {i+1}/{num_world}...")
 
     if same_demonstration:
             # Randomly select one pairwise comparison and replicate it

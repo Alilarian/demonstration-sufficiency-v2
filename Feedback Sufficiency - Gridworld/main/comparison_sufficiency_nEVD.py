@@ -27,9 +27,9 @@ from utils.env_helper import print_policy_2
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
-parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=False)
-parser.add_argument('--save_dir', type=str, help='Directory to save results', required=False)
-#parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
+parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
+parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+parser.add_argument('--seed', type=int, required=True)
 args = parser.parse_args()
 
 # Set the save directory in the parent folder's "results" directory
@@ -75,9 +75,9 @@ thresholds = config['suff_config']['thresholds']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
 # Fixing Seeds
-random.seed(seed)  # Fix Python's built-in random module
-np.random.seed(seed)  # Fix NumPy
-os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+random.seed(args.seed)  # Fix Python's built-in random module
+np.random.seed(args.seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(args.seed)  # Ensure deterministic hashing
 
 # Initialize environments
 # Define your feature weights list
@@ -144,7 +144,6 @@ percentage_of_states_needed_all_experiments = []
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
 same_demonstration = False
-
 
 # Run experiments for each world
 for i in range(num_world):

@@ -55,6 +55,9 @@ class NoisyLinearRewardFeaturizedGridWorldEnv(gym.Env):
         self.terminal_states = terminal_states if terminal_states else [self.num_states - 1]
         self.num_feat = len(next(iter(self.colors_to_features.values())))
 
+        # set the up right corner cell as the defualt starting state
+        self.start_location = (0, 0)
+
         # Set custom feature weights if provided, otherwise use random initialization
         if custom_feature_weights:
             assert len(custom_feature_weights) == self.num_feat, "Custom feature weights must match the number of features."
@@ -215,15 +218,19 @@ class NoisyLinearRewardFeaturizedGridWorldEnv(gym.Env):
 
         return observation, reward, terminated, False
 
-    def reset(self, seed=None, options=None):
+    def reset(self, seed=None, fixed_start=True):
         #self.set_random_seed(seed)
         super().reset(seed=seed)
 
-        while True:
-            self._agent_location = self.np_random.integers(0, self.rows - 1, size=2)
-            raw_index = self._agent_location[0] * self.columns + self._agent_location[1]
-            if raw_index not in self.terminal_states:
-                break
+        if fixed_start:
+            self._agent_location = self.start_location
+        
+        else:
+            while True:
+                self._agent_location = self.np_random.integers(0, self.rows - 1, size=2)
+                raw_index = self._agent_location[0] * self.columns + self._agent_location[1]
+                if raw_index not in self.terminal_states:
+                    break
 
         observation = self.get_observation()
 
@@ -325,6 +332,13 @@ class NoisyLinearRewardFeaturizedGridWorldEnv(gym.Env):
         row, col = divmod(state, self.columns)
         cell_features = self.get_cell_features([row, col])
         return np.dot(cell_features, self.feature_weights)
+
+    def get_state_feature(self, state):
+        
+        row, col = divmod(state, self.columns)
+        cell_features = self.get_cell_features([row, col])
+        return cell_features
+        
 
     def get_cell_features(self, position):
         """

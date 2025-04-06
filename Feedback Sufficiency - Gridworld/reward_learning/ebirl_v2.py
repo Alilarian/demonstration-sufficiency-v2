@@ -2,6 +2,7 @@ from agent.q_learning_agent import ValueIteration
 import numpy as np
 import copy
 from utils.common_helper import compute_reward_for_trajectory
+from scipy.special import logsumexp
 """
 In this version, I implemented the Estop model presented in the paper:
 "The off-switch game. Workshops at the Thirty-First AAAI Conference on Artificial Intelligence, 2017."
@@ -69,7 +70,7 @@ class EBIRL:
             reward_up_to_t = sum(self.env.compute_reward(s) for s, _ in trajectory[:t+1])
 
             # Add repeated rewards for the last step at time t until the trajectory horizon
-            reward_up_to_t += (traj_len - t - 1) * self.env.compute_reward(trajectory[t][0])
+            #reward_up_to_t += (traj_len - t - 1) * self.env.compute_reward(trajectory[t][0])
 
             # Numerator: P(off | r, C) -> exp(beta * reward_up_to_t)
             stop_prob_numerator = self.beta * reward_up_to_t
@@ -79,12 +80,14 @@ class EBIRL:
             
             #denominator = np.exp(self.beta * traj_reward) + np.exp(stop_prob_numerator)
         
+            log_denominator = logsumexp([self.beta * traj_reward, stop_prob_numerator])
+            
             # Use the Log-Sum-Exp trick for the denominator
-            max_reward = max(self.beta * traj_reward, stop_prob_numerator)
-            log_denominator = max_reward + np.log(
-                np.exp(self.beta * traj_reward - max_reward) +
-                np.exp(stop_prob_numerator - max_reward)
-            )
+            #max_reward = max(self.beta * traj_reward, stop_prob_numerator)
+            #log_denominator = max_reward + np.log(
+            #    np.exp(self.beta * traj_reward - max_reward) +
+            #   np.exp(stop_prob_numerator - max_reward)
+            #)
 
             # Add the log probability to the log sum
             log_sum += stop_prob_numerator - log_denominator

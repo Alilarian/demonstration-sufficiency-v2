@@ -26,8 +26,9 @@ from utils.env_helper import print_policy_2
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
-parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=False)
-parser.add_argument('--save_dir', type=str, help='Directory to save results', required=False)
+parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
+parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+parser.add_argument('--seed', type=int, required=True)
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
 args = parser.parse_args()
 
@@ -72,12 +73,12 @@ random_normalization = config['suff_config']['random_normalization']
 conv_thresholds = config['suff_config']['conv_thresholds']
 
 # Get values from argparse or fallback to YAML config
-num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
+num_demonstration = args.num_demonstration
 
 # Fixing Seeds
-random.seed(seed)  # Fix Python's built-in random module
-np.random.seed(seed)  # Fix NumPy
-os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+random.seed(args.seed)  # Fix Python's built-in random module
+np.random.seed(args.seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(args.seed)  # Ensure deterministic hashing
 
 # Initialize environments
 # Define your feature weights list
@@ -125,8 +126,6 @@ logger.info(f"Generated optimal policies for all environments.")
 print_policy_2(policies[0], size=size)
 
 
-
-
 ########################################################################
 # Metrics for convergence - all experiments
 ########################################################################
@@ -145,9 +144,6 @@ cm2_conv_all = []
 cm1_conv_all = []
 
 
-
-
-
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
@@ -155,9 +151,9 @@ same_demonstration = False
 
 
 # Run experiments for each world
-for i in range(50):
+for i in range(num_world):
     env = envs[i]
-    logger.info(f"\nRunning experiment {i+1}/{50}...")
+    logger.info(f"\nRunning experiment {i+1}/{num_world}...")
 
         
     pairwise_comparisons = generate_pairwise_comparisons(env, num_trajs=10, max_horizon=size*size, num_comparisons=num_demonstration)

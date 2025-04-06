@@ -28,8 +28,9 @@ from data_generation.generate_data import (generate_random_trajectory,
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
-parser.add_argument('--beta', type=float, help='beta', required=False)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+parser.add_argument('--seed', type=int, required=True)
+args = parser.parse_args()
 
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
 args = parser.parse_args()
@@ -55,13 +56,13 @@ logger.info("Config file loaded successfully.")
 render_mode = config['env_config']['render_mode']
 size = config['env_config']['size']
 noise_prob = config['env_config']['noise_prob']
-seed = config['env_config']['seed']
+
 gamma = config['env_config']['gamma']
 epsilon = float(config['algorithm_config']['epsilon'])
 
 num_steps = config['bayesian_irl_config']['num_steps']
 step_stdev = config['bayesian_irl_config']['step_stdev']
-beta = float(args.beta) if args.beta else config['bayesian_irl_config']['beta']
+beta = config['bayesian_irl_config']['beta']
 normalize = config['bayesian_irl_config']['normalize']
 adaptive = config['bayesian_irl_config']['adaptive']
 burn_frac = config['bayesian_irl_config']['burn_frac']
@@ -71,41 +72,35 @@ alphas = config['suff_config']['alphas']
 delta = config['suff_config']['delta']
 optimality_threshold = config['suff_config']['optimality_threshold']
 random_normalization = config['suff_config']['random_normalization']
-
 entropyConf_thresholds  = [0.5, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
 #num_world = config['experiments']['num_world']
-num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
+num_demonstration = args.num_demonstration
 
 # Fixing Seeds
-random.seed(seed)  # Fix Python's built-in random module
-np.random.seed(seed)  # Fix NumPy
-os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+random.seed(args.seed)  # Fix Python's built-in random module
+np.random.seed(args.seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(args.seed)  # Ensure deterministic hashing
 
 color_to_feature_map = {
     "red": [1, 0, 0],
     "blue": [0, 1, 0],
     "black": [0, 0, 1]  # 'black' indicates a terminal state
 }
-
 custom_grid_features = [
     ["blue", "red", "blue"],
     ["blue", "blue", "black"]
 ]
-
 # Initialize environments
 # Define your feature weights list
 #feature_weights_list = [[-0.69171446, -0.20751434,  0.69171446]]
 feature_weights_list = np.load("grid_world_weights.npy")
-
 # Initialize environments with feature weights
 envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     color_to_feature_map=color_to_feature_map,
     grid_features=custom_grid_features,
     custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
-# Loop through each environment and set feature weights
-#for env, weights in zip(envs, feature_weights_list):
-#    env.set_feature_weights(weights)
+num_world = len(envs)
 
 for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
@@ -114,7 +109,6 @@ for env in envs:
 policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(len(envs))]
 
 logger.info(f"Generated optimal policies for all environments.")
-
 
 ########################################################################
 # Metrics for entropyConfergence - all experiments
@@ -134,20 +128,17 @@ cm3_entropyConf_all = []
 cm2_entropyConf_all = []
 cm1_entropyConf_all = []
 
-
 # Initialize MCMC storage
 mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 
 same_demonstration = False
 
 # Run experiments for each world
-for i in range(50):
+for i in range(num_world):
     env = envs[i]
-    logger.info(f"\nRunning experiment {i+1}/{50}...")
+    logger.info(f"\nRunning experiment {i+1}/{num_world}...")
 
-    random_trajs = [generate_random_trajectory(envs[i], max_horizon=10) for j in range(num_demonstration)]
-
-
+    random_trajs = [generate_random_trajectory(env, max_horizon=4) for j in range(num_demonstration)]
     estops = [simulate_human_estop_v2(env, j, beta=beta, gamma=gamma) for j in random_trajs]
 
     if same_demonstration:
@@ -184,7 +175,6 @@ for i in range(50):
     cm2_entropyConf = {threshold: [[0, 0], [0, 0]] for threshold in entropyConf_thresholds}  # actual positive is with nEVD threshold = 0.2
     cm1_entropyConf = {threshold: [[0, 0], [0, 0]] for threshold in entropyConf_thresholds}  # actual positive is with nEVD threshold = 0.1
     
-
     entropyConv_per_demo = {i: [] for i in range(0, num_demonstration)}
     
     max_entropy = np.log(num_steps * (1 - burn_frac))

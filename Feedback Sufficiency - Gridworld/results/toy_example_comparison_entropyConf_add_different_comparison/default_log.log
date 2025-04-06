@@ -1,0 +1,1602 @@
+Config file loaded successfully.
+Feature weights for environment: [-0.97266673 -0.03083248  0.23014951]
+Feature weights for environment: [-0.35835056 -0.08647525  0.92957351]
+Feature weights for environment: [-0.71046942 -0.64188771  0.28846728]
+Feature weights for environment: [-0.89578956 -0.24432685  0.37130237]
+Feature weights for environment: [-0.7282924  -0.22722733  0.64649665]
+Feature weights for environment: [-0.75022399 -0.57596895  0.32469021]
+Feature weights for environment: [-0.70842322 -0.26108332  0.65572254]
+Feature weights for environment: [-0.74635145 -0.57484795  0.33542412]
+Feature weights for environment: [-0.0505111  -0.01531811  0.99860602]
+Feature weights for environment: [-0.76518493 -0.64328377  0.02603879]
+Feature weights for environment: [-0.87829137 -0.24439244  0.41094598]
+Feature weights for environment: [-0.8497926  -0.50850291  0.13884283]
+Feature weights for environment: [-0.34477193 -0.32328333  0.88126058]
+Feature weights for environment: [-0.43088031 -0.17122291  0.88601629]
+Feature weights for environment: [-0.75433776 -0.02805593  0.65588674]
+Feature weights for environment: [-0.92032338 -0.11683579  0.37330186]
+Feature weights for environment: [-0.76208548 -0.28664819  0.58056743]
+Feature weights for environment: [-0.39174849 -0.30341429  0.86860399]
+Feature weights for environment: [-0.92648321 -0.16748955  0.33701054]
+Feature weights for environment: [-0.61012931 -0.3129562   0.72787406]
+Feature weights for environment: [-0.3738588  -0.3262014   0.86822937]
+Feature weights for environment: [-0.70965126 -0.6051058   0.36089066]
+Feature weights for environment: [-0.74528522 -0.55533186  0.36899385]
+Feature weights for environment: [-0.68144434 -0.29187893  0.6711485 ]
+Feature weights for environment: [-0.44714936 -0.30119858  0.84222139]
+Feature weights for environment: [-0.7333898  -0.47830978  0.48307263]
+Feature weights for environment: [-0.65557811 -0.01374154  0.75500233]
+Feature weights for environment: [-0.866301   -0.34967581  0.35672034]
+Feature weights for environment: [-0.6535586  -0.23072892  0.72085041]
+Feature weights for environment: [-0.81326386 -0.04441834  0.5801973 ]
+Feature weights for environment: [-0.27534761 -0.19938474  0.94044108]
+Feature weights for environment: [-0.90753571 -0.40234227  0.1204144 ]
+Feature weights for environment: [-0.32556312 -0.30396656  0.89532842]
+Feature weights for environment: [-0.839382   -0.393236    0.37523766]
+Feature weights for environment: [-0.94121751 -0.05112011  0.33391067]
+Feature weights for environment: [-0.05456508 -0.040557    0.99768621]
+Feature weights for environment: [-0.75478167 -0.33513042  0.563908  ]
+Feature weights for environment: [-0.49248773 -0.22865786  0.83974486]
+Feature weights for environment: [-0.56481614 -0.46100063  0.68444222]
+Feature weights for environment: [-0.6667631  -0.57474284  0.47444455]
+Feature weights for environment: [-0.46247666 -0.0267168   0.88622884]
+Feature weights for environment: [-0.71505276 -0.68463496  0.14133129]
+Feature weights for environment: [-0.94655708 -0.29794542  0.12352418]
+Feature weights for environment: [-0.88315502 -0.32822573  0.33511952]
+Feature weights for environment: [-0.83381491 -0.37890594  0.40147601]
+Feature weights for environment: [-0.82098277 -0.18440172  0.54035479]
+Feature weights for environment: [-0.73857451 -0.23755048  0.63093381]
+Feature weights for environment: [-0.95541883 -0.18852986  0.22722531]
+Feature weights for environment: [-0.98484463 -0.1489005   0.08893646]
+Feature weights for environment: [-0.47840873 -0.41855607  0.77196885]
+Generated optimal policies for all environments.
+
+Running experiment 1/50...
+Shuffled Demos: [([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.6718
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.87206931  0.13208563  0.47122022]
+True reward weights: [-0.97266673 -0.03083248  0.23014951]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123668
+
+Running PBIRL with 2 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.6610
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.88075551 -0.47084216  0.05076812]
+True reward weights: [-0.80351677 -0.46399545  0.3729196 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123994
+
+Running PBIRL with 3 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3250
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.43906095  0.23969867  0.86589262]
+True reward weights: [ 0.34561818  0.76228784 -0.54723425]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.198299
+
+Running PBIRL with 4 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3082
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.59721568  0.00966607  0.80202244]
+True reward weights: [-0.81342233 -0.07664053  0.57660241]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.174835
+
+Running PBIRL with 5 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3210
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.09948161  0.49698275  0.86203919]
+True reward weights: [-0.56076429  0.14035438  0.81599268]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.163256
+
+Running PBIRL with 6 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3228
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.79607207 -0.33143995  0.50637616]
+True reward weights: [-0.74810427 -0.50742104 -0.42762587]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.155860
+
+Running PBIRL with 7 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3170
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.62381985  0.01184845  0.78147834]
+True reward weights: [0.17960565 0.50747472 0.8427403 ]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.150573
+
+Running PBIRL with 8 demonstrations for experiment 1
+MCMC completed with acceptance ratio: 0.3190
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.81202328  0.00652077  0.58358861]
+True reward weights: [-0.91669445 -0.22469818  0.33042701]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.147053
+
+Running experiment 2/50...
+Shuffled Demos: [([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.6602
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.18625355  0.95217234 -0.24223429]
+True reward weights: [-0.35835056 -0.08647525  0.92957351]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123664
+
+Running PBIRL with 2 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.6202
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.89165558 -0.22457144  0.39308778]
+True reward weights: [-0.63129398 -0.2407216   0.73723878]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.129991
+
+Running PBIRL with 3 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.6266
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.78757523  0.61386921 -0.05375734]
+True reward weights: [-0.50466216  0.22885469  0.83243116]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.128038
+
+Running PBIRL with 4 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2872
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.3028795   0.16915624  0.93789668]
+True reward weights: [0.45813867 0.69340574 0.55614517]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.213151
+
+Running PBIRL with 5 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2804
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.24972131  0.09004952  0.96412154]
+True reward weights: [-0.99622896 -0.0234608   0.08353117]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.190578
+
+Running PBIRL with 6 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2908
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.85090028  0.01473089  0.52512067]
+True reward weights: [-0.95383993 -0.2964453  -0.04805809]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.176931
+
+Running PBIRL with 7 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2660
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.89944887 -0.40245415 -0.17035959]
+True reward weights: [-0.01759011  0.21812706  0.97576184]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.167715
+
+Running PBIRL with 8 demonstrations for experiment 2
+MCMC completed with acceptance ratio: 0.2762
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.75584507 -0.21894777  0.61705762]
+True reward weights: [-0.63908442  0.29460246  0.71047906]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.161857
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 3/50...
+Shuffled Demos: [([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6562
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.69969543  0.65536739 -0.28446422]
+True reward weights: [-0.71046942 -0.64188771  0.28846728]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123667
+
+Running PBIRL with 2 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6534
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.69289455  0.58599463 -0.42012788]
+True reward weights: [-0.72223919 -0.13514002  0.67831241]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124026
+
+Running PBIRL with 3 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6584
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.89856401 -0.16192576  0.40787592]
+True reward weights: [ 0.15921557  0.71164053 -0.68426468]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.123786
+
+Running PBIRL with 4 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6232
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.15750838  0.82653665  0.54039641]
+True reward weights: [ 0.22030233  0.93810594 -0.26725294]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.134342
+
+Running PBIRL with 5 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6148
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.60656888  0.71317939  0.3513536 ]
+True reward weights: [-0.0819015   0.98935767 -0.12026451]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.132027
+
+Running PBIRL with 6 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6276
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.01512924  0.38312442  0.92357284]
+True reward weights: [-0.26170017  0.92375985  0.27960821]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.131026
+
+Running PBIRL with 7 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6258
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.36435323  0.92249358  0.12748458]
+True reward weights: [-0.50421285 -0.12934285  0.85383829]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.129840
+
+Running PBIRL with 8 demonstrations for experiment 3
+MCMC completed with acceptance ratio: 0.6182
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.22816553  0.52906911 -0.8173288 ]
+True reward weights: [-0.61282008  0.09270311  0.784766  ]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.128982
+
+Running experiment 4/50...
+Shuffled Demos: [([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.6628
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.5818165  -0.03782533  0.81244003]
+True reward weights: [-0.89578956 -0.24432685  0.37130237]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.6598
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.89973957 -0.1223302   0.418932  ]
+True reward weights: [-0.43940194  0.80625543 -0.39607842]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123919
+
+Running PBIRL with 3 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.6632
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.50887453 -0.0994862   0.85507263]
+True reward weights: [0.05975579 0.6517216  0.75610066]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124058
+
+Running PBIRL with 4 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.3406
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.7112264  -0.21232573  0.67013044]
+True reward weights: [-0.42906644  0.71650599 -0.55001923]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.211008
+
+Running PBIRL with 5 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.3208
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.45247146 -0.03251396  0.89118596]
+True reward weights: [-0.76753839 -0.52904673  0.36193145]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.188268
+
+Running PBIRL with 6 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.3300
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.15458752  0.49001968  0.85789476]
+True reward weights: [-0.87095286 -0.46641684  0.15458472]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.175557
+
+Running PBIRL with 7 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.2750
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.57457922  0.10205697  0.81206101]
+True reward weights: [-0.80912858 -0.54727018 -0.21402404]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.191741
+
+Running PBIRL with 8 demonstrations for experiment 4
+MCMC completed with acceptance ratio: 0.2732
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.6819805  -0.34253487  0.64619847]
+True reward weights: [-0.76052405  0.06522218  0.64602572]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.180764
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 5/50...
+Shuffled Demos: [([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6524
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.01048632  0.42668722  0.90433846]
+True reward weights: [-0.7282924  -0.22722733  0.64649665]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123670
+
+Running PBIRL with 2 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6748
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.06483003  0.66966327 -0.73982983]
+True reward weights: [-0.55071434 -0.39805825 -0.73366433]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124201
+
+Running PBIRL with 3 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6516
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [ 0.01460215  0.74011328 -0.67232366]
+True reward weights: [-0.85274743  0.18990663  0.48657712]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124115
+
+Running PBIRL with 4 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.6560
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.61653345  0.61223083 -0.49503526]
+True reward weights: [-0.08923549  0.21510746  0.97250491]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.124311
+
+Running PBIRL with 5 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.2920
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.50450749  0.00244446  0.86340386]
+True reward weights: [-0.56418903 -0.20943474 -0.79864124]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.231022
+
+Running PBIRL with 6 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.2844
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.50918139 -0.01941828  0.86044014]
+True reward weights: [-0.41879252  0.29452291  0.85899306]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.206096
+
+Running PBIRL with 7 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.2780
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.83684867 -0.41350591  0.35874388]
+True reward weights: [-0.7864504  -0.60356939 -0.13114783]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.199313
+
+Running PBIRL with 8 demonstrations for experiment 5
+MCMC completed with acceptance ratio: 0.2810
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.81775581 -0.31778621  0.47988266]
+True reward weights: [-0.47367975  0.27285654  0.83736301]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.187497
+
+Running experiment 6/50...
+Shuffled Demos: [([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.6546
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.56309464 -0.67386331  0.47836457]
+True reward weights: [-0.75022399 -0.57596895  0.32469021]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123669
+
+Running PBIRL with 2 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.3178
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.71884451 -0.29835641  0.62789014]
+True reward weights: [0.58752388 0.544889   0.59825719]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.172902
+
+Running PBIRL with 3 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.3356
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.54059038 -0.18305743  0.8211285 ]
+True reward weights: [-0.81732084 -0.54335302 -0.19171368]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.153792
+
+Running PBIRL with 4 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.3200
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.0549106   0.37250118  0.92640579]
+True reward weights: [0.19641049 0.34781379 0.91675978]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.146184
+
+Running PBIRL with 5 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.2660
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.45255726  0.01027168  0.89167619]
+True reward weights: [-0.87429811 -0.4273178   0.23022231]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.164108
+
+Running PBIRL with 6 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.2908
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.78070415 -0.4470162   0.4366664 ]
+True reward weights: [-0.84955411  0.0402091   0.52596676]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.181040
+
+Running PBIRL with 7 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.2738
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.91979187 -0.19399884  0.34109729]
+True reward weights: [0.12646528 0.43129016 0.89330584]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.176330
+
+Running PBIRL with 8 demonstrations for experiment 6
+MCMC completed with acceptance ratio: 0.2676
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.89616795 -0.4289162   0.11363931]
+True reward weights: [-0.71492902 -0.51109194  0.4771389 ]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.172522
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 7/50...
+Shuffled Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6522
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.21458957  0.94672814  0.24011902]
+True reward weights: [-0.70842322 -0.26108332  0.65572254]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123669
+
+Running PBIRL with 2 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6480
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [0.44663869 0.7685463  0.4580944 ]
+True reward weights: [-0.61550186  0.20598913  0.76074039]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124046
+
+Running PBIRL with 3 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6522
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.40927089  0.7314004   0.54548217]
+True reward weights: [-0.20855091  0.14247974 -0.96757741]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124077
+
+Running PBIRL with 4 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6540
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [0.20852709 0.97021509 0.12328472]
+True reward weights: [0.00264145 0.40089435 0.91612049]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.124466
+
+Running PBIRL with 5 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6478
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.93939324 -0.33232575  0.0842611 ]
+True reward weights: [-0.52590495 -0.14797994 -0.83757144]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.124409
+
+Running PBIRL with 6 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6490
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [ 0.45789633  0.84870666 -0.26462794]
+True reward weights: [ 0.22222363  0.8701093  -0.43991644]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.124306
+
+Running PBIRL with 7 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6544
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [0.03838195 0.89583087 0.44273454]
+True reward weights: [0.06667011 0.76017246 0.64629168]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.123963
+
+Running PBIRL with 8 demonstrations for experiment 7
+MCMC completed with acceptance ratio: 0.6408
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.98441063  0.00550799  0.17579922]
+True reward weights: [-0.80334779  0.20170318 -0.56031076]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.124109
+
+Running experiment 8/50...
+Shuffled Demos: [([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.6562
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.83894002 -0.34880884 -0.41774637]
+True reward weights: [-0.74635145 -0.57484795  0.33542412]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.6658
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [0.22505111 0.96436479 0.13911341]
+True reward weights: [ 0.12349991  0.79823503 -0.5895495 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123949
+
+Running PBIRL with 3 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2910
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.97272455 -0.21653032  0.083196  ]
+True reward weights: [0.16999108 0.46095537 0.87098977]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.205493
+
+Running PBIRL with 4 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2852
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.41117694  0.07216061  0.90869487]
+True reward weights: [-0.56110811 -0.447318    0.69646557]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.179667
+
+Running PBIRL with 5 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2830
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.97863039 -0.08655847  0.18652128]
+True reward weights: [-0.83454417 -0.33330592  0.43868349]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.166832
+
+Running PBIRL with 6 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2846
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.73187871 -0.14191852  0.66649283]
+True reward weights: [-0.15573051 -0.01091016  0.98773933]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.158422
+
+Running PBIRL with 7 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2742
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.27199002  0.24509063  0.93056543]
+True reward weights: [-0.06653865  0.43059405  0.90008965]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.161969
+
+Running PBIRL with 8 demonstrations for experiment 8
+MCMC completed with acceptance ratio: 0.2766
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.75931021 -0.25477811  0.59877886]
+True reward weights: [-0.66372131 -0.5761687  -0.47697344]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.156354
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 9/50...
+Shuffled Demos: [([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.6586
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [0.37410376 0.92509256 0.065193  ]
+True reward weights: [-0.0505111  -0.01531811  0.99860602]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.6572
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.42078747 -0.05283292  0.90561945]
+True reward weights: [-0.67910208 -0.19061579 -0.70886246]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123661
+
+Running PBIRL with 3 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2814
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.95648093 -0.18750471  0.22357598]
+True reward weights: [ 0.13019215  0.89830292 -0.41964493]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.204486
+
+Running PBIRL with 4 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2708
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.90143144 -0.17008109  0.39811277]
+True reward weights: [-0.74591492 -0.15802669  0.6470228 ]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.184428
+
+Running PBIRL with 5 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2618
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.94722071 -0.06049574  0.31482248]
+True reward weights: [-0.73540406 -0.65585255  0.17040625]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.170265
+
+Running PBIRL with 6 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2788
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.90486412 -0.42449105 -0.03206675]
+True reward weights: [-0.92720529  0.02731267  0.37355637]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.186189
+
+Running PBIRL with 7 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2782
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.851122   -0.5005255  -0.15832108]
+True reward weights: [-0.87727059 -0.0021934   0.47999115]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.235252
+
+Running PBIRL with 8 demonstrations for experiment 9
+MCMC completed with acceptance ratio: 0.2820
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.84875195 -0.51571466 -0.11686966]
+True reward weights: [-0.72114731 -0.6351624  -0.27661397]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.231057
+
+Running experiment 10/50...
+Shuffled Demos: [([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6652
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.74699388  0.48891453 -0.45051384]
+True reward weights: [-0.76518493 -0.64328377  0.02603879]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123669
+
+Running PBIRL with 2 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6618
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.96590847 -0.18919937  0.17670436]
+True reward weights: [0.67938259 0.66816156 0.30331407]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123954
+
+Running PBIRL with 3 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6580
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.38432591  0.17920808 -0.90563683]
+True reward weights: [-0.01867464  0.99863347  0.04881043]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124194
+
+Running PBIRL with 4 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6626
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.00739338  0.93800231  0.34655015]
+True reward weights: [ 0.20577534  0.87830209 -0.43155759]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.148368
+
+Running PBIRL with 5 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6600
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.50911091  0.85850299 -0.06147112]
+True reward weights: [0.55889224 0.81201661 0.16813233]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.148317
+
+Running PBIRL with 6 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6444
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.54916874  0.80422933  0.22721992]
+True reward weights: [-0.54329201  0.83429608  0.09372223]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.148259
+
+Running PBIRL with 7 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6474
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [ 0.2805635   0.8948751  -0.34710615]
+True reward weights: [-0.12280152  0.55169435 -0.82495644]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.148485
+
+Running PBIRL with 8 demonstrations for experiment 10
+MCMC completed with acceptance ratio: 0.6506
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [0.02996452 0.77918834 0.62607321]
+True reward weights: [0.27292285 0.61828403 0.73704679]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.148578
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 11/50...
+Shuffled Demos: [([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.6572
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.57742037 -0.69952259  0.42101528]
+True reward weights: [-0.87829137 -0.24439244  0.41094598]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123670
+
+Running PBIRL with 2 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.3270
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.94733844 -0.06173459  0.31422718]
+True reward weights: [ 0.76894473 -0.22014975  0.60021503]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.173159
+
+Running PBIRL with 3 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.3418
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.93582258 -0.20871009  0.28403557]
+True reward weights: [-0.35088075  0.05376696  0.93487529]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.155740
+
+Running PBIRL with 4 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.2700
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.91240083 -0.40923785  0.00700706]
+True reward weights: [-0.44592561  0.25778033  0.85714623]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.167468
+
+Running PBIRL with 5 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.2764
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.77557431 -0.25433326  0.57775348]
+True reward weights: [-0.24041615  0.35328389  0.90409655]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.157901
+
+Running PBIRL with 6 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.2734
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.80910958 -0.2455954   0.53387694]
+True reward weights: [-0.04364868  0.40680996  0.91246942]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.151145
+
+Running PBIRL with 7 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.2722
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.88020198 -0.42100165  0.21909379]
+True reward weights: [-0.77281449  0.03879562  0.63344508]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.147836
+
+Running PBIRL with 8 demonstrations for experiment 11
+MCMC completed with acceptance ratio: 0.2672
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.88245503 -0.47012724  0.01592181]
+True reward weights: [-0.52301294  0.06103191  0.85013679]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.144637
+
+Running experiment 12/50...
+Shuffled Demos: [([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.6548
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.65283303 -0.19644419  0.73158644]
+True reward weights: [-0.8497926  -0.50850291  0.13884283]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123667
+
+Running PBIRL with 2 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2852
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.58460307 -0.11261084  0.80346627]
+True reward weights: [-0.8952474   0.33332849  0.29567585]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.178460
+
+Running PBIRL with 3 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2876
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.91386933 -0.31500617 -0.25615223]
+True reward weights: [-0.92972776 -0.35955337 -0.07954659]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.158577
+
+Running PBIRL with 4 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2918
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.84653485 -0.07122689  0.52754665]
+True reward weights: [-0.46386006  0.2516742   0.849408  ]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.148788
+
+Running PBIRL with 5 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2848
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.91529395 -0.33014192  0.23074511]
+True reward weights: [-0.82635229  0.01338802  0.56299437]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.143457
+
+Running PBIRL with 6 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2846
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.92988115 -0.28581647  0.23158151]
+True reward weights: [-0.21005106  0.42152187  0.88215524]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.140406
+
+Running PBIRL with 7 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2846
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.80070336 -0.46438378  0.37844662]
+True reward weights: [-0.49620109 -0.01614239  0.86805755]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.162526
+
+Running PBIRL with 8 demonstrations for experiment 12
+MCMC completed with acceptance ratio: 0.2946
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.82337372 -0.50435204 -0.2601629 ]
+True reward weights: [-0.84432131 -0.53545584 -0.02021309]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.161771
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 13/50...
+Shuffled Demos: [([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6558
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.34528602  0.83063598 -0.43683113]
+True reward weights: [-0.34477193 -0.32328333  0.88126058]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123667
+
+Running PBIRL with 2 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6560
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [0.0877374  0.84080453 0.53418152]
+True reward weights: [0.03907597 0.84109118 0.53948003]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124039
+
+Running PBIRL with 3 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6620
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [0.45745881 0.8817532  0.11507705]
+True reward weights: [-0.79021922 -0.61081844 -0.0495421 ]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124030
+
+Running PBIRL with 4 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6634
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.91325764 -0.2587185   0.31468271]
+True reward weights: [-0.10533138  0.85093254 -0.51460579]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.123960
+
+Running PBIRL with 5 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.6582
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.94970049 -0.26309237 -0.16985696]
+True reward weights: [-0.88064293 -0.43467272 -0.18848782]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.124310
+
+Running PBIRL with 6 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.2936
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.82884648 -0.33776962  0.44601031]
+True reward weights: [-0.76572514  0.35202177  0.53828031]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.236304
+
+Running PBIRL with 7 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.2888
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.90912946 -0.41647884 -0.00538506]
+True reward weights: [-0.70185318  0.20474926  0.68226084]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.212112
+
+Running PBIRL with 8 demonstrations for experiment 13
+MCMC completed with acceptance ratio: 0.2758
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.83086333 -0.42885256 -0.35461473]
+True reward weights: [-0.96770954 -0.25190335 -0.00910723]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.198112
+
+Running experiment 14/50...
+Shuffled Demos: [([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.6482
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [ 0.54621554 -0.13607109  0.82651875]
+True reward weights: [-0.43088031 -0.17122291  0.88601629]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123667
+
+Running PBIRL with 2 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.3236
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.45852244 -0.0887908   0.88423604]
+True reward weights: [ 0.18999618 -0.64522501  0.73999063]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.172499
+
+Running PBIRL with 3 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2762
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.92234806 -0.23072629  0.30990229]
+True reward weights: [-0.55783059 -0.34270424  0.75589605]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.171501
+
+Running PBIRL with 4 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2806
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.80025112 -0.00685037  0.5996259 ]
+True reward weights: [-0.69382402  0.10314741  0.71271933]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.158877
+
+Running PBIRL with 5 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2780
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.41258011 -0.07766149  0.90760473]
+True reward weights: [0.09390862 0.3091888  0.94635271]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.151953
+
+Running PBIRL with 6 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2732
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.60457074 -0.14887158  0.78251611]
+True reward weights: [-0.34381251 -0.12489549  0.93069548]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.146836
+
+Running PBIRL with 7 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2732
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.76091722 -0.31787375  0.56565119]
+True reward weights: [-0.51313847 -0.20975741  0.83228045]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.143566
+
+Running PBIRL with 8 demonstrations for experiment 14
+MCMC completed with acceptance ratio: 0.2788
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.85362574 -0.52048849  0.02036716]
+True reward weights: [-0.25278023  0.10264627  0.96206335]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.165917
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 15/50...
+Shuffled Demos: [([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 3), (4, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 2), (3, 1), (3, 1), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6554
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.97033723 -0.09138189  0.22381916]
+True reward weights: [-0.75433776 -0.02805593  0.65588674]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123671
+
+Running PBIRL with 2 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6426
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.96555881 -0.23169538 -0.11837839]
+True reward weights: [0.52933353 0.78708258 0.31671283]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.124301
+
+Running PBIRL with 3 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6488
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.98993523 -0.10095221 -0.0991811 ]
+True reward weights: [-0.5472766   0.82758001  0.12489856]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.124219
+
+Running PBIRL with 4 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6638
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.62821274  0.4209109   0.65435676]
+True reward weights: [0.21075187 0.64291224 0.73637457]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.124140
+
+Running PBIRL with 5 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.6638
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [ 0.39579743  0.86217516 -0.31622521]
+True reward weights: [-0.53945793  0.49924339 -0.67804217]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.124380
+
+Running PBIRL with 6 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.3278
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.86836453 -0.05037473  0.49336137]
+True reward weights: [-0.03880485  0.36122718 -0.93167006]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.222829
+
+Running PBIRL with 7 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.3308
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.78831831 -0.03367217  0.61434553]
+True reward weights: [-0.65465534 -0.09284095  0.7502046 ]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.203432
+
+Running PBIRL with 8 demonstrations for experiment 15
+MCMC completed with acceptance ratio: 0.3252
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.01348675  0.42672999  0.90427851]
+True reward weights: [-0.25872318  0.58337854  0.76989077]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.190100
+
+Running experiment 16/50...
+Shuffled Demos: [([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 3), (4, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 2), (3, 2)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 0), (0, 2), (0, 1), (3, 3), (4, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 2), (3, 1), (3, 1), (3, 2), (3, 1)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 0), (0, 1), (3, 1), (3, 0), (0, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 2), (3, 1), (3, 1), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 3), (4, 3), (4, 3), (4, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 1.0000
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.50297322 -0.55609615  0.66164568]
+True reward weights: [-0.92032338 -0.11683579  0.37330186]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.147550
+
+Running PBIRL with 2 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.6662
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [ 0.18076555 -0.86992895  0.45885448]
+True reward weights: [ 0.7641659  -0.06864528  0.64135662]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.182887
+
+Running PBIRL with 3 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2856
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.85468382 -0.51153024  0.08861365]
+True reward weights: [-0.57064541 -0.81890756 -0.06127172]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.241006
+
+Running PBIRL with 4 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2946
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.84851624 -0.5260535   0.05734018]
+True reward weights: [-0.85382925 -0.45407457  0.25454252]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.210966
+
+Running PBIRL with 5 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2874
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.90800801 -0.4187376  -0.01342699]
+True reward weights: [-0.65905338  0.10813424  0.74428195]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.196447
+
+Running PBIRL with 6 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2732
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.8905863  -0.43102974  0.14515303]
+True reward weights: [-0.59777111 -0.15684997  0.78617288]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.187348
+
+Running PBIRL with 7 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2802
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.83530045 -0.50513059  0.21706279]
+True reward weights: [0.10532105 0.19096051 0.97593113]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.181005
+
+Running PBIRL with 8 demonstrations for experiment 16
+MCMC completed with acceptance ratio: 0.2746
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.86436072 -0.45330069 -0.21771318]
+True reward weights: [-0.54803056 -0.03734733  0.83562413]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.176603
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 17/50...
+Shuffled Demos: [([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 3), (4, 3), (4, 3), (4, 0)]), ([(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 2), (3, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (3, 1), (3, 1), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 2), (0, 0), (0, 3), (0, 0), (1, 3)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 2), (3, 1), (3, 1), (3, 2), (3, 1)]), ([(0, 0), (0, 2), (0, 1), (3, 3), (4, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 0), (0, 1), (3, 1), (3, 0), (0, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 3), (4, 0)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.6626
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.63434772 -0.33874921  0.69487549]
+True reward weights: [-0.76208548 -0.28664819  0.58056743]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2950
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.78727257 -0.61540699  0.03842038]
+True reward weights: [-0.51936977 -0.42428868 -0.7417777 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.180077
+
+Running PBIRL with 3 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2884
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.82446983 -0.56264921 -0.06062478]
+True reward weights: [0.34923779 0.37603274 0.85827288]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.182744
+
+Running PBIRL with 4 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2802
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.89277374 -0.43337731  0.12304125]
+True reward weights: [-0.87259134 -0.21674783  0.43772678]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.173824
+
+Running PBIRL with 5 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2890
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.85215181 -0.50076638  0.15188919]
+True reward weights: [-0.64321348 -0.45694498 -0.61439214]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.168877
+
+Running PBIRL with 6 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2800
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.82981201 -0.51775429  0.20818867]
+True reward weights: [-0.72368956 -0.687026    0.0653352 ]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.165871
+
+Running PBIRL with 7 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.2956
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.89361586 -0.44577109  0.05233395]
+True reward weights: [-0.28726519  0.17523786  0.94168488]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.163156
+
+Running PBIRL with 8 demonstrations for experiment 17
+MCMC completed with acceptance ratio: 0.1954
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.83494451 -0.48496665  0.26014422]
+True reward weights: [0.06094537 0.13980589 0.98830156]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.211770
+
+Running experiment 18/50...
+Shuffled Demos: [([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 1), (3, 1), (3, 0), (0, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 0)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 3), (0, 0), (1, 3)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 0), (0, 0), (0, 1), (3, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 3), (4, 0)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 0), (0, 1), (3, 0), (4, 0), (1, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 3), (4, 3), (4, 3), (4, 0)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 2), (3, 1), (3, 1), (3, 2), (3, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 0), (0, 2), (0, 1), (3, 3), (4, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 2), (3, 2)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 0), (0, 1), (3, 0), (4, 0), (1, 0)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 2), (3, 1), (3, 1), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.6564
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.62350241  0.2510387  -0.74042171]
+True reward weights: [-0.39174849 -0.30341429  0.86860399]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123667
+
+Running PBIRL with 2 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.6584
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.87236193 -0.38074672  0.30662125]
+True reward weights: [-0.61548224  0.35335208 -0.70450261]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123933
+
+Running PBIRL with 3 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.6488
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.3334278   0.40990075 -0.8490037 ]
+True reward weights: [-0.46246414  0.07474874 -0.88348149]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.123987
+
+Running PBIRL with 4 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.2686
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.8805106  -0.10068251  0.46321065]
+True reward weights: [-0.19637205  0.25480704  0.94684286]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.216715
+
+Running PBIRL with 5 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.2790
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.73011368 -0.32039267  0.60355825]
+True reward weights: [-0.32792154 -0.00474147  0.94469306]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.191756
+
+Running PBIRL with 6 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.2880
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.72946507  0.01075056  0.68393357]
+True reward weights: [-0.93361591 -0.31896772  0.16315922]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.177199
+
+Running PBIRL with 7 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.2862
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.22531614  0.14965589  0.96272309]
+True reward weights: [-0.70590755 -0.66612638  0.24076996]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.168616
+
+Running PBIRL with 8 demonstrations for experiment 18
+MCMC completed with acceptance ratio: 0.2762
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.68463736  0.12642799  0.71783539]
+True reward weights: [-0.7683315  -0.6399206  -0.01297435]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.170409
+
+Saving results to files...
+Results saved successfully.
+
+Running experiment 19/50...
+Shuffled Demos: [([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 2), (3, 3), (4, 2), (3, 1)], [(0, 3), (1, 1), (2, 0), (2, 0), (2, 2)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 0), (0, 1), (3, 1), (3, 0), (0, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 3), (4, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 0)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (0, 2), (0, 1), (3, 3), (4, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 0), (0, 1), (3, 0), (4, 0), (1, 0)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (3, 1), (3, 1), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 0), (0, 0), (0, 1), (3, 0), (0, 3)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 3), (4, 3), (4, 3), (4, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 0), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 3), (1, 2), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 2), (0, 0), (0, 3), (0, 0), (1, 3)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 2), (3, 1), (3, 1), (3, 2), (3, 1)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 1), (3, 0), (4, 0), (1, 0)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 0), (0, 2), (0, 1), (3, 3), (3, 1)], [(0, 3), (1, 1), (2, 0), (2, 0), (2, 2)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 1)], [(0, 1), (1, 3), (2, 1), (5, None)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 3)], [(0, 1), (1, 3), (2, 1), (5, None)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 2), (3, 2)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.6450
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.69980291 -0.3180075   0.63964609]
+True reward weights: [-0.92648321 -0.16748955  0.33701054]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123666
+
+Running PBIRL with 2 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2904
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.87246494 -0.2840898   0.39761527]
+True reward weights: [-0.79989975 -0.56437622  0.2040585 ]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.180080
+
+Running PBIRL with 3 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2906
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.82520158 -0.12758745  0.55023976]
+True reward weights: [-0.86617014 -0.49885169  0.02993778]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.158433
+
+Running PBIRL with 4 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2838
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.94388012 -0.32849281  0.03439169]
+True reward weights: [-0.6780008  -0.36329477  0.63900848]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.149182
+
+Running PBIRL with 5 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2820
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.62226468  0.09563502  0.77694312]
+True reward weights: [-0.72430268  0.17242229  0.66757486]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.143778
+
+Running PBIRL with 6 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2922
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.45103799  0.099387    0.88695375]
+True reward weights: [-0.60260268 -0.26393208  0.75313336]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.140347
+
+Running PBIRL with 7 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2828
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.75616247  0.10688491  0.6455958 ]
+True reward weights: [-0.21403104  0.41194518  0.88571546]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.138643
+
+Running PBIRL with 8 demonstrations for experiment 19
+MCMC completed with acceptance ratio: 0.2912
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.88230893 -0.46766647 -0.05309448]
+True reward weights: [-0.6999139   0.15441058  0.69733629]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.161231
+
+Running experiment 20/50...
+Shuffled Demos: [([(0, 0), (0, 2), (0, 1), (3, 3), (4, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 2), (3, 1), (3, 1), (3, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 1), (5, None)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (3, 3), (4, 0), (1, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 3), (1, 1)], [(0, 2), (0, 3), (1, 2), (1, 1), (0, 0)]), ([(0, 2), (0, 0), (0, 3), (0, 0), (1, 3)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 2), (0, 0), (0, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (0, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 3), (1, 0), (1, 3), (2, 0), (2, 0)]), ([(0, 2), (0, 1), (3, 0), (0, 3), (1, 1)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 2), (0, 3), (1, 3), (2, 3), (2, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 1), (0, 2), (0, 0)]), ([(0, 0), (0, 0), (0, 3), (3, 1), (4, 0)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 1), (3, 3), (3, 1), (3, 3), (4, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 3), (1, 0), (2, 0), (2, 0), (2, 0)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 1), (3, 1), (3, 2), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)]), ([(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 1)], [(0, 1), (1, 3), (2, 1), (5, None)]), ([(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 1), (3, 0), (0, 3), (1, 2), (0, 3)]), ([(0, 0), (0, 1), (3, 1), (3, 0), (0, 1)], [(0, 2), (0, 3), (0, 3), (1, 0), (1, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 0), (0, 3), (1, 3), (2, 3)]), ([(0, 0), (0, 1), (3, 0), (4, 0), (1, 0)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 1), (0, 2), (0, 1), (3, 1), (3, 0)], [(0, 0), (0, 0), (0, 0), (0, 3), (1, 1)]), ([(0, 1), (3, 3), (0, 2), (0, 2), (0, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (1, 3), (2, 2), (1, 0), (1, 0)]), ([(0, 2), (0, 2), (0, 2), (0, 3), (0, 3)], [(0, 2), (0, 0), (0, 2), (0, 3), (1, 1)]), ([(0, 1), (3, 2), (3, 3), (4, 1), (5, None)], [(0, 2), (0, 0), (0, 1), (3, 1), (4, 0)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 3), (1, 0), (0, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 1)]), ([(0, 3), (1, 3), (2, 1), (5, None)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 2), (3, 2)]), ([(0, 0), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 3), (1, 2), (1, 1), (4, 2), (3, 1)]), ([(0, 0), (0, 0), (0, 2), (0, 0), (0, 2)], [(0, 2), (0, 3), (1, 2), (0, 2), (0, 1)]), ([(0, 0), (0, 0), (0, 1), (3, 3), (0, 3)], [(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)]), ([(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 1), (0, 0), (0, 2), (0, 0), (0, 3)], [(0, 0), (0, 3), (1, 1), (4, 1), (4, 0)]), ([(0, 1), (3, 3), (4, 1), (3, 2), (3, 1)], [(0, 2), (0, 0), (1, 1), (4, 2), (3, 3)]), ([(0, 0), (1, 2), (0, 1), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)], [(0, 0), (0, 1), (3, 0), (0, 3), (1, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 2), (0, 2)], [(0, 1), (3, 1), (3, 3), (4, 0), (1, 2)]), ([(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)], [(0, 3), (1, 0), (2, 0), (2, 1), (1, 1)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 1), (3, 3), (4, 0), (1, 2), (0, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 2), (0, 0), (0, 1), (1, 3), (4, 0)]), ([(0, 2), (0, 2), (0, 2), (0, 3), (0, 3)], [(0, 3), (1, 1), (4, 2), (3, 0), (0, 0)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 3), (1, 0), (1, 0), (2, 1), (5, None)]), ([(0, 3), (3, 1), (3, 2), (3, 3), (4, 0)], [(0, 3), (1, 2), (1, 0), (1, 3), (2, 3)]), ([(0, 3), (1, 2), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 1), (3, 1), (4, 3), (1, 2)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 0), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 0), (0, 3), (1, 0), (1, 1), (4, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 3)], [(0, 3), (1, 0), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 0), (0, 0), (0, 2), (0, 0)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (3, 3)], [(0, 2), (0, 3), (1, 1), (4, 2), (3, 1)]), ([(0, 0), (0, 2), (0, 2), (0, 0), (0, 2)], [(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)]), ([(0, 0), (0, 0), (0, 3), (0, 3), (1, 3)], [(0, 3), (1, 0), (1, 1), (2, 2), (1, 1)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (3, 1)], [(0, 2), (0, 3), (1, 1), (4, 0), (1, 3)]), ([(0, 2), (0, 3), (1, 2), (1, 1), (0, 0)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 3)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 3)], [(0, 1), (1, 3), (2, 1), (5, None)]), ([(0, 3), (1, 1), (0, 2), (0, 0), (0, 1)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 2), (3, 0), (0, 2), (0, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (0, 2), (0, 1), (3, 1), (4, 1)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 1), (0, 3), (3, 1), (3, 1), (3, 2)], [(0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]), ([(0, 2), (3, 1), (3, 1), (3, 2), (3, 3)], [(0, 3), (1, 0), (1, 0), (1, 0), (1, 2)]), ([(0, 2), (0, 1), (3, 2), (3, 0), (0, 3)], [(0, 1), (3, 3), (4, 1), (4, 0), (1, 0)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 2), (0, 1), (3, 1), (3, 0), (4, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 3), (1, 1), (4, 3), (5, None)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 0), (0, 0), (0, 1), (3, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 3), (4, 1), (4, 0)], [(0, 2), (0, 0), (1, 2), (4, 2), (3, 1)]), ([(0, 2), (0, 2), (0, 0), (0, 1), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 3), (3, 1), (3, 0), (3, 0), (0, 3)], [(0, 2), (0, 0), (0, 3), (1, 1), (4, 3)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 0), (0, 3), (1, 1), (0, 1), (3, 0)]), ([(0, 1), (3, 2), (3, 3), (4, 2), (3, 1)], [(0, 3), (1, 1), (2, 0), (2, 0), (2, 2)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 0), (0, 3), (1, 3), (1, 0), (1, 2)]), ([(0, 2), (0, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 2), (0, 0), (0, 0), (0, 0), (0, 0)], [(0, 2), (3, 2), (3, 0), (0, 0), (1, 1)]), ([(0, 0), (1, 3), (2, 2), (2, 3), (5, None)], [(0, 0), (0, 1), (1, 3), (2, 0), (2, 0)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 3), (1, 0), (1, 0), (1, 0), (2, 3)], [(0, 3), (1, 0), (1, 3), (1, 0), (1, 0)]), ([(0, 1), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 3), (4, 3), (4, 3), (4, 0)]), ([(0, 1), (3, 1), (4, 3), (5, None)], [(0, 0), (0, 1), (3, 0), (4, 0), (1, 0)]), ([(0, 2), (0, 2), (0, 1), (3, 2), (0, 2)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 1), (3, 1), (3, 0), (0, 1), (3, 2)], [(0, 3), (1, 2), (0, 3), (1, 0), (1, 2)]), ([(0, 1), (3, 2), (3, 2), (3, 1), (3, 1)], [(0, 2), (3, 3), (0, 0), (0, 3), (1, 2)]), ([(0, 0), (0, 2), (0, 1), (3, 3), (3, 1)], [(0, 3), (1, 1), (2, 0), (2, 0), (2, 2)]), ([(0, 1), (3, 0), (3, 3), (4, 2), (3, 0)], [(0, 0), (0, 0), (1, 0), (1, 1), (4, 1)]), ([(0, 2), (3, 3), (4, 2), (4, 3), (5, None)], [(0, 3), (0, 1), (3, 2), (3, 2), (3, 1)]), ([(0, 1), (0, 2), (0, 2), (0, 2), (0, 3)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 2), (3, 0), (0, 0), (0, 1), (3, 3)], [(0, 2), (0, 3), (1, 2), (0, 1), (3, 0)]), ([(0, 2), (0, 3), (1, 2), (0, 3), (3, 0)], [(0, 3), (1, 2), (0, 2), (0, 0), (0, 3)]), ([(0, 2), (0, 2), (0, 3), (1, 1), (4, 3)], [(0, 0), (0, 3), (1, 3), (2, 2), (1, 1)]), ([(0, 2), (0, 0), (0, 3), (3, 2), (3, 2)], [(0, 2), (0, 2), (0, 3), (1, 2), (0, 2)]), ([(0, 1), (3, 3), (4, 2), (3, 1), (3, 1)], [(0, 3), (1, 0), (1, 0), (1, 3), (2, 1)]), ([(0, 1), (3, 0), (0, 2), (0, 2), (0, 0)], [(0, 3), (1, 1), (4, 1), (3, 1), (3, 2)]), ([(0, 3), (3, 3), (4, 3), (5, None)], [(0, 1), (3, 1), (3, 2), (0, 0), (0, 3)]), ([(0, 3), (1, 1), (4, 2), (3, 0), (0, 0)], [(0, 2), (0, 3), (1, 2), (1, 1), (0, 0)])]
+Maximum entropy: 8.0864
+
+Running PBIRL with 1 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.6592
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 1
+MAP Solution: [-0.92929008 -0.34708363 -0.1263048 ]
+True reward weights: [-0.61012931 -0.3129562   0.72787406]
+MAP Policy for current environment:
+Information gain 1 demonstrations: 0.123665
+
+Running PBIRL with 2 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.6532
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 2
+MAP Solution: [-0.66918025 -0.34163738  0.65991037]
+True reward weights: [-0.97703363 -0.20806964  0.04595994]
+MAP Policy for current environment:
+Information gain 2 demonstrations: 0.123822
+
+Running PBIRL with 3 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.2932
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 3
+MAP Solution: [-0.78776036  0.08095175  0.61063937]
+True reward weights: [-0.49583905  0.08202459  0.86453201]
+MAP Policy for current environment:
+Information gain 3 demonstrations: 0.203357
+
+Running PBIRL with 4 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.2878
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 4
+MAP Solution: [-0.84098143 -0.51568212 -0.16377482]
+True reward weights: [-0.75076425 -0.60753281 -0.25933941]
+MAP Policy for current environment:
+Information gain 4 demonstrations: 0.178779
+
+Running PBIRL with 5 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.2744
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 5
+MAP Solution: [-0.91735449 -0.33475615 -0.2154044 ]
+True reward weights: [-0.71198182 -0.10395318  0.69446067]
+MAP Policy for current environment:
+Information gain 5 demonstrations: 0.165946
+
+Running PBIRL with 6 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.3050
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 6
+MAP Solution: [-0.421841    0.13879867  0.89598276]
+True reward weights: [-0.79268048 -0.24492617  0.55827307]
+MAP Policy for current environment:
+Information gain 6 demonstrations: 0.157700
+
+Running PBIRL with 7 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.2908
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 7
+MAP Solution: [-0.95749868 -0.10585599  0.26831099]
+True reward weights: [-0.55546119 -0.53848284  0.63363957]
+MAP Policy for current environment:
+Information gain 7 demonstrations: 0.151941
+
+Running PBIRL with 8 demonstrations for experiment 20
+MCMC completed with acceptance ratio: 0.2886
+Using 3250 samples after burn-in.
+Stored 3250 MCMC samples for demonstration 8
+MAP Solution: [-0.94314149 -0.27895148  0.18074903]
+True reward weights: [-0.84160923 -0.38668203 -0.37705559]
+MAP Policy for current environment:
+Information gain 8 demonstrations: 0.148267
+
+Saving results to files...
+Results saved successfully.

@@ -616,6 +616,38 @@ def compute_entropy(env,
 
     return entropy
 
+
+import numpy as np
+from scipy.special import logsumexp
+from multiprocessing import Pool
+
+def compute_entropy_parallel(env, demos, inner_mcmc_samples_post, outer_mcmc_samples_post, beta, log_prob_func):
+    """
+    Compute entropy using parallel processing for log probability computation.
+    """
+
+    M2_n = len(inner_mcmc_samples_post)
+    M2 = len(outer_mcmc_samples_post)
+
+    # Define a helper function to compute log probabilities
+    def compute_log_prob(theta):
+        return log_prob_func(env, demos, theta, beta)
+
+    # Use multiprocessing to parallelize computations
+    with Pool() as pool:
+        posterior_log_probs_outer = np.exp(np.array(pool.map(compute_log_prob, outer_mcmc_samples_post)))
+        posterior_log_probs_inner = np.exp(np.array(pool.map(compute_log_prob, inner_mcmc_samples_post)))
+
+    # Compute entropy
+    entropy = np.log(np.sum(posterior_log_probs_inner)) - np.log(M2_n) - np.mean(posterior_log_probs_outer) + np.log(M2)
+
+    return entropy
+
+
+
+
+
+
 def log_prob_demo(env, demos, theta, beta):
     """
     Computes the log probability of a set of demonstrations given a reward function.
@@ -638,6 +670,7 @@ def log_prob_demo(env, demos, theta, beta):
             log_sum += beta * q_values[s][a] - logsumexp(beta * q_values[s])
 
     return log_sum
+
 
 def log_prob_estop(env, demos, theta, beta):
     
@@ -681,11 +714,6 @@ def log_prob_estop(env, demos, theta, beta):
         #log_sum += stop_prob_numerator - np.log(denominator)
     
     return log_sum
-
-
-
-
-
 
 def log_prob_comparison(env, demos, theta, beta):
     """

@@ -50,6 +50,9 @@ class NoisyLinearRewardFeaturizedGridWorldEnv(gym.Env):
         else:
             self.terminal_states = terminal_states  # Set multiple terminal states
 
+        # set the up right corner cell as the defualt starting state
+        self.start_location = (0, 0)
+
         self.num_feat = len(self.colors_to_features['blue'])
         self.grid_features = self._initialize_grid_features(size)
 
@@ -216,19 +219,23 @@ class NoisyLinearRewardFeaturizedGridWorldEnv(gym.Env):
 
         return observation, reward, terminated, False
 
-    def reset(self, seed=None, options=None):
+    def reset(self, seed=None, fixed_start=True):
         """
         Resets the environment to the initial state and returns the initial observation.
         """
         self.set_random_seed(seed)
         super().reset(seed=seed)
 
-        # Randomly initialize the agent's position, making sure it's not in a terminal state
-        while True:
-            self._agent_location = self.np_random.integers(0, self.size - 1, size=2)
-            raw_index = self._agent_location[0] * self.size + self._agent_location[1]
-            if raw_index not in self.terminal_states:
-                break
+        if fixed_start:
+            self._agent_location = self.start_location
+            
+        else:
+            # Randomly initialize the agent's position, making sure it's not in a terminal state
+            while True:
+                self._agent_location = self.np_random.integers(0, self.size - 1, size=2)
+                raw_index = self._agent_location[0] * self.size + self._agent_location[1]
+                if raw_index not in self.terminal_states:
+                    break
 
         observation = self.get_observation()
         #info = self.get_additional_info()

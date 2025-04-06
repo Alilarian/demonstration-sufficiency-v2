@@ -11,7 +11,6 @@ import yaml
 import numpy as np
 import random
 from scipy.special import logsumexp
-
 # Get current and parent directory to handle import paths
 current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
@@ -242,7 +241,8 @@ class GridWorldMDPDataGenerator:
         np.random.seed(seed)
         random.seed(seed)
 
-def generate_random_trajectory(env, max_horizon=25):
+
+def generate_random_trajectory(env, max_horizon=25, fixed_start=True):
     """
     Generate a random trajectory of fixed length (max_horizon + 1) using random actions.
     The state is stored as an integer index (raw_index) instead of (row, col).
@@ -255,7 +255,7 @@ def generate_random_trajectory(env, max_horizon=25):
         list of (state_index, action) tuples.
     """
     trajectory = []
-    obsv = env.reset()  # Reset environment and get initial observation.
+    obsv = env.reset(fixed_start=fixed_start)  # Reset environment and get initial observation.
     agent_position = obsv["agent"]  # [row, col]
     terminal_states = obsv["terminal states"]  # List of terminal states as indices
 
@@ -327,50 +327,11 @@ def generate_pairwise_comparisons(env, num_trajs=10, max_horizon=25, num_compari
     # Ensure we return exactly `num_comparisons` comparisons
     return random.sample(pairwise_comparisons, min(num_comparisons, len(pairwise_comparisons)))
 
-def generate_random_trajectory_diff_start(env, max_horizon=25):
+
+def simulate_improvement_feedback_DEPRICATED(env, trajectory, optimal_policy):
     """
-    Generate a random trajectory of up to max_horizon steps using random actions.
-    The trajectory starts from a random non-terminal state and may or may not reach the goal.
-
-    Args:
-        env: The GridWorld environment.
-        max_horizon (int): Maximum length of the trajectory.
-
-    Returns:
-        list of (state_index, action) tuples.
-    """
-    trajectory = []
-
-    # Get all non-terminal states except goal
-    non_terminal_states = [s for s in range(env.num_states) if s not in env.terminal_states]
-    #non_terminal_states = [0, 3]
-
-    # Select a random start state (not the goal)
-    start_state = random.choice(non_terminal_states)
-    state = start_state
-
-    for step in range(max_horizon):
-        # Append current state and action
-        if state in env.terminal_states:
-            trajectory.append((state, None))  # Terminal state reached
-            break
-
-        # Choose a random action uniformly
-        action = np.random.choice(env.num_actions)
-
-        # Sample the next state based on transition probabilities
-        next_state = np.random.choice(env.num_states, p=env.transitions[state][action])
-
-        # Append (current state, chosen action) to the trajectory
-        trajectory.append((state, action))
-
-        # Update state
-        state = next_state
-
-    return trajectory
-
-def simulate_improvement_feedback(env, trajectory, optimal_policy):
-    """
+    This kind of improvement where it improves the trajectory to reach the goal was so informative than the pairwise comparison
+    
     Simulates improvement feedback by modifying a randomly chosen suboptimal step in the trajectory.
 
     Args:
@@ -414,6 +375,60 @@ def simulate_improvement_feedback(env, trajectory, optimal_policy):
         next_state_probs = env.transitions[state][optimal_action]
         state = np.random.choice(env.get_num_states(), p=next_state_probs)  # Sample next state
 
+        if state in env.terminal_states:
+            improved_trajectory.append((state, None))  # Append terminal state
+            break
+
+        # Update action based on the optimal policy
+        optimal_action = optimal_policy_dict.get(state, optimal_action)
+
+    return (improved_trajectory, trajectory)
+
+def simulate_improvement_feedback_v2(env, trajectory, optimal_policy):
+    """
+    Simulates improvement feedback by modifying a randomly chosen suboptimal step in the trajectory.
+
+    Args:
+        env: The GridWorld environment.
+        trajectory (list): A list of (state, action) tuples representing the original trajectory.
+        optimal_policy (list of tuples): A list of (state, optimal_action) pairs.
+
+    Returns:
+        tuple: (improved_trajectory, original_trajectory)
+            - improved_trajectory: The modified trajectory with an improved action sequence.
+            - original_trajectory: The input trajectory (unchanged).
+            - If the given trajectory was already optimal, improved_trajectory is an empty list.
+    """
+    # Convert optimal_policy from list of tuples to dictionary for fast lookup
+    optimal_policy_dict = dict(optimal_policy)
+
+    if len(trajectory) < 2:
+        return ([], trajectory)  # Too short to improve
+
+    # Find all suboptimal action indices
+    suboptimal_indices = [
+        i for i in range(len(trajectory) - 1)  # Exclude the last state
+        if trajectory[i][1] != optimal_policy_dict.get(trajectory[i][0], trajectory[i][1])
+    ]
+
+    if not suboptimal_indices:
+        return ([], trajectory)  # No suboptimal actions found, return empty improved trajectory
+
+    # Randomly select one of the suboptimal indices
+    suboptimal_index = random.choice(suboptimal_indices)
+    state, _ = trajectory[suboptimal_index]  # Start from the randomly chosen suboptimal state
+    optimal_action = optimal_policy_dict[state]  # Get the optimal action
+
+    # Create the improved trajectory
+    improved_trajectory = trajectory[:suboptimal_index]  # Keep trajectory up to this state
+
+    # Continue improving for the same length as the original trajectory
+    for _ in range(suboptimal_index, len(trajectory)):
+        improved_trajectory.append((state, optimal_action))
+
+        # Get next state probabilities based on transition model
+        next_state_probs = env.transitions[state][optimal_action]
+        state = np.random.choice(env.get_num_states(), p=next_state_probs)  # Sample next state
         if state in env.terminal_states:
             improved_trajectory.append((state, None))  # Append terminal state
             break
@@ -501,7 +516,7 @@ def simulate_human_estop_v2(env, full_trajectory, beta=2.0, gamma=1.0):
         reward_up_to_t = sum(env.compute_reward(s) for s, _ in full_trajectory[:t+1])
 
         # Add repeated reward for the last step
-        reward_up_to_t += (traj_len - t - 1) * env.compute_reward(full_trajectory[t][0])
+        #reward_up_to_t += (traj_len - t - 1) * env.compute_reward(full_trajectory[t][0])
 
         # Numerator and denominator for the stopping probability
         numerator = beta * reward_up_to_t

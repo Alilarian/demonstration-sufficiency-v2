@@ -25,9 +25,9 @@ from data_generation.generate_data import generate_random_trajectory, simulate_h
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
-parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=False)
-parser.add_argument('--save_dir', type=str, help='Directory to save results', required=False)
-#parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
+parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
+parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+parser.add_argument('--seed', type=int, required=True)
 args = parser.parse_args()
 
 # Set the save directory in the parent folder's "results" directory
@@ -74,9 +74,9 @@ thresholds = config['suff_config']['thresholds']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
 # Fixing Seeds
-random.seed(seed)  # Fix Python's built-in random module
-np.random.seed(seed)  # Fix NumPy
-os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+random.seed(args.seed)  # Fix Python's built-in random module
+np.random.seed(args.seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(args.seed)  # Ensure deterministic hashing
 
 color_to_feature_map = {
     "red": [1, 0, 0],
@@ -109,11 +109,6 @@ policies = [ValueIteration(envs[i]).get_optimal_policy() for i in range(len(envs
 print_policy(policies[0], 2, 3)
 logger.info(f"Generated optimal policies for all environments.")
 
-## Generate 10 random traj
-## Simulate the E-stop from them
-## In each iteration featch 4 of them and run experiments
-#random_trajs = [generate_random_trajectory(envs[0], max_horizon=10) for i in range(6)]
-#estops = [simulate_human_estop(envs[0], i, beta=beta, gamma=gamma, fixed_length=None) for i in random_trajs]
 
 bounds_all_experiments = []
 num_demos_all_experiments = []
@@ -133,7 +128,7 @@ for i in range(20):
     #estops = [simulate_human_estop(env, i, beta=beta, gamma=gamma, fixed_length=None) for i in random_trajs]
     #estops = [simulate_human_estop(env, i, beta=beta, fixed_length=None) for i in random_trajs]
 
-    random_trajs = [generate_random_trajectory(env, max_horizon=10) for j in range(num_demonstration)]
+    random_trajs = [generate_random_trajectory(env, max_horizon=4) for j in range(num_demonstration)]
     #random_trajs = [generate_random_trajectory_diff_start(envs[i], max_horizon=5) for j in range(6)]
 
     #random_trajs = [[(0,1), (3,3), (4,3), (5,None)], [(0,1), (3,0), (0,1), (3,0)], 

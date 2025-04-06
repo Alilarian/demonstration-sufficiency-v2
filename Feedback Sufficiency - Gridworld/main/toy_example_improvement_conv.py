@@ -21,13 +21,14 @@ from utils.common_helper import (calculate_percentage_optimal_actions,
                                  calculate_policy_accuracy,)
 from utils.env_helper import print_policy
 from data_generation.generate_data import (generate_random_trajectory, 
-                                           simulate_improvement_feedback)
+                                           simulate_improvement_feedback_v2)
 
 # Argument parser for command line arguments
 parser = argparse.ArgumentParser(description='Experiment Settings')
 parser.add_argument('--num_demonstration', type=int, help='Number of demonstrations', required=True)
-parser.add_argument('--beta', type=float, help='beta', required=False)
 parser.add_argument('--save_dir', type=str, help='Directory to save results', required=True)
+parser.add_argument('--seed', type=int, required=True)
+args = parser.parse_args()
 
 #parser.add_argument('--log_file', type=str, help='Path to the log file', required=False)
 args = parser.parse_args()
@@ -59,7 +60,7 @@ epsilon = float(config['algorithm_config']['epsilon'])
 
 num_steps = config['bayesian_irl_config']['num_steps']
 step_stdev = config['bayesian_irl_config']['step_stdev']
-beta = float(args.beta) if args.beta else config['bayesian_irl_config']['beta']
+beta = config['bayesian_irl_config']['beta']
 normalize = config['bayesian_irl_config']['normalize']
 adaptive = config['bayesian_irl_config']['adaptive']
 burn_frac = config['bayesian_irl_config']['burn_frac']
@@ -75,9 +76,9 @@ conv_thresholds = config['suff_config']['conv_thresholds']
 num_demonstration = args.num_demonstration if args.num_demonstration else config['experiments']['num_demonstration']
 
 # Fixing Seeds
-random.seed(seed)  # Fix Python's built-in random module
-np.random.seed(seed)  # Fix NumPy
-os.environ['PYTHONHASHSEED'] = str(seed)  # Ensure deterministic hashing
+random.seed(args.seed)  # Fix Python's built-in random module
+np.random.seed(args.seed)  # Fix NumPy
+os.environ['PYTHONHASHSEED'] = str(args.seed)  # Ensure deterministic hashing
 
 color_to_feature_map = {
     "red": [1, 0, 0],
@@ -103,9 +104,7 @@ envs = [gridworld_env2.NoisyLinearRewardFeaturizedGridWorldEnv(gamma=gamma,
     grid_features=custom_grid_features,
     custom_feature_weights=list(feat)) for feat in feature_weights_list]
 
-# Loop through each environment and set feature weights
-#for env, weights in zip(envs, feature_weights_list):
-#    env.set_feature_weights(weights)
+num_world = len(envs)
 
 for env in envs:
     logger.info(f"Feature weights for environment: {env.feature_weights}")
@@ -141,15 +140,15 @@ mcmc_samples_all_experiments = {}  # Track MCMC samples across experiments
 same_demonstration = False
 
 # Run experiments for each world
-for i in range(50):
+for i in range(num_world):
     env = envs[i]
-    logger.info(f"\nRunning experiment {i+1}/{50}...")
+    logger.info(f"\nRunning experiment {i+1}/{num_world}...")
 
 
-    random_trajs = [generate_random_trajectory(envs[i], max_horizon=10) for j in range(num_demonstration)]
+    random_trajs = [generate_random_trajectory(env, max_horizon=4) for j in range(num_demonstration)]
 
 
-    improvement_feedbacks = [simulate_improvement_feedback(envs[i], j, policies[0]) for j in random_trajs]
+    improvement_feedbacks = [simulate_improvement_feedback_v2(env, j, policies[0]) for j in random_trajs]
 
     if same_demonstration:
             # Randomly select one pairwise comparison and replicate it
